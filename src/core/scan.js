@@ -22,6 +22,7 @@ export function scanWidgets(root = document) {
       if (!isWidgetId(widget)) throw new Error('NutriFit: unknown data-nutrifit-widget');
       result.widgets.push(mountWidget(element, {
         widget,
+        integrationId: element.dataset.integrationId,
         locale: normalizeLocale(element.dataset.locale),
         theme: normalizeTheme(element.dataset.theme),
         campaign: element.dataset.campaign,

@@ -1,6 +1,6 @@
 # Adding a NutriFit widget
 
-Keep the public repository a collection of reusable adapters. Nutrition is the
+Keep the public repository a collection of reusable adapters and optional native UIs. Nutrition is the
 first registered widget; do not add pretend calculator entries or arbitrary
 iframe URLs to represent unimplemented products.
 
@@ -8,7 +8,7 @@ iframe URLs to represent unimplemented products.
 
 Implement the interface in NutriFit's private application, next to the domain
 that owns the data and calculations. Reuse the canonical API contract and server
-calculation; do not copy the database, formulas or private UI into this repository.
+calculation; do not copy the database, server implementation or private account UI into this repository.
 A widget can be a calculator or another explicitly public, read-only experience.
 
 Create an exact `/embed/<name>` route with no application navigation, session
@@ -80,6 +80,20 @@ site. The source loader always targets NutriFit by default, even if its assets
 are self-hosted; only an explicit `hostUrl` changes the iframe origin.
 
 ## 5. Document and release the capability
+
+For an optional native UI, place its component and UI models in a separate module
+under `src/native/`; keep API payloads as `unknown` at this external package boundary
+and narrow them into UI models. The private NutriFit applications continue to use
+their canonical API contract. Add a separate package export/build entry so iframe
+consumers do not download native UI code. Reuse the session transport only when
+the new widget's explicit server contract and paid scope support it. Do not assume
+that the nutrition runtime authorizes other resources.
+
+The initial native nutrition UI was extracted from the hosted calculator. The
+host keeps a source snapshot because the public checkout is intentionally outside
+its workspace; changes to shared nutrition UI behavior must update both copies in
+one task. Changes to iframe core must likewise update hosted source assets. A
+future published dependency can replace this copying after an authorized release.
 
 Update the registry table, example, service scope, supported locales/themes and
 any widget-specific limits. Keep MIT notices when distributing code. A public

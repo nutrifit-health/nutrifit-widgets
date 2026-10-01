@@ -14,6 +14,7 @@ export interface WidgetDefinition {
 export interface WidgetMountOptions {
   widget: WidgetId;
   hostUrl?: string;
+  integrationId?: string;
   locale?: WidgetLocale;
   theme?: WidgetTheme;
   title?: string;

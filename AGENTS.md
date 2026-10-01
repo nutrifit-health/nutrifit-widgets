@@ -4,9 +4,10 @@ This repository contains open-source adapters for NutriFit's hosted widgets.
 It is independent of the private NutriFit application, even when checked out
 inside its directory. Work on main; do not commit or publish without a request.
 
-Keep native calculator implementation, API credentials, private contracts,
+The public native calculator UI is MIT; paid access is enforced by NutriFit servers.
+Keep API credentials, private contracts,
 catalog exports and commercial entitlement logic out of this repository.
-All free adapters render the same hosted iframe and expose no branding removal.
+Free adapters render the hosted iframe. Paid integrationId selects server-verified branding; native React requires a short-lived session from the customer backend.
 
 Keep TypeScript types in types.ts and import them with import type.
 Use unknown for external messages; validate origin, source, instance and shape.

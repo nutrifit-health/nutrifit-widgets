@@ -3,7 +3,7 @@
 Embed NutriFit calculators and widgets with React, JavaScript or an iframe.
 Maintained by **NUTRIFIT LLC**.
 
-**Status:** source implementation 0.1.0. The npm package has not been published
+**Status:** source implementation 0.2.0. The npm package has not been published
 and the hosting changes have not been deployed as part of this work. Production
 URLs below are deployment targets. Build, typecheck and browser checks have not
 been run.
@@ -13,14 +13,16 @@ been run.
 Give visitors a complete nutrition calculator on your website without running
 a food database or calculation service. They can search public foods and
 recipes, add ingredient weights, set the finished dish weight, view energy,
-protein, fat and carbohydrates, and download a CSV. Whole-dish and per-100-g
+protein, fat and carbohydrates, and download a server-generated PDF or a CSV. Whole-dish and per-100-g
 values are available. Missing nutrients stay unknown; partial totals are labeled.
 
-No account, email, payment or visit to NutriFit is required for the result or CSV.
+No account, email, payment or visit to NutriFit is required for the free result, PDF or CSV.
 English, Russian and Spanish, light/dark/automatic themes, automatic iframe
 height and multiple widgets on one page are supported by the source implementation.
 
-The hosted interface retains NutriFit attribution. An optional link opens the
+The free hosted interface and its PDF retain NutriFit attribution. The PDF includes
+a NutriFit link and QR code; it is generated from a fresh server calculation and
+does not upload or store a personal recipe. An optional link opens the
 same ingredient draft in NutriFit. It does not automatically save a recipe or
 post to Feed. Large drafts that exceed the transfer limit can still be calculated
 and exported on the embedding site.
@@ -112,11 +114,12 @@ the iframe mounts on the client and is cleaned up on unmount or option changes.
 | `title` | Registry title | Accessible iframe title |
 | `campaign` | `nutrition_calculator` on continuation | Campaign label, truncated to 80 characters |
 | `hostUrl` | `https://nutrifit.health` | Explicit HTTP(S) origin for a matching staging host; no path or credentials |
+| `integrationId` | — | Paid hosted integration from your account; the server decides branding and allowed domain |
 | `onEvent` | — | `ready`, `calculated`, `error`; no calculation payload |
 | `className`, `style` | — | React container only; cannot style the document inside the iframe |
 
 Callbacks can change without remounting. Changing widget/host/locale/theme/title/
-campaign remounts the iframe and clears its unsaved state. `initialDraft` is not
+campaign/integrationId remounts the iframe and clears its unsaved state. `initialDraft` is not
 part of the public adapter API.
 
 ## Framework-free module
@@ -156,7 +159,7 @@ private interface or backend. The calculator origin stays NutriFit unless
 ></iframe>
 ```
 
-This uses fixed height and internal scrolling. Keep download permission for CSV
+This uses fixed height and internal scrolling. Keep download permission for PDF and CSV
 and popup permissions for voluntary continuation. Use the loader or React for
 automatic height.
 
@@ -192,19 +195,56 @@ under the standard [MIT License](LICENSE). Retain its copyright and permission
 notice when distributing copies or substantial portions. The license permits
 modifying and redistributing the adapter code.
 
-This repository does not distribute NutriFit's private calculator implementation,
-backend or food catalog. Its code license does not grant a hosted-service quota,
+This repository includes the native calculator UI and transport, together with
+iframe adapters. It does not distribute NutriFit's backend or food catalog.
+Its code license does not grant a hosted-service quota,
 white-label service entitlement or rights to NutriFit trademarks. Hosted service
 availability and limits are managed separately. No SLA is offered in this release.
 The served free iframe retains its attribution; embedding-site CSS cannot edit
 its document, although a site can visually crop or cover a frame.
 
-Commercial white-label hosting and later native/API access are planned separately:
-account → payment/subscription → integration entitlement → domains and scoped
-sessions. Personal NutriFit Premium does not automatically grant widget rights.
-Automatic commercial billing, token provisioning and brand removal are not
-implemented in this release. See [SERVICE_MODEL.md](SERVICE_MODEL.md) or
+The companion NutriFit application contains account onboarding, configured Stripe
+subscriptions, prepaid purchases from the existing wallet, audited bank-transfer
+activation, DNS verification, key rotation, revocation and monthly quotas.
+These server changes require a coordinated deployment. Prices are not invented
+by this repository: without configured plans, commercial purchase is unavailable.
+Personal NutriFit Premium does not grant widget rights. See
+[SERVICE_MODEL.md](SERVICE_MODEL.md), [native React setup](docs/NATIVE_REACT.md) or
 [contact NUTRIFIT LLC](mailto:office@nutrifit.company?subject=NutriFit%20widget%20integration).
+
+## Paid white label and native React
+
+After the service is configured and deployed, sign in at
+`https://nutrifit.health/widgets/integrations`, obtain a widget plan, add an exact
+HTTPS origin and publish the DNS TXT challenge shown in your account. Verify the
+domain before embedding. A white-label plan changes the hosted UI and PDF to
+your configured brand and removes the NutriFit continuation link.
+
+For hosted white label, pass `integrationId` to either React frame component or
+`mountWidget`, add `data-integration-id` to the loader container, or use the iframe
+code from your account. The ID is public. There is no free `hideLogo` option.
+
+For a native component rendered in your page:
+
+```tsx
+import { NativeNutritionCalculator } from '@nutrifit/widgets/native';
+import '@nutrifit/widgets/native.css';
+
+export function Calculator() {
+  return <NativeNutritionCalculator locale="en" theme="light"
+    getSession={async (signal) => {
+      const response = await fetch('/api/nutrifit-session', { method: 'POST', signal });
+      if (!response.ok) throw new Error('Widget access unavailable');
+      return response.json();
+    }} />;
+}
+```
+
+Your server exchanges a secret key for a five-minute session. Never put that key
+in React props, HTML, public environment variables or a browser request.
+[The complete integration guide](docs/NATIVE_REACT.md) includes the server side,
+failure handling, quotas and domain limitations. Native sessions require a plan
+with native access; the MIT license applies to UI code, not free service usage.
 
 ## Development
 
@@ -215,6 +255,7 @@ the parent workspace. It has its own Git/main and remote.
 ```text
 src/core/                 Registry, options, postMessage, mount/scan and types
 src/react/                Generic React adapter and React props
+src/native/               Native nutrition UI, styles and session transport
 src/widgets/nutrition/    Nutrition convenience component
 src/browser/types.ts     Asynchronous loader API types
 src/embed.js              Classic script bootstrap
@@ -234,7 +275,8 @@ npm run typecheck
 npm run build
 ```
 
-Build emits the React bundle, browser modules, loader and TypeScript declarations
+Build emits the iframe React bundle, native React bundle/CSS, browser modules,
+loader and TypeScript declarations
 into `dist/`. `prepublishOnly` builds before npm publication; the npm scope must
 be accessible to the publisher. Build/check scripts are documentation, not a
 claim that checks ran. The host must deploy corresponding private UI/routes and

@@ -19,3 +19,11 @@ await copyFile('LICENSE', 'dist/LICENSE');
 for (const file of await readdir('src/core')) {
   if (file.endsWith('.js')) await copyFile('src/core/' + file, 'dist/core/' + file);
 }
+
+await build({
+  entryPoints: ['src/native/index.ts'], outfile: 'dist/native.js', bundle: true,
+  format: 'esm', platform: 'browser', target: 'es2022',
+  external: ['react', 'react/jsx-runtime'],
+  banner: { js: '"use client";\n/*! Copyright (c) 2026 NUTRIFIT LLC. MIT License. */' },
+  sourcemap: true,
+});

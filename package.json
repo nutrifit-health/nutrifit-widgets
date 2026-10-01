@@ -1,27 +1,73 @@
 {
   "name": "@nutrifit/widgets",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Embed NutriFit calculators and widgets with React, JavaScript or an iframe.",
-  "author": { "name": "NUTRIFIT LLC", "url": "https://nutrifit.company" },
+  "author": {
+    "name": "NUTRIFIT LLC",
+    "url": "https://nutrifit.company"
+  },
   "license": "MIT",
   "type": "module",
-  "repository": { "type": "git", "url": "https://github.com/nutrifit-health/nutrifit-widgets.git" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nutrifit-health/nutrifit-widgets.git"
+  },
   "homepage": "https://github.com/nutrifit-health/nutrifit-widgets#readme",
-  "keywords": ["nutrition", "calculator", "react", "widget", "iframe", "nutrifit"],
-  "files": ["dist", "README.md", "LICENSE"],
-  "sideEffects": ["./dist/embed.js"],
+  "keywords": [
+    "nutrition",
+    "calculator",
+    "react",
+    "widget",
+    "iframe",
+    "nutrifit"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SERVICE_MODEL.md",
+    "docs",
+    "examples"
+  ],
+  "sideEffects": [
+    "./dist/embed.js",
+    "./dist/native.css"
+  ],
   "exports": {
-    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
-    "./core": { "types": "./dist/core/index.d.ts", "import": "./dist/core/index.js" },
-    "./embed.js": "./dist/embed.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "import": "./dist/core/index.js"
+    },
+    "./embed.js": "./dist/embed.js",
+    "./native": {
+      "types": "./dist/native/index.d.ts",
+      "import": "./dist/native.js"
+    },
+    "./native.css": "./dist/native.css"
   },
   "scripts": {
     "build": "node scripts/build.mjs && tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run build"
   },
-  "peerDependencies": { "react": "^18.2.0 || ^19.0.0" },
-  "peerDependenciesMeta": { "react": { "optional": true } },
-  "devDependencies": { "@types/react": "^19.0.0", "esbuild": "^0.28.1", "typescript": "^5.9.0" },
-  "publishConfig": { "access": "public" }
+  "peerDependencies": {
+    "react": "^18.2.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "esbuild": "^0.28.1",
+    "typescript": "^5.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

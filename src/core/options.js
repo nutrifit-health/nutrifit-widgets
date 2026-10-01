@@ -34,6 +34,10 @@ export function createWidgetUrl(definition, options, instanceId, parentOrigin) {
   url.searchParams.set('parentOrigin', normalizeOrigin(parentOrigin));
   url.searchParams.set('lang', normalizeLocale(options.locale));
   url.searchParams.set('theme', normalizeTheme(options.theme));
+  if (options.integrationId) {
+    if (!/^[0-9a-f-]{36}$/i.test(options.integrationId)) throw new Error('NutriFit: invalid integration ID');
+    url.searchParams.set('integrationId', options.integrationId);
+  }
   if (options.campaign) url.searchParams.set('campaign', options.campaign.slice(0, 80));
   return url;
 }

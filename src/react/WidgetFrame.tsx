@@ -5,7 +5,7 @@ import { mountWidget } from '../core/mount.js';
 import type { WidgetFrameProps } from './types.js';
 
 export function WidgetFrame({
-  widget, hostUrl, locale, theme, title, campaign, className, style, onEvent,
+  widget, hostUrl, locale, theme, title, campaign, integrationId, className, style, onEvent,
 }: WidgetFrameProps) {
   const container = useRef<HTMLDivElement>(null);
   const callback = useRef(onEvent);
@@ -14,11 +14,11 @@ export function WidgetFrame({
   useEffect(() => {
     if (!container.current) return;
     const handle = mountWidget(container.current, {
-      widget, hostUrl, locale, theme, title, campaign,
+      widget, hostUrl, locale, theme, title, campaign, integrationId,
       onEvent: (event) => callback.current?.(event),
     });
     return handle.destroy;
-  }, [widget, hostUrl, locale, theme, title, campaign]);
+  }, [widget, hostUrl, locale, theme, title, campaign, integrationId]);
 
   return <div ref={container} className={className} style={style} />;
 }

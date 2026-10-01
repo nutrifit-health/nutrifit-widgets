@@ -1,63 +1,84 @@
 # Service model
 
-## The exchange
+## Value for both sides
 
-Website owners receive a complete on-site calculator and CSV export. NutriFit
-operates the catalog, calculations, translations and interface, and receives
-visible attribution plus voluntary referrals. Visitors are not required to
-register or leave the website to obtain their results.
+Website owners give visitors a complete calculator, nutrition totals, PDF and CSV
+without operating a food catalog or calculation server. Results stay on their
+website. NutriFit receives visible attribution, branded reports and optional
+referrals. No registration, payment or visit to NutriFit is required for free results.
 
-Free delivery is an iframe hosted by NutriFit. The JavaScript loader and React
-component are convenience adapters for that iframe. A brand-free native
-calculator is not part of this public repository.
+| Format | Website owner receives | NutriFit receives |
+| --- | --- | --- |
+| Free iframe, JS loader or React frame | Hosted calculator, branded PDF and CSV, maintained interface | Attribution and voluntary referrals |
+| Paid hosted white label | Own brand, approved origins, account quota, managed hosting | Subscription or prepaid revenue |
+| Paid native React | UI inside the site's DOM, custom composition, scoped backend access | Paid use of catalog/calculation resources |
 
-## Attribution that remains under NutriFit's control
+Source code is MIT, including native UI. Service access is separate. Removing a
+logo from a copied React component does not bypass paid API authorization. The
+existing anonymous public API remains public; this product does not pretend it
+is a new subscription paywall. Paid value is branding, native integration and a
+managed integration account with explicit resource limits. No SLA is promised.
 
-The logo, source label and continuation link render inside the hosted document.
-Embedding-site CSS cannot edit that document. No supported free setting removes
-them. Branding changes are made on the NutriFit host. This controls the contents
-we serve; it is not a claim that a website cannot conceal or crop an iframe.
+## Attribution and control
 
-## Proposed commercial route
+The free logo, source label and continuation link are inside NutriFit's iframe.
+Embedding-site CSS cannot modify that document. There is no supported free option
+to remove them. A site can still crop or cover a frame; iframe hosting is not a
+guarantee of permanent visual attribution or SEO backlinks.
 
-The intended product flow is: account sign-in → integration subscription →
-confirmed payment → active integration entitlement → domain setup and access
-credentials. Stripe, verified crypto payment and an audited manual bank-transfer
-grant should enable the same resource entitlement. Personal NutriFit Premium
-or promotional/research access must not automatically enable commercial widgets.
+The free PDF includes a NutriFit link and QR code. White-label UI, PDF and CSV use
+the customer's configured brand. White-label continuation is disabled. PDF is a
+fresh server calculation: source updates can make it differ from an earlier
+on-screen result. Neither report generation nor continuation saves a recipe or
+publishes to Feed automatically.
 
-The recommended first paid format is a NutriFit-hosted iframe with the customer's
-branding. Native React/direct API access can follow as a separate commercial
-level. The current release provides an inquiry path for domain, use case,
-expected traffic, branding and support requirements; automatic billing and
-credential provisioning are not implemented.
+## Account and payments
 
-A later paid product should tie access to an integration account and server-side
-entitlement, resource quotas, approved origins, credential revocation and billing
-state. A browser-visible key is an integration identifier, not a secret or
-proof of authorization. Domain CORS alone is not authorization either. Prefer a
-short-lived, narrowly scoped widget session; permanent secret keys belong on
-customer servers, not inside HTML or React. Each request needs an entitlement,
-revocation and quota check, including sessions issued before a subscription
-expired or was revoked.
-Existing anonymous public catalog routes must not be presented as subscription
-protected merely because their cross-origin browser access is restricted.
+The companion application's source implements sign-in → configured plan → payment
+→ active widget access → domain verification → embed code or server key. It still
+requires deployment and commercial configuration; this repository alone does not
+activate a hosted subscription. Personal Premium gives no widget rights.
 
-This release creates no payment plan, secret/key issuing service, entitlement
-enforcement or automatic onboarding. No price or paid SLA has been invented.
-The commercial contact link is an inquiry path, not checkout.
+- Stripe uses a separate monthly USD price and verified payment events. Redirects
+  from checkout do not grant access. Cancelling renewal preserves the paid period.
+- Wallet purchases debit the existing available USD balance transactionally and
+  buy one calendar month. Existing supported crypto top-ups can fund that balance;
+  the widget does not collect crypto itself or equate a token with USD.
+- For bank transfers, a support operator with billing permission records a
+  confirmed payment reference and dates. Access is audited and can be revoked.
 
-## Measuring whether the free service is worthwhile
+There are no default prices, trial, grace, automatic wallet renewal or overage.
+The owner configures plan limits and prices. Failed renewal cannot extend access;
+refunds and unresolved/lost disputes block the affected Stripe grant. A manual
+revocation survives provider-event replays.
 
-Pilot with three real websites. Count usable integrations, successful user
-tasks, continuation landings, registration intent, completed registrations and
-eventual revenue against support effort and API costs.
+## Keys, domains and quotas
 
-The implemented continuation uses campaign and referring hostname, then emits
-`widget_handoff` on the NutriFit destination and
-`widget_registration_click` for its account CTA. `widget_calculation` covers a
-calculation on that destination. Those events do not prove account creation
-or payment; those outcomes must come from the existing product analytics.
-No ingredients, gram values or nutrient results are analytics properties.
-Downloads/stars and the presence of an iframe are not revenue evidence or
-a guarantee of SEO gains.
+Each integration has one exact HTTPS origin, verified using DNS TXT. No wildcard
+domains. A paid iframe uses a public integration ID with server-selected branding
+and a restricted frame-ancestors policy. Its bootstrap is a publishable
+capability, not cryptographic proof of the embedding visitor's identity.
+
+Native React uses a server-held key exchanged for a five-minute browser session.
+NutriFit stores hashes of opaque keys and sessions. Keys are shown once; rotation
+and disablement invalidate existing sessions through the integration revision.
+Each request checks expiry, origin, current integration, current paid period and
+native permission. CORS/origin restrictions alone cannot authenticate non-browser
+callers. Protect the customer's session endpoint against abuse too.
+
+Quota is shared by the account across integrations and resets each UTC calendar
+month. One calculation and one PDF each consume one operation; search consumes no
+monthly operation but is rate limited. Failed computation after admission still
+counts. There is no automatic charged retry. A lower site limit permits only the
+earliest enabled integrations up to the new limit; disable an unused one to
+release its slot. Usage stores counts and period, not ingredient data.
+
+## Measuring value
+
+Pilot with three real websites. Compare successful user tasks, voluntary visits,
+registrations and resulting revenue with support effort and service cost.
+Continuation emits widget_handoff, its account CTA widget_registration_click,
+and destination calculations widget_calculation. They do not prove registration
+or payment; those outcomes need existing product analytics. No ingredients, gram
+values or nutrient results are analytics properties. Stars/downloads are not
+revenue evidence and a free widget does not guarantee SEO gains.

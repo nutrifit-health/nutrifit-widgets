@@ -33,7 +33,7 @@ export function mountWidget(container, options) {
   let destroyed = false;
 
   /** @param {MessageEvent<unknown>} event */
-  function receive(event) {
+  const receive = (event) => {
     if (destroyed || event.origin !== url.origin || event.source !== iframe.contentWindow) return;
     const message = readWidgetMessage(event.data, instanceId);
     if (!message) return;
@@ -45,7 +45,7 @@ export function mountWidget(container, options) {
       detail: { instanceId, widget: options.widget },
     }));
     options.onEvent?.(message.event);
-  }
+  };
 
   /** @type {import('./types.js').WidgetHandle} */
   const handle = {

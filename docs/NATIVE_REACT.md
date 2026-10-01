@@ -2,8 +2,9 @@
 
 This source integration requires the matching NutriFit service deployment, a
 configured plan with `native: true`, a verified HTTPS domain and a server key.
-The npm package is not yet published. Build/type/runtime checks have not been run
-for this source release. Review your deployment before exposing it to visitors.
+The package build and TypeScript checks pass for 0.2.0. Runtime service checks
+have not been run, and the matching service changes have not been deployed as
+part of this package release. Review your deployment before exposing it to visitors.
 
 ## Account setup
 

@@ -1,7 +1,7 @@
 import { HOST_URL, MAX_INGREDIENTS } from './constants';
 import { isRecord } from './adapters';
 import { canCalculateDraft, isPositiveWeight } from './validation';
-import type { CalculatorDraft, WidgetLocale } from './types';
+import type { CalculatorDraft, Ingredient, WidgetLocale } from './types';
 
 const HANDOFF_PREFIX = '#nutrifit=';
 const MAX_HANDOFF_LENGTH = 50000;
@@ -35,7 +35,7 @@ export function parseHandoff(hash: string): CalculatorDraft | null {
         value.items.length < 1 || value.items.length > MAX_INGREDIENTS ||
         typeof value.outputWeight !== 'string' || value.outputWeight.length > 32) return null;
     if (!isPositiveWeight(value.outputWeight)) return null;
-    const items = value.items.map((item: unknown, index) => {
+    const items = value.items.map<Ingredient>((item: unknown, index) => {
       if (!isRecord(item) || (item.category !== 'food' && item.category !== 'recipe') ||
           typeof item.reference !== 'string' || !item.reference || item.reference.length > MAX_HANDOFF_LENGTH ||
           typeof item.label !== 'string' || !item.label || item.label.length > MAX_HANDOFF_LENGTH ||

@@ -3,10 +3,11 @@
 Embed NutriFit calculators and widgets with React, JavaScript or an iframe.
 Maintained by **NUTRIFIT LLC**.
 
-**Status:** source implementation 0.2.0. The npm package has not been published
-and the hosting changes have not been deployed as part of this work. Production
-URLs below are deployment targets. Build, typecheck and browser checks have not
-been run.
+**Release:** 0.2.0 of `@nutrifit/widgets`. Package build and TypeScript checks pass.
+The matching NutriFit hosting changes have not been deployed as part of this
+release. Production URLs below are deployment targets; hosted calculator and
+API availability are not guaranteed by installing this package. Browser and
+end-to-end service checks have not been run.
 
 ## Why use it?
 
@@ -85,7 +86,11 @@ widget or invalid container does not prevent other containers from mounting.
 
 ## React
 
-After the first npm release, install `@nutrifit/widgets` in your React application:
+Install `@nutrifit/widgets` in your React application:
+
+```sh
+npm install @nutrifit/widgets
+```
 
 ```tsx
 "use client";
@@ -124,7 +129,7 @@ part of the public adapter API.
 
 ## Framework-free module
 
-After the npm release:
+Import the framework-free entry point:
 
 ```js
 import { mountWidget, scanWidgets, widgets } from "@nutrifit/widgets/core";

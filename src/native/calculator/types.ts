@@ -95,3 +95,6 @@ export interface CalculationResultsProps {
 }
 
 export interface WidgetIconProps { name: 'search' | 'plus' | 'remove' | 'download' | 'arrow'; }
+export interface NutriFitLogoProps {
+  theme: WidgetTheme;
+}

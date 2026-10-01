@@ -28,7 +28,8 @@
     "CHANGELOG.md",
     "SERVICE_MODEL.md",
     "docs",
-    "examples"
+    "examples",
+    "NOTICE"
   ],
   "sideEffects": [
     "./dist/embed.js",

@@ -11,6 +11,8 @@
 - Public catalog PDF requests omit application credentials. White-label catalog frames omit the NutriFit PDF button; native dish PDF remains managed by the service entitlement.
 - Registry definitions now expose `titles` keyed by locale instead of one `title`. The mount option `title` remains a caller-provided accessibility label.
 
+- Official NutriFit light/dark logos are included in branded widget headers. Auto theme follows the system preference; white-label integrations retain their customer brand. Native CSS bundles the supplied PNG assets as data URLs. See NOTICE for brand attribution.
+
 Publication, production deployment and release checks are separate. No 0.3.0 validation results are claimed here.
 
 ## 0.2.0 — published

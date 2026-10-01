@@ -180,3 +180,5 @@ export async function POST() {
 Copyright (c) 2026 **NUTRIFIT LLC**. Adapter va nativ taom interfeysi kodi standart MIT litsenziyasida tarqatiladi. Kod litsenziyasi xizmat kvotasi, white label, NutriFit savdo belgisi yoki klinik so‘rovnomalar mulk huquqini bermaydi. Backend, shaxsiy kabinet va mahsulot katalogi kiritilmagan. Tibbiy va psixologik kalkulyatorlar usul cheklovlarini saqlaydi va tashxis hisoblanmaydi.
 
 [MIT](../LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
+
+Brendli vidjetlar rasmiy NutriFit logotipidan foydalanadi: yorug‘, qorong‘i yoki `theme="auto"` bilan tizim mavzusiga mos. White-label mijoz brendini saqlaydi. Native CSS PNG fayllarini o‘z ichiga oladi; qat’iy CSP `img-src` uchun `data:` ga ruxsat berishi kerak. Brend shartlari [NOTICE](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/NOTICE) faylida.

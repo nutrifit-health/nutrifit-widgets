@@ -180,3 +180,5 @@ export async function POST() {
 Copyright (c) 2026 **NUTRIFIT LLC**. Код адаптеров и нативного интерфейса блюда распространяется по стандартной MIT. Лицензия на код не даёт квоту сервиса, право white label, права на товарный знак NutriFit или владение клиническими опросниками. Backend, личный кабинет и каталог продуктов не включены. Медицинские и психологические калькуляторы сохраняют ограничения методик и не являются диагнозом.
 
 [MIT](../LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
+
+В брендированных виджетах используется официальный логотип NutriFit: светлый, тёмный или по системной теме при `theme="auto"`. White-label сохраняет бренд клиента. В native CSS PNG встроены; строгий CSP сайта должен разрешать `data:` в `img-src`. Условия использования бренда — в [NOTICE](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/NOTICE).

@@ -180,3 +180,5 @@ export async function POST() {
 Copyright (c) 2026 **NUTRIFIT LLC**. Адаптерлер мен нативті тағам интерфейсі стандартты MIT лицензиясымен таратылады. Код лицензиясы сервис квотасын, white label, NutriFit тауар белгісін немесе клиникалық сауалнамаларға меншік құқығын бермейді. Backend, жеке кабинет және өнімдер каталогы қосылмаған. Медициналық және психологиялық калькуляторлар әдістеме шектеулерін сақтайды және диагноз болып саналмайды.
 
 [MIT](../LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
+
+Брендтелген виджеттер ресми NutriFit логотипін қолданады: ашық, қараңғы немесе `theme="auto"` арқылы жүйе тақырыбына сай. White-label клиент брендін сақтайды. Native CSS ішіне PNG енгізілген; қатаң CSP `img-src` ішінде `data:` рұқсат етуі керек. Бренд шарттары [NOTICE](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/NOTICE) файлында.

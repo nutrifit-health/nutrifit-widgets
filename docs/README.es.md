@@ -180,3 +180,5 @@ export async function POST() {
 Copyright (c) 2026 **NUTRIFIT LLC**. Los adaptadores y la interfaz nativa del plato se distribuyen con la licencia MIT estándar. La licencia del código no concede cuotas del servicio, marca blanca, derechos de marca NutriFit ni propiedad de instrumentos clínicos. No se incluyen backend, cuenta privada ni catálogo de alimentos. Las calculadoras médicas y psicológicas conservan sus límites y no constituyen un diagnóstico.
 
 [MIT](../LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
+
+Los widgets con marca usan el logotipo oficial de NutriFit: claro, oscuro o según el sistema con `theme="auto"`. White-label conserva la marca del cliente. El CSS nativo incluye los PNG; una CSP estricta debe permitir `data:` en `img-src`. Consulta [NOTICE](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/NOTICE).

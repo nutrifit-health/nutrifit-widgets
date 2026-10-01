@@ -180,3 +180,5 @@ export async function POST() {
 Copyright (c) 2026 **NUTRIFIT LLC**. Adapter and native dish UI code are distributed under the standard MIT license. The code license does not grant hosted service quotas, white-label entitlement, NutriFit trademark rights or ownership of clinical questionnaire instruments. Backend, private account logic and food catalog are not included. Medical and psychological calculators retain their method limitations and are not a diagnosis.
 
 [MIT](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
+
+Branded widget headers use the official NutriFit logo: light, dark, or the system preference with `theme="auto"`. White-label integrations retain the customer brand. Native CSS embeds the PNG assets; a restrictive host CSP must allow `data:` in `img-src`. See [NOTICE](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/NOTICE) for brand attribution.

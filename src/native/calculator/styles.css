@@ -87,3 +87,17 @@
 .nf-widget .nf-continue:hover { text-decoration: underline; }
 .nf-widget .nf-integration { display: inline-block; min-height: 36px; padding: 9px 0; margin-top: 6px; font-size: 12px; color: var(--nf-muted); }
 @media (prefers-reduced-motion: reduce) { .nf-widget input, .nf-widget button { transition: none; } }
+
+.nf-brand-identity { display: inline-flex; align-items: center; gap: 10px; line-height: 1.25; }
+.nf-brand-identity .nf-brand-mark {
+  display: block; flex: 0 0 36px; width: 36px; height: 36px; border-radius: 9px;
+  background: #fff url("./assets/logo-light.png") center / contain no-repeat;
+}
+.nf-brand-identity[data-theme="dark"] .nf-brand-mark {
+  background-color: #222; background-image: url("./assets/logo-dark.png");
+}
+@media (prefers-color-scheme: dark) {
+  .nf-brand-identity[data-theme="auto"] .nf-brand-mark {
+    background-color: #222; background-image: url("./assets/logo-dark.png");
+  }
+}

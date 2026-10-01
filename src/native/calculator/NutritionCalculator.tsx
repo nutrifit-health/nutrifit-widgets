@@ -2,6 +2,7 @@
 
 import { useId, useState } from 'react';
 import { WidgetIcon } from './WidgetIcon';
+import { NutriFitLogo } from './NutriFitLogo';
 import { translations } from './i18n';
 import { buildContinueUrl } from './handoff';
 import { calculationErrorText } from './validation';
@@ -25,7 +26,7 @@ export function NutritionCalculator({
 
   return <section className={`nf-widget ${className}`} data-theme={theme} lang={locale} aria-labelledby={id + '-title'}>
     <header className="nf-header">
-      {brandName ? <span className="nf-brand">{brandName}</span> : <a href="https://nutrifit.health/?utm_source=nutrifit_widget&utm_medium=referral" target="_blank" rel="noopener noreferrer" className="nf-brand">NutriFit</a>}
+      {brandName ? <span className="nf-brand">{brandName}</span> : <a href="https://nutrifit.health/?utm_source=nutrifit_widget&utm_medium=referral" target="_blank" rel="noopener noreferrer" className="nf-brand"><NutriFitLogo theme={theme} /></a>}
       <h2 id={id + '-title'}>{t.title}</h2><p>{t.intro}</p>
     </header>
     <form onSubmit={(event) => { event.preventDefault(); void calculator.calculate(); }}>

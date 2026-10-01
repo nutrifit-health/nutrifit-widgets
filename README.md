@@ -186,6 +186,6 @@ Branded widget headers use the official NutriFit logo: light, dark, or the syste
 
 [Native React integration](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/NATIVE_REACT.md) · [Service model](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/SERVICE_MODEL.md) · [Adding widgets](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/ADDING_WIDGETS.md) · [Publishing releases](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/RELEASING.md)
 
-The primary npm package is `@nutrifit/widgets`. GitHub Packages also provides `@nutrifit-health/widgets` linked to this repository. Its distribution comes from the published npm archive; the scope differs because GitHub requires the organization name. GitHub installation requires registry authentication. Standard npm users should use the command above.
+The primary npm package is `@nutrifit/widgets`. GitHub Packages also provides `@nutrifit-health/widgets` linked to this repository. Its distribution comes from the published npm archive; the scope follows the GitHub repository owner. GitHub installation requires registry authentication. Standard npm users should use the command above.
 
-[GitHub Packages](https://github.com/orgs/nutrifit-health/packages?repo_name=nutrifit-widgets)
+[GitHub Packages](https://github.com/nutrifit-health/nutrifit-widgets/pkgs/npm/widgets)

@@ -179,13 +179,13 @@ export async function POST() {
 
 Copyright (c) 2026 **NUTRIFIT LLC**. Код адаптеров и нативного интерфейса блюда распространяется по стандартной MIT. Лицензия на код не даёт квоту сервиса, право white label, права на товарный знак NutriFit или владение клиническими опросниками. Backend, личный кабинет и каталог продуктов не включены. Медицинские и психологические калькуляторы сохраняют ограничения методик и не являются диагнозом.
 
-[MIT](../LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
+[MIT](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
 
 В брендированных виджетах используется официальный логотип NutriFit: светлый, тёмный или по системной теме при `theme="auto"`. White-label сохраняет бренд клиента. В native CSS PNG встроены; строгий CSP сайта должен разрешать `data:` в `img-src`. Условия использования бренда — в [NOTICE](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/NOTICE).
 
 
 [Нативная интеграция React](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/NATIVE_REACT.md) · [Модель сервиса](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/SERVICE_MODEL.md) · [Добавление виджетов](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/ADDING_WIDGETS.md) · [Публикация релизов](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/RELEASING.md)
 
-Основной npm-пакет — `@nutrifit/widgets`. GitHub Packages также предоставляет `@nutrifit-health/widgets`, связанный с этим репозиторием. Сборка берётся из опубликованного npm-архива; scope отличается по правилу организации GitHub. Установка из GitHub требует авторизации в его реестре. Для обычной установки npm используйте команду выше.
+Основной npm-пакет — `@nutrifit/widgets`. GitHub Packages также предоставляет `@nutrifit-health/widgets`, связанный с этим репозиторием. Сборка берётся из опубликованного npm-архива; scope соответствует владельцу репозитория GitHub. Установка из GitHub требует авторизации в его реестре. Для обычной установки npm используйте команду выше.
 
-[GitHub Packages](https://github.com/orgs/nutrifit-health/packages?repo_name=nutrifit-widgets)
+[GitHub Packages](https://github.com/nutrifit-health/nutrifit-widgets/pkgs/npm/widgets)

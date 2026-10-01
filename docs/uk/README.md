@@ -179,13 +179,13 @@ export async function POST() {
 
 Copyright (c) 2026 **NUTRIFIT LLC**. Код адаптерів і нативного інтерфейсу страви поширюється за стандартною MIT. Ліцензія на код не надає квоти сервісу, права white label, прав на знак NutriFit або власності на клінічні опитувальники. Backend, особистий кабінет і каталог продуктів не включені. Медичні та психологічні калькулятори зберігають обмеження й не є діагнозом.
 
-[MIT](../LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
+[MIT](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
 
 Брендовані віджети використовують офіційний логотип NutriFit: світлий, темний або за системною темою з `theme="auto"`. White-label зберігає бренд клієнта. Native CSS містить PNG; суворий CSP має дозволяти `data:` у `img-src`. Умови використання бренду — у [NOTICE](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/NOTICE).
 
 
 [Нативна інтеграція React](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/NATIVE_REACT.md) · [Модель сервісу](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/SERVICE_MODEL.md) · [Додавання віджетів](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/ADDING_WIDGETS.md) · [Публікація релізів](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/RELEASING.md)
 
-Основний npm-пакет — `@nutrifit/widgets`. GitHub Packages також надає `@nutrifit-health/widgets`, пов’язаний із репозиторієм і створений з опублікованого npm-архіву. Scope відповідає організації GitHub. Установлення з GitHub потребує авторизації; для npm використовуйте команду вище.
+Основний npm-пакет — `@nutrifit/widgets`. GitHub Packages також надає `@nutrifit-health/widgets`, пов’язаний із репозиторієм і створений з опублікованого npm-архіву. Scope відповідає власнику репозиторію GitHub. Установлення з GitHub потребує авторизації; для npm використовуйте команду вище.
 
-[GitHub Packages](https://github.com/orgs/nutrifit-health/packages?repo_name=nutrifit-widgets)
+[GitHub Packages](https://github.com/nutrifit-health/nutrifit-widgets/pkgs/npm/widgets)

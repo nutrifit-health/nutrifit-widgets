@@ -4,7 +4,7 @@
 
 [← Русский](README.md)
 
-Синхронизируйте версию пакета, tag и публикации реестров. GitHub Release vX.Y.Z запускает publish.yml: сначала npm, затем копию в GitHub Packages. При повторном запуске уже опубликованная immutable npm-версия используется повторно. Trusted publisher npm настраивается для организации nutrifit-health, репозитория nutrifit-widgets и workflow publish.yml с разрешением прямого npm publish. GitHub Packages использует GITHUB_TOKEN репозитория и scope @nutrifit-health. Видимость пакета GitHub настраивается отдельно.
+Синхронизируйте версию пакета, tag и публикации реестров. GitHub Release vX.Y.Z запускает publish.yml: сначала npm, затем копию в GitHub Packages. При повторном запуске уже опубликованная immutable npm-версия используется повторно. Trusted publisher npm настраивается для владельца GitHub nutrifit-health, репозитория nutrifit-widgets и workflow publish.yml с разрешением прямого npm publish. GitHub Packages использует GITHUB_TOKEN репозитория и scope @nutrifit-health. Видимость пакета GitHub настраивается отдельно.
 
 Обновите языковые инструкции и CHANGELOG, затем сохраните нужные файлы в main. Сборка создаёт JavaScript, CSS и декларации TypeScript для публикации. Тесты и другие проверки требуют отдельного явного запроса. Публикация npm не разворачивает private hosted-маршруты и не задаёт коммерческие тарифы.
 
@@ -18,4 +18,4 @@ git push origin vX.Y.Z
 gh release create vX.Y.Z --title "NutriFit Widgets X.Y.Z" --notes-file /path/to/release-notes.md
 ```
 
-[npm](https://www.npmjs.com/package/@nutrifit/widgets) · [GitHub Releases](https://github.com/nutrifit-health/nutrifit-widgets/releases) · [GitHub Packages](https://github.com/orgs/nutrifit-health/packages?repo_name=nutrifit-widgets)
+[npm](https://www.npmjs.com/package/@nutrifit/widgets) · [GitHub Releases](https://github.com/nutrifit-health/nutrifit-widgets/releases) · [GitHub Packages](https://github.com/nutrifit-health/nutrifit-widgets/pkgs/npm/widgets)

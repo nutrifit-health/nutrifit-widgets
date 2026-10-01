@@ -179,13 +179,13 @@ export async function POST() {
 
 Copyright (c) 2026 **NUTRIFIT LLC**. Los adaptadores y la interfaz nativa del plato se distribuyen con la licencia MIT estándar. La licencia del código no concede cuotas del servicio, marca blanca, derechos de marca NutriFit ni propiedad de instrumentos clínicos. No se incluyen backend, cuenta privada ni catálogo de alimentos. Las calculadoras médicas y psicológicas conservan sus límites y no constituyen un diagnóstico.
 
-[MIT](../LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
+[MIT](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
 
 Los widgets con marca usan el logotipo oficial de NutriFit: claro, oscuro o según el sistema con `theme="auto"`. White-label conserva la marca del cliente. El CSS nativo incluye los PNG; una CSP estricta debe permitir `data:` en `img-src`. Consulta [NOTICE](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/NOTICE).
 
 
 [Integración React nativa](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/NATIVE_REACT.md) · [Modelo de servicio](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/SERVICE_MODEL.md) · [Añadir widgets](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/ADDING_WIDGETS.md) · [Publicar versiones](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/RELEASING.md)
 
-El paquete npm principal es `@nutrifit/widgets`. GitHub Packages ofrece también `@nutrifit-health/widgets`, vinculado al repositorio y obtenido del archivo npm publicado. El scope coincide con la organización GitHub. La instalación desde GitHub requiere autenticación; para npm usa el comando anterior.
+El paquete npm principal es `@nutrifit/widgets`. GitHub Packages ofrece también `@nutrifit-health/widgets`, vinculado al repositorio y obtenido del archivo npm publicado. El scope coincide con el propietario del repositorio GitHub. La instalación desde GitHub requiere autenticación; para npm usa el comando anterior.
 
-[GitHub Packages](https://github.com/orgs/nutrifit-health/packages?repo_name=nutrifit-widgets)
+[GitHub Packages](https://github.com/nutrifit-health/nutrifit-widgets/pkgs/npm/widgets)

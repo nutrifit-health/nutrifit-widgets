@@ -179,13 +179,13 @@ export async function POST() {
 
 Copyright (c) 2026 **NUTRIFIT LLC**. Адаптерлер мен нативті тағам интерфейсі стандартты MIT лицензиясымен таратылады. Код лицензиясы сервис квотасын, white label, NutriFit тауар белгісін немесе клиникалық сауалнамаларға меншік құқығын бермейді. Backend, жеке кабинет және өнімдер каталогы қосылмаған. Медициналық және психологиялық калькуляторлар әдістеме шектеулерін сақтайды және диагноз болып саналмайды.
 
-[MIT](../LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
+[MIT](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
 
 Брендтелген виджеттер ресми NutriFit логотипін қолданады: ашық, қараңғы немесе `theme="auto"` арқылы жүйе тақырыбына сай. White-label клиент брендін сақтайды. Native CSS ішіне PNG енгізілген; қатаң CSP `img-src` ішінде `data:` рұқсат етуі керек. Бренд шарттары [NOTICE](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/NOTICE) файлында.
 
 
 [Нативті React интеграциясы](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/NATIVE_REACT.md) · [Қызмет моделі](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/SERVICE_MODEL.md) · [Виджет қосу](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/ADDING_WIDGETS.md) · [Релиз жариялау](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/RELEASING.md)
 
-Негізгі npm пакеті — `@nutrifit/widgets`. GitHub Packages репозиториймен байланысқан `@nutrifit-health/widgets` көшірмесін де береді; ол жарияланған npm архивінен алынады. Scope GitHub ұйымына сәйкес келеді. GitHub орнату үшін авторизация керек; npm үшін жоғарыдағы пәрменді қолданыңыз.
+Негізгі npm пакеті — `@nutrifit/widgets`. GitHub Packages репозиториймен байланысқан `@nutrifit-health/widgets` көшірмесін де береді; ол жарияланған npm архивінен алынады. Scope GitHub репозиторийінің иесіне сәйкес келеді. GitHub орнату үшін авторизация керек; npm үшін жоғарыдағы пәрменді қолданыңыз.
 
-[GitHub Packages](https://github.com/orgs/nutrifit-health/packages?repo_name=nutrifit-widgets)
+[GitHub Packages](https://github.com/nutrifit-health/nutrifit-widgets/pkgs/npm/widgets)

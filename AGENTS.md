@@ -20,7 +20,7 @@ README and scripts are not authorization to execute them.
 Use src/core for the registry, browser transport and lifecycle. React and classic
 script adapters must reuse it. Add only implemented widget definitions; adding
 an ID does not deploy its private host. Keep the hosted copies of source browser
-assets synchronized in the same change. See docs/ADDING_WIDGETS.md.
+assets synchronized in the same change. See docs/en/ADDING_WIDGETS.md.
 
 Keep the standard MIT license and NUTRIFIT LLC copyright notice intact. Never
 copy company tax forms, private documents, credentials or internal source here.

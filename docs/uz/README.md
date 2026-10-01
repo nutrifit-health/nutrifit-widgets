@@ -179,13 +179,13 @@ export async function POST() {
 
 Copyright (c) 2026 **NUTRIFIT LLC**. Adapter va nativ taom interfeysi kodi standart MIT litsenziyasida tarqatiladi. Kod litsenziyasi xizmat kvotasi, white label, NutriFit savdo belgisi yoki klinik so‘rovnomalar mulk huquqini bermaydi. Backend, shaxsiy kabinet va mahsulot katalogi kiritilmagan. Tibbiy va psixologik kalkulyatorlar usul cheklovlarini saqlaydi va tashxis hisoblanmaydi.
 
-[MIT](../LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
+[MIT](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)
 
 Brendli vidjetlar rasmiy NutriFit logotipidan foydalanadi: yorug‘, qorong‘i yoki `theme="auto"` bilan tizim mavzusiga mos. White-label mijoz brendini saqlaydi. Native CSS PNG fayllarini o‘z ichiga oladi; qat’iy CSP `img-src` uchun `data:` ga ruxsat berishi kerak. Brend shartlari [NOTICE](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/NOTICE) faylida.
 
 
 [Nativ React integratsiyasi](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/NATIVE_REACT.md) · [Xizmat modeli](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/SERVICE_MODEL.md) · [Vidjet qo‘shish](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/ADDING_WIDGETS.md) · [Reliz nashr qilish](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/RELEASING.md)
 
-Asosiy npm paketi — `@nutrifit/widgets`. GitHub Packages repozitoriyga bog‘langan `@nutrifit-health/widgets` nusxasini ham taqdim etadi; u nashr etilgan npm arxividan olinadi. Scope GitHub tashkilotiga mos. GitHub dan o‘rnatish autentifikatsiya talab qiladi; npm uchun yuqoridagi buyruqni ishlating.
+Asosiy npm paketi — `@nutrifit/widgets`. GitHub Packages repozitoriyga bog‘langan `@nutrifit-health/widgets` nusxasini ham taqdim etadi; u nashr etilgan npm arxividan olinadi. Scope GitHub repozitoriysi egasiga mos. GitHub dan o‘rnatish autentifikatsiya talab qiladi; npm uchun yuqoridagi buyruqni ishlating.
 
-[GitHub Packages](https://github.com/orgs/nutrifit-health/packages?repo_name=nutrifit-widgets)
+[GitHub Packages](https://github.com/nutrifit-health/nutrifit-widgets/pkgs/npm/widgets)

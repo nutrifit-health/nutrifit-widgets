@@ -3,11 +3,25 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
+import { setTimeout as wait } from 'node:timers/promises';
 
 const { name, version } = JSON.parse(await readFile('package.json', 'utf8'));
-const response = await fetch(`https://registry.npmjs.org/${encodeURIComponent(name)}/${version}`);
-if (!response.ok) throw new Error(`Npm-версия недоступна: ${response.status}`);
-const metadata = await response.json();
+async function getPublishedMetadata() {
+  const url = `https://registry.npmjs.org/${encodeURIComponent(name)}/${version}`;
+  for (let attempt = 0; attempt < 10; attempt += 1) {
+    const response = await fetch(url, { signal: AbortSignal.timeout(15000) });
+    if (response.status === 200) return response.json();
+    const retryable = [202, 404, 429].includes(response.status) || response.status >= 500;
+    if (!retryable || attempt === 9) {
+      throw new Error(`Npm-версия недоступна: ${response.status}`);
+    }
+    // Новая npm-версия появляется в читающем registry с задержкой.
+    await wait(3000);
+  }
+  throw new Error('Npm-версия не появилась в registry');
+}
+
+const metadata = await getPublishedMetadata();
 const tarballUrl = new URL(metadata.dist.tarball);
 if (tarballUrl.origin !== 'https://registry.npmjs.org') throw new Error('Неожиданный источник npm-архива');
 const tarball = await fetch(tarballUrl);

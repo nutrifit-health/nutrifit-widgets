@@ -6,8 +6,10 @@ Maintained by **NUTRIFIT LLC**.
 **Release:** 0.2.0 of `@nutrifit/widgets`. Package build and TypeScript checks pass.
 The matching NutriFit hosting changes have not been deployed as part of this
 release. Production URLs below are deployment targets; hosted calculator and
-API availability are not guaranteed by installing this package. Browser and
-end-to-end service checks have not been run.
+API availability are not guaranteed by installing this package. Local browser
+checks confirm React, JavaScript and iframe mounting, bridge events, locale/theme
+selection and mobile layout. A complete live API calculation/PDF flow is still
+unverified; the local host used for the check had no running backend.
 
 ## Why use it?
 
@@ -36,6 +38,12 @@ and exported on the embedding site.
 
 The registry is extensible; only the nutrition calculator is currently implemented.
 [Adding a widget](docs/ADDING_WIDGETS.md) explains the public and hosted changes.
+
+## Independent consumer example
+
+[Run the consumer site](examples/consumer-site/README.md) to try the published npm
+package on a separate local origin. It includes React, JavaScript and plain iframe
+integrations without mocked API responses.
 
 ## JavaScript embed
 

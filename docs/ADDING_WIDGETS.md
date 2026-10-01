@@ -1,7 +1,6 @@
 # Adding a NutriFit widget
 
-Keep the public repository a collection of reusable adapters and optional native UIs. Nutrition is the
-first registered widget; do not add pretend calculator entries or arbitrary
+Keep the public repository a collection of reusable adapters and optional native UIs. Nutrition and all 48 published catalog calculators are registered; do not add pretend calculator entries or arbitrary
 iframe URLs to represent unimplemented products.
 
 ## 1. Implement the hosted capability
@@ -11,7 +10,7 @@ that owns the data and calculations. Reuse the canonical API contract and server
 calculation; do not copy the database, server implementation or private account UI into this repository.
 A widget can be a calculator or another explicitly public, read-only experience.
 
-Create an exact `/embed/<name>` route with no application navigation, session
+Create an exact `/embed/<name>` route (catalog calculators use `/embed/calculators/<slug>`) with no application navigation, session
 restoration, cookie writes or embedded analytics. Reuse the private `WidgetHost`
 lifecycle bridge. Validate its `parentOrigin`, instance and supported options.
 Allow framing only for this exact route in both application and reverse-proxy
@@ -27,7 +26,7 @@ Add a frozen definition to `src/core/registry.js`:
 
 - a stable, descriptive key;
 - the exact hosted path;
-- an accessible default title;
+- accessible default titles for all six WidgetLocale codes;
 - an initial iframe height between 100 and 10000 pixels.
 
 `WidgetId` is inferred from registry keys. Generic `WidgetFrame`, `mountWidget`,
@@ -105,3 +104,9 @@ failed mounts, idempotent teardown, React cleanup, hostile messages, resize,
 loading/errors, keyboard use and mobile/light/dark layouts. Verify actual framing
 and module CORS through the deployed proxy. Do not run checks automatically from
 these instructions.
+
+## Catalog calculator releases
+
+The canonical published catalog belongs to NutriFit. Add the implemented slug to the component map, exact hosted path allowlist and public core registry in the same change. A formula name in the private type union is not evidence of a published calculator: only CALCULATOR_CONFIGS and an implemented public page qualify. Reuse that component and its six-language labels; do not copy the private implementation into the public adapter repository. Update the six README files and six CALCULATORS guides. CalculatorFrame handles every catalog slug. NativeNutritionCalculator remains a separate native dish-calculation capability.
+
+The six-language README guides explain installation and usage. Publication of a package version and deployment of its hosted routes are separate steps; mark both accurately. No build, test or browser check is automatically authorized by this guide.

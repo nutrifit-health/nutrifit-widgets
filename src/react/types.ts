@@ -7,3 +7,8 @@ export interface WidgetFrameProps extends WidgetMountOptions {
 }
 
 export type NutritionCalculatorFrameProps = Omit<WidgetFrameProps, 'widget'>;
+
+export type CalculatorId = Exclude<WidgetMountOptions['widget'], 'nutrition'>;
+export interface CalculatorFrameProps extends Omit<WidgetFrameProps, 'widget'> {
+  calculator: CalculatorId;
+}

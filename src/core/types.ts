@@ -1,13 +1,13 @@
 import type { widgets } from './registry.js';
 
 export type WidgetId = keyof typeof widgets;
-export type WidgetLocale = 'en' | 'ru' | 'es';
+export type WidgetLocale = 'en' | 'ru' | 'es' | 'uk' | 'kk' | 'uz';
 export type WidgetTheme = 'light' | 'dark' | 'auto';
 export type WidgetEvent = 'ready' | 'calculated' | 'error';
 
 export interface WidgetDefinition {
   path: string;
-  title: string;
+  titles: Record<WidgetLocale, string>;
   height: number;
 }
 

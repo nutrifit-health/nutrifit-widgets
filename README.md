@@ -1,301 +1,182 @@
-# NutriFit Widgets
+# @nutrifit/widgets
 
-Embed NutriFit calculators and widgets with React, JavaScript or an iframe.
-Maintained by **NUTRIFIT LLC**.
+[English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/README.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/README.ru.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/README.es.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/README.uk.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/README.kk.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/README.uz.md)
 
-**Release:** 0.2.0 of `@nutrifit/widgets`. Package build and TypeScript checks pass.
-The matching NutriFit hosting changes have not been deployed as part of this
-release. Production URLs below are deployment targets; hosted calculator and
-API availability are not guaranteed by installing this package. Local browser
-checks confirm React, JavaScript and iframe mounting, bridge events, locale/theme
-selection and mobile layout. A complete live API calculation/PDF flow is still
-unverified; the local host used for the check had no running backend.
+Branded NutriFit calculators for your website: one nutrition calculator and all 48 tools in the public catalog. React, JavaScript and iframe adapters use the same hosted interfaces and calculations as NutriFit.
 
-## Why use it?
+This source prepares version **0.3.0**. The previously published npm version is **0.2.0**. New IDs and languages require publication of 0.3.0 and a coordinated deployment of the NutriFit host. This document does not claim that publication, deployment or release checks have happened.
 
-Give visitors a complete nutrition calculator on your website without running
-a food database or calculation service. They can search public foods and
-recipes, add ingredient weights, set the finished dish weight, view energy,
-protein, fat and carbohydrates, and download a server-generated PDF or a CSV. Whole-dish and per-100-g
-values are available. Missing nutrients stay unknown; partial totals are labeled.
+## Installation
 
-No account, email, payment or visit to NutriFit is required for the free result, PDF or CSV.
-English, Russian and Spanish, light/dark/automatic themes, automatic iframe
-height and multiple widgets on one page are supported by the source implementation.
+After version 0.3.0 is published, install it with the command below. For React, use React 18.2 or 19. The framework-free core does not require React.
 
-The free hosted interface and its PDF retain NutriFit attribution. The PDF includes
-a NutriFit link and QR code; it is generated from a fresh server calculation and
-does not upload or store a personal recipe. An optional link opens the
-same ingredient draft in NutriFit. It does not automatically save a recipe or
-post to Feed. Large drafts that exceed the transfer limit can still be calculated
-and exported on the embedding site.
-
-## Available widgets
-
-| ID | React component | Hosted route |
-| --- | --- | --- |
-| `nutrition` | `NutritionCalculatorFrame` | `/embed/nutrition-calculator` |
-
-The registry is extensible; only the nutrition calculator is currently implemented.
-[Adding a widget](docs/ADDING_WIDGETS.md) explains the public and hosted changes.
-
-## Independent consumer example
-
-[Run the consumer site](examples/consumer-site/README.md) to try the published npm
-package on a separate local origin. It includes React, JavaScript and plain iframe
-integrations without mocked API responses.
-
-## JavaScript embed
-
-After the hosting deployment, add:
-
-```html
-<div data-nutrifit-widget="nutrition" data-locale="en" data-theme="light"
-     data-campaign="recipe-blog"></div>
-<script src="https://nutrifit.health/widgets/v1/embed.js" defer></script>
+```sh
+npm install @nutrifit/widgets@^0.3.0
 ```
-
-The classic loader imports the shared browser runtime, scans the document and
-creates an isolated iframe. It does not load React into your page. Include the
-loader more than once safely; a container is mounted only once.
-
-Call the following after the script has loaded:
-
-```js
-await window.NutriFitWidgets.ready;
-const container = document.getElementById("calculator");
-const handle = await window.NutriFitWidgets.mount(container, {
-  widget: "nutrition",
-  locale: "en",
-  theme: "auto",
-  campaign: "recipe-blog",
-  onEvent(event) {
-    console.log(event);
-  },
-});
-
-handle.destroy();
-```
-
-`mount` and `scan` are asynchronous on the loader API. Keep the handle and call
-`destroy()` before removing a container in a single-page application. Repeated
-`destroy()` calls are harmless and cannot remove a later mount.
-
-For new markup:
-
-```js
-const result = await window.NutriFitWidgets.scan(container);
-console.log(result.widgets, result.errors);
-```
-
-The scan includes the root container itself and its descendants. An unsupported
-widget or invalid container does not prevent other containers from mounting.
-`scan` returns handles and per-container errors.
 
 ## React
 
-Install `@nutrifit/widgets` in your React application:
-
-```sh
-npm install @nutrifit/widgets
-```
+Use `CalculatorFrame` for any catalog ID. `NutritionCalculatorFrame` embeds the dish calculator. `WidgetFrame widget="tdee"` is the generic equivalent. Calculations remain in the iframe; this component does not copy formulas into your application.
 
 ```tsx
-"use client";
+import { CalculatorFrame, NutritionCalculatorFrame } from '@nutrifit/widgets';
 
-import { NutritionCalculatorFrame, WidgetFrame } from "@nutrifit/widgets";
-
-export function RecipePage() {
-  return <NutritionCalculatorFrame locale="en" theme="light" campaign="recipe-blog" />;
-}
-
-export function GenericWidgetSlot() {
-  return <WidgetFrame widget="nutrition" locale="en" />;
+export function Calculators() {
+  return <>
+    <CalculatorFrame calculator="tdee" locale="en" theme="auto" title="NutriFit TDEE" />
+    <NutritionCalculatorFrame locale="en" theme="light" />
+  </>;
 }
 ```
 
-React 18.2+ or 19 must be installed by the React consumer. No stylesheet import
-is needed. The generic component and the nutrition convenience component share
-the same iframe runtime as the JavaScript adapter. Imports are safe for SSR;
-the iframe mounts on the client and is cleaned up on unmount or option changes.
+## JavaScript without a framework
 
-| Option | Default | Purpose |
-| --- | --- | --- |
-| `widget` | Required on `WidgetFrame` and `mount` | A registry ID; fixed on `NutritionCalculatorFrame` |
-| `locale` | `en` | `en`, `ru`, `es` |
-| `theme` | `light` | `light`, `dark`, `auto` |
-| `title` | Registry title | Accessible iframe title |
-| `campaign` | `nutrition_calculator` on continuation | Campaign label, truncated to 80 characters |
-| `hostUrl` | `https://nutrifit.health` | Explicit HTTP(S) origin for a matching staging host; no path or credentials |
-| `integrationId` | — | Paid hosted integration from your account; the server decides branding and allowed domain |
-| `onEvent` | — | `ready`, `calculated`, `error`; no calculation payload |
-| `className`, `style` | — | React container only; cannot style the document inside the iframe |
+Deploy the loader and its `core/*.js` modules together. Each container can use a different widget, language and theme. The loader adjusts iframe height automatically. For lifecycle control, import `mountWidget` from `@nutrifit/widgets/core`; call `handle.destroy()` during cleanup.
 
-Callbacks can change without remounting. Changing widget/host/locale/theme/title/
-campaign/integrationId remounts the iframe and clears its unsaved state. `initialDraft` is not
-part of the public adapter API.
-
-## Framework-free module
-
-Import the framework-free entry point:
+```html
+<div data-nutrifit-widget="tdee" data-locale="en" data-theme="auto" data-title="NutriFit TDEE"></div>
+<div data-nutrifit-widget="nutrition" data-locale="en"></div>
+<script src="https://nutrifit.health/widgets/v1/embed.js" defer></script>
+```
 
 ```js
-import { mountWidget, scanWidgets, widgets } from "@nutrifit/widgets/core";
-
-const handle = mountWidget(document.getElementById("calculator"), {
-  widget: "nutrition",
-  locale: "en",
+import { mountWidget } from '@nutrifit/widgets/core';
+const handle = mountWidget(document.getElementById('calculator'), {
+  widget: 'water', locale: 'en', theme: 'light',
 });
+// handle.destroy()
 ```
-
-Module `mountWidget` and `scanWidgets` are synchronous, unlike the loader methods
-that wait for the module download. The core has no React dependency. Supported
-IDs are inferred from the registry for TypeScript consumers; public types are
-exported from `@nutrifit/widgets` using `import type`.
-
-For a source checkout or a static host, import `src/core/index.js` directly using
-a module script. Serve files over HTTP(S); `file:` and opaque sandbox origins
-are not supported. Self-hosting adapter files does not self-host NutriFit's
-private interface or backend. The calculator origin stays NutriFit unless
-`hostUrl` is explicitly changed for a corresponding deployment.
 
 ## Plain iframe
 
+The plain iframe has fixed height and internal scrolling. Use React or the JavaScript adapter for automatic height. Replace `tdee` with an ID from the catalog. The dish calculator uses `/embed/nutrition-calculator`.
+
 ```html
 <iframe
-  src="https://nutrifit.health/embed/nutrition-calculator?lang=en&theme=light"
-  title="NutriFit nutrition calculator"
-  loading="lazy"
-  referrerpolicy="no-referrer"
+  src="https://nutrifit.health/embed/calculators/tdee?lang=en&theme=light"
+  title="NutriFit TDEE" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
-  style="width:100%;height:680px;border:0"
+  style="width:100%;height:880px;border:0"
 ></iframe>
 ```
 
-This uses fixed height and internal scrolling. Keep download permission for PDF and CSV
-and popup permissions for voluntary continuation. Use the loader or React for
-automatic height.
+## Languages and appearance
 
-## Events and browser policies
+Set `locale` in React/module options, `data-locale` in HTML, or `lang` in an iframe URL. Supported codes: **en, ru, es, uk, kk, uz**. Themes: `light`, `dark`, `auto`. `auto` follows the browser color scheme. Use a descriptive iframe title in your page language; React/module options accept `title` and the loader accepts `data-title`.
 
-Mounted containers dispatch `nutrifit:ready`, `nutrifit:calculated` and
-`nutrifit:error`. Lifecycle event detail contains `instanceId` and `widget` only.
-A scan-time mount error contains `{ code: "mount_failed" }` instead. Loader network
-failures emit `nutrifit:loader-error` on `window` with `{ code: "load_failed" }`;
-`ready`, `mount` and `scan` also reject on a failed module load.
+## Using the calculators
 
-The ready event means the interface mounted; it does not prove backend availability.
-Messages are accepted only from the configured origin and iframe window, with a
-matching instance, protocol version and validated shape. Resize heights are
-finite and bounded. Ingredients and nutrient results are never posted to the host.
+Choose an ID, language and theme, then enter the requested values with the units shown. Formula calculators update their results as you edit; questionnaires require answers before displaying a result. Method, limitations and sources are available within the widget. The full result is available on your website, without requiring a NutriFit account. The optional link opens the full NutriFit page in a new tab; it does not transfer the inputs of catalog calculators.
 
-The embedding site's CSP must allow `frame-src https://nutrifit.health` and,
-for the loader, `script-src https://nutrifit.health`. Hosts serving adapter modules
-must return JavaScript MIME types and permit CORS module loading. The versioned
-asset directory must be deployed together: `embed.js`, `core/*.js` and `LICENSE`.
-Copying only `embed.js` is insufficient.
+For `nutrition`: find public foods or recipes, add their weights in grams and enter the finished dish weight. Select Calculate to see totals and values per 100 g; PDF and CSV export are available. Missing nutrient data is marked as incomplete, never silently treated as zero. Up to 50 ingredients are supported.
 
-The embedded calculator does not bootstrap the user's NutriFit session, store a
-local draft, set language cookies or load analytics SDKs. Only a voluntary
-continuation transfers the draft in a URL fragment. The NutriFit destination
-removes that fragment before loading analytics. Ingredient values and results
-are not analytics properties; campaign and source hostname are used for attribution.
+Free catalog widgets can request the existing branded server PDF. It is a snapshot of the displayed inputs/results, not an independent recalculation or diagnostic validation. Server availability is required. For questionnaires, finish answering before exporting.
 
-## License and hosted service
+[Detailed usage, method, formulas and limitations for every calculator](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md).
 
-Copyright (c) 2026 **NUTRIFIT LLC**. This repository's adapter code is licensed
-under the standard [MIT License](LICENSE). Retain its copyright and permission
-notice when distributing copies or substantial portions. The license permits
-modifying and redistributing the adapter code.
+## Complete catalog
 
-This repository includes the native calculator UI and transport, together with
-iframe adapters. It does not distribute NutriFit's backend or food catalog.
-Its code license does not grant a hosted-service quota,
-white-label service entitlement or rights to NutriFit trademarks. Hosted service
-availability and limits are managed separately. No SLA is offered in this release.
-The served free iframe retains its attribution; embedding-site CSS cannot edit
-its document, although a site can visually crop or cover a frame.
+| Widget ID | Calculator | Purpose |
+|---|---|---|
+| `nutrition` | Calculation NutriFit | For `nutrition`: find public foods or recipes, add their weights in grams and enter the finished dish weight. Select Calculate to see totals and values per 100 g; PDF and CSV export are available. Missing nutrient data is marked as incomplete, never silently treated as zero. Up to 50 ingredients are supported. |
+| `tdee` | [Daily calorie needs calculator (TDEE)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#tdee) | Calculates basal metabolic rate and total daily energy expenditure, plus calorie targets for losing, maintaining and gaining weight. |
+| `macros` | [Macronutrient calculator](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#macros) | Splits a daily calorie target into protein, fat and carbohydrates based on body weight and goal — in grams, calories and percentages. |
+| `water` | [Water intake calculator](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#water) | Calculates daily fluid needs from body weight with adjustments for physical activity and hot climate. |
+| `body-composition` | [Body composition calculator](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#body-composition) | Estimates body fat percentage from circumferences, calculates fat and lean mass and body mass index. |
+| `glycemic-load` | [Glycemic load calculator](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#glycemic-load) | Calculates the glycemic load of a serving from its glycemic index and carbohydrate content — a measure that reflects the real glucose response better than the index alone. |
+| `deficiency-risk` | [Nutrient deficiency risk screening](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#deficiency-risk) | Mark the lifestyle and diet factors that apply to you and see which nutrient deficiencies are likely and which laboratory tests confirm them. |
+| `health-balance-wheel` | [Health & Nutrition Balance Wheel](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#health-balance-wheel) | Interactive radar chart of 8 health and lifestyle dimensions. Identifies bottlenecks (Liebig's Law of the Minimum) and links deficits to NutriFit tools. |
+| `homa-ir` | [HOMA-IR Calculator: Insulin Resistance Index](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#homa-ir) | HOMA-IR, HOMA-β and QUICKI from fasting glucose and insulin: insulin resistance and beta-cell function with reference ranges and interpretation. |
+| `tyg-index` | [TyG Index Calculator (Triglycerides × Glucose)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#tyg-index) | TyG index and its derivatives TyG-BMI and TyG-WC: insulin resistance and cardiometabolic risk from fasting triglycerides and glucose — no insulin assay needed. |
+| `lipid-profile` | [Lipid Panel Calculator: LDL, non-HDL and Atherogenic Indices](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#lipid-profile) | Calculated LDL by two methods, non-HDL, remnant cholesterol and five atherogenic indices from a standard lipid panel — with ESC/EAS target values. |
+| `egfr` | [eGFR Calculator (CKD-EPI 2021)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#egfr) | Estimated GFR by CKD-EPI 2021 (creatinine, optionally cystatin C), Cockcroft–Gault creatinine clearance and KDIGO CKD stage — with µmol/L and mg/dL conversion. |
+| `hba1c-eag` | [HbA1c ↔ Average Glucose (eAG) Converter](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#hba1c-eag) | HbA1c to 3-month average glycemia by the ADAG formula, reverse calculation and % ↔ mmol/mol conversion with ADA categories. |
+| `lab-unit-converter` | [Lab Unit Converter](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#lab-unit-converter) | Conversion of 33 lab analytes between SI (mmol/L, µmol/L, nmol/L, pmol/L) and conventional units (mg/dL, ng/mL, pg/mL) by molar mass. |
+| `vitamin-d-dose` | [Vitamin D: van Groningen model estimate](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#vitamin-d-dose) | 25(OH)D in two unit systems and a weight-based research estimate. No automatic treatment schedule. |
+| `iron-deficiency` | [Iron Deficiency Calculator: TSAT, Ferritin and Ganzoni Deficit](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#iron-deficiency) | TSAT, a CRP-aware ferritin reference threshold and the arithmetic Ganzoni model. Biomarker patterns are not diagnoses. |
+| `phenoage` | [PhenoAge Biological Age Calculator (Levine)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#phenoage) | A research estimate using nine biomarkers and age. The result does not predict individual life expectancy. |
+| `fib-4` | [FIB-4 and APRI Calculator: Liver Fibrosis Indices](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#fib-4) | FIB-4 and APRI from age, AST, ALT and platelets, with thresholds and limitations for discussion with a clinician. |
+| `free-testosterone` | [Free Testosterone Calculator (Vermeulen)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#free-testosterone) | Free and bioavailable testosterone fractions from the Vermeulen 1999 binding model. Results require method-specific reference intervals and clinical context. |
+| `anion-gap` | [Anion Gap and Delta Ratio Calculator](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#anion-gap) | Anion gap corrected for albumin (Figge) and the ΔAG/ΔHCO₃ delta ratio to distinguish high- and normal-anion-gap acidosis. |
+| `corrected-calcium` | [Albumin-Corrected Calcium Calculator](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#corrected-calcium) | Educational calculation of albumin-adjusted total calcium using the simplified Payne formula. It does not measure ionized calcium or determine treatment. |
+| `one-rep-max` | [1RM Calculator (One-Rep Max)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#one-rep-max) | Calculates the maximum load an athlete can lift for a single repetition without the injury risk of direct 1RM testing. |
+| `heart-rate-zones` | [Heart Rate Training Zones Calculator](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#heart-rate-zones) | Calculates individual target heart rate zones accounting for both maximum heart rate and resting pulse (Heart Rate Reserve method). |
+| `vo2max` | [VO2 Max Calculator (Cardiorespiratory Fitness)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#vo2max) | Evaluates aerobic power and cardiorespiratory fitness based on validated field protocols without specialized laboratory gas analysis equipment. |
+| `ffmi` | [FFMI Calculator (Fat-Free Mass Index)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#ffmi) | Determines lean muscular mass relative to height, distinguishing genuine hypertrophy from body fat accumulation. |
+| `katch-mcardle` | [Katch-McArdle BMR & TDEE Calculator](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#katch-mcardle) | Calculates basal metabolic rate (BMR) and total daily energy expenditure (TDEE) based strictly on lean muscle mass rather than total scale weight. |
+| `ideal-body-weight` | [Ideal Body Weight Calculator (IBW & AdjBW)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#ideal-body-weight) | Calculates reference body weight according to recognized clinical equations and determines Adjusted Body Weight (AdjBW) for clinical nutrition and medicine. |
+| `waist-ratios` | [Waist Anthropometric Index Calculator (WHtR, WHR, VAI)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#waist-ratios) | Evaluates body fat distribution, visceral adiposity, and cardiometabolic risk far more accurately than standard BMI. |
+| `sweat-rate` | [Sweat Rate & Hydration Calculator](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#sweat-rate) | Determines individual sweat loss rate and calculates personalized post-exercise fluid and electrolyte replacement needs. |
+| `muscle-potential` | [Maximum Muscular Potential Calculator (Casey Butt & Berkhan)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#muscle-potential) | Estimates the maximum drug-free lean body mass and muscular circumferences (chest, arms, thighs) achievable without anabolic pharmacology. |
+| `powerlifting-coefficients` | [Powerlifting Coefficients Calculator (DOTS, Wilks, IPF GL)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#powerlifting-coefficients) | Evaluates and benchmarks relative strength in powerlifting (squat, bench press, deadlift) across diverse body weights and sexes using DOTS, Wilks, and IPF GL Points. |
+| `protein-intake` | [Protein Intake Calculator (ISSN & ESPEN)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#protein-intake) | Determines individualized daily protein targets based on fitness goals, dietary pattern, and muscle protein synthesis (MPS) thresholds. |
+| `fiber-intake` | [Dietary Fiber Intake Calculator (WHO & EFSA)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#fiber-intake) | Quantifies daily soluble and insoluble dietary fiber requirements to support gut microbiome diversity, optimize lipid profiles, and maintain healthy transit time. |
+| `omega-3` | [Omega-3 Intake & Index Calculator (EPA + DHA)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#omega-3) | Determines therapeutic and maintenance dosages of active EPA and DHA fatty acids according to clinical indications and laboratory biomarkers. |
+| `sodium-potassium` | [Sodium-Potassium Balance & Salt Calculator (Na:K)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#sodium-potassium) | Analyzes electrolyte balance between sodium and potassium, converting milligrams of sodium into dietary salt and identifying hypertension risk. |
+| `alcohol` | [Alcohol Clearance & Sobriety Calculator (Widmark)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#alcohol) | Calculates peak and current blood alcohol concentration (BAC in ‰), precise time to complete sobriety, and empty caloric load from ethanol. |
+| `caffeine` | [Caffeine Clearance & Sleep Timing Calculator](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#caffeine) | Simulates caffeine pharmacokinetics, biological half-life, and remaining bedtime adenosine blockade to safeguard deep slow-wave sleep. |
+| `weight-loss-forecast` | [Dynamic Weight Loss Forecast Calculator (Kevin Hall Model)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#weight-loss-forecast) | Generates a realistic, non-linear weight loss trajectory using the NIH/NIDDK model of Kevin Hall, accounting for adaptive thermogenesis and body composition changes. |
+| `sleep-cycles` | [Sleep Cycles Calculator](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#sleep-cycles) | A sleep timing tool based on 90-minute ultradian cycles (slow-wave and REM sleep phases) and average sleep onset latency. |
+| `findrisc` | [FINDRISC Diabetes Risk Score](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#findrisc) | An internationally recognized WHO and IDF questionnaire for early screening of undiagnosed diabetes and estimating the 10-year risk of developing type 2 diabetes. |
+| `debq` | [Dutch Eating Behavior Questionnaire (DEBQ)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#debq) | A classic validated psychological instrument designed to assess three primary eating behavior patterns: restrained eating, emotional eating, and external eating. |
+| `phq-9` | [Patient Health Questionnaire-9 (PHQ-9 Depression)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#phq-9) | The international gold standard for primary depression screening and symptom severity assessment based on DSM-5 clinical criteria. |
+| `gad-7` | [Generalized Anxiety Disorder 7-Item Scale (GAD-7)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#gad-7) | An international clinical screening instrument designed to rapidly evaluate the severity of generalized anxiety and emotional tension. |
+| `pss-10` | [Perceived Stress Scale (PSS-10)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#pss-10) | The classic psychological scale by Sheldon Cohen designed to measure the degree to which situations in one's life are appraised as unpredictable, uncontrollable, and overloading. |
+| `isi` | [Insomnia Severity Index (ISI)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#isi) | A concise 7-item clinical instrument designed to evaluate the nature, severity, and daytime impact of insomnia symptoms. |
+| `scoff` | [SCOFF Eating Disorder Screening Questionnaire](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#scoff) | An internationally recognized 5-question clinical screening tool designed to identify the risk of eating disorders (anorexia nervosa and bulimia nervosa). |
+| `ies-2` | [Intuitive Eating Scale-2 (IES-2)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#ies-2) | A scientifically validated 23-item psychometric instrument by Tracy Tylka designed to measure adaptive, intuitive relationships with food and body signals. |
+| `yfas` | [Yale Food Addiction Scale mYFAS 2.0](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#yfas) | An adapted scientific questionnaire developed at Yale University to assess symptoms of addictive eating behavior toward highly palatable, ultra-processed foods. |
+| `eating-behavior-wizard` | [Eating Behavior Diagnostic Wizard](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/CALCULATORS.en.md#eating-behavior-wizard) | An integrated diagnostic wizard by NutriFit synthesizing leading validated scales to identify your core eating behavior archetype and personalized action plan. |
 
-The companion NutriFit application contains account onboarding, configured Stripe
-subscriptions, prepaid purchases from the existing wallet, audited bank-transfer
-activation, DNS verification, key rotation, revocation and monthly quotas.
-These server changes require a coordinated deployment. Prices are not invented
-by this repository: without configured plans, commercial purchase is unavailable.
-Personal NutriFit Premium does not grant widget rights. See
-[SERVICE_MODEL.md](SERVICE_MODEL.md), [native React setup](docs/NATIVE_REACT.md) or
-[contact NUTRIFIT LLC](mailto:office@nutrifit.company?subject=NutriFit%20widget%20integration).
 
-## Paid white label and native React
+## Options and events
 
-After the service is configured and deployed, sign in at
-`https://nutrifit.health/widgets/integrations`, obtain a widget plan, add an exact
-HTTPS origin and publish the DNS TXT challenge shown in your account. Verify the
-domain before embedding. A white-label plan changes the hosted UI and PDF to
-your configured brand and removes the NutriFit continuation link.
+`hostUrl` selects a matching HTTP(S) staging deployment; it must be an origin without path, credentials or query. `campaign` labels a referral. `integrationId` selects an account integration; the server verifies domain and entitlement. Changing widget, host, language, theme or integration remounts the frame and clears its unsaved state.
 
-For hosted white label, pass `integrationId` to either React frame component or
-`mountWidget`, add `data-integration-id` to the loader container, or use the iframe
-code from your account. The ID is public. There is no free `hideLogo` option.
+`onEvent` receives `ready`, `calculated` or `error`. Ready means the UI mounted, not that the API is available. Catalog calculators emit calculated when displayed results change, including an initial default calculation. Events never expose inputs, answers or results to the embedding site. PostMessage validates origin, source, instance and protocol. Browser CSP must allow `frame-src https://nutrifit.health`; the loader also needs `script-src https://nutrifit.health`.
 
-For a native component rendered in your page:
+## Hosted service and native React
+
+Free hosted widgets retain the NutriFit brand and optional links. White label requires a separately configured widget plan, account integration and verified exact HTTPS domain. It is not included in personal Premium. Hosted catalog widgets can use the verified brand; their NutriFit PDF button is omitted in white-label mode. The paid dish calculator supports branded service PDF/CSV.
+
+`NativeNutritionCalculator` from `@nutrifit/widgets/native` renders the dish calculator directly in your page. Import `@nutrifit/widgets/native.css`. It requires a short-lived session obtained by your server; keep the permanent key only on that server. Other catalog calculators use React iframe adapters, not native DOM components. Local catalog formulas do not use the nutrition API operation quota; dish calculation and PDF do.
 
 ```tsx
 import { NativeNutritionCalculator } from '@nutrifit/widgets/native';
 import '@nutrifit/widgets/native.css';
 
-export function Calculator() {
-  return <NativeNutritionCalculator locale="en" theme="light"
-    getSession={async (signal) => {
-      const response = await fetch('/api/nutrifit-session', { method: 'POST', signal });
-      if (!response.ok) throw new Error('Widget access unavailable');
-      return response.json();
-    }} />;
+export function NativeCalculator() {
+  return <NativeNutritionCalculator locale="en" getSession={async (signal) => {
+    const response = await fetch('/api/nutrifit-session', { method: 'POST', signal });
+    if (!response.ok) throw new Error('Widget session unavailable');
+    return response.json();
+  }} />;
 }
 ```
 
-Your server exchanges a secret key for a five-minute session. Never put that key
-in React props, HTML, public environment variables or a browser request.
-[The complete integration guide](docs/NATIVE_REACT.md) includes the server side,
-failure handling, quotas and domain limitations. Native sessions require a plan
-with native access; the MIT license applies to UI code, not free service usage.
+In the integrations account, activate a configured native plan, add the exact HTTPS origin, publish the DNS TXT challenge, verify the domain and issue a server key. Store `NUTRIFIT_WIDGET_KEY` and `NUTRIFIT_SITE_ORIGIN` only on your server. The broker below exchanges the key for a five-minute session and returns the complete envelope to getSession. Apply visitor access controls and rate limits to your broker; never log the session or permanent key.
 
-## Development
-
-The source repository is independent of the private application. When nested
-inside that checkout it lives at `apps/widgets/`, excluded from parent Git and
-the parent workspace. It has its own Git/main and remote.
-
-```text
-src/core/                 Registry, options, postMessage, mount/scan and types
-src/react/                Generic React adapter and React props
-src/native/               Native nutrition UI, styles and session transport
-src/widgets/nutrition/    Nutrition convenience component
-src/browser/types.ts     Asynchronous loader API types
-src/embed.js              Classic script bootstrap
-examples/                 HTML and React integrations
-docs/ADDING_WIDGETS.md    Extension and hosting contract
+```ts
+export async function POST() {
+  const key = process.env.NUTRIFIT_WIDGET_KEY;
+  const origin = process.env.NUTRIFIT_SITE_ORIGIN;
+  if (!key || !origin) return new Response(null, { status: 503 });
+  const response = await fetch('https://api.nutrifit.health/api/v2/widget-runtime/session', {
+    method: 'POST', cache: 'no-store',
+    headers: { 'Content-Type': 'application/json', 'X-NutriFit-Key': key },
+    body: JSON.stringify({ origin }),
+  });
+  if (!response.ok) return new Response(null, { status: response.status });
+  return new Response(await response.text(), {
+    headers: { 'Content-Type': 'application/json', 'Cache-Control': 'private, no-store' },
+  });
+}
 ```
 
-The browser runtime is JavaScript with JSDoc references to central TypeScript
-types. This allows the same source to run directly in a browser and be consumed
-by the React build, without a second manually maintained transport implementation.
+[Native API](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/NATIVE_REACT.md) · [Service](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/SERVICE_MODEL.md) · [Account](https://nutrifit.health/widgets/integrations?lang=en)
 
-When explicitly authorized to install/build/check:
+## License and scope
 
-```sh
-npm install
-npm run typecheck
-npm run build
-```
+Copyright (c) 2026 **NUTRIFIT LLC**. Adapter and native dish UI code are distributed under the standard MIT license. The code license does not grant hosted service quotas, white-label entitlement, NutriFit trademark rights or ownership of clinical questionnaire instruments. Backend, private account logic and food catalog are not included. Medical and psychological calculators retain their method limitations and are not a diagnosis.
 
-Build emits the iframe React bundle, native React bundle/CSS, browser modules,
-loader and TypeScript declarations
-into `dist/`. `prepublishOnly` builds before npm publication; the npm scope must
-be accessible to the publisher. Build/check scripts are documentation, not a
-claim that checks ran. The host must deploy corresponding private UI/routes and
-adapter assets before the examples can work against production.
-
-Examples: [HTML](examples/basic.html), [React](examples/ReactExample.tsx).
-References: [MIT](https://opensource.org/license/mit),
-[iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe),
-[postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage).
+[MIT](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE) · [GitHub](https://github.com/nutrifit-health/nutrifit-widgets)

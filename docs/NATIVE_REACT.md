@@ -2,9 +2,9 @@
 
 This source integration requires the matching NutriFit service deployment, a
 configured plan with `native: true`, a verified HTTPS domain and a server key.
-The package build and TypeScript checks pass for 0.2.0. Runtime service checks
-have not been run, and the matching service changes have not been deployed as
-part of this package release. Review your deployment before exposing it to visitors.
+The 0.3.0 source adds six languages. Its build and runtime checks have not been run as part of this preparation. Publication and matching service deployment remain separate steps. NativeNutritionCalculator implements the dish calculator; all other catalog calculators use CalculatorFrame or WidgetFrame.
+
+Languages: [English](../README.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Українська](README.uk.md) · [Қазақша](README.kk.md) · [O‘zbekcha](README.uz.md).
 
 ## Account setup
 

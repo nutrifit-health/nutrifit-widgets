@@ -13,7 +13,7 @@ export function normalizeOrigin(value) {
 
 /** @param {unknown} value @returns {import('./types.js').WidgetLocale} */
 export function normalizeLocale(value) {
-  return value === 'ru' || value === 'es' ? value : 'en';
+  return value === 'ru' || value === 'es' || value === 'uk' || value === 'kk' || value === 'uz' ? value : 'en';
 }
 
 /** @param {unknown} value @returns {import('./types.js').WidgetTheme} */

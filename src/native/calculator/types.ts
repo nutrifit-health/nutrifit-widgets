@@ -1,5 +1,5 @@
-export type WidgetLocale = 'en' | 'ru' | 'es';
-export type WidgetTheme = 'light' | 'dark' | 'auto';
+import type { WidgetLocale, WidgetTheme } from '../../core/types.js';
+export type { WidgetLocale, WidgetTheme } from '../../core/types.js';
 export type NutrientKey = 'calories' | 'protein' | 'fat' | 'carbs';
 export type CalculationBasis = 'total' | 'per100g';
 

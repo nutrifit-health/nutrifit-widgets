@@ -1,7 +1,7 @@
 {
   "name": "@nutrifit/widgets",
-  "version": "0.2.0",
-  "description": "Embed NutriFit calculators and widgets with React, JavaScript or an iframe.",
+  "version": "0.3.0",
+  "description": "49 branded NutriFit widgets: nutrition, fitness, laboratory, lifestyle and psychology calculators in six languages.",
   "author": {
     "name": "NUTRIFIT LLC",
     "url": "https://nutrifit.company"
@@ -25,6 +25,7 @@
     "dist",
     "README.md",
     "LICENSE",
+    "CHANGELOG.md",
     "SERVICE_MODEL.md",
     "docs",
     "examples"

@@ -52,6 +52,6 @@ export function CalculationResults({ id, t, locale, result, client, draft, brand
       <WidgetIcon name="download" />{pdfBusy ? t.pdfBusy : t.pdf}
     </button>}
     {pdfError && <p role="alert" className="nf-notice">{calculationErrorText(pdfError, t)}</p>}
-    <button className="nf-download" type="button" onClick={() => downloadNutritionCsv(result, brandName)}><WidgetIcon name="download" />{t.download}</button>
+    <button className="nf-download" type="button" onClick={() => downloadNutritionCsv(result, brandName, locale)}><WidgetIcon name="download" />{t.download}</button>
   </section>;
 }

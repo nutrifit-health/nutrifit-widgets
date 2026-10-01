@@ -1,5 +1,5 @@
 import { widgets, isWidgetId } from './registry.js';
-import { createWidgetUrl, FRAME_SANDBOX } from './options.js';
+import { createWidgetUrl, FRAME_SANDBOX, normalizeLocale } from './options.js';
 import { readWidgetMessage } from './protocol.js';
 
 /** @type {WeakMap<HTMLElement, import('./types.js').WidgetHandle>} */
@@ -25,7 +25,7 @@ export function mountWidget(container, options) {
   const instanceId = 'nf-' + (view.crypto.randomUUID?.() ?? Date.now().toString(36)) + '-' + (++sequence);
   const url = createWidgetUrl(definition, options, instanceId, view.location.origin);
   const iframe = container.ownerDocument.createElement('iframe');
-  iframe.title = options.title || definition.title;
+  iframe.title = options.title || definition.titles[normalizeLocale(options.locale)];
   iframe.loading = 'lazy';
   iframe.referrerPolicy = 'no-referrer';
   iframe.setAttribute('sandbox', FRAME_SANDBOX);

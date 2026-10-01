@@ -82,3 +82,9 @@ and destination calculations widget_calculation. They do not prove registration
 or payment; those outcomes need existing product analytics. No ingredients, gram
 values or nutrient results are analytics properties. Stars/downloads are not
 revenue evidence and a free widget does not guarantee SEO gains.
+
+## Catalog scope in the prepared 0.3.0 source
+
+There are 49 widget IDs: the dish nutrition widget and all 48 published catalog calculators. All accept six languages. Catalog frames reuse existing local formulas and questionnaire scoring; only nutrition uses the managed search/calculation runtime. Catalog formula interactions do not consume its API-operation quota. Their free branded server PDF is the existing public report endpoint, separate from the nutrition runtime. In hosted white-label catalog frames this NutriFit PDF action is omitted; the dish widget continues to use entitled service branding for UI/PDF/CSV. Native DOM support is specifically NativeNutritionCalculator; the other calculators use iframe adapters.
+
+Read the installation and full catalog documentation in [English](README.md), [Русский](docs/README.ru.md), [Español](docs/README.es.md), [Українська](docs/README.uk.md), [Қазақша](docs/README.kk.md) or [O‘zbekcha](docs/README.uz.md). Source version preparation is not publication or hosted-service availability.

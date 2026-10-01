@@ -1,6 +1,6 @@
 {
   "name": "@nutrifit/widgets",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "49 branded NutriFit widgets: nutrition, fitness, laboratory, lifestyle and psychology calculators in six languages.",
   "author": {
     "name": "NUTRIFIT LLC",
@@ -26,7 +26,6 @@
     "README.md",
     "LICENSE",
     "CHANGELOG.md",
-    "SERVICE_MODEL.md",
     "docs",
     "examples",
     "NOTICE"
@@ -71,5 +70,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/nutrifit-health/nutrifit-widgets/issues"
   }
 }

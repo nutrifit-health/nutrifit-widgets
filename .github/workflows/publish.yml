@@ -1,0 +1,66 @@
+name: Publish widgets
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+concurrency:
+  group: widgets-release
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  npm:
+    if: github.event_name == 'workflow_dispatch' || (!github.event.release.prerelease && !github.event.release.draft)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          registry-url: https://registry.npmjs.org
+      - name: Определить версию выпуска
+        id: version
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: node scripts/release-version.mjs
+      - name: Установить зависимости сборки
+        if: steps.version.outputs.published != 'true'
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Опубликовать npm с подтверждением происхождения
+        if: steps.version.outputs.published != 'true'
+        run: npm publish --access public --provenance --registry https://registry.npmjs.org
+
+  github-packages:
+    needs: npm
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          registry-url: https://npm.pkg.github.com
+          scope: '@nutrifit-health'
+      - name: Подготовить копию опубликованного npm-пакета
+        id: mirror
+        run: node scripts/prepare-github-package.mjs
+      - name: Опубликовать GitHub Packages
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PACKAGE_DIR: ${{ steps.mirror.outputs.directory }}
+          PACKAGE_VERSION: ${{ steps.mirror.outputs.version }}
+        run: |
+          if npm view "@nutrifit-health/widgets@$PACKAGE_VERSION" version --registry https://npm.pkg.github.com >/dev/null 2>&1; then
+            echo "Версия уже опубликована в GitHub Packages"
+          else
+            npm publish "$PACKAGE_DIR" --ignore-scripts --registry https://npm.pkg.github.com
+          fi

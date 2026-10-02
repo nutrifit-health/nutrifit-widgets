@@ -25,6 +25,15 @@ export function scanWidgets(root = document) {
         integrationId: element.dataset.integrationId,
         locale: normalizeLocale(element.dataset.locale),
         theme: normalizeTheme(element.dataset.theme),
+        appearance: {
+          background: element.dataset.background,
+          surface: element.dataset.surface,
+          text: element.dataset.text,
+          muted: element.dataset.muted,
+          accent: element.dataset.accent,
+          border: element.dataset.border,
+          radius: element.dataset.radius === undefined ? undefined : Number(element.dataset.radius),
+        },
         campaign: element.dataset.campaign,
         title: element.dataset.title,
       }));

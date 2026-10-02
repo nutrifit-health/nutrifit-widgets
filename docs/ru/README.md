@@ -1,5 +1,7 @@
 # @nutrifit/widgets
 
+[Оформление виджетов](APPEARANCE.md)
+
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/README.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/README.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/README.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/README.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/README.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/README.md)
 
 [![npm](https://img.shields.io/npm/v/@nutrifit/widgets)](https://www.npmjs.com/package/@nutrifit/widgets) [![GitHub Release](https://img.shields.io/github/v/release/nutrifit-health/nutrifit-widgets)](https://github.com/nutrifit-health/nutrifit-widgets/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE)
@@ -189,3 +191,18 @@ Copyright (c) 2026 **NUTRIFIT LLC**. Код адаптеров и нативно
 Основной npm-пакет — `@nutrifit/widgets`. GitHub Packages также предоставляет `@nutrifit-health/widgets`, связанный с этим репозиторием. Сборка берётся из опубликованного npm-архива; scope соответствует владельцу репозитория GitHub. Установка из GitHub требует авторизации в его реестре. Для обычной установки npm используйте команду выше.
 
 [GitHub Packages](https://github.com/nutrifit-health/nutrifit-widgets/pkgs/npm/widgets)
+
+## Локальная витрина
+
+Посмотрите все 49 калькуляторов: весь интерфейс переведён на шесть языков, доступны светлая и тёмная темы и готовые примеры React, JavaScript и iframe.
+
+В клонированном репозитории выполните:
+
+```sh
+npm install --prefix examples/consumer-site
+npm run demo
+```
+
+Откройте [витрину](http://127.0.0.1:5178/?lang=ru). Локальный адрес NutriFit по умолчанию — `http://localhost:5100`; его можно изменить в настройках подключения. Оставьте процесс демонстрации запущенным.
+
+[Локальная витрина](../../examples/consumer-site/README.md)

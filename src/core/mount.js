@@ -1,6 +1,7 @@
 import { widgets, isWidgetId } from './registry.js';
 import { createWidgetUrl, FRAME_SANDBOX, normalizeLocale } from './options.js';
 import { readWidgetMessage } from './protocol.js';
+import { normalizeAppearance } from './appearance.js';
 
 /** @type {WeakMap<HTMLElement, import('./types.js').WidgetHandle>} */
 const mounted = new WeakMap();
@@ -29,7 +30,8 @@ export function mountWidget(container, options) {
   iframe.loading = 'lazy';
   iframe.referrerPolicy = 'no-referrer';
   iframe.setAttribute('sandbox', FRAME_SANDBOX);
-  iframe.style.cssText = `display:block;width:100%;height:${definition.height}px;border:0;`;
+  const radius = normalizeAppearance(options.appearance).radius ?? 20;
+  iframe.style.cssText = `display:block;width:100%;height:${definition.height}px;border:0;border-radius:${radius}px;background:transparent;`;
   let destroyed = false;
 
   /** @param {MessageEvent<unknown>} event */

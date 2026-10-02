@@ -1,5 +1,7 @@
 # @nutrifit/widgets
 
+[Widget appearance](docs/en/APPEARANCE.md)
+
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/README.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/README.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/README.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/README.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/README.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/README.md)
 
 [![npm](https://img.shields.io/npm/v/@nutrifit/widgets)](https://www.npmjs.com/package/@nutrifit/widgets) [![GitHub Release](https://img.shields.io/github/v/release/nutrifit-health/nutrifit-widgets)](https://github.com/nutrifit-health/nutrifit-widgets/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE)
@@ -189,3 +191,18 @@ Branded widget headers use the official NutriFit logo: light, dark, or the syste
 The primary npm package is `@nutrifit/widgets`. GitHub Packages also provides `@nutrifit-health/widgets` linked to this repository. Its distribution comes from the published npm archive; the scope follows the GitHub repository owner. GitHub installation requires registry authentication. Standard npm users should use the command above.
 
 [GitHub Packages](https://github.com/nutrifit-health/nutrifit-widgets/pkgs/npm/widgets)
+
+## Local playground
+
+Preview all 49 calculators with a fully translated interface in six languages, light/dark themes and copyable React, JavaScript and iframe examples.
+
+Run from a clone of this repository:
+
+```sh
+npm install --prefix examples/consumer-site
+npm run demo
+```
+
+Open [the playground](http://127.0.0.1:5178/). The default local NutriFit host is `http://localhost:5100`; change it in Connection settings if needed. Keep the demo process running.
+
+[Local playground](examples/consumer-site/README.md)

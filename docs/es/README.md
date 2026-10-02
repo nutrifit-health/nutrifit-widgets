@@ -1,5 +1,7 @@
 # @nutrifit/widgets
 
+[Diseño de los widgets](APPEARANCE.md)
+
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/README.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/README.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/README.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/README.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/README.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/README.md)
 
 [![npm](https://img.shields.io/npm/v/@nutrifit/widgets)](https://www.npmjs.com/package/@nutrifit/widgets) [![GitHub Release](https://img.shields.io/github/v/release/nutrifit-health/nutrifit-widgets)](https://github.com/nutrifit-health/nutrifit-widgets/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE)
@@ -189,3 +191,18 @@ Los widgets con marca usan el logotipo oficial de NutriFit: claro, oscuro o seg�
 El paquete npm principal es `@nutrifit/widgets`. GitHub Packages ofrece también `@nutrifit-health/widgets`, vinculado al repositorio y obtenido del archivo npm publicado. El scope coincide con el propietario del repositorio GitHub. La instalación desde GitHub requiere autenticación; para npm usa el comando anterior.
 
 [GitHub Packages](https://github.com/nutrifit-health/nutrifit-widgets/pkgs/npm/widgets)
+
+## Demostración local
+
+Explora las 49 calculadoras con una interfaz traducida a seis idiomas, temas claro y oscuro y ejemplos de React, JavaScript e iframe listos para copiar.
+
+Desde un clon del repositorio, ejecuta:
+
+```sh
+npm install --prefix examples/consumer-site
+npm run demo
+```
+
+Abre [la demostración](http://127.0.0.1:5178/?lang=es). El servidor local de NutriFit predeterminado es `http://localhost:5100`; puedes cambiarlo en la configuración de conexión. Mantén el proceso de demostración en ejecución.
+
+[Demostración local](../../examples/consumer-site/README.md)

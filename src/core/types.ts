@@ -5,6 +5,16 @@ export type WidgetLocale = 'en' | 'ru' | 'es' | 'uk' | 'kk' | 'uz';
 export type WidgetTheme = 'light' | 'dark' | 'auto';
 export type WidgetEvent = 'ready' | 'calculated' | 'error';
 
+export interface WidgetAppearance {
+  background?: string;
+  surface?: string;
+  text?: string;
+  muted?: string;
+  accent?: string;
+  border?: string;
+  radius?: number;
+}
+
 export interface WidgetDefinition {
   path: string;
   titles: Record<WidgetLocale, string>;
@@ -17,6 +27,7 @@ export interface WidgetMountOptions {
   integrationId?: string;
   locale?: WidgetLocale;
   theme?: WidgetTheme;
+  appearance?: WidgetAppearance;
   title?: string;
   campaign?: string;
   onEvent?: (event: WidgetEvent) => void;

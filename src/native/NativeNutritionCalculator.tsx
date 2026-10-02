@@ -1,5 +1,7 @@
 'use client';
 import { useEffect, useMemo, useRef, useState } from 'react';
+import type { CSSProperties } from 'react';
+import { appearanceStyle } from '../core/appearance.js';
 import { NutritionCalculator } from './calculator/NutritionCalculator';
 import { translations } from './calculator/i18n';
 import { createNativeClient } from './client';
@@ -8,7 +10,7 @@ import './calculator/styles.css';
 
 const retryLabels = { en: 'Retry', ru: 'Повторить', es: 'Reintentar', uk: 'Повторити', kk: 'Қайталау', uz: 'Qayta urinish' };
 
-export function NativeNutritionCalculator({ getSession, apiOrigin = 'https://api.nutrifit.health', locale = 'en', theme = 'light', className, onCalculated, onError }: NativeNutritionCalculatorProps) {
+export function NativeNutritionCalculator({ getSession, apiOrigin = 'https://api.nutrifit.health', locale = 'en', theme = 'light', appearance, className, onCalculated, onError }: NativeNutritionCalculatorProps) {
   const provider = useRef(getSession); const errorCallback = useRef(onError);
   const [brand, setBrand] = useState<string | null>(null); const [ready, setReady] = useState(false); const [failed, setFailed] = useState(false);
   const [retry, setRetry] = useState(0);
@@ -22,10 +24,10 @@ export function NativeNutritionCalculator({ getSession, apiOrigin = 'https://api
     });
     return () => controller.abort();
   }, [runtime]);
-  if (!ready) return <section className="nf-widget" data-theme={theme} lang={locale}>
+  if (!ready) return <section className={`nf-widget ${className ?? ''}`} data-theme={theme} lang={locale} style={appearanceStyle(appearance) as CSSProperties}>
     <p role={failed ? 'alert' : 'status'}>{failed ? translations[locale].error : translations[locale].searching}</p>
     {failed && <button type="button" onClick={() => setRetry(value => value + 1)}>{retryLabels[locale]}</button>}
   </section>;
-  return <NutritionCalculator client={runtime.client} locale={locale} theme={theme} className={className}
+  return <NutritionCalculator client={runtime.client} locale={locale} theme={theme} appearance={appearance} className={className}
     brandName={brand ?? undefined} showContinue={!brand} onCalculated={onCalculated} onError={onError} />;
 }

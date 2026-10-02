@@ -1,6 +1,8 @@
 'use client';
 
 import { useId, useState } from 'react';
+import type { CSSProperties } from 'react';
+import { appearanceStyle } from '../../core/appearance.js';
 import { WidgetIcon } from './WidgetIcon';
 import { NutriFitLogo } from './NutriFitLogo';
 import { translations } from './i18n';
@@ -13,7 +15,7 @@ import { CalculationResults } from './CalculationResults';
 import type { NutritionCalculatorProps } from './types';
 
 export function NutritionCalculator({
-  locale = 'en', theme = 'light', brandName, client, initialDraft,
+  locale = 'en', theme = 'light', appearance, brandName, client, initialDraft,
   sourceSite = '', campaign, showContinue = true, className = '', onCalculated, onError,
 }: NutritionCalculatorProps) {
   const id = useId();
@@ -24,7 +26,7 @@ export function NutritionCalculator({
   const continuation = showContinue && calculator.canCalculate
     ? buildContinueUrl(calculator.draft, locale, sourceSite, campaign) : null;
 
-  return <section className={`nf-widget ${className}`} data-theme={theme} lang={locale} aria-labelledby={id + '-title'}>
+  return <section className={`nf-widget ${className}`} data-theme={theme} lang={locale} aria-labelledby={id + '-title'} style={appearanceStyle(appearance) as CSSProperties}>
     <header className="nf-header">
       {brandName ? <span className="nf-brand">{brandName}</span> : <a href="https://nutrifit.health/?utm_source=nutrifit_widget&utm_medium=referral" target="_blank" rel="noopener noreferrer" className="nf-brand"><NutriFitLogo theme={theme} /></a>}
       <h2 id={id + '-title'}>{t.title}</h2><p>{t.intro}</p>

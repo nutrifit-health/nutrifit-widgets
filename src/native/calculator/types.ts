@@ -1,4 +1,5 @@
 import type { WidgetLocale, WidgetTheme } from '../../core/types.js';
+import type { WidgetAppearance } from '../../core/types.js';
 export type { WidgetLocale, WidgetTheme } from '../../core/types.js';
 export type NutrientKey = 'calories' | 'protein' | 'fat' | 'carbs';
 export type CalculationBasis = 'total' | 'per100g';
@@ -33,6 +34,7 @@ export interface CalculatorClient {
 }
 export interface CalculatorDraft { items: Ingredient[]; outputWeight: string; }
 export interface NutritionCalculatorProps {
+  appearance?: WidgetAppearance;
   brandName?: string;
   locale?: WidgetLocale;
   theme?: WidgetTheme;

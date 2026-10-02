@@ -1,5 +1,7 @@
 # @nutrifit/widgets
 
+[Оформлення віджетів](APPEARANCE.md)
+
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/README.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/README.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/README.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/README.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/README.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/README.md)
 
 [![npm](https://img.shields.io/npm/v/@nutrifit/widgets)](https://www.npmjs.com/package/@nutrifit/widgets) [![GitHub Release](https://img.shields.io/github/v/release/nutrifit-health/nutrifit-widgets)](https://github.com/nutrifit-health/nutrifit-widgets/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE)
@@ -189,3 +191,18 @@ Copyright (c) 2026 **NUTRIFIT LLC**. Код адаптерів і нативно
 Основний npm-пакет — `@nutrifit/widgets`. GitHub Packages також надає `@nutrifit-health/widgets`, пов’язаний із репозиторієм і створений з опублікованого npm-архіву. Scope відповідає власнику репозиторію GitHub. Установлення з GitHub потребує авторизації; для npm використовуйте команду вище.
 
 [GitHub Packages](https://github.com/nutrifit-health/nutrifit-widgets/pkgs/npm/widgets)
+
+## Локальна демонстрація
+
+Перегляньте всі 49 калькуляторів: увесь інтерфейс перекладено шістьма мовами, доступні світла й темна теми та готові приклади React, JavaScript і iframe.
+
+У клонованому репозиторії виконайте:
+
+```sh
+npm install --prefix examples/consumer-site
+npm run demo
+```
+
+Відкрийте [демонстрацію](http://127.0.0.1:5178/?lang=uk). Типова локальна адреса NutriFit — `http://localhost:5100`; її можна змінити в налаштуваннях підключення. Залиште процес демонстрації запущеним.
+
+[Локальна демонстрація](../../examples/consumer-site/README.md)

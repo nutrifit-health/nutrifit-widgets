@@ -1,3 +1,5 @@
+import { normalizeAppearance } from './appearance.js';
+
 export const HOST_URL = 'https://nutrifit.health';
 export const FRAME_SANDBOX = 'allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox';
 
@@ -34,6 +36,9 @@ export function createWidgetUrl(definition, options, instanceId, parentOrigin) {
   url.searchParams.set('parentOrigin', normalizeOrigin(parentOrigin));
   url.searchParams.set('lang', normalizeLocale(options.locale));
   url.searchParams.set('theme', normalizeTheme(options.theme));
+  for (const [key, value] of Object.entries(normalizeAppearance(options.appearance))) {
+    url.searchParams.set('appearance' + key[0].toUpperCase() + key.slice(1), String(value));
+  }
   if (options.integrationId) {
     if (!/^[0-9a-f-]{36}$/i.test(options.integrationId)) throw new Error('NutriFit: invalid integration ID');
     url.searchParams.set('integrationId', options.integrationId);

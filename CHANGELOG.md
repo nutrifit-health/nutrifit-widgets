@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.2
+
+- Add documented appearance options for background, surfaces, text, accent, borders and corner radius.
+- Apply the transparent NutriFit wordmark and adaptive light/dark branding.
+- Clip widget surfaces to rounded borders and align select arrows consistently.
+- Improve questionnaire navigation and provide a six-language integration playground with live customization.
+- Document customization in all six language folders.
+
 ## 1.0.1
 
 - Correct GitHub Packages links and repository-owner terminology in all six languages.

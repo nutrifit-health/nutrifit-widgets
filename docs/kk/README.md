@@ -1,5 +1,7 @@
 # @nutrifit/widgets
 
+[Виджеттерді безендіру](APPEARANCE.md)
+
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/README.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/README.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/README.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/README.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/README.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/README.md)
 
 [![npm](https://img.shields.io/npm/v/@nutrifit/widgets)](https://www.npmjs.com/package/@nutrifit/widgets) [![GitHub Release](https://img.shields.io/github/v/release/nutrifit-health/nutrifit-widgets)](https://github.com/nutrifit-health/nutrifit-widgets/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE)
@@ -189,3 +191,18 @@ Copyright (c) 2026 **NUTRIFIT LLC**. Адаптерлер мен нативті 
 Негізгі npm пакеті — `@nutrifit/widgets`. GitHub Packages репозиториймен байланысқан `@nutrifit-health/widgets` көшірмесін де береді; ол жарияланған npm архивінен алынады. Scope GitHub репозиторийінің иесіне сәйкес келеді. GitHub орнату үшін авторизация керек; npm үшін жоғарыдағы пәрменді қолданыңыз.
 
 [GitHub Packages](https://github.com/nutrifit-health/nutrifit-widgets/pkgs/npm/widgets)
+
+## Жергілікті демонстрация
+
+Барлық 49 калькуляторды қараңыз: интерфейс толықтай алты тілге аударылған, ашық және қараңғы тақырыптар, көшіруге дайын React, JavaScript және iframe мысалдары бар.
+
+Клондалған репозиторийде орындаңыз:
+
+```sh
+npm install --prefix examples/consumer-site
+npm run demo
+```
+
+[Демонстрацияны](http://127.0.0.1:5178/?lang=kk) ашыңыз. NutriFit жүйесінің әдепкі жергілікті мекенжайы — `http://localhost:5100`; оны қосылым баптауларында өзгертуге болады. Демонстрация процесін іске қосулы қалдырыңыз.
+
+[Жергілікті демонстрация](../../examples/consumer-site/README.md)

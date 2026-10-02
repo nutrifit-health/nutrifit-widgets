@@ -1,5 +1,7 @@
 # @nutrifit/widgets
 
+[Vidjet ko‘rinishi](APPEARANCE.md)
+
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/README.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/README.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/README.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/README.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/README.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/README.md)
 
 [![npm](https://img.shields.io/npm/v/@nutrifit/widgets)](https://www.npmjs.com/package/@nutrifit/widgets) [![GitHub Release](https://img.shields.io/github/v/release/nutrifit-health/nutrifit-widgets)](https://github.com/nutrifit-health/nutrifit-widgets/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE)
@@ -189,3 +191,18 @@ Brendli vidjetlar rasmiy NutriFit logotipidan foydalanadi: yorug‘, qorong‘i 
 Asosiy npm paketi — `@nutrifit/widgets`. GitHub Packages repozitoriyga bog‘langan `@nutrifit-health/widgets` nusxasini ham taqdim etadi; u nashr etilgan npm arxividan olinadi. Scope GitHub repozitoriysi egasiga mos. GitHub dan o‘rnatish autentifikatsiya talab qiladi; npm uchun yuqoridagi buyruqni ishlating.
 
 [GitHub Packages](https://github.com/nutrifit-health/nutrifit-widgets/pkgs/npm/widgets)
+
+## Mahalliy namoyish
+
+Barcha 49 kalkulyatorni ko‘ring: interfeys to‘liq olti tilga tarjima qilingan, yorug‘ va qorong‘i mavzular hamda nusxalash uchun tayyor React, JavaScript va iframe misollari mavjud.
+
+Klonlangan repozitoriyda bajaring:
+
+```sh
+npm install --prefix examples/consumer-site
+npm run demo
+```
+
+[Namoyishni](http://127.0.0.1:5178/?lang=uz) oching. NutriFit uchun standart mahalliy manzil — `http://localhost:5100`; uni ulanish sozlamalarida o‘zgartirish mumkin. Namoyish jarayonini ishlayotgan holda qoldiring.
+
+[Mahalliy namoyish](../../examples/consumer-site/README.md)

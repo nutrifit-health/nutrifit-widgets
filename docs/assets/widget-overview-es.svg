@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" lang="es" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-labelledby="title desc">
+  <title id="title">Widgets integrables de NutriFit</title>
+  <desc id="desc">49 calculadoras de nutrición, fitness, valores de laboratorio y cuestionarios. Integración con React, JavaScript o iframe. Seis idiomas, temas claros y oscuros, colores personalizables e informes PDF.</desc>
+  <rect width="1000" height="280" rx="24" fill="#f3f7f4"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="36" y="47" font-size="25" font-weight="700" fill="#16382b">49 calculadoras para tu sitio web.</text>
+    <text x="36" y="75" font-size="15" fill="#4c6558">React · JavaScript · iframe</text>
+    <rect x="36" y="98" width="294" height="108" rx="16" fill="#ffffff" stroke="#d6e3d9"/>
+    <rect x="353" y="98" width="294" height="108" rx="16" fill="#ffffff" stroke="#d6e3d9"/>
+    <rect x="670" y="98" width="294" height="108" rx="16" fill="#16382b"/>
+    <g font-size="18" font-weight="700">
+      <text x="56" y="130" fill="#16382b">Nutrición y fitness</text>
+      <text x="373" y="130" fill="#16382b">Cálculos de laboratorio</text>
+      <text x="690" y="130" fill="#ffffff">Hábitos y cuestionarios</text>
+    </g>
+    <g font-size="13">
+      <text x="56" y="160" fill="#4c6558">TDEE · Macros · Agua · Grasa corporal</text>
+      <text x="56" y="183" fill="#4c6558">Proteína · Fibra · 1RM · Pulso</text>
+      <text x="373" y="160" fill="#4c6558">HOMA-IR · eGFR · HbA1c · Lípidos</text>
+      <text x="373" y="183" fill="#4c6558">Métodos, fuentes y limitaciones</text>
+      <text x="690" y="160" fill="#d4e7da">Sueño · Cafeína · Conducta alimentaria</text>
+      <text x="690" y="183" fill="#d4e7da">DEBQ · PHQ-9 · GAD-7 · PSS-10</text>
+    </g>
+    <text x="36" y="247" font-size="14" fill="#16382b">6 idiomas · Temas claros y oscuros · Tus colores · Informes PDF con la marca NutriFit</text>
+  </g>
+</svg>

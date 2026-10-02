@@ -8,7 +8,7 @@
 
 **[Попробовать виджеты](https://nutrifit.health/embed/calculators/tdee?lang=ru&theme=auto)** · [БЖУ](https://nutrifit.health/embed/calculators/macros?lang=ru&theme=auto) · [Норма воды](https://nutrifit.health/embed/calculators/water?lang=ru&theme=auto) · [Все 49 калькуляторов](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/CALCULATORS.md) · [Оформление](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/APPEARANCE.md)
 
-![Обзор калькуляторов, способов встраивания и возможностей](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview.svg)
+![Обзор калькуляторов, способов встраивания и возможностей](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview-ru.svg)
 
 - Шесть языков; светлая, тёмная и системная темы.
 - Настройка фона, цветов и скругления под ваш сайт.

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" lang="uz" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-labelledby="title desc">
+  <title id="title">NutriFit joylashtiriladigan vidjetlari</title>
+  <desc id="desc">Ovqatlanish, fitnes, laboratoriya ko‘rsatkichlari va so‘rovnomalar uchun 49 kalkulyator. React, JavaScript yoki iframe orqali joylashtirish. Olti til, yorug‘ va qorong‘i mavzular, ranglarni sozlash va PDF hisobotlari.</desc>
+  <rect width="1000" height="280" rx="24" fill="#f3f7f4"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="36" y="47" font-size="25" font-weight="700" fill="#16382b">Saytingiz uchun 49 kalkulyator.</text>
+    <text x="36" y="75" font-size="15" fill="#4c6558">React · JavaScript · iframe</text>
+    <rect x="36" y="98" width="294" height="108" rx="16" fill="#ffffff" stroke="#d6e3d9"/>
+    <rect x="353" y="98" width="294" height="108" rx="16" fill="#ffffff" stroke="#d6e3d9"/>
+    <rect x="670" y="98" width="294" height="108" rx="16" fill="#16382b"/>
+    <g font-size="17" font-weight="700">
+      <text x="56" y="130" fill="#16382b">Ovqatlanish va fitnes</text>
+      <text x="373" y="130" fill="#16382b">Laboratoriya hisoblari</text>
+      <text x="690" y="130" fill="#ffffff">Odatlar va so‘rovnomalar</text>
+    </g>
+    <g font-size="13">
+      <text x="56" y="160" fill="#4c6558">TDEE · BYU · Suv · Tana yog‘i</text>
+      <text x="56" y="183" fill="#4c6558">Oqsil · Tola · 1RM · Puls</text>
+      <text x="373" y="160" fill="#4c6558">HOMA-IR · eGFR · HbA1c · Lipidlar</text>
+      <text x="373" y="183" fill="#4c6558">Usullar, manbalar va cheklovlar</text>
+      <text x="690" y="160" fill="#d4e7da">Uyqu · Kofein · Ovqatlanish xulqi</text>
+      <text x="690" y="183" fill="#d4e7da">DEBQ · PHQ-9 · GAD-7 · PSS-10</text>
+    </g>
+    <text x="36" y="247" font-size="14" fill="#16382b">6 til · Yorug‘ va qorong‘i mavzular · Sizning ranglaringiz · NutriFit logotipli PDF</text>
+  </g>
+</svg>

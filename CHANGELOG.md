@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.4
+
+- Localize the integration overview SVG into English, Russian, Spanish, Ukrainian, Kazakh and Uzbek, including accessible titles and descriptions.
+- Use the matching illustration in each localized README; the root README uses English.
+- Keep calculator runtime artifacts unchanged; this release updates documentation only.
+
 ## 1.0.3
 
 - Clarify the package description and add keywords for every implemented calculator and questionnaire.

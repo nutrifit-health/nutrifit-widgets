@@ -8,7 +8,7 @@ Integra 49 calculadoras de nutrición, fitness, valores de laboratorio y estilo 
 
 **[Probar los widgets](https://nutrifit.health/embed/calculators/tdee?lang=es&theme=auto)** · [Macronutrientes](https://nutrifit.health/embed/calculators/macros?lang=es&theme=auto) · [Agua diaria](https://nutrifit.health/embed/calculators/water?lang=es&theme=auto) · [Las 49 calculadoras](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/CALCULATORS.md) · [Diseño](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/APPEARANCE.md)
 
-![Resumen de calculadoras, opciones de integración y funciones](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview.svg)
+![Resumen de calculadoras, opciones de integración y funciones](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview-es.svg)
 
 - Seis idiomas; temas claro, oscuro y del sistema.
 - Personaliza el fondo, los colores y las esquinas para tu sitio.

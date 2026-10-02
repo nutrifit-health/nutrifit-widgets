@@ -8,7 +8,7 @@ React компоненті, JavaScript немесе iframe арқылы тама
 
 **[Виджеттерді қолданып көру](https://nutrifit.health/embed/calculators/tdee?lang=kk&theme=auto)** · [БЖК](https://nutrifit.health/embed/calculators/macros?lang=kk&theme=auto) · [Су нормасы](https://nutrifit.health/embed/calculators/water?lang=kk&theme=auto) · [Барлық 49 калькулятор](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/CALCULATORS.md) · [Безендіру](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/APPEARANCE.md)
 
-![Калькуляторлар, енгізу тәсілдері және мүмкіндіктерге шолу](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview.svg)
+![Калькуляторлар, енгізу тәсілдері және мүмкіндіктерге шолу](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview-kk.svg)
 
 - Алты тіл; ашық, қараңғы және жүйелік тақырыптар.
 - Сайтыңызға сай фонды, түстерді және бұрыштарды дөңгелектеуді баптаңыз.

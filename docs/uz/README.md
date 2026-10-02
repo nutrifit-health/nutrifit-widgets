@@ -8,7 +8,7 @@ React komponenti, JavaScript yoki iframe orqali oziqlanish, fitnes, laboratoriya
 
 **[Vidjetlarni sinab ko‘rish](https://nutrifit.health/embed/calculators/tdee?lang=uz&theme=auto)** · [BYU](https://nutrifit.health/embed/calculators/macros?lang=uz&theme=auto) · [Suv me’yori](https://nutrifit.health/embed/calculators/water?lang=uz&theme=auto) · [Barcha 49 kalkulyator](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/CALCULATORS.md) · [Ko‘rinish](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/APPEARANCE.md)
 
-![Kalkulyatorlar, joylashtirish usullari va imkoniyatlar sharhi](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview.svg)
+![Kalkulyatorlar, joylashtirish usullari va imkoniyatlar sharhi](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview-uz.svg)
 
 - Olti til; yorug‘, qorong‘i va tizim mavzulari.
 - Fon, ranglar va burchak yumaloqligini saytingizga moslang.

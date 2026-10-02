@@ -8,7 +8,7 @@ Embed 49 nutrition, fitness, laboratory and lifestyle calculators on your websit
 
 **[Try the widgets](https://nutrifit.health/embed/calculators/tdee?lang=en&theme=auto)** · [Macros](https://nutrifit.health/embed/calculators/macros?lang=en&theme=auto) · [Water](https://nutrifit.health/embed/calculators/water?lang=en&theme=auto) · [All 49 calculators](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/CALCULATORS.md) · [Appearance](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/APPEARANCE.md)
 
-![Integration overview: calculators, embedding options and supported features](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview.svg)
+![Integration overview: calculators, embedding options and supported features](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview-en.svg)
 
 - Six languages; light, dark and system themes.
 - Customize backgrounds, colors and corner radius for your website.

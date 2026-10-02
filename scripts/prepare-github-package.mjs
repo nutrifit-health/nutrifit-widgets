@@ -6,27 +6,29 @@ import { createHash } from 'node:crypto';
 import { setTimeout as wait } from 'node:timers/promises';
 
 const { name, version } = JSON.parse(await readFile('package.json', 'utf8'));
-async function getPublishedMetadata() {
-  const url = `https://registry.npmjs.org/${encodeURIComponent(name)}/${version}`;
+async function getPublishedResource(url, label) {
   const attempts = 60;
   for (let attempt = 0; attempt < attempts; attempt += 1) {
     const response = await fetch(url, { signal: AbortSignal.timeout(15000) });
-    if (response.status === 200) return response.json();
+    if (response.status === 200) return response;
     const retryable = [202, 404, 429].includes(response.status) || response.status >= 500;
     if (!retryable || attempt === attempts - 1) {
-      throw new Error(`Npm-версия недоступна: ${response.status}`);
+      throw new Error(`${label} недоступен: ${response.status}`);
     }
-    // Новая npm-версия появляется в читающем registry с задержкой.
+    // Метаданные и архив новой версии появляются в registry независимо и с задержкой.
     await wait(5000);
   }
-  throw new Error('Npm-версия не появилась в registry');
+  throw new Error(`${label} не появился в registry`);
 }
 
-const metadata = await getPublishedMetadata();
+const metadataResponse = await getPublishedResource(
+  `https://registry.npmjs.org/${encodeURIComponent(name)}/${version}`,
+  'Манифест npm-пакета',
+);
+const metadata = await metadataResponse.json();
 const tarballUrl = new URL(metadata.dist.tarball);
 if (tarballUrl.origin !== 'https://registry.npmjs.org') throw new Error('Неожиданный источник npm-архива');
-const tarball = await fetch(tarballUrl);
-if (!tarball.ok) throw new Error(`Архив недоступен: ${tarball.status}`);
+const tarball = await getPublishedResource(tarballUrl, 'Архив npm-пакета');
 const bytes = Buffer.from(await tarball.arrayBuffer());
 const integrity = 'sha512-' + createHash('sha512').update(bytes).digest('base64');
 if (integrity !== metadata.dist.integrity) throw new Error('Целостность npm-архива не подтверждена');

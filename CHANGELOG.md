@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.3
+
+- Clarify the package description and add keywords for every implemented calculator and questionnaire.
+- Add an integration overview, direct hosted widget links and a clearer introduction to all six README languages.
+- Reuse the published 1.0.2 runtime artifacts; this documentation and metadata release does not change calculator code.
+
 ## 1.0.2
 
 - Add documented appearance options for background, surfaces, text, accent, borders and corner radius.

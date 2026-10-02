@@ -1,12 +1,20 @@
-# @nutrifit/widgets
-
-[Виджеттерді безендіру](APPEARANCE.md)
+# NutriFit Widgets — Сайтыңызға арналған тамақтану және денсаулық калькуляторлары
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/README.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/README.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/README.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/README.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/README.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/README.md)
 
 [![npm](https://img.shields.io/npm/v/@nutrifit/widgets)](https://www.npmjs.com/package/@nutrifit/widgets) [![GitHub Release](https://img.shields.io/github/v/release/nutrifit-health/nutrifit-widgets)](https://github.com/nutrifit-health/nutrifit-widgets/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE)
 
-Сайтыңызға арналған NutriFit брендті калькуляторлары: тағам калькуляторы және ашық каталогтағы барлық 48 құрал. React, JavaScript және iframe адаптерлері NutriFit жүйесіндегі сол орналастырылған интерфейстер мен есептеулерді қолданады.
+React компоненті, JavaScript немесе iframe арқылы тамақтану, фитнес, зертханалық көрсеткіштер және өмір салты бойынша 49 калькуляторды сайтыңызға енгізіңіз. TDEE мен калория нормасынан, БЖК, су нормасы, дене құрамы немесе тағамның қоректік құндылығынан бастаңыз.
+
+**[Виджеттерді қолданып көру](https://nutrifit.health/embed/calculators/tdee?lang=kk&theme=auto)** · [БЖК](https://nutrifit.health/embed/calculators/macros?lang=kk&theme=auto) · [Су нормасы](https://nutrifit.health/embed/calculators/water?lang=kk&theme=auto) · [Барлық 49 калькулятор](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/CALCULATORS.md) · [Безендіру](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/APPEARANCE.md)
+
+![Калькуляторлар, енгізу тәсілдері және мүмкіндіктерге шолу](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview.svg)
+
+- Алты тіл; ашық, қараңғы және жүйелік тақырыптар.
+- Сайтыңызға сай фонды, түстерді және бұрыштарды дөңгелектеуді баптаңыз.
+- Келушілер NutriFit аккаунтынсыз сіздің бетіңізде есептеп, брендтелген PDF есебін жүктей алады.
+
+Тегін виджеттер NutriFit брендін сақтайды. Калькуляторлар NutriFit серверлерінде орналасқан; желіге қосылу қажет.
 
 ## Орнату
 

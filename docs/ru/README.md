@@ -1,12 +1,20 @@
-# @nutrifit/widgets
-
-[Оформление виджетов](APPEARANCE.md)
+# NutriFit Widgets — Калькуляторы питания и здоровья для вашего сайта
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/README.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/README.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/README.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/README.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/README.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/README.md)
 
 [![npm](https://img.shields.io/npm/v/@nutrifit/widgets)](https://www.npmjs.com/package/@nutrifit/widgets) [![GitHub Release](https://img.shields.io/github/v/release/nutrifit-health/nutrifit-widgets)](https://github.com/nutrifit-health/nutrifit-widgets/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE)
 
-Брендированные калькуляторы NutriFit для вашего сайта: калькулятор блюда и все 48 инструментов публичного каталога. Адаптеры React, JavaScript и iframe используют те же размещённые формы и вычисления, что и NutriFit.
+Встройте 49 калькуляторов питания, фитнеса, лабораторных показателей и образа жизни через React-компонент, JavaScript или iframe. Начните с TDEE и нормы калорий, БЖУ, нормы воды, состава тела или пищевой ценности блюда.
+
+**[Попробовать виджеты](https://nutrifit.health/embed/calculators/tdee?lang=ru&theme=auto)** · [БЖУ](https://nutrifit.health/embed/calculators/macros?lang=ru&theme=auto) · [Норма воды](https://nutrifit.health/embed/calculators/water?lang=ru&theme=auto) · [Все 49 калькуляторов](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/CALCULATORS.md) · [Оформление](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/APPEARANCE.md)
+
+![Обзор калькуляторов, способов встраивания и возможностей](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview.svg)
+
+- Шесть языков; светлая, тёмная и системная темы.
+- Настройка фона, цветов и скругления под ваш сайт.
+- Посетители считают на вашей странице без аккаунта NutriFit и могут скачать брендированный PDF.
+
+Бесплатные виджеты сохраняют бренд NutriFit. Калькуляторы размещены на серверах NutriFit; нужно сетевое подключение.
 
 ## Установка
 

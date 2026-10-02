@@ -1,12 +1,20 @@
-# @nutrifit/widgets
-
-[Widget appearance](docs/en/APPEARANCE.md)
+# NutriFit Widgets — Embeddable Nutrition & Fitness Calculators
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/README.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/README.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/README.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/README.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/README.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/README.md)
 
 [![npm](https://img.shields.io/npm/v/@nutrifit/widgets)](https://www.npmjs.com/package/@nutrifit/widgets) [![GitHub Release](https://img.shields.io/github/v/release/nutrifit-health/nutrifit-widgets)](https://github.com/nutrifit-health/nutrifit-widgets/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE)
 
-Branded NutriFit calculators for your website: one nutrition calculator and all 48 tools in the public catalog. React, JavaScript and iframe adapters use the same hosted interfaces and calculations as NutriFit.
+Embed 49 nutrition, fitness, laboratory and lifestyle calculators on your website with React components, a JavaScript snippet or a plain iframe. Start with TDEE and calorie needs, macros, water intake, body composition or dish nutrition.
+
+**[Try the widgets](https://nutrifit.health/embed/calculators/tdee?lang=en&theme=auto)** · [Macros](https://nutrifit.health/embed/calculators/macros?lang=en&theme=auto) · [Water](https://nutrifit.health/embed/calculators/water?lang=en&theme=auto) · [All 49 calculators](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/CALCULATORS.md) · [Appearance](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/APPEARANCE.md)
+
+![Integration overview: calculators, embedding options and supported features](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview.svg)
+
+- Six languages; light, dark and system themes.
+- Customize backgrounds, colors and corner radius for your website.
+- Visitors calculate on your page without a NutriFit account and can download branded PDF reports.
+
+Free embeds retain NutriFit branding. The calculators are hosted by NutriFit and require a network connection.
 
 ## Installation
 

@@ -1,12 +1,20 @@
-# @nutrifit/widgets
-
-[Diseño de los widgets](APPEARANCE.md)
+# NutriFit Widgets — Calculadoras de nutrición y fitness para tu sitio
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/README.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/README.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/README.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/README.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/README.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/README.md)
 
 [![npm](https://img.shields.io/npm/v/@nutrifit/widgets)](https://www.npmjs.com/package/@nutrifit/widgets) [![GitHub Release](https://img.shields.io/github/v/release/nutrifit-health/nutrifit-widgets)](https://github.com/nutrifit-health/nutrifit-widgets/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/LICENSE)
 
-Calculadoras de NutriFit para tu sitio: una calculadora de platos y las 48 herramientas del catálogo público. Los adaptadores React, JavaScript e iframe usan las mismas interfaces y cálculos alojados que NutriFit.
+Integra 49 calculadoras de nutrición, fitness, valores de laboratorio y estilo de vida con componentes React, JavaScript o un iframe. Empieza con TDEE y calorías, macronutrientes, agua diaria, composición corporal o nutrición de platos.
+
+**[Probar los widgets](https://nutrifit.health/embed/calculators/tdee?lang=es&theme=auto)** · [Macronutrientes](https://nutrifit.health/embed/calculators/macros?lang=es&theme=auto) · [Agua diaria](https://nutrifit.health/embed/calculators/water?lang=es&theme=auto) · [Las 49 calculadoras](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/CALCULATORS.md) · [Diseño](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/APPEARANCE.md)
+
+![Resumen de calculadoras, opciones de integración y funciones](https://raw.githubusercontent.com/nutrifit-health/nutrifit-widgets/main/docs/assets/widget-overview.svg)
+
+- Seis idiomas; temas claro, oscuro y del sistema.
+- Personaliza el fondo, los colores y las esquinas para tu sitio.
+- Los visitantes calculan en tu página sin una cuenta de NutriFit y pueden descargar informes PDF con la marca.
+
+Los widgets gratuitos mantienen la marca NutriFit. Las calculadoras están alojadas en NutriFit y necesitan conexión a la red.
 
 ## Instalación
 

@@ -1,4 +1,4 @@
-# Calculadora de ingesta de fibra dietética (OMS y EFSA)
+# Valores de referencia de fibra
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/fiber-intake.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/fiber-intake.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/fiber-intake.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/fiber-intake.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/fiber-intake.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/fiber-intake.md)
 
@@ -6,29 +6,28 @@
 
 `fiber-intake` · [NutriFit](https://nutrifit.health/es/calculators/fiber-intake)
 
-Determina el requerimiento diario de fibra soluble e insoluble para nutrir la microbiota intestinal, normalizar el colesterol y regular el tránsito gastrointestinal.
+Se muestran por separado: EFSA establece 25 g/día para adultos; IOM/NASEM, 14 g/1000 kcal. IA de IOM por edad y sexo: 19–50 años, 38 g para hombres y 25 g para mujeres; mayores de 50, 30 y 21 g. El cálculo energético no sustituye automáticamente las otras referencias.
 
-### Cómo usar
+### Uso
 
-1. Añade verduras en cada comida: Consume al menos 400–500 g de verduras sin almidón y hortalizas al día (regla del plato de Harvard).
-2. Cambia cereales refinados por integrales: Elige trigo sarraceno, quinoa, copos de avena enteros, cebada y pan integral en lugar de arroz blanco o harinas refinadas.
-3. Incorpora semillas y legumbres: Una cucharada sopera de semillas de chía o lino molido, junto con una ración de lentejas, aporta de 8 a 12 g de fibra de alta calidad.
+1. Introduzca los datos: Se muestran por separado: EFSA establece 25 g/día para adultos; IOM/NASEM, 14 g/1000 kcal. IA de IOM por edad y sexo: 19–50 años, 38 g para hombres y 25 g para mujeres; mayores de 50, 30 y 21 g. El cálculo energético no sustituye automáticamente las otras referencias.
+2. Compare las referencias: Se muestran por separado: EFSA establece 25 g/día para adultos; IOM/NASEM, 14 g/1000 kcal. IA de IOM por edad y sexo: 19–50 años, 38 g para hombres y 25 g para mujeres; mayores de 50, 30 y 21 g. El cálculo energético no sustituye automáticamente las otras referencias.
+3. Considere las limitaciones: Para adultos desde los 19 años, fuera del embarazo y la lactancia. No son límites individuales de seguridad ni tratamientos del estreñimiento, SII o colesterol alto. Aumente la ingesta según la tolerancia. No se calcula agua adicional a razón de 40 ml por gramo de fibra.
 
 ### Método y fórmula
 
-Basada en estándares de la OMS y la EFSA (14 g de fibra por cada 1000 kcal, mínimo 25 g para mujeres y 38 g para hombres). Calcula el agua adicional requerida (+40 ml por gramo de fibra) y adapta recomendaciones en SII.
+Se muestran por separado: EFSA establece 25 g/día para adultos; IOM/NASEM, 14 g/1000 kcal. IA de IOM por edad y sexo: 19–50 años, 38 g para hombres y 25 g para mujeres; mayores de 50, 30 y 21 g. El cálculo energético no sustituye automáticamente las otras referencias.
 
-Fibra objetivo = max(25/38 g, Calorías × 0,014); Fracción soluble ~30–35%; Insoluble ~65–70%; Agua adicional = Fibra (g) × 40 ml.
+Se muestran por separado: EFSA establece 25 g/día para adultos; IOM/NASEM, 14 g/1000 kcal. IA de IOM por edad y sexo: 19–50 años, 38 g para hombres y 25 g para mujeres; mayores de 50, 30 y 21 g. El cálculo energético no sustituye automáticamente las otras referencias.
 
 ### Limitaciones
 
-En sobrecrecimiento bacteriano (SIBO) y brotes de colitis, el exceso de fibra fermentable puede agravar el meteorismo. La dosis de fibra debe aumentarse de forma gradual.
+Para adultos desde los 19 años, fuera del embarazo y la lactancia. No son límites individuales de seguridad ni tratamientos del estreñimiento, SII o colesterol alto. Aumente la ingesta según la tolerancia. No se calcula agua adicional a razón de 40 ml por gramo de fibra.
 
 ### Fuentes
 
-- [EFSA Panel on Dietetic Products, Nutrition, and Allergies. Scientific Opinion on Dietary Reference Values for carbohydrates and dietary fibre. EFSA Journal, 2010;8(3):1462](https://doi.org/10.2903/j.efsa.2010.1462)
-- [Reynolds A. et al. Carbohydrate quality and human health: a series of systematic reviews and meta-analyses. Lancet, 2019;393(10170):434–445](https://pubmed.ncbi.nlm.nih.gov/30638909/)
-- [Stephen A.M. et al. Dietary fibre in Europe: current state of knowledge on definitions, sources, recommendations, intakes and relationships to health. Nutr Res Rev, 2017;30(2):149–190](https://pubmed.ncbi.nlm.nih.gov/28676135/)
+- [EFSA. Dietary Reference Values summary, 2017](https://www.efsa.europa.eu/sites/default/files/2017_09_DRVs_summary_report.pdf)
+- [IOM/NASEM. Dietary Reference Intakes: Fiber, 2006](https://www.nationalacademies.org/read/11537/chapter/11)
 
 ## Cómo integrar esta calculadora
 
@@ -59,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/fiber-intake?lang=es&theme=auto"
-  title="Calculadora de ingesta de fibra dietética (OMS y EFSA)" loading="lazy" referrerpolicy="no-referrer"
+  title="Valores de referencia de fibra" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

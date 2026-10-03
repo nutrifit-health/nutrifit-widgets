@@ -6,32 +6,30 @@
 
 `tyg-index` · [NutriFit](https://nutrifit.health/kk/calculators/tyg-index)
 
-TyG индексі және TyG-BMI, TyG-WC туындылары: аш қарынға триглицеридтер мен глюкоза бойынша инсулинге төзімділік пен кардиометаболикалық қауіпті бағалау — инсулин талдауынсыз.
+Ашқарындағы триглицеридтер мен глюкозаға негізделген зерттеу индексі, TyG-BMI және TyG-WC туынды көрсеткіштерімен.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
 1. Аш қарынға триглицеридтер мен глюкозаны алыңыз: Екі көрсеткіш те қанның стандартты биохимиясына кіреді. Үлгі аш қарынға алынуы маңызды: тамақтан кейін триглицеридтер 1,5–2 есе өсіп, индексті «үрлейді».
 2. Бланк бірліктерін көрсетіңіз: Формула мг/дл үшін анықталған. Зертхана ммоль/л берсе, ауыстырғышты ммоль/л-де қалдырыңыз — калькулятор мг/дл-ге автоматты түрде қайта есептейді.
 3. Салмақ, бой және белді қосыңыз: TyG-BMI және TyG-WC висцеральды семіздік пен бауырдың майлы ауруын «таза» TyG-ден дәлірек анықтайды. Белді кіндік деңгейінде дем шығарғанда өлшеңіз.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-TyG индексі (Simental-Mendía, 2008) — мг/дл-дегі аш қарынға триглицеридтер мен глюкоза көбейтіндісінің жартысының натурал логарифмі. Ол липотоксикалықты және глюкозаның игерілуінің бұзылуын — инсулинге төзімділіктің екі негізгі механизмін — көрсетеді және эугликемиялық клэмппен HOMA-IR-ден кем емес корреляцияланады, бұл ретте қымбат және нашар стандартталған инсулин талдауын қажет етпейді. TyG-BMI және TyG-WC туындылары дене салмағы мен бел орамын қосып, метаболикалық синдром мен АБМА анықтау дәлдігін арттырады.
+Мұнда Lee et al. (2018) қолданған ln(TG × глюкоза / 2) нұсқасы пайдаланылады, екі концентрация да мг/дл-де. Басқа жарияланған ln(TG × глюкоза)/2 нұсқасының сандық шкаласы бөлек; оның шектерін мұнда қолдануға болмайды.
 
-TyG = ln[ Триглицеридтер (мг/дл) × Глюкоза (мг/дл) / 2 ]
-TyG-BMI = TyG × ДСИ (кг/м²)
-TyG-WC = TyG × Бел орамы (см)
-Қайта есептеу: ТГ мг/дл = ммоль/л × 88,57; глюкоза мг/дл = ммоль/л × 18,016
+TyG = ln[TG (мг/дл) × глюкоза (мг/дл) / 2]. TyG-BMI = TyG × ДСИ; TyG-WC = TyG × бел (см).
 
 ### Шектеулер
 
-TyG-дің бірыңғай шегі жоқ: әртүрлі популяцияларда жоғары қауіп шегі 8,5-тен 9,0-ге дейін ауытқиды, ал азиялық когорттарда — төмен. Индекс отбасылық гипертриглицеридемияда, фибраттар, статиндер қабылдағанда және алдыңғы күні алкоголь ішкенде, сондай-ақ жедел ауру кезінде бұрмаланады. Аш қарынға (8–12 сағ) мәндер қажет. Индекс — диагноз емес, скринингтік құрал.
+Бұл есептеу үшін әмбебап диагностикалық шектер белгіленбеген. Индекс инсулинге төзімділікті, диабетті немесе жүрек-қан тамырлары ауруын растамайды.
 
 ### Дереккөздер
 
-- [Simental-Mendía L.E., Rodríguez-Morán M., Guerrero-Romero F. The product of fasting glucose and triglycerides as surrogate for identifying insulin resistance in apparently healthy subjects. Metab Syndr Relat Disord, 2008;6(4):299–304](https://pubmed.ncbi.nlm.nih.gov/19067533/)
-- [Guerrero-Romero F. et al. The product of triglycerides and glucose, a simple measure of insulin sensitivity. Comparison with the euglycemic-hyperinsulinemic clamp. J Clin Endocrinol Metab, 2010;95(7):3347–3351](https://pubmed.ncbi.nlm.nih.gov/20484475/)
-- [Sánchez-García A. et al. Diagnostic accuracy of the triglyceride and glucose index for insulin resistance: a systematic review. Int J Endocrinol, 2020;2020:4678526](https://pubmed.ncbi.nlm.nih.gov/32256572/)
+- [Lee J.W., Lim N.K., Park H.Y. TyG and type 2 diabetes risk in middle-aged Koreans. BMC Endocr Disord, 2018;18:33](https://link.springer.com/article/10.1186/s12902-018-0259-x)
+- [Simental-Mendía LE et al. The product of fasting glucose and triglycerides as surrogate for identifying insulin resistance in apparently healthy subjects. Metab Syndr Relat Disord, 2008](https://pubmed.ncbi.nlm.nih.gov/19067533/)
+- [Guerrero-Romero F et al. The product of triglycerides and glucose, a simple measure of insulin sensitivity. Comparison with the euglycemic-hyperinsulinemic clamp. J Clin Endocrinol Metab, 2010](https://pubmed.ncbi.nlm.nih.gov/20484475/)
+- [Sánchez-García A et al. Diagnostic Accuracy of the Triglyceride and Glucose Index for Insulin Resistance: A Systematic Review. Int J Endocrinol, 2020](https://pubmed.ncbi.nlm.nih.gov/32256572/)
 
 ## Осы калькуляторды ендіру
 

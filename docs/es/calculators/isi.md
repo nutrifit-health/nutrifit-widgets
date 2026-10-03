@@ -6,28 +6,29 @@
 
 `isi` · [NutriFit](https://nutrifit.health/es/calculators/isi)
 
-Herramienta clínica de 7 preguntas diseñada para evaluar de forma fiable la intensidad, naturaleza y repercusión diurna del insomnio.
+Evaluación del sueño durante las últimas 2 semanas: 7 ítems con escalas distintas de 0 a 4; total de 0 a 28. Satisfacción, visibilidad de problemas, preocupación e impacto diario tienen respuestas propias.
 
-### Cómo usar
+### Uso
 
-1. Considere las últimas 2 semanas: Valore la calidad de su descanso nocturno y su grado de energía diurna a lo largo de los últimos 14 días.
-2. Responda a las 7 preguntas: Puntúe cada dificultad desde 0 ('Ninguna') hasta 4 ('Muy grave') según su vivencia real.
-3. Analice su resultado y recomendaciones: Identifique su categoría clínica y aplique las medidas oportunas de higiene circadiana.
+1. Introduzca los datos iniciales: Evaluación del sueño durante las últimas 2 semanas: 7 ítems con escalas distintas de 0 a 4; total de 0 a 28. Satisfacción, visibilidad de problemas, preocupación e impacto diario tienen respuestas propias.
+2. Ajuste los parámetros: Evaluación del sueño durante las últimas 2 semanas: 7 ítems con escalas distintas de 0 a 4; total de 0 a 28. Satisfacción, visibilidad de problemas, preocupación e impacto diario tienen respuestas propias.
+3. Lea el resultado: Traducción informativa para autoevaluación. No se ha confirmado la validación de esta adaptación concreta. La puntuación no establece un diagnóstico y un resultado bajo no descarta enfermedad.
 
 ### Método y fórmula
 
-7 ítems valorados de 0 a 4 puntos. La puntuación global oscila de 0 a 28, analizando conciliación, mantenimiento, despertar precoz y malestar.
+Evaluación del sueño durante las últimas 2 semanas: 7 ítems con escalas distintas de 0 a 4; total de 0 a 28. Satisfacción, visibilidad de problemas, preocupación e impacto diario tienen respuestas propias.
 
-Puntuación total ISI = Suma de los 7 ítems (0–28). 0–7: Sin insomnio clínico; 8–14: Insomnio subclínico (leve); 15–21: Insomnio clínico moderado; 22–28: Insomnio clínico grave.
+Evaluación del sueño durante las últimas 2 semanas: 7 ítems con escalas distintas de 0 a 4; total de 0 a 28. Satisfacción, visibilidad de problemas, preocupación e impacto diario tienen respuestas propias.
 
 ### Limitaciones
 
-Este test tiene finalidad de cribado. Ante sospecha de apnea del sueño o síndrome de piernas inquietas, se requiere polisomnografía médica.
+Traducción informativa para autoevaluación. No se ha confirmado la validación de esta adaptación concreta. La puntuación no establece un diagnóstico y un resultado bajo no descarta enfermedad.
 
 ### Fuentes
 
-- [Morin C.M. et al. The Insomnia Severity Index: psychometric indicators to detect insomnia cases. Sleep, 2011;34(5):601–608](https://pubmed.ncbi.nlm.nih.gov/21532953/)
-- [Bastien C.H. et al. Validation of the Insomnia Severity Index as an outcome measure. Sleep Med, 2001;2(4):297–307](https://pubmed.ncbi.nlm.nih.gov/11438246/)
+- [Morin CM et al. The Insomnia Severity Index: psychometric indicators to detect insomnia cases and evaluate treatment response. Sleep, 2011](https://pubmed.ncbi.nlm.nih.gov/21532953/)
+- [Bastien CH et al. Validation of the Insomnia Severity Index as an outcome measure for insomnia research. Sleep Med, 2001](https://pubmed.ncbi.nlm.nih.gov/11438246/)
+- [PhenX Toolkit. Insomnia Severity Index: patient questionnaire, last two weeks, protocol 640801](https://www.phenxtoolkit.org/protocols/view/640801?origin=subcollection)
 
 ## Cómo integrar esta calculadora
 

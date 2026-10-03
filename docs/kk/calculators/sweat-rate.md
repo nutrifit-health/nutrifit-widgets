@@ -1,4 +1,4 @@
-# Терлеу және регидратация калькуляторы
+# Жаттығудағы тер шығынын бағалау
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/sweat-rate.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/sweat-rate.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/sweat-rate.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/sweat-rate.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/sweat-rate.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/sweat-rate.md)
 
@@ -6,29 +6,30 @@
 
 `sweat-rate` · [NutriFit](https://nutrifit.health/kk/calculators/sweat-rate)
 
-Тер шығынының жеке қарқынын анықтайды және жаттығудан кейін сұйықтық пен электролиттерді толтыру бойынша дербес жоспар жасайды.
+Тер (л) ≈ бастапқы салмақ − соңғы салмақ (кг) + ішкен (л) − зәр (л); жылдамдық = тер / уақыт сағатпен. Бірдей жағдайда, дымқыл киімсіз өлшеніңіз.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Жаттығу алдында өлшеніңіз: Дәретханаға барып, жаттығу басталар алдында киімсіз дәл сандық таразыда өлшеніңіз.
-2. Ішілген су көлемін қадағалаңыз: Қанша ішкеніңізді нақты білу үшін бөтелкедегі өлшем белгілеріне қараңыз.
-3. Мәреден кейін құрғақ күйде өлшеніңіз: Қайта өлшенер алдында тері мен шаштағы терді сүлгімен мұқият сүртіңіз.
+1. Бастапқы деректерді енгізіңіз: Тер (л) ≈ бастапқы салмақ − соңғы салмақ (кг) + ішкен (л) − зәр (л); жылдамдық = тер / уақыт сағатпен. Бірдей жағдайда, дымқыл киімсіз өлшеніңіз.
+2. Параметрлерді нақтылаңыз: Тер шығыны (мл) = (Салмақ_дейін − Салмақ_кейін, г) + Ішілген_су(мл) − Несеп(мл); Терлеу қарқыны (л/сағ) = (Тер шығыны / Уақыт_мин) × 60 / 1000; Дегидратация % = ((Салмақ_дейін − Салмақ_кейін) / Салмақ_дейін) × 100.
+3. Нәтижені оқыңыз: Салмақ жоғалту пайызы сусыздану диагнозы емес; теріс мән қосылған салмақты білдіреді. NATA (2017): таза жоғалтудың 100–150% — жаттығудан кейінгі шартты бағдар, әсіресе қалпына келу төрт сағаттан аз болса. Бұл бәріне міндетті көлем не жаттығуда ішу жылдамдығы емес.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-Америкалық спорттық медицина колледжінің (ACSM) әдістемесіне негізделген. Жаттығуға дейінгі және кейінгі құрғақ денені киімсіз өлшеу, ішілген су мен несеп көлемін есепке алу сағаттық терлеу қарқынын көрсетеді.
+Тер (л) ≈ бастапқы салмақ − соңғы салмақ (кг) + ішкен (л) − зәр (л); жылдамдық = тер / уақыт сағатпен. Бірдей жағдайда, дымқыл киімсіз өлшеніңіз.
 
-Тер шығыны (мл) = (Салмақ_дейін − Салмақ_кейін, г) + Ішілген_су(мл) − Несеп(мл); Терлеу қарқыны (л/сағ) = (Тер шығыны / Уақыт_мин) × 60 / 1000; Дегидратация % = ((Салмақ_дейін − Салмақ_кейін) / Салмақ_дейін) × 100.
+Тер (л) ≈ бастапқы салмақ − соңғы салмақ (кг) + ішкен (л) − зәр (л); жылдамдық = тер / уақыт сағатпен. Бірдей жағдайда, дымқыл киімсіз өлшеніңіз.
 
 ### Шектеулер
 
-Гликогеннің тотығуын және тыныс алу арқылы судың булануын (~100–150 г/сағ) есепке алмайды. Дегенмен сұйықтық тапшылығын өте дәл көрсетеді.
+Салмақ жоғалту пайызы сусыздану диагнозы емес; теріс мән қосылған салмақты білдіреді. NATA (2017): таза жоғалтудың 100–150% — жаттығудан кейінгі шартты бағдар, әсіресе қалпына келу төрт сағаттан аз болса. Бұл бәріне міндетті көлем не жаттығуда ішу жылдамдығы емес.
 
 ### Дереккөздер
 
-- [Sawka M.N. et al. American College of Sports Medicine position stand. Exercise and fluid replacement. Med Sci Sports Exerc, 2007;39(2):377–390](https://pubmed.ncbi.nlm.nih.gov/17277604/)
-- [Thomas D.T., Erdman K.A., Burke L.M. Position of the Academy of Nutrition and Dietetics, Dietitians of Canada, and the American College of Sports Medicine: Nutrition and Athletic Performance. J Acad Nutr Diet, 2016;116(3):501–528](https://pubmed.ncbi.nlm.nih.gov/26920240/)
-- [Shirreffs S.M., Sawka M.N. Fluid and electrolyte needs for training, competition, and recovery. J Sports Sci, 2011;29(Suppl 1):S39–S46](https://pubmed.ncbi.nlm.nih.gov/22150427/)
+- [NATA. Fluid Replacement for the Physically Active, 2017.](https://nata.kglmeridian.com/view/journals/attr/52/9/article-p877.xml)
+- [American College of Sports Medicine et al. American College of Sports Medicine position stand. Exercise and fluid replacement. Med Sci Sports Exerc, 2007](https://pubmed.ncbi.nlm.nih.gov/17277604/)
+- [Thomas DT et al. Position of the Academy of Nutrition and Dietetics, Dietitians of Canada, and the American College of Sports Medicine: Nutrition and Athletic Performance. J Acad Nutr Diet, 2016](https://pubmed.ncbi.nlm.nih.gov/26920240/)
+- [Shirreffs SM et al. Fluid and electrolyte needs for training, competition, and recovery. J Sports Sci, 2011](https://pubmed.ncbi.nlm.nih.gov/22150427/)
 
 ## Осы калькуляторды ендіру
 
@@ -59,7 +60,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/sweat-rate?lang=kk&theme=auto"
-  title="Терлеу және регидратация калькуляторы" loading="lazy" referrerpolicy="no-referrer"
+  title="Жаттығудағы тер шығынын бағалау" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

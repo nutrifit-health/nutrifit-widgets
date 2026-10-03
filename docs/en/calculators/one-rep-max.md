@@ -1,4 +1,4 @@
-# 1RM Calculator (One-Rep Max)
+# Estimated one-repetition maximum (1RM)
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/one-rep-max.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/one-rep-max.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/one-rep-max.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/one-rep-max.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/one-rep-max.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/one-rep-max.md)
 
@@ -6,29 +6,31 @@
 
 `one-rep-max` · [NutriFit](https://nutrifit.health/calculators/one-rep-max)
 
-Calculates the maximum load an athlete can lift for a single repetition without the injury risk of direct 1RM testing.
+The main result is an author-defined average of Epley and Brzycki. Individual equations and arithmetic percentages of that average are shown below.
 
-### How to use
+### Usage
 
-1. Perform a thorough warm-up: Perform general joint mobility drills, followed by 3–4 warm-up sets progressively ramping up to your working weight.
-2. Perform a working set of 3–6 reps: Select a load with which you can complete 3 to 6 clean repetitions leaving no more than 1 rep in reserve (RPE 9).
-3. Input data and apply percentages: Enter the weight and reps into the calculator. Use the percentage chart to prescribe weights for strength (85%), hypertrophy (75%), or recovery (60%) workouts.
+1. Enter the starting values: The main result is an author-defined average of Epley and Brzycki. Individual equations and arithmetic percentages of that average are shown below.
+2. Adjust the parameters: Epley: w × (1 + r/30); Brzycki: w / (1.0278 − 0.0278 × r); Lombardi: w × r^0.10; Wathan: 100 × w / (48.8 + 53.8 × exp(−0.075 × r)); Mayhew: 100 × w / (52.2 + 41.9 × exp(−0.055 × r)).
+w: weight, kg; r: repetitions. At r = 1 all estimates equal w.
+3. Read the result: Enter the load and repetitions completed in a set to failure. Accuracy depends on exercise and technique and decreases with high repetitions. A load percentage does not guarantee a specific number of repetitions.
 
 ### Method and formula
 
-One-rep max estimation utilizes regression equations modeling repetitions-to-fatigue against percentage of maximal effort. The Epley formula excels in the 2–6 repetition range, while the Brzycki equation provides high accuracy across 6–10 repetitions.
+The main result is an author-defined average of Epley and Brzycki. Individual equations and arithmetic percentages of that average are shown below.
 
-Epley: 1RM = Weight × (1 + 0.0333 × Reps); Brzycki: 1RM = Weight / (1.0278 − 0.0278 × Reps); Lombardi: Weight × Reps^0.10; Wathan: (100 × Weight) / (48.8 + 53.8 × e^(−0.075 × Reps)).
+Epley: w × (1 + r/30); Brzycki: w / (1.0278 − 0.0278 × r); Lombardi: w × r^0.10; Wathan: 100 × w / (48.8 + 53.8 × exp(−0.075 × r)); Mayhew: 100 × w / (52.2 + 41.9 × exp(−0.055 × r)).
+w: weight, kg; r: repetitions. At r = 1 all estimates equal w.
 
 ### Limitations
 
-Not validated for sets beyond 10–12 repetitions due to localized metabolic fatigue. Precision depends on technical execution and muscle fiber composition.
+Enter the load and repetitions completed in a set to failure. Accuracy depends on exercise and technique and decreases with high repetitions. A load percentage does not guarantee a specific number of repetitions.
 
 ### Sources
 
-- [Epley B. Poundage chart. Boyd Epley Workout, Lincoln, NE, 1985](https://pubmed.ncbi.nlm.nih.gov/2706858/)
-- [Brzycki M. Strength testing—predicting a one-rep max from reps-to-fatigue. JOHPERD, 1993;64(1):88–90](https://doi.org/10.1080/07303084.1993.10606684)
-- [Reynolds J.M. et al. Prediction of one repetition maximum strength from multiple repetition maximum testing and anthropometry. J Strength Cond Res, 2006;20(3):584–592](https://pubmed.ncbi.nlm.nih.gov/16937972/)
+- [LeSuer D.A. et al. The Accuracy of Prediction Equations for Estimating 1-RM Performance in the Bench Press, Squat, and Deadlift. J Strength Cond Res, 1997;11(4):211–213](https://paulogentil.com/pdf/The%20Accuracy%20of%20Prediction%20Equations%20for%20Estimating%201-RM%20Performance%20in%20the%20Bench%20Press%2C%20Squat%2C%20and%20Deadlift.pdf)
+- [Brzycki M. Strength Testing—Predicting a One-Rep Max from Reps-to-Fatigue. JOHPERD, 1993;64(1):88–90](https://doi.org/10.1080/07303084.1993.10606684)
+- [Reynolds JM et al. Prediction of one repetition maximum strength from multiple repetition maximum testing and anthropometry. J Strength Cond Res, 2006](https://pubmed.ncbi.nlm.nih.gov/16937972/)
 
 ## Embed this calculator
 
@@ -59,7 +61,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/one-rep-max?lang=en&theme=auto"
-  title="1RM Calculator (One-Rep Max)" loading="lazy" referrerpolicy="no-referrer"
+  title="Estimated one-repetition maximum (1RM)" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

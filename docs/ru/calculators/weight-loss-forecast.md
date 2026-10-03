@@ -1,4 +1,4 @@
-# Калькулятор динамического прогноза снижения веса (модель Кевина Холла)
+# Сценарий изменения веса Hall–Chow
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/weight-loss-forecast.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/weight-loss-forecast.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/weight-loss-forecast.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/weight-loss-forecast.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/weight-loss-forecast.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/weight-loss-forecast.md)
 
@@ -6,29 +6,28 @@
 
 `weight-loss-forecast` · [NutriFit](https://nutrifit.health/ru/calculators/weight-loss-forecast)
 
-Строит реалистичную нелинейную траекторию похудения на основе метаболической модели Кевина Холла (NIH), учитывая адаптивное замедление обмена и сохранение мышц.
+Упрощённая модель со средними параметрами показывает изменение веса при постоянном снижении исходного потребления энергии и неизменной активности.
 
 ### Порядок использования
 
-1. Держите умеренный дефицит (15–20%): Дефицит в 300–500 ккал комфортен для психики и защищает мышечную ткань от катаболизма, минимизируя срывы.
-2. Потребляйте достаточно белка: Норма белка 1,8–2,4 г/кг на дефиците гарантирует, что до 85–90% сброшенного веса придётся именно на подкожный и висцеральный жир.
-3. Планируйте диетические паузы (Diet Breaks): Каждые 8–12 недель похудения делайте 1–2 недели питания на уровне поддержки (TDEE). Это перезагружает гормоны лептин и Т3, снимая метаболическую адаптацию.
+1. Введите исходные данные: Используйте фактические значения и подходящие единицы.
+2. Уточните параметры: Измените исходные предположения с учётом вашей ситуации.
+3. Прочитайте результат: Учитывайте ограничения модели и не воспринимайте расчёт как измерение.
 
 ### Методика и формула
 
-Классическое правило Уишнофски (1958 г., «дефицит 7700 ккал = сброс 1 кг») ошибочно предполагает постоянную скорость похудения. Динамическая модель Кевина Холла (Lancet, 2011; NIH/NIDDK) математически доказывает, что каждый сброшенный килограмм снижает базовый расход, вызывая неизбежное плато. Доли потерь жира и мышц рассчитываются по уравнению Форбса.
+W(t)=W0−D/22×(1−exp(−22×t/9100)); t — сутки, D — снижение энергии в ккал/сут. Средние параметры: ρ=9100 ккал/кг, ε=22 ккал/(кг·сут). Для сравнения: линейная потеря D×t/7700.
 
-Метаболическая адаптация = 22 ккал/кг потери + адаптивный термогенез; Эффективный дефицит = Заданный дефицит − Адаптация; Доля потери жира p = Forbes(F, W); Динамический вес(t) моделируется методом численного интегрирования неделя за неделей.
+W(t)=W0−D/22×(1−exp(−22×t/9100)); t — сутки, D — снижение энергии в ккал/сут. Средние параметры: ρ=9100 ккал/кг, ε=22 ккал/(кг·сут). Для сравнения: линейная потеря D×t/7700.
 
 ### Ограничения
 
-Предполагает 100% соблюдение заданного дефицита калорий без читмилов. Задержка воды при стрессе (кортизол) может временно маскировать потерю жира на весах.
+Это линеаризованная двухпараметрическая модель Hall–Chow (2011), а не полная индивидуальная модель NIH Body Weight Planner. Не прогнозирует жир, мышцы или точный срок плато. Сценарий для взрослых, без беременности и грудного вскармливания. Исходное питание предполагается равновесным, изменение постоянным; вода, лекарства, заболевания и соблюдение рациона не моделируются. Это не назначение дефицита калорий.
 
 ### Источники
 
-- [Hall K.D. et al. Quantification of the effect of energy imbalance on bodyweight. Lancet, 2011;378(9793):826–837](https://pubmed.ncbi.nlm.nih.gov/21872751/)
-- [Thomas D.M. et al. Can a weight loss of one pound a week be achieved with a 3,500-kcal deficit? Commentary on a commonly accepted rule. Int J Obes, 2013;37(12):1611–1613](https://pubmed.ncbi.nlm.nih.gov/23628852/)
-- [Forbes G.B. Lean body mass-body fat interrelationships in humans. Nutr Rev, 1987;45(8):225–231](https://pubmed.ncbi.nlm.nih.gov/3306482/)
+- [Hall K.D., Chow C.C. Estimating changes in free-living energy intake and its confidence interval. Am J Clin Nutr, 2011;94(1):66–74. Linearized energy-balance model](https://pmc.ncbi.nlm.nih.gov/articles/PMC3127505/)
+- [Hall KD et al. Quantification of the effect of energy imbalance on bodyweight. Lancet, 2011](https://pubmed.ncbi.nlm.nih.gov/21872751/)
 
 ## Как встроить этот калькулятор
 
@@ -59,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/weight-loss-forecast?lang=ru&theme=auto"
-  title="Калькулятор динамического прогноза снижения веса (модель Кевина Холла)" loading="lazy" referrerpolicy="no-referrer"
+  title="Сценарий изменения веса Hall–Chow" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

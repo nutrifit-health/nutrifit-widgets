@@ -1,4 +1,4 @@
-# Бұлшықет әлеуетінің калькуляторы (Кейси Батт және Мартин Беркхан)
+# Casey Butt антропометриялық моделі
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/muscle-potential.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/muscle-potential.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/muscle-potential.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/muscle-potential.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/muscle-potential.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/muscle-potential.md)
 
@@ -6,29 +6,29 @@
 
 `muscle-potential` · [NutriFit](https://nutrifit.health/kk/calculators/muscle-potential)
 
-Анаболикалық стероидтарсыз қол жеткізуге болатын ең жоғары құрғақ бұлшықет массасы мен дененің шекті көлемдерін (кеуде, бицепс, сан) анықтайды.
+Бой, білек, тобық пен болжамды май бойынша масса және айналымның эвристикалық бағасы. Бастапқы айналымдар майы шамамен 8–10% ер бодибилдерлерді сипаттайды. Berkhan: бөлек бағдар — бой (см) − 100 кг.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Сүйек өлшемдерін дәл өлшеңіз: Білек алақан мен шынтақ сүйегінің басы арасында өлшенеді. Тобық — буын сүйектерінен сәл жоғары ең жіңішке жерінде өлшенеді.
-2. Қажетті май пайызын көрсетіңіз: Жыл бойы тамаша пішінде болу үшін 10–12% майды; жарыс бедері үшін — 6–8% бағдарлаңыз.
-3. Қазіргі өлшемдерді максимуммен салыстырыңыз: Калькулятор бицепс, кеуде және санның шекті өлшемдерін көрсетеді. Бұл сіздің денеңіз үшін шынайы бағдар.
+1. Бастапқы деректерді енгізіңіз: Бой, білек, тобық пен болжамды май бойынша масса және айналымның эвристикалық бағасы. Бастапқы айналымдар майы шамамен 8–10% ер бодибилдерлерді сипаттайды. Berkhan: бөлек бағдар — бой (см) − 100 кг.
+2. Параметрлерді нақтылаңыз: Max LBM = Бой^1,5 × [sqrt(Білек)/22,6670 + sqrt(Тобық)/17,0104] × [(Май%/224) + 1]; Беркханның жарыс салмағы (~5% май) = Бой (см) − 100.
+3. Нәтижені оқыңыз: Ерлер үлгісі әйелдер нормасын негіздемейді. Модель генетиканы өлшемейді, бұлшықет шегін дәлелдемейді, мерзімді болжамайды. Таңдалған май — жорамал, ұсынылған мақсат емес.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-Кейси Батттың (Casey Butt, Ph.D.) 6 жылдық зерттеуі стероидқа дейінгі дәуірдегі (1940–1950 жж.) бодибилдингтен жүздеген элиталық әлем чемпиондарының антропометриясын талдады. Үлгі табиғи бұлшықет массасының сүйек қаңқасының қалыңдығымен — білек пен тобық шеңберімен қатаң шектелгенін дәлелдеді.
+Бой, білек, тобық пен болжамды май бойынша масса және айналымның эвристикалық бағасы. Бастапқы айналымдар майы шамамен 8–10% ер бодибилдерлерді сипаттайды. Berkhan: бөлек бағдар — бой (см) − 100 кг.
 
 Max LBM = Бой^1,5 × [sqrt(Білек)/22,6670 + sqrt(Тобық)/17,0104] × [(Май%/224) + 1]; Беркханның жарыс салмағы (~5% май) = Бой (см) − 100.
 
 ### Шектеулер
 
-Ерлер үшін әзірленген. Әйелдерде гормоналды фонға байланысты бұлшықет массасының шегі ерлер формуласының шамамен 65–70%-ын құрайды. Жылдар бойғы мінсіз жаттығулар мен дұрыс тамақтануды талап етеді.
+Ерлер үлгісі әйелдер нормасын негіздемейді. Модель генетиканы өлшемейді, бұлшықет шегін дәлелдемейді, мерзімді болжамайды. Таңдалған май — жорамал, ұсынылған мақсат емес.
 
 ### Дереккөздер
 
-- [Butt C. Your Maximum Muscular Potential (The Casey Butt Model). The WeighTrainer, 2009](https://www.weightrainer.net/potential.html)
+- [Casey Butt. Your Maximum Muscular Bodyweight and Measurements. Авторский текст, архивная копия.](https://forum.steelfactor.ru/index.php?app=core&attach_id=540052&module=attach&section=attach)
 - [Berkhan M. The Leangains Guide and Maximum Potential for Drug-Free Athletes, 2010](https://leangains.com/maximum-muscular-potential-of-drug-free-athletes-updated-version/)
-- [Kouri E.M. et al. Fat-free mass index in users and nonusers of anabolic-androgenic steroids. Clin J Sport Med, 1995;5(4):223–228](https://pubmed.ncbi.nlm.nih.gov/7496846/)
+- [Kouri EM et al. Fat-free mass index in users and nonusers of anabolic-androgenic steroids. Clin J Sport Med, 1995](https://pubmed.ncbi.nlm.nih.gov/7496846/)
 
 ## Осы калькуляторды ендіру
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/muscle-potential?lang=kk&theme=auto"
-  title="Бұлшықет әлеуетінің калькуляторы (Кейси Батт және Мартин Беркхан)" loading="lazy" referrerpolicy="no-referrer"
+  title="Casey Butt антропометриялық моделі" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

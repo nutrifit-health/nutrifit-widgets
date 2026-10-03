@@ -8,11 +8,11 @@
 
 Herramienta clínica de 5 preguntas breves reconocida internacionalmente para detectar el riesgo de padecer anorexia o bulimia nerviosa.
 
-### Cómo usar
+### Uso
 
-1. Lea atentamente las 5 preguntas: Analice su conducta alimentaria habitual y su relación con su imagen corporal durante los últimos meses.
-2. Responda Sí o No con franqueza: Conteste de manera honesta sin justificar ni restar importancia a sus sensaciones.
-3. Examine el resultado del cribado: Compruebe si existe sospecha de riesgo clínico y revise las recomendaciones de orientación.
+1. Lea las instrucciones: Tenga en cuenta el periodo indicado y el significado de cada afirmación.
+2. Elija sus respuestas: Responda a cada ítem eligiendo la opción adecuada.
+3. Consulte el resultado: Cribado positivo — se necesita más evaluación
 
 ### Método y fórmula
 
@@ -22,12 +22,12 @@ Puntuación total SCOFF = Número de respuestas afirmativas (0–5). Un resultad
 
 ### Limitaciones
 
-El test SCOFF es exclusivamente un cribado inicial. No formula un diagnóstico médico y precisa evaluación clínica especializada.
+Este resultado informativo no establece un diagnóstico ni prescribe tratamiento. Las traducciones son adaptaciones informativas; no se ha confirmado su validación psicométrica por separado.
 
 ### Fuentes
 
-- [Morgan J.F. et al. The SCOFF questionnaire: assessment of a new screening tool for eating disorders. BMJ, 1999;319(7223):1467–1468](https://pubmed.ncbi.nlm.nih.gov/10582927/)
-- [Luck A.J. et al. The SCOFF questionnaire and clinical interview for detecting eating disorders. BMJ, 2002;325(7367):755–756](https://pubmed.ncbi.nlm.nih.gov/12364305/)
+- [Morgan JF et al. The SCOFF questionnaire: assessment of a new screening tool for eating disorders. BMJ, 1999](https://pubmed.ncbi.nlm.nih.gov/10582927/)
+- [Luck AJ et al. The SCOFF questionnaire and clinical interview for eating disorders in general practice: comparative study. BMJ, 2002](https://pubmed.ncbi.nlm.nih.gov/12364305/)
 
 ## Cómo integrar esta calculadora
 

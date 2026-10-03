@@ -1,4 +1,4 @@
-# Калькулятор норми клітковини (харчових волокон)
+# Довідкові орієнтири клітковини
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/fiber-intake.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/fiber-intake.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/fiber-intake.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/fiber-intake.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/fiber-intake.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/fiber-intake.md)
 
@@ -6,29 +6,28 @@
 
 `fiber-intake` · [NutriFit](https://nutrifit.health/uk/calculators/fiber-intake)
 
-Визначає добову потребу в розчинних та нерозчинних харчових волокнах для мікробіоти кишечника, нормалізації холестерину та моторики ШКТ.
+Орієнтири показано окремо: EFSA — 25 г/добу для дорослих; IOM/NASEM — 14 г/1000 ккал. AI IOM за віком і статтю: 19–50 років — 38 г для чоловіків і 25 г для жінок; після 50 — 30 і 21 г. Енергетичний розрахунок не замінює автоматично інші орієнтири.
 
 ### Порядок використання
 
-1. Додавайте овочі до кожного прийому їжі: З'їдайте не менше 400–500 г некрохмалистих овочів та зелені на день (правило тарілки Гарварда).
-2. Замініть очищені крупи на цільнозернові: Обирайте гречку, кіноа, вівсяні пластівці довгого варіння, перловку та цільнозерновий хліб замість білого рису і борошна вищого ґатунку.
-3. Підключіть насіння та бобові: 1 столова ложка насіння чіа або льону, а також порція сочевиці дають одразу 8–12 г якісної клітковини.
+1. Введіть дані: Орієнтири показано окремо: EFSA — 25 г/добу для дорослих; IOM/NASEM — 14 г/1000 ккал. AI IOM за віком і статтю: 19–50 років — 38 г для чоловіків і 25 г для жінок; після 50 — 30 і 21 г. Енергетичний розрахунок не замінює автоматично інші орієнтири.
+2. Порівняйте орієнтири: Орієнтири показано окремо: EFSA — 25 г/добу для дорослих; IOM/NASEM — 14 г/1000 ккал. AI IOM за віком і статтю: 19–50 років — 38 г для чоловіків і 25 г для жінок; після 50 — 30 і 21 г. Енергетичний розрахунок не замінює автоматично інші орієнтири.
+3. Врахуйте обмеження: Для дорослих від 19 років поза вагітністю та лактацією. Це не індивідуальні межі безпеки й не лікування закрепу, СПК чи підвищеного холестерину. Збільшуйте споживання з урахуванням переносимості. Додаткові 40 мл води на грам клітковини не розраховуються.
 
-### Методика та формула
+### Методика і формула
 
-Базується на стандартах ВООЗ та Європейського агентства з безпеки харчових продуктів (EFSA: 14 г клітковини на 1000 ккал раціону, мінімум 25 г для жінок і 38 г для чоловіків). Розраховує водний баланс (+40 мл води на грам волокон) та фільтрує рекомендації при СПК.
+Орієнтири показано окремо: EFSA — 25 г/добу для дорослих; IOM/NASEM — 14 г/1000 ккал. AI IOM за віком і статтю: 19–50 років — 38 г для чоловіків і 25 г для жінок; після 50 — 30 і 21 г. Енергетичний розрахунок не замінює автоматично інші орієнтири.
 
-Цільова клітковина = max(25/38 г, Калорії × 0,014); Розчинна фракція ~30–35%; Нерозчинна ~65–70%; Додаткова вода = Клітковина (г) × 40 мл.
+Орієнтири показано окремо: EFSA — 25 г/добу для дорослих; IOM/NASEM — 14 г/1000 ккал. AI IOM за віком і статтю: 19–50 років — 38 г для чоловіків і 25 г для жінок; після 50 — 30 і 21 г. Енергетичний розрахунок не замінює автоматично інші орієнтири.
 
 ### Обмеження
 
-При синдромі надлишкового бактеріального росту (СНБР) та загостренні коліту надлишок ферментованих волокон може посилювати метеоризм. Дозу клітковини підвищують поступово.
+Для дорослих від 19 років поза вагітністю та лактацією. Це не індивідуальні межі безпеки й не лікування закрепу, СПК чи підвищеного холестерину. Збільшуйте споживання з урахуванням переносимості. Додаткові 40 мл води на грам клітковини не розраховуються.
 
 ### Джерела
 
-- [EFSA Panel on Dietetic Products, Nutrition, and Allergies. Scientific Opinion on Dietary Reference Values for carbohydrates and dietary fibre. EFSA Journal, 2010;8(3):1462](https://doi.org/10.2903/j.efsa.2010.1462)
-- [Reynolds A. et al. Carbohydrate quality and human health: a series of systematic reviews and meta-analyses. Lancet, 2019;393(10170):434–445](https://pubmed.ncbi.nlm.nih.gov/30638909/)
-- [Stephen A.M. et al. Dietary fibre in Europe: current state of knowledge on definitions, sources, recommendations, intakes and relationships to health. Nutr Res Rev, 2017;30(2):149–190](https://pubmed.ncbi.nlm.nih.gov/28676135/)
+- [EFSA. Dietary Reference Values summary, 2017](https://www.efsa.europa.eu/sites/default/files/2017_09_DRVs_summary_report.pdf)
+- [IOM/NASEM. Dietary Reference Intakes: Fiber, 2006](https://www.nationalacademies.org/read/11537/chapter/11)
 
 ## Як вбудувати цей калькулятор
 
@@ -59,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/fiber-intake?lang=uk&theme=auto"
-  title="Калькулятор норми клітковини (харчових волокон)" loading="lazy" referrerpolicy="no-referrer"
+  title="Довідкові орієнтири клітковини" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

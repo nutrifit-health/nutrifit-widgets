@@ -6,27 +6,27 @@
 
 `lab-unit-converter` · [NutriFit](https://nutrifit.health/uz/calculators/lab-unit-converter)
 
-Molyar massalarga asoslangan SI (mmol/l, μmol/l, nmol/l, pmol/l) va an&#39;anaviy birliklar (mg/dl, ng/ml, pg/ml) o&#39;rtasida 33 ta laboratoriya parametrlarini konvertatsiya qilish.
+Molyar massalarga asoslangan SI (mmol/l, μmol/l, nmol/l, pmol/l) va an'anaviy birliklar (mg/dl, ng/ml, pg/ml) o'rtasida 33 ta laboratoriya parametrlarini konvertatsiya qilish.
 
 ### Foydalanish tartibi
 
-1. Ko&#39;rsatkichni tanlang: Ro&#39;yxat eng keng tarqalgan 33 ta analitni o&#39;z ichiga oladi: glyukoza va xolesteroldan tortib D vitamini, testosteron va kortizolgacha. Koeffitsient xolesterin, LDL va HDL uchun bir xil.
-2. Iltimos, yo&#39;nalishni ko&#39;rsating: SI → an&#39;anaviy, agar shakl mmol/L yoki nmol/L da bo&#39;lsa va xorijiy mahsulotdan olingan ma&#39;lumotnoma mg/dL yoki ng/ml da bo&#39;lsa. Va aksincha, agar test chet elda o&#39;tkazilgan bo&#39;lsa.
-3. Faqat raqamni emas, balki ma&#39;lumotnomani tekshiring: Malumot intervallari laboratoriya usuliga bog&#39;liq. Qiymatni to&#39;g&#39;ri diapazon bilan taqqoslash uchun shakldagi normal diapazonlarni qayta hisoblang.
+1. Ko'rsatkichni tanlang: Ro'yxat eng keng tarqalgan 33 ta analitni o'z ichiga oladi: glyukoza va xolesteroldan tortib D vitamini, testosteron va kortizolgacha. Koeffitsient xolesterin, LDL va HDL uchun bir xil.
+2. Iltimos, yo'nalishni ko'rsating: SI → an'anaviy, agar shakl mmol/L yoki nmol/L da bo'lsa va xorijiy mahsulotdan olingan ma'lumotnoma mg/dL yoki ng/ml da bo'lsa. Va aksincha, agar test chet elda o'tkazilgan bo'lsa.
+3. Faqat raqamni emas, balki ma'lumotnomani tekshiring: Malumot intervallari laboratoriya usuliga bog'liq. Qiymatni to'g'ri diapazon bilan taqqoslash uchun shakldagi normal diapazonlarni qayta hisoblang.
 
 ### Usul va formula
 
-Koeffitsient massa konsentratsiyasini molar massa va birlik hajmini hisobga olgan holda molyar konsentratsiyaga o&#39;zgartiradi. AMA va Labcorp dan olingan umumiy laboratoriya koeffitsientlari qo&#39;llaniladi. Insulin va prolaktin uchun koeffitsient tahlil kalibrlashiga bog&#39;liq; siz laboratoriyangiz qiymatini kiritishingiz mumkin. Karbamid uchun birlik mg/dL butun karbamid molekulasining massasini emas, balki karbamid azotining massasini - BUN ni ifodalaydi.
+Koeffitsient massa konsentratsiyasini molar massa va birlik hajmini hisobga olgan holda molyar konsentratsiyaga o'zgartiradi. AMA va Labcorp dan olingan umumiy laboratoriya koeffitsientlari qo'llaniladi. Insulin va prolaktin uchun koeffitsient tahlil kalibrlashiga bog'liq; siz laboratoriyangiz qiymatini kiritishingiz mumkin. Karbamid uchun birlik mg/dL butun karbamid molekulasining massasini emas, balki karbamid azotining massasini - BUN ni ifodalaydi.
 
-SI = massa qiymati × koeffitsient. Teskari tarjima: SI ÷ koeffitsient. Insulin va prolaktin uchun laboratoriya koeffitsientini tekshiring; mg/dL BUN va mg/dL karbamid bir-birining o&#39;rnini bosa olmaydi.
+SI = massa qiymati × koeffitsient. Teskari tarjima: SI ÷ koeffitsient. Insulin va prolaktin uchun laboratoriya koeffitsientini tekshiring; mg/dL BUN va mg/dL karbamid bir-birining o'rnini bosa olmaydi.
 
 ### Cheklovlar
 
-Birliklarni konvertatsiya qilish natijani sharhlamaydi yoki tashxis qo&#39;ymaydi. Malumot intervallari laboratoriya va usulga qarab farq qiladi; ularning chegaralarini alohida konvertatsiya qiling. Insulin va prolaktin uchun koeffitsientni laboratoriya bilan tekshiring. BUN konvertatsiyasi mg/dL da karbamid sifatida ko&#39;rsatilgan natijalar uchun mos emas.
+Birliklarni konvertatsiya qilish natijani sharhlamaydi yoki tashxis qo'ymaydi. Malumot intervallari laboratoriya va usulga qarab farq qiladi; ularning chegaralarini alohida konvertatsiya qiling. Insulin va prolaktin uchun koeffitsientni laboratoriya bilan tekshiring. BUN konvertatsiyasi mg/dL da karbamid sifatida ko'rsatilgan natijalar uchun mos emas.
 
 ### Manbalar
 
-- [Young D.S. Implementation of SI units for clinical laboratory data. Style specifications and conversion tables. Ann Intern Med, 1987;106(1):114–129](https://pubmed.ncbi.nlm.nih.gov/3789557/)
+- [Young DS. et al. Implementation of SI units for clinical laboratory data. Style specifications and conversion tables. Ann Intern Med, 1987](https://pubmed.ncbi.nlm.nih.gov/3789557/)
 - [AMA Manual of Style, 11th ed. Units of Measure: Conventional Units and SI Units in Clinical Chemistry. Oxford University Press, 2020](https://academic.oup.com/amamanualofstyle/si-conversion-calculator)
 - [NIST Special Publication 811. Guide for the Use of the International System of Units (SI), 2008](https://www.nist.gov/pml/special-publication-811)
 

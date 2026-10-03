@@ -6,17 +6,17 @@
 
 `vitamin-d-dose` · [NutriFit](https://nutrifit.health/calculators/vitamin-d-dose)
 
-25(OH)D in two unit systems and a weight-based research estimate. No automatic treatment schedule.
+25(OH)D in two units and a weight-based research estimate. No automatic treatment schedule.
 
-### How to use
+### Usage
 
-1. Enter measured 25(OH)D: 25-hydroxyvitamin D (calcidiol) specifically, not 1,25(OH)₂D. Report units are nmol/L or ng/mL; pick the right one and the calculator converts.
-2. Check applicability: The 75 nmol/L target is fixed by the study, not selected as a universal normal value. This tool does not calculate the model at baseline levels of 50 nmol/L or above.
-3. Enter body weight: Discuss the estimate with a clinician. The number does not determine a product, single dose or dosing frequency.
+1. Enter the starting values: The van Groningen (2010) model relates total cholecalciferol dose to weight and baseline 25(OH)D. This tool uses the research target of 75 nmol/L, baseline below 50 nmol/L and weight 35–125 kg. The lower weight limit restricts the interface to an adult context; age and clinical exclusions require clinician assessment. It does not select a schedule, maintenance dose or follow-up interval. Endocrine Society 2024 does not establish a universal target 25(OH)D for disease prevention in healthy people.
+2. Adjust the parameters: Total model estimate (IU) = 40 × (75 − 25(OH)D, nmol/L) × weight (kg). 1 ng/mL = 2.496 nmol/L.
+3. Read the result: A research calculation for discussion with a clinician, not an individual prescription. Do not use it for self-treatment during pregnancy, in children, or with calcium disorders, kidney disease, malabsorption or granulomatous disease. The model does not account for medicines or supplements; the total must not be taken as a single dose.
 
 ### Method and formula
 
-The van Groningen (2010) model relates total cholecalciferol dose to weight and baseline 25(OH)D. This tool uses the fixed research target of 75 nmol/L, baseline below 50 nmol/L and weight 35–125 kg. The lower weight limit restricts this interface to an adult context; age and clinical exclusions require clinician assessment. It does not select a dosing schedule, maintenance dose or follow-up interval. Endocrine Society 2024 does not establish a universal target 25(OH)D for disease prevention in healthy people.
+The van Groningen (2010) model relates total cholecalciferol dose to weight and baseline 25(OH)D. This tool uses the research target of 75 nmol/L, baseline below 50 nmol/L and weight 35–125 kg. The lower weight limit restricts the interface to an adult context; age and clinical exclusions require clinician assessment. It does not select a schedule, maintenance dose or follow-up interval. Endocrine Society 2024 does not establish a universal target 25(OH)D for disease prevention in healthy people.
 
 Total model estimate (IU) = 40 × (75 − 25(OH)D, nmol/L) × weight (kg). 1 ng/mL = 2.496 nmol/L.
 
@@ -26,7 +26,7 @@ A research calculation for discussion with a clinician, not an individual prescr
 
 ### Sources
 
-- [van Groningen L. et al. Cholecalciferol loading dose guideline for vitamin D-deficient adults. Eur J Endocrinol, 2010;162(4):805–811](https://pubmed.ncbi.nlm.nih.gov/20139241/)
+- [van Groningen L et al. Cholecalciferol loading dose guideline for vitamin D-deficient adults. Eur J Endocrinol, 2010](https://pubmed.ncbi.nlm.nih.gov/20139241/)
 - [Endocrine Society. Vitamin D for the Prevention of Disease: Clinical Practice Guideline, 2024](https://www.endocrine.org/clinical-practice-guidelines/vitamin-d-for-prevention-of-disease)
 
 ## Embed this calculator

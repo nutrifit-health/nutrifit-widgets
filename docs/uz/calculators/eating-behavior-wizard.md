@@ -1,4 +1,4 @@
-# Ovqatlanish xulq-atvori diagnostikasi ustasi
+# Ovqatlanish xulqini o‘zini baholash
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/eating-behavior-wizard.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/eating-behavior-wizard.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/eating-behavior-wizard.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/eating-behavior-wizard.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/eating-behavior-wizard.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/eating-behavior-wizard.md)
 
@@ -6,23 +6,23 @@
 
 `eating-behavior-wizard` · [NutriFit](https://nutrifit.health/uz/calculators/eating-behavior-wizard)
 
-Taomlanishning chuqur psixotipini va shaxsiy strategiyani aniqlash uchun yetakchi validatsiyalangan shkalalarni birlashtiruvchi NutriFit integratsiyalashgan diagnostika ustasi.
+SCOFF ning beshta savoli va ovqatlanish xulqini o‘zini baholash uchun to‘rtta mualliflik savoli.
 
 ### Foydalanish tartibi
 
-1. Xavflar skriningidan o‘ting: Vazn va ovqatni nazorat qilishga bo‘lgan o‘ta kuchli diqqat belgilarini belgilang.
-2. Ovqatlanish shkalalarini sozlang: Cheklovlar, stressni yeyish va tashqi ovqatga munosabat darajasini ko‘rsating.
-3. Psixotipingiz va strategiyangizni oling: Yetakchi taomlanish profilingiz tavsifi bilan tanishing va batafsil PDF-hisobotni yuklab oling.
+1. Yo‘riqnomani o‘qing: Ko‘rsatilgan davr va har bir fikrning ma’nosini hisobga oling.
+2. Javoblarni tanlang: Har bir bandga mos variantni tanlab javob bering.
+3. Natijani ko‘ring: Natija javoblarni aks ettiradi; uni usulning cheklovlarini hisobga olib talqin qiling.
 
 ### Usul va formula
 
-NutriFit ko‘p omilli algoritmi parhez nazorati, emotsional yeb qo‘yish, tashqi stimullarga bog‘liqlik va OXB xavfi belgilarini yagona psixotipga umumlashtiradi.
+SCOFF beshta haqiqiy «ha/yo‘q» javobi asosida hisoblanadi. Qolgan javoblar bevosita ko‘rsatiladi.
 
-DEBQ, SCOFF, IES-2 va mYFAS 2.0 shkalalari o‘zaro korrelyatsiyasiga asoslangan ovqatlanish xulq-atvorini tasniflashning kompleks matritsasi.
+SCOFF da ikki yoki undan ko‘p «ha» javobi — ijobiy skrining. Mualliflik savollari DEBQ, IES-2 yoki mYFAS ballarini hisoblamaydi va psixologik tipni aniqlamaydi.
 
 ### Cheklovlar
 
-Ushbu vosita o‘z-o‘zini anglash va mutaxassis bilan ishlashda yo‘nalish olish uchun mo‘ljallangan bo‘lib, shifokorning klinik ko‘rigi o‘rnini bosmaydi.
+Ma’lumot uchun berilgan natija tashxis qo‘ymaydi va davolash buyurmaydi. Tarjima axborot uchun moslashtirilgan; uning alohida psixometrik validatsiyasi tasdiqlanmagan.
 
 ### Manbalar
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/eating-behavior-wizard?lang=uz&theme=auto"
-  title="Ovqatlanish xulq-atvori diagnostikasi ustasi" loading="lazy" referrerpolicy="no-referrer"
+  title="Ovqatlanish xulqini o‘zini baholash" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

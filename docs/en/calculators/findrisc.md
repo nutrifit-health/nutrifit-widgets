@@ -6,29 +6,29 @@
 
 `findrisc` · [NutriFit](https://nutrifit.health/calculators/findrisc)
 
-An internationally recognized WHO and IDF questionnaire for early screening of undiagnosed diabetes and estimating the 10-year risk of developing type 2 diabetes.
+Reference 10-year risk of type 2 diabetes from 8 FINDRISC factors; total 0–26. Percentages refer to the original study population and are not a precise individual probability.
 
-### How to use
+### Usage
 
-1. Enter your age and body measurements: Select your age group, BMI category, and waist circumference measured with a tape halfway between the lowest rib and the top of the hip bone.
-2. Assess your lifestyle and diet: Indicate whether you get at least 30 minutes of physical activity daily and whether you eat vegetables, fruit, or berries every day.
-3. Provide your medical history: Note whether you take blood pressure medication, have had elevated blood sugar in the past, and whether blood relatives have diabetes.
+1. Enter the starting values: Reference 10-year risk of type 2 diabetes from 8 FINDRISC factors; total 0–26. Percentages refer to the original study population and are not a precise individual probability.
+2. Adjust the parameters: Reference 10-year risk of type 2 diabetes from 8 FINDRISC factors; total 0–26. Percentages refer to the original study population and are not a precise individual probability.
+3. Read the result: Informational translation for self-assessment. Validation of this particular adaptation has not been confirmed. A score does not establish a diagnosis, and a low score does not rule out illness. Reference 10-year risk of type 2 diabetes from 8 FINDRISC factors; total 0–26. Percentages refer to the original study population and are not a precise individual probability.
 
 ### Method and formula
 
-Sums 8 evidence-based risk factors: age, BMI, waist circumference, physical activity, vegetable intake, antihypertensive therapy, prior high blood glucose, and family history.
+Reference 10-year risk of type 2 diabetes from 8 FINDRISC factors; total 0–26. Percentages refer to the original study population and are not a precise individual probability.
 
-FINDRISC score = Age (0–4) + BMI (0–3) + Waist (0–4) + Physical activity (0/2) + Vegetables (0/1) + BP medication (0/2) + Prior high glucose (0/5) + Family history (0/3/5). Total: 0–26 points.
+Reference 10-year risk of type 2 diabetes from 8 FINDRISC factors; total 0–26. Percentages refer to the original study population and are not a precise individual probability.
 
 ### Limitations
 
-This scale is a predictive screening tool and does not replace laboratory diagnostics (fasting plasma glucose, HbA1c, oral glucose tolerance test).
+Informational translation for self-assessment. Validation of this particular adaptation has not been confirmed. A score does not establish a diagnosis, and a low score does not rule out illness. Reference 10-year risk of type 2 diabetes from 8 FINDRISC factors; total 0–26. Percentages refer to the original study population and are not a precise individual probability.
 
 ### Sources
 
-- [Lindström J., Tuomilehto J. The diabetes risk score: a practical tool to predict type 2 diabetes risk. Diabetes Care, 2003;26(3):725–731](https://pubmed.ncbi.nlm.nih.gov/12610029/)
+- [Finnish Diabetes Association. Type 2 diabetes risk assessment form](https://sites.pitt.edu/~super1/assist/Type%202%20diabetes%20risk%20test.pdf)
+- [Lindström J et al. The diabetes risk score: a practical tool to predict type 2 diabetes risk. Diabetes Care, 2003](https://pubmed.ncbi.nlm.nih.gov/12610029/)
 - [International Diabetes Federation (IDF). Clinical Practice Recommendations for managing Type 2 Diabetes in Primary Care, 2017](https://www.idf.org/our-activities/care-prevention/clinical-practice-recommendations/)
-- [Saaristo T. et al. FINDRISC as an early intervention tool in primary health care. Diabetes Care, 2005;28(12):2900–2907](https://pubmed.ncbi.nlm.nih.gov/16316578/)
 
 ## Embed this calculator
 

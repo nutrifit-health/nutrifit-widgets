@@ -8,11 +8,11 @@
 
 An internationally recognized 5-question clinical screening tool designed to identify the risk of eating disorders (anorexia nervosa and bulimia nervosa).
 
-### How to use
+### Usage
 
-1. Read each of the 5 questions carefully: Reflect on your habitual eating behaviors, body image feelings, and relationship with food over recent months.
-2. Answer Yes or No honestly: Provide candid answers without rationalizing behaviors or minimizing personal distress.
-3. Review your screening result: Learn whether your responses suggest clinical risk and examine recommended next steps.
+1. Read the instructions: Consider the stated period and the meaning of each statement.
+2. Choose your answers: Answer each item by choosing the appropriate option.
+3. View the result: Positive screen — further assessment is needed
 
 ### Method and formula
 
@@ -22,12 +22,12 @@ Total SCOFF Score = Number of affirmative answers (0–5). A score of ≥ 2 indi
 
 ### Limitations
 
-The SCOFF questionnaire is exclusively an initial screening tool. It does not establish a definitive medical diagnosis and requires clinical evaluation by an ED specialist.
+This informational result does not establish a diagnosis or prescribe treatment. Translated versions are informational adaptations; separate psychometric validation of each translation has not been confirmed.
 
 ### Sources
 
-- [Morgan J.F. et al. The SCOFF questionnaire: assessment of a new screening tool for eating disorders. BMJ, 1999;319(7223):1467–1468](https://pubmed.ncbi.nlm.nih.gov/10582927/)
-- [Luck A.J. et al. The SCOFF questionnaire and clinical interview for detecting eating disorders. BMJ, 2002;325(7367):755–756](https://pubmed.ncbi.nlm.nih.gov/12364305/)
+- [Morgan JF et al. The SCOFF questionnaire: assessment of a new screening tool for eating disorders. BMJ, 1999](https://pubmed.ncbi.nlm.nih.gov/10582927/)
+- [Luck AJ et al. The SCOFF questionnaire and clinical interview for eating disorders in general practice: comparative study. BMJ, 2002](https://pubmed.ncbi.nlm.nih.gov/12364305/)
 
 ## Embed this calculator
 

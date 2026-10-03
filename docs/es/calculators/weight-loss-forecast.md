@@ -1,4 +1,4 @@
-# Calculadora de pronóstico dinámico de pérdida de peso (modelo de Kevin Hall)
+# Escenario de cambio de peso Hall–Chow
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/weight-loss-forecast.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/weight-loss-forecast.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/weight-loss-forecast.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/weight-loss-forecast.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/weight-loss-forecast.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/weight-loss-forecast.md)
 
@@ -6,29 +6,28 @@
 
 `weight-loss-forecast` · [NutriFit](https://nutrifit.health/es/calculators/weight-loss-forecast)
 
-Genera una trayectoria no lineal y realista de pérdida de peso basada en el modelo dinámico de Kevin Hall (NIH), considerando la ralentización metabólica y la masa magra.
+Un modelo simplificado con parámetros medios ilustra el cambio de peso tras reducir de forma constante el consumo energético inicial, sin cambiar la actividad.
 
-### Cómo usar
+### Uso
 
-1. Mantén un déficit moderado (15–20%): Un déficit de 300–500 kcal resulta sostenible, protege el tejido muscular del catabolismo y minimiza los abandonos.
-2. Consume suficiente proteína: Una pauta de 1,8–2,4 g/kg de proteína en déficit asegura que el 85–90% del peso perdido provenga de grasa subcutánea y visceral.
-3. Planifica descansos dietéticos (Diet Breaks): Cada 8–12 semanas de déficit, pasa 1–2 semanas comiendo en mantenimiento (TDEE). Esto recupera los niveles de leptina y hormona tiroidea T3.
+1. Introduzca los datos iniciales: Use valores reales y las unidades adecuadas.
+2. Ajuste los parámetros: Ajuste las suposiciones iniciales a su situación.
+3. Lea el resultado: Considere las limitaciones del modelo; el cálculo no es una medición.
 
 ### Método y fórmula
 
-Sustituye la regla estática de Wishnofsky (1958, «7700 kcal = 1 kg») por el modelo de balance energético dinámico (Hall et al., The Lancet 2011; NIH/NIDDK). Incorpora la reducción metabólica (~22 kcal/kg perdido) y la partición de Forbes.
+W(t)=W0−D/22×(1−exp(−22×t/9100)); t en días, D es la reducción en kcal/día. Parámetros medios: ρ=9100 kcal/kg, ε=22 kcal/(kg·día). Comparación lineal: pérdida D×t/7700.
 
-Adaptación metabólica = 22 kcal/kg perdido + termogénesis adaptativa; Déficit efectivo = Déficit prescrito − Adaptación; Partición de grasa p = Forbes(F, W); Peso dinámico(t) iterado semana a semana.
+W(t)=W0−D/22×(1−exp(−22×t/9100)); t en días, D es la reducción en kcal/día. Parámetros medios: ρ=9100 kcal/kg, ε=22 kcal/(kg·día). Comparación lineal: pérdida D×t/7700.
 
 ### Limitaciones
 
-Asume un cumplimiento estricto del déficit prescrito. Las oscilaciones de agua por cortisol o sodio pueden ocultar temporalmente la pérdida de grasa en la báscula.
+Es el modelo linealizado de dos parámetros Hall–Chow (2011), no el modelo individual completo NIH Body Weight Planner. No predice grasa, músculo ni la fecha exacta de una meseta. Escenario para adultos, excluidos embarazo y lactancia. Se supone que el consumo inicial mantiene el peso y la reducción es constante; no modela agua, fármacos, enfermedades ni adherencia. No prescribe un déficit calórico.
 
 ### Fuentes
 
-- [Hall K.D. et al. Quantification of the effect of energy imbalance on bodyweight. Lancet, 2011;378(9793):826–837](https://pubmed.ncbi.nlm.nih.gov/21872751/)
-- [Thomas D.M. et al. Can a weight loss of one pound a week be achieved with a 3,500-kcal deficit? Commentary on a commonly accepted rule. Int J Obes, 2013;37(12):1611–1613](https://pubmed.ncbi.nlm.nih.gov/23628852/)
-- [Forbes G.B. Lean body mass-body fat interrelationships in humans. Nutr Rev, 1987;45(8):225–231](https://pubmed.ncbi.nlm.nih.gov/3306482/)
+- [Hall K.D., Chow C.C. Estimating changes in free-living energy intake and its confidence interval. Am J Clin Nutr, 2011;94(1):66–74. Linearized energy-balance model](https://pmc.ncbi.nlm.nih.gov/articles/PMC3127505/)
+- [Hall KD et al. Quantification of the effect of energy imbalance on bodyweight. Lancet, 2011](https://pubmed.ncbi.nlm.nih.gov/21872751/)
 
 ## Cómo integrar esta calculadora
 
@@ -59,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/weight-loss-forecast?lang=es&theme=auto"
-  title="Calculadora de pronóstico dinámico de pérdida de peso (modelo de Kevin Hall)" loading="lazy" referrerpolicy="no-referrer"
+  title="Escenario de cambio de peso Hall–Chow" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

@@ -1,4 +1,4 @@
-# Erkin testosteron kalkulyatori (Vermeulen)
+# Vermeulen bo‘yicha erkin testosteron
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/free-testosterone.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/free-testosterone.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/free-testosterone.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/free-testosterone.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/free-testosterone.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/free-testosterone.md)
 
@@ -6,33 +6,29 @@
 
 `free-testosterone` · [NutriFit](https://nutrifit.health/uz/calculators/free-testosterone)
 
-Vermeulen 1999 bog‘lanish modeli bo‘yicha testosteronning erkin va bio-mavjud fraksiyalari. Natija usul referenslari va klinik kontekstni talab qiladi.
+Umumiy testosteron, SHBG va albumindan erkin va SHBG bilan bog‘lanmagan fraksiyalarni hisoblash.
 
 ### Foydalanish tartibi
 
-1. Ertalab umumiy testosteron va SHBG topshiring: Testosteron ertalab soat 7 dan 10 gacha maksimal bo‘lib, kechqurunga kelib 20–30 % ga kamayadi. Och qoringa, o‘tkir kasalliklarsiz, imkon qadar SK-MS/MS usulida topshiring.
-2. Albuminni qo‘shing: O‘lchangan albuminni g/l da kiriting. Shakldagi 43 g/l qiymati misoldir; tahlil o‘rniga taxminiy qiymat kiritish noaniqlikni oshiradi.
-3. Agar SHBG nostandart bo‘lsa, erkin fraksiyaga qarang: SHBG o‘zgarganda, umumiy testosteron va erkin fraksiya talqini bo‘yicha farq qilishi mumkin. Ularni belgilar, tahlil usuli va takroriy o‘lchovlar bilan birgalikda ko‘rib chiqing.
+1. Boshlang‘ich ma’lumotlarni kiriting: Haqiqiy qiymatlar va mos birliklardan foydalaning.
+2. Parametrlarni aniqlashtiring: Boshlang‘ich taxminlarni holatingizga moslang.
+3. Natijani o‘qing: Model cheklovlarini hisobga oling; hisob o‘lchov emas.
 
 ### Usul va formula
 
-QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS
+Vermeulen (1999) muvozanatli bog‘lanish modeli: K_SHBG=10⁹ l/mol, K_Alb=3,6×10⁴ l/mol, albumin molyar massasi 69 000 g/mol. Modeldagi biofoydalanadigan fraksiya — erkin va albuminga bog‘langan testosteron.
 
-N = Kalb × [Albumin] + 1;  a = N × Kshbg;  b = N + Kshbg × ([SHBG] − [T])
-Erkin T = (−b + √(b² + 4·a·[T])) / (2·a)
-Bio-mavjud T = Erkin T × N
-Kshbg = 1×10⁹ l/mol; Kalb = 3,6×10⁴ l/mol; konsentratsiyalar mol/l da; albumin g/l / 69 000
-Qayta hisoblash: T ng/dl × 0,0347 = nmol/l; erkin T nmol/l × 288,4 = pg/ml
+Vermeulen (1999) muvozanatli bog‘lanish modeli: K_SHBG=10⁹ l/mol, K_Alb=3,6×10⁴ l/mol, albumin molyar massasi 69 000 g/mol. Modeldagi biofoydalanadigan fraksiya — erkin va albuminga bog‘langan testosteron.
 
 ### Cheklovlar
 
-Hisoblash umumiy testosteron aniq usulda (SK-MS/MS yoki kalibrlangan immunoanaliz) ertalab soat 7 dan 11 gacha och qoringa, bir necha hafta oralig‘ida ikki marta o‘lchanganda to‘g‘ri bo‘ladi. Albumin meʼyordan chetga chiqqanda natija siljiydi; homiladorlikda va KOK qabul qilinganda SHBG keskin o‘zgaradi. Erkin testosteron referenslari usul va yoshga bog‘liq; quyidagi chegaralar erkaklarga tegishli — ayollar uchun kalkulyator toifasiz qiymatlarni ko‘rsatadi. Gipogonadizm tashxisi belgilar va shaxsiy ko‘rikni talab qiladi.
+Bu hisob, to‘g‘ridan-to‘g‘ri o‘lchov emas. Umumiy me’yor belgilanmaydi: talqin alomat, yosh, jins, laboratoriya usuli va takroriy o‘lchovlarga bog‘liq.
 
 ### Manbalar
 
-- [Vermeulen A., Verdonck L., Kaufman J.M. A critical evaluation of simple methods for the estimation of free testosterone in serum. J Clin Endocrinol Metab, 1999;84(10):3666–3672](https://pubmed.ncbi.nlm.nih.gov/10523012/)
-- [Bhasin S. et al. Testosterone therapy in men with hypogonadism: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab, 2018;103(5):1715–1744](https://pubmed.ncbi.nlm.nih.gov/29562364/)
-- [Salonia A. et al. European Association of Urology guidelines on sexual and reproductive health — 2021 update: male sexual dysfunction. Eur Urol, 2021;80(3):333–357](https://pubmed.ncbi.nlm.nih.gov/34183196/)
+- [Vermeulen A et al. A critical evaluation of simple methods for the estimation of free testosterone in serum. J Clin Endocrinol Metab, 1999](https://pubmed.ncbi.nlm.nih.gov/10523012/)
+- [Bhasin S et al. Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab, 2018](https://pubmed.ncbi.nlm.nih.gov/29562364/)
+- [Salonia A et al. European Association of Urology Guidelines on Sexual and Reproductive Health-2021 Update: Male Sexual Dysfunction. Eur Urol, 2021](https://pubmed.ncbi.nlm.nih.gov/34183196/)
 
 ## Ushbu kalkulyatorni joylashtirish
 
@@ -63,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/free-testosterone?lang=uz&theme=auto"
-  title="Erkin testosteron kalkulyatori (Vermeulen)" loading="lazy" referrerpolicy="no-referrer"
+  title="Vermeulen bo‘yicha erkin testosteron" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

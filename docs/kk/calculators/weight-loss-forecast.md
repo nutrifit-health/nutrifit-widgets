@@ -1,4 +1,4 @@
-# Салмақ төмендеуінің динамикалық болжамы калькуляторы (Кевин Холл моделі)
+# Hall–Chow салмақ өзгерісі сценарийі
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/weight-loss-forecast.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/weight-loss-forecast.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/weight-loss-forecast.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/weight-loss-forecast.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/weight-loss-forecast.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/weight-loss-forecast.md)
 
@@ -6,29 +6,28 @@
 
 `weight-loss-forecast` · [NutriFit](https://nutrifit.health/kk/calculators/weight-loss-forecast)
 
-Зат алмасудың бейімделгіш баяулауын және бұлшықеттерді сақтауды ескере отырып, Кевин Холлдың (NIH) метаболикалық моделі негізінде салмақ тастаудың нақты сызықтық емес траекториясын құрады.
+Орташа параметрлері бар қарапайым модель бастапқы энергия тұтынуы тұрақты азайғанда және белсенділік өзгермегенде салмақ өзгерісін көрсетеді.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Қалыпты дефицитті ұстаныңыз (15–20%): 300–500 ккал дефицит психика үшін қолайлы және бұлшықет тінін катаболизмнен қорғайды.
-2. Ақуызды жеткілікті тұтыныңыз: Дефицит кезінде 1,8–2,4 г/кг ақуыз нормасы тасталған салмақтың 85–90%-ы дәл тері асты және висцеральды майға келуіне кепілдік береді.
-3. Диеталық үзілістерді (Diet Breaks) жоспарлаңыз: Салмақ тастаудың әр 8–12 аптасы сайын 1–2 апта қолдау деңгейінде (TDEE) тамақтаныңыз. Бұл лептин мен Т3 гормондарын қалпына келтіреді.
+1. Бастапқы деректерді енгізіңіз: Нақты мәндер мен тиісті бірліктерді қолданыңыз.
+2. Параметрлерді нақтылаңыз: Бастапқы болжамдарды өз жағдайыңызға сай өзгертіңіз.
+3. Нәтижені оқыңыз: Модель шектеулерін ескеріңіз; есеп өлшеу емес.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-Классикалық Вишнофски ережесінің (1958 ж., «7700 ккал дефицит = 1 кг тастау») орнына Кевин Холлдың динамикалық энергия балансы моделіне (Lancet, 2011; NIH/NIDDK) сүйенеді. Әрбір тасталған килограмм базалық шығынды азайтып, сөзсіз плато тудырады. Форбс теңдеуі бойынша май мен бұлшықет жоғалту үлестері есептеледі.
+W(t)=W0−D/22×(1−exp(−22×t/9100)); t — күн, D — ккал/тәуліктегі азаю. Орташа параметрлер: ρ=9100 ккал/кг, ε=22 ккал/(кг·тәулік). Сызықтық салыстыру: D×t/7700 жоғалту.
 
-Метаболикалық бейімделу = 22 ккал/кг жоғалту + бейімделгіш термогенез; Тиімді дефицит = Берілген дефицит − Бейімделу; Май жоғалту үлесі p = Forbes(F, W); Динамикалық салмақ(t) апта сайын интегралдау әдісімен үлгіленеді.
+W(t)=W0−D/22×(1−exp(−22×t/9100)); t — күн, D — ккал/тәуліктегі азаю. Орташа параметрлер: ρ=9100 ккал/кг, ε=22 ккал/(кг·тәулік). Сызықтық салыстыру: D×t/7700 жоғалту.
 
 ### Шектеулер
 
-Читмилсіз белгіленген калория дефицитін 100% сақтауды көздейді. Күйзеліс (кортизол) немесе тұздан судың іркілуі таразыда майдың еруін уақытша жасыруы мүмкін.
+Бұл Hall–Chow (2011) екі параметрлі сызықтандырылған моделі, NIH Body Weight Planner толық жеке моделі емес. Май, бұлшықет немесе платоның нақты күнін болжай алмайды. Ересектерге арналған сценарий; жүктілік пен емізу кезінде қолданылмайды. Бастапқы тұтыну салмақты сақтайды, ал азаю тұрақты деп алынады; су, дәрілер, аурулар мен рационды ұстану модельденбейді. Калория тапшылығын тағайындамайды.
 
 ### Дереккөздер
 
-- [Hall K.D. et al. Quantification of the effect of energy imbalance on bodyweight. Lancet, 2011;378(9793):826–837](https://pubmed.ncbi.nlm.nih.gov/21872751/)
-- [Thomas D.M. et al. Can a weight loss of one pound a week be achieved with a 3,500-kcal deficit? Commentary on a commonly accepted rule. Int J Obes, 2013;37(12):1611–1613](https://pubmed.ncbi.nlm.nih.gov/23628852/)
-- [Forbes G.B. Lean body mass-body fat interrelationships in humans. Nutr Rev, 1987;45(8):225–231](https://pubmed.ncbi.nlm.nih.gov/3306482/)
+- [Hall K.D., Chow C.C. Estimating changes in free-living energy intake and its confidence interval. Am J Clin Nutr, 2011;94(1):66–74. Linearized energy-balance model](https://pmc.ncbi.nlm.nih.gov/articles/PMC3127505/)
+- [Hall KD et al. Quantification of the effect of energy imbalance on bodyweight. Lancet, 2011](https://pubmed.ncbi.nlm.nih.gov/21872751/)
 
 ## Осы калькуляторды ендіру
 
@@ -59,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/weight-loss-forecast?lang=kk&theme=auto"
-  title="Салмақ төмендеуінің динамикалық болжамы калькуляторы (Кевин Холл моделі)" loading="lazy" referrerpolicy="no-referrer"
+  title="Hall–Chow салмақ өзгерісі сценарийі" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

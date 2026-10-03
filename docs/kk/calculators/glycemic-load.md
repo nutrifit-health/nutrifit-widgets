@@ -1,4 +1,4 @@
-# Гликемиялық жүктеме калькуляторы
+# Порцияның гликемиялық жүктемесі
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/glycemic-load.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/glycemic-load.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/glycemic-load.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/glycemic-load.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/glycemic-load.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/glycemic-load.md)
 
@@ -6,28 +6,28 @@
 
 `glycemic-load` · [NutriFit](https://nutrifit.health/kk/calculators/glycemic-load)
 
-Порцияның гликемиялық жүктемесін гликемиялық индекс пен көмірсу мөлшері бойынша есептейді — бұл шама глюкоза реакциясын индекстің өзінен гөрі жақсы көрсетеді.
+ГЖ = ГИ × порцияның қолжетімді көмірсуы / 100. Нақты тағам мен дайындаудың ГИ-ын глюкоза = 100 шкаласында, 100 г-ға көмірсу мен порция салмағын енгізіңіз. Бастапқы сандар — мысал.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Өнімді таңдаңыз немесе ГИ енгізіңіз: Анықтамалық өнімдер базасын (Atkinson 2021 халықаралық кестелері) пайдаланыңыз немесе гликемиялық индексті қолмен көрсетіңіз.
-2. Көмірсулар мен порция мөлшерін көрсетіңіз: 100 г-дағы көмірсулар мөлшерін және порцияның нақты салмағын граммен енгізіңіз.
-3. Метаболикалық әсерді бағалаңыз: Порцияның қандағы қантқа нақты әсерін біліңіз: төмен (≤10), орташа (11–19) немесе жоғары (≥20) жүктеме.
+1. Бастапқы деректерді енгізіңіз: ГЖ = ГИ × порцияның қолжетімді көмірсуы / 100. Нақты тағам мен дайындаудың ГИ-ын глюкоза = 100 шкаласында, 100 г-ға көмірсу мен порция салмағын енгізіңіз. Бастапқы сандар — мысал.
+2. Параметрлерді нақтылаңыз: ГЖ = ГИ × порцияның қолжетімді көмірсуы / 100. Нақты тағам мен дайындаудың ГИ-ын глюкоза = 100 шкаласында, 100 г-ға көмірсу мен порция салмағын енгізіңіз. Бастапқы сандар — мысал.
+3. Нәтижені оқыңыз: ГЖ жеке глюкозаны не инсулин дозасын болжамайды. Порция санаттары әмбебап тәуліктік норманы бермейді. Нақты тағамға тексерілмеген орташа мәндер автоматты қойылмайды.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-Гликемиялық индекс 50 г көмірсуы бар порциядан кейін глюкозаның көтерілу жылдамдығын көрсетеді, бірақ нақты порция мөлшері туралы ештеңе айтпайды. Гликемиялық жүктеме екеуін де ескереді: индекс нақты порциядағы көмірсу мөлшеріне көбейтіліп, 100-ге бөлінеді. Сондықтан индексі жоғары қарбыз төмен жүктеме береді — порциядағы көмірсу аз.
+ГЖ = ГИ × порцияның қолжетімді көмірсуы / 100. Нақты тағам мен дайындаудың ГИ-ын глюкоза = 100 шкаласында, 100 г-ға көмірсу мен порция салмағын енгізіңіз. Бастапқы сандар — мысал.
 
 Порция көмірсуы(г) = 100 г-дағы көмірсу × порция салмағы / 100; ГЖ = ГИ × порция көмірсуы / 100
 
 ### Шектеулер
 
-Кестелік индекс мәндері орташаланған: сұрып, пісу дәрежесі, ұнтақтау, дайындау тәсілі әрі ақуыз, май және талшықпен үйлесуі глюкоза реакциясын өзгертеді. Жеке реакция айтарлықтай ерекшеленеді, ал қант диабетінде есеп глюкозаны өлшеуді немесе мониторинг деректерін алмастырмайды.
+ГЖ жеке глюкозаны не инсулин дозасын болжамайды. Порция санаттары әмбебап тәуліктік норманы бермейді. Нақты тағамға тексерілмеген орташа мәндер автоматты қойылмайды.
 
 ### Дереккөздер
 
-- [Atkinson F.S., Brand-Miller J.C. et al. International tables of glycemic index and glycemic load values 2021. Am J Clin Nutr, 2021;114(5):1625–1632](https://pubmed.ncbi.nlm.nih.gov/34258626/)
-- [Augustin L.S.A. et al. Glycemic index, glycemic load and glycemic response: International Scientific Consensus Summit. Nutr Metab Cardiovasc Dis, 2015;25(9):795–815](https://pubmed.ncbi.nlm.nih.gov/26160327/)
+- [Atkinson FS et al. International tables of glycemic index and glycemic load values 2021: a systematic review. Am J Clin Nutr, 2021](https://pubmed.ncbi.nlm.nih.gov/34258626/)
+- [Augustin LSA et al. Glycemic index, glycemic load and glycemic response: An International Scientific Consensus Summit from the International Carbohydrate Quality Consortium (ICQC). Nutr Metab Cardiovasc Dis, 2015](https://pubmed.ncbi.nlm.nih.gov/26160327/)
 
 ## Осы калькуляторды ендіру
 
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/glycemic-load?lang=kk&theme=auto"
-  title="Гликемиялық жүктеме калькуляторы" loading="lazy" referrerpolicy="no-referrer"
+  title="Порцияның гликемиялық жүктемесі" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

@@ -6,28 +6,28 @@
 
 `gad-7` · [NutriFit](https://nutrifit.health/es/calculators/gad-7)
 
-Cuestionario clínico internacional diseñado para evaluar de forma ágil y precisa la intensidad de la ansiedad generalizada y la tensión somática.
+Intensidad de síntomas de ansiedad durante las últimas 2 semanas: 7 respuestas de frecuencia de 0 a 3; total de 0 a 21.
 
-### Cómo usar
+### Uso
 
-1. Valore los síntomas de los últimos 14 días: Haga memoria sobre la frecuencia con la que ha sentido desasosiego, temor o tensión muscular durante las últimas dos semanas.
-2. Seleccione sus respuestas: Indique la frecuencia de cada síntoma desde 'Para nada' (0) hasta 'Casi todos los días' (3).
-3. Obtenga su resultado y pautas: Conozca su nivel de ansiedad y explore estrategias efectivas para recuperar el equilibrio autonómico.
+1. Introduzca los datos iniciales: Intensidad de síntomas de ansiedad durante las últimas 2 semanas: 7 respuestas de frecuencia de 0 a 3; total de 0 a 21.
+2. Ajuste los parámetros: Intensidad de síntomas de ansiedad durante las últimas 2 semanas: 7 respuestas de frecuencia de 0 a 3; total de 0 a 21.
+3. Lea el resultado: Traducción informativa para autoevaluación. No se ha confirmado la validación de esta adaptación concreta. La puntuación no establece un diagnóstico y un resultado bajo no descarta enfermedad.
 
 ### Método y fórmula
 
-7 preguntas valoradas de 0 a 3 puntos que examinan los síntomas de ansiedad experimentados en las últimas 2 semanas.
+Intensidad de síntomas de ansiedad durante las últimas 2 semanas: 7 respuestas de frecuencia de 0 a 3; total de 0 a 21.
 
-Puntuación total GAD-7 = Suma de los 7 ítems (0–21). 0–4: mínima; 5–9: leve; 10–14: moderada; 15–21: grave.
+Intensidad de síntomas de ansiedad durante las últimas 2 semanas: 7 respuestas de frecuencia de 0 a 3; total de 0 a 21.
 
 ### Limitaciones
 
-Este cribado no constituye un diagnóstico médico formal. Si sufre crisis de pánico o malestar invalidante, consulte a un profesional de salud mental.
+Traducción informativa para autoevaluación. No se ha confirmado la validación de esta adaptación concreta. La puntuación no establece un diagnóstico y un resultado bajo no descarta enfermedad.
 
 ### Fuentes
 
-- [Spitzer R.L. et al. A brief measure for assessing generalized anxiety disorder: the GAD-7. Arch Intern Med, 2006;166(10):1092–1097](https://pubmed.ncbi.nlm.nih.gov/16717171/)
-- [Löwe B. et al. Validation and standardization of the Generalized Anxiety Disorder Screener (GAD-7). Med Care, 2008;46(3):266–274](https://pubmed.ncbi.nlm.nih.gov/18388841/)
+- [Spitzer RL et al. A brief measure for assessing generalized anxiety disorder: the GAD-7. Arch Intern Med, 2006](https://pubmed.ncbi.nlm.nih.gov/16717171/)
+- [Löwe B et al. Validation and standardization of the Generalized Anxiety Disorder Screener (GAD-7) in the general population. Med Care, 2008](https://pubmed.ncbi.nlm.nih.gov/18388841/)
 
 ## Cómo integrar esta calculadora
 

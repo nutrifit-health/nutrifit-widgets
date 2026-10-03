@@ -6,28 +6,28 @@
 
 `phq-9` · [NutriFit](https://nutrifit.health/calculators/phq-9)
 
-The international gold standard for primary depression screening and symptom severity assessment based on DSM-5 clinical criteria.
+Depressive symptom severity over the last 2 weeks: 9 frequency responses scored 0–3; total 0–27.
 
-### How to use
+### Usage
 
-1. Reflect on the past 2 weeks: Evaluate how you have felt over the last 14 days, taking into account the frequency of each described sensation.
-2. Answer all 9 items: Choose the most accurate frequency for each symptom from 'Not at all' (0) to 'Nearly every day' (3).
-3. Review clinical interpretation: Examine your severity category, self-care guidelines, and recommended healthcare resources.
+1. Enter the starting values: Depressive symptom severity over the last 2 weeks: 9 frequency responses scored 0–3; total 0–27.
+2. Adjust the parameters: Depressive symptom severity over the last 2 weeks: 9 frequency responses scored 0–3; total 0–27.
+3. Read the result: Informational translation for self-assessment. Validation of this particular adaptation has not been confirmed. A score does not establish a diagnosis, and a low score does not rule out illness. Any nonzero response to item 9 requires a separate discussion of thoughts of death or self-harm with a professional regardless of the total. Seek urgent help if there is immediate danger.
 
 ### Method and formula
 
-9 questions assessing the frequency of depressive symptoms over the past 2 weeks on a scale from 0 ('Not at all') to 3 ('Nearly every day').
+Depressive symptom severity over the last 2 weeks: 9 frequency responses scored 0–3; total 0–27.
 
-Total PHQ-9 Score = Sum of all 9 item scores (range 0–27). 0–4: Minimal; 5–9: Mild; 10–14: Moderate; 15–19: Moderately severe; 20–27: Severe depression.
+Depressive symptom severity over the last 2 weeks: 9 frequency responses scored 0–3; total 0–27.
 
 ### Limitations
 
-This screening tool does not replace clinical evaluation by a psychiatrist or psychotherapist. An affirmative answer to question 9 requires immediate clinical support.
+Informational translation for self-assessment. Validation of this particular adaptation has not been confirmed. A score does not establish a diagnosis, and a low score does not rule out illness. Any nonzero response to item 9 requires a separate discussion of thoughts of death or self-harm with a professional regardless of the total. Seek urgent help if there is immediate danger.
 
 ### Sources
 
-- [Kroenke K. et al. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med, 2001;16(9):606–613](https://pubmed.ncbi.nlm.nih.gov/11556941/)
-- [Spitzer R.L. et al. Validation and utility of a self-report version of PRIME-MD: the PHQ primary care study. JAMA, 1999;282(18):1737–1744](https://pubmed.ncbi.nlm.nih.gov/10568646/)
+- [Kroenke K et al. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med, 2001](https://pubmed.ncbi.nlm.nih.gov/11556941/)
+- [Spitzer RL et al. Validation and utility of a self-report version of PRIME-MD: the PHQ primary care study. Primary Care Evaluation of Mental Disorders. Patient Health Questionnaire. JAMA, 1999](https://pubmed.ncbi.nlm.nih.gov/10568646/)
 
 ## Embed this calculator
 

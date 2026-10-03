@@ -1,4 +1,4 @@
-# Калькулятор нормы воды
+# Эвристическая оценка суточной воды
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/water.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/water.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/water.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/water.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/water.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/water.md)
 
@@ -6,28 +6,28 @@
 
 `water` · [NutriFit](https://nutrifit.health/ru/calculators/water)
 
-Считает суточную потребность в жидкости от массы тела с поправками на физическую нагрузку и жаркий климат.
+Выбранная модель: 30 мл/кг + 500 мл за час нагрузки + 500 мл при жаре. 75% условно относится к напиткам; стакан = 250 мл. Возрастное снижение не применяется.
 
 ### Порядок использования
 
-1. Укажите массу тела: Базовая физиологическая потребность в воде прямо пропорциональна весу тела (в среднем 30–35 мл на 1 кг массы).
-2. Добавьте физическую активность: Каждые 30 минут тренировки требуют дополнительно 350–500 мл жидкости для компенсации потерь с потом.
-3. Учтите климат и температуру: Жаркая погода (>25°C) или низкая влажность воздуха увеличивают суточную потребность еще на 500 мл.
+1. Введите исходные данные: Выбранная модель: 30 мл/кг + 500 мл за час нагрузки + 500 мл при жаре. 75% условно относится к напиткам; стакан = 250 мл. Возрастное снижение не применяется.
+2. Уточните параметры: Выбранная модель: 30 мл/кг + 500 мл за час нагрузки + 500 мл при жаре. 75% условно относится к напиткам; стакан = 250 мл. Возрастное снижение не применяется.
+3. Прочитайте результат: Это допущения модели, не норматив EFSA. EFSA указывает общую воду из напитков и пищи 2,0 л для женщин и 2,5 л для мужчин, одинаково для взрослых и пожилых при умеренных условиях. Фактические потери пота и ограничения при заболеваниях определяются отдельно.
 
 ### Методика и формула
 
-Базовая потребность — 30 мл на кг массы тела для взрослых и 25 мл/кг после 60 лет, когда концентрационная способность почек снижается. За каждый час интенсивной нагрузки добавляется 500 мл на компенсацию потерь с потом, за жаркий климат или сухое отапливаемое помещение — ещё 500 мл. Итог — полная потребность в воде; 20–30% её человек получает с пищей, поэтому отдельно показана норма именно напитков (EFSA, 2010).
+Выбранная модель: 30 мл/кг + 500 мл за час нагрузки + 500 мл при жаре. 75% условно относится к напиткам; стакан = 250 мл. Возрастное снижение не применяется.
 
-Всего(мл) = вес × 30 (или × 25 после 60 лет) + 500 × часы нагрузки + 500 при жаре; Напитки(мл) = всего × 0,75
+Выбранная модель: 30 мл/кг + 500 мл за час нагрузки + 500 мл при жаре. 75% условно относится к напиткам; стакан = 250 мл. Возрастное снижение не применяется.
 
 ### Ограничения
 
-Ориентир для здоровых взрослых. При сердечной и почечной недостаточности, приёме диуретиков, лихорадке и в жарком производстве норма определяется врачом. Жажда и цвет мочи остаются более надёжными ориентирами, чем любой расчёт.
+Это допущения модели, не норматив EFSA. EFSA указывает общую воду из напитков и пищи 2,0 л для женщин и 2,5 л для мужчин, одинаково для взрослых и пожилых при умеренных условиях. Фактические потери пота и ограничения при заболеваниях определяются отдельно.
 
 ### Источники
 
 - [EFSA Panel on Dietetic Products. Scientific Opinion on Dietary Reference Values for water, 2010](https://www.efsa.europa.eu/en/efsajournal/pub/1459)
-- [Sawka M.N. et al. American College of Sports Medicine Position Stand: Exercise and Fluid Replacement, 2007](https://pubmed.ncbi.nlm.nih.gov/17277604/)
+- [American College of Sports Medicine et al. American College of Sports Medicine position stand. Exercise and fluid replacement. Med Sci Sports Exerc, 2007](https://pubmed.ncbi.nlm.nih.gov/17277604/)
 
 ## Как встроить этот калькулятор
 
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/water?lang=ru&theme=auto"
-  title="Калькулятор нормы воды" loading="lazy" referrerpolicy="no-referrer"
+  title="Эвристическая оценка суточной воды" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

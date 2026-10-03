@@ -1,4 +1,4 @@
-# Ұйқы циклдерінің калькуляторы
+# Ұйқы кестесін жоспарлау
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/sleep-cycles.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/sleep-cycles.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/sleep-cycles.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/sleep-cycles.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/sleep-cycles.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/sleep-cycles.md)
 
@@ -6,29 +6,29 @@
 
 `sleep-cycles` · [NutriFit](https://nutrifit.health/kk/calculators/sleep-cycles)
 
-90 минуттық ультрадиандық циклдер (баяу және жылдам ұйқы фазалары) мен орташа ұйықтап кету уақыты негізінде ұйқы уақытын есептеу құралы.
+Ұйықтап кету уақытын ескере отырып, 7, 8 және 9 сағат ұйқыға арналған жату немесе ояну уақыты.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Есептеу бағытын таңдаңыз: Сізге не қажет екенін анықтаңыз: оятқышқа ояну үшін сағат нешеде жату керектігін білу немесе қазір жатсаңыз оятқышты нешеге қою керектігін білу.
-2. Ұйықтап кету латенттілігін орнатыңыз: Әдепкі бойынша 14 минут орнатылған. Егер сіз әдетте ұзағырақ дөңбекшісеңіз немесе лезде ұйықтап кетсеңіз, осы мәнді түзетіңіз.
-3. 5 немесе 6 циклден тұратын тізбекті таңдаңыз: 5 цикл (7 сағ 30 мин) жұмыс күндері үшін өте қолайлы, 6 цикл (9 сағ) — қарқынды жаттығулар немесе ұйқы тапшылығын қалпына келтіру үшін.
+1. Бастапқы деректерді енгізіңіз: Нақты мәндер мен тиісті бірліктерді қолданыңыз.
+2. Параметрлерді нақтылаңыз: Бастапқы болжамдарды өз жағдайыңызға сай өзгертіңіз.
+3. Нәтижені оқыңыз: Модель шектеулерін ескеріңіз; есеп өлшеу емес.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-Есептеу NREM (баяу ұйқы) және REM (жылдам ұйқы) сатыларын біріктіретін 90 минуттық ультрадиандық циклдер моделіне негізделген. Цикл шекарасында ояну ұйқы инерциясын болдырмайды.
+Ояну уақыты = жату уақыты + ұйықтап кету уақыты + ұйқы ұзақтығы; жату уақыты осы аралықтарды шегеру арқылы есептеледі.
 
-Ояну уақыты = Ұйықтау уақыты + Ұйықтап кету (14 мин) + N × 90 мин. Ұйықтау уақыты = Ояну уақыты - (N × 90 мин) - Ұйықтап кету (14 мин).
+Ояну уақыты = жату уақыты + ұйықтап кету уақыты + ұйқы ұзақтығы; жату уақыты осы аралықтарды шегеру арқылы есептеледі.
 
 ### Шектеулер
 
-Калькулятор 90 минуттық орташа цикл ұзақтығын пайдаланады. Жеке цикл 70-тен 120 минутқа дейін өзгеруі мүмкін. Созылмалы ұйқы бұзылыстарында полисомнография қажет.
+Ересектердің көбіне 7–9 сағат ұйқы ұсынылады. Бұл жеке норма немесе ұйқы кезеңінің болжамы емес, кесте нұсқалары. Ұйқы циклдері мен кезеңдері түн ішінде өзгереді. Сағат бойынша REM кезінде немесе оңай оянуды кепілдеуге болмайды.
 
 ### Дереккөздер
 
-- [Carskadon M.A., Dement W.C. Normal Human Sleep: An Overview. Principles and Practice of Sleep Medicine, 2011;5:16–26](https://doi.org/10.1016/B978-1-4160-6645-3.00002-5)
-- [Hirshkowitz M. et al. National Sleep Foundation’s sleep time duration recommendations: methodology and results summary. Sleep Health, 2015;1(1):40–43](https://pubmed.ncbi.nlm.nih.gov/29073412/)
-- [Dijk D.J., Czeisler C.A. Contribution of the circadian pacemaker and the homeostatic process to the timing of human sleep. Sleep, 1995;18(5):285–304](https://pubmed.ncbi.nlm.nih.gov/7676163/)
+- [NHLBI. How Sleep Works: Sleep Phases and Stages](https://www.nhlbi.nih.gov/health/sleep/stages-of-sleep)
+- [NHLBI. How Sleep Works: How Much Sleep Is Enough?](https://www.nhlbi.nih.gov/health/sleep/how-much-sleep)
+- [Hirshkowitz M et al. National Sleep Foundation's sleep time duration recommendations: methodology and results summary. Sleep Health, 2015](https://pubmed.ncbi.nlm.nih.gov/29073412/)
 
 ## Осы калькуляторды ендіру
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/sleep-cycles?lang=kk&theme=auto"
-  title="Ұйқы циклдерінің калькуляторы" loading="lazy" referrerpolicy="no-referrer"
+  title="Ұйқы кестесін жоспарлау" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

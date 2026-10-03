@@ -1,4 +1,4 @@
-# Calculadora de coeficientes de powerlifting (DOTS, Wilks, IPF GL)
+# Coeficientes de powerlifting DOTS, Wilks e IPF GL
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/powerlifting-coefficients.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/powerlifting-coefficients.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/powerlifting-coefficients.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/powerlifting-coefficients.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/powerlifting-coefficients.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/powerlifting-coefficients.md)
 
@@ -6,27 +6,27 @@
 
 `powerlifting-coefficients` · [NutriFit](https://nutrifit.health/es/calculators/powerlifting-coefficients)
 
-Compara la fuerza relativa de atletas de diferentes categorías de peso y sexo en levantamiento de potencia (sentadilla, press de banca, peso muerto) con DOTS, Wilks e IPF GL.
+Introduzca el peso del pesaje y la suma de mejores intentos válidos de sentadilla, press de banca y peso muerto en kilogramos. DOTS, Wilks clásico e IPF GL 2020 para powerlifting clásico.
 
-### Cómo usar
+### Uso
 
-1. Sume sus mejores levantamientos: Sume su peso máximo alcanzado en sentadilla, press de banca y peso muerto según la normativa de competición.
-2. Indique el peso corporal exacto del pesaje: Utilice el peso verificado en la báscula durante el pesaje técnico oficial antes de subir a la tarima.
-3. Evalúe sus puntos DOTS e IPF GL: Compare su resultado con la escala de rendimiento: 300 puntos es intermedio sólido, 400 nivel nacional y 500 élite internacional.
+1. Introduzca los datos iniciales: Introduzca el peso del pesaje y la suma de mejores intentos válidos de sentadilla, press de banca y peso muerto en kilogramos. DOTS, Wilks clásico e IPF GL 2020 para powerlifting clásico. DOTS limita el peso del coeficiente a 40–210 kg en hombres y 40–150 kg en mujeres; fuera del intervalo se usa el extremo.
+2. Ajuste los parámetros: DOTS: Coeficiente = 500 / (A×Peso^4 + B×Peso^3 + C×Peso^2 + D×Peso + E); Puntos DOTS = Total (kg) × Coeficiente; IPF GL: 100 × Total / (A − B × e^(−C × Peso)); Wilks: polinomio de 5.º grado.
+3. Lea el resultado: Son puntuaciones comparativas distintas, no una categoría deportiva universal. Este IPF GL no sirve para banca sola o powerlifting equipado. Compare la misma disciplina; no incluye ajustes de edad.
 
 ### Método y fórmula
 
-La escala alométrica demuestra que la fuerza muscular es proporcional al área de sección transversal (altura al cuadrado), mientras que el peso corporal crece con el volumen (altura al cubo). Las fórmulas usan curvas polinómicas y exponenciales para igualar a atletas ligeros y pesados.
+Introduzca el peso del pesaje y la suma de mejores intentos válidos de sentadilla, press de banca y peso muerto en kilogramos. DOTS, Wilks clásico e IPF GL 2020 para powerlifting clásico. DOTS limita el peso del coeficiente a 40–210 kg en hombres y 40–150 kg en mujeres; fuera del intervalo se usa el extremo.
 
 DOTS: Coeficiente = 500 / (A×Peso^4 + B×Peso^3 + C×Peso^2 + D×Peso + E); Puntos DOTS = Total (kg) × Coeficiente; IPF GL: 100 × Total / (A − B × e^(−C × Peso)); Wilks: polinomio de 5.º grado.
 
 ### Limitaciones
 
-Diseñado para powerlifting de tres movimientos (trofeo completo). No aplicable a halterofilia olímpica (que usa Sinclair) ni a deportes monomovimiento no reglamentados.
+Son puntuaciones comparativas distintas, no una categoría deportiva universal. Este IPF GL no sirve para banca sola o powerlifting equipado. Compare la misma disciplina; no incluye ajustes de edad.
 
 ### Fuentes
 
-- [Perotti L. et al. The DOTS Formula: A new formula for evaluating strength athletes across weight classes, 2019](https://pubmed.ncbi.nlm.nih.gov/31804245/)
+- [OpenPowerlifting. Reference DOTS implementation and attribution to Tim Konertz.](https://gitlab.com/openpowerlifting/opl-data/blob/main/crates/coefficients/src/dots.rs)
 - [Wilks R. The Wilks Formula for Powerlifting. Australian Powerlifting Federation, 1997](https://www.powerlifting.sport/)
 - [International Powerlifting Federation. IPF GL Points Formula for Classic and Equipped Powerlifting, 2020](https://www.powerlifting.sport/rules/codes/info/ipf-formula)
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/powerlifting-coefficients?lang=es&theme=auto"
-  title="Calculadora de coeficientes de powerlifting (DOTS, Wilks, IPF GL)" loading="lazy" referrerpolicy="no-referrer"
+  title="Coeficientes de powerlifting DOTS, Wilks e IPF GL" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

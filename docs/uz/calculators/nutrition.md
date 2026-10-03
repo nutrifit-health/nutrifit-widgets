@@ -12,6 +12,8 @@
 
 NutriFit serveri tanlangan ochiq mahsulot va retseptlarning mavjud oziq moddalarini ingredient vazniga ko‘ra jamlaydi. Tayyor taom vazni asosida umumiy va 100 g qiymatlarini qaytaradi. PDF serverda yangidan hisoblaydi; CSV ko‘rsatilgan natijani eksport qiladi.
 
+Masalliq vaznini katalogda tanlangan holatda (xom yoki pishgan), 100 g hisob uchun esa tayyor taom vaznini kiriting. Pishirish va suyuqlikni to‘kishdagi nutrient yo‘qotilishi hisoblanmaydi.
+
 ## Cheklovlar
 
 50 tagacha ingredient. Vaznlarni grammda kiriting, tayyor taom vazni musbat bo‘lishi kerak. Noma’lum qiymatlar nol bilan almashtirilmaydi, to‘liq emas deb belgilanadi. Ma’lumotlar o‘zgarishi mumkin, shu sabab PDF oldingi natijadan farq qilishi mumkin. Bu baholash tashxis yoki davolash tayinlovi emas.

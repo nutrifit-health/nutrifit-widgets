@@ -6,28 +6,29 @@
 
 `yfas` · [NutriFit](https://nutrifit.health/es/calculators/yfas)
 
-Cuestionario científico adaptado de la Universidad de Yale para diagnosticar patrones adictivos hacia alimentos hiperpalatables y ultraprocesados.
+mYFAS 2.0: 13 preguntas sobre problemas con la alimentación durante los últimos 12 meses.
 
-### Cómo usar
+### Uso
 
-1. Identifique sus alimentos conflictivos: Piense en aquellos alimentos con los que le resulta más difícil parar de comer (dulces, aperitivos salados, fritos o bollería).
-2. Responda a las 13 preguntas: Marque 'Sí' si ha experimentado esa conducta de forma habitual a lo largo de los últimos 12 meses.
-3. Consulte el recuento de síntomas y el resultado: Conozca cuántos criterios diagnósticos cumple y el grado de repercusión clínica en su bienestar.
+1. Lea las instrucciones: Tenga en cuenta el periodo indicado y el significado de cada afirmación.
+2. Elija sus respuestas: Responda a cada ítem eligiendo la opción adecuada.
+3. Consulte el resultado: El resultado refleja sus respuestas; interprételo dentro de los límites de la escala.
 
 ### Método y fórmula
 
-13 ítems basados en los 11 criterios diagnósticos del DSM-5 para trastornos por consumo de sustancias adaptados a la alimentación, más 2 ítems de malestar clínico significativo.
+Ocho opciones de frecuencia, de nunca a todos los días. Cada ítem tiene su propio umbral de frecuencia; no se usan respuestas de sí/no.
 
-El diagnóstico de adicción a la comida precisa malestar clínico o deterioro funcional (ítems 12 o 13) y al menos 2 síntomas. 2–3: leve; 4–5: moderada; ≥ 6: adicción grave.
+Los ítems 5 y 6 evalúan malestar/deterioro funcional. Los otros 11 determinan el número de síntomas. Con malestar/deterioro: 2–3 indican categoría leve, 4–5 moderada y 6–11 grave; de lo contrario no se cumple el criterio de la escala.
 
 ### Limitaciones
 
-El concepto de 'adicción a la comida' continúa siendo objeto de debate científico. La escala evalúa conductas compulsivas hacia alimentos con alta densidad de azúcar, grasa y sal.
+Este resultado informativo no establece un diagnóstico ni prescribe tratamiento. Las traducciones son adaptaciones informativas; no se ha confirmado su validación psicométrica por separado.
 
 ### Fuentes
 
-- [Schulte E.M., Gearhardt A.N. Development of the Modified Yale Food Addiction Scale Version 2.0. Eur Eat Disord Rev, 2017;25(4):302–308](https://pubmed.ncbi.nlm.nih.gov/28543787/)
-- [Gearhardt A.N. et al. Preliminary validation of the Yale Food Addiction Scale. Appetite, 2009;52(2):430–436](https://pubmed.ncbi.nlm.nih.gov/19028533/)
+- [Schulte, Gearhardt. Modified Yale Food Addiction Scale 2.0: original form and scoring](https://sites.lsa.umich.edu/fastlab/yale-food-addiction-scale/)
+- [Schulte EM et al. Development of the Modified Yale Food Addiction Scale Version 2.0. Eur Eat Disord Rev, 2017](https://pubmed.ncbi.nlm.nih.gov/28370722/)
+- [Gearhardt AN et al. Development of the Yale Food Addiction Scale Version 2.0. Psychol Addict Behav, 2016](https://pubmed.ncbi.nlm.nih.gov/26866783/)
 
 ## Cómo integrar esta calculadora
 

@@ -6,30 +6,34 @@
 
 `phenoage` · [NutriFit](https://nutrifit.health/es/calculators/phenoage)
 
-Edad fenotípica y aceleración del envejecimiento a partir de 9 biomarcadores del hemograma y la bioquímica rutinarios (Levine 2018) con estimación del riesgo a 10 años.
+El modelo Levine 2018 combina nueve biomarcadores y la edad cronológica. PhenoAge es una edad equivalente del riesgo poblacional en el modelo NHANES, no la edad de los órganos ni la esperanza de vida individual. La diferencia respecto a la edad es una resta, no una velocidad de envejecimiento ni el residuo estadístico PhenoAgeAccel.
 
-### Cómo usar
+### Uso
 
-1. 1. Hágase un hemograma con fórmula y una bioquímica: Se necesitan: albúmina, creatinina, glucosa en ayunas, PCR (mejor ultrasensible) y fosfatasa alcalina de la bioquímica; leucocitos, linfocitos %, VCM y RDW del hemograma.
-2. 2. Introduzca los valores en unidades SI: Albúmina en g/L (no g/dL), creatinina en µmol/L, glucosa en mmol/L, PCR en mg/L. Si el informe usa otras unidades, use el conversor de unidades.
-3. 3. Siga la tendencia, no un número aislado: El error puntual del modelo es de varios años, pero el cambio de PhenoAge tras 6–12 meses de intervención muestra si esta funciona. Recalcule con análisis del mismo laboratorio.
+1. Introduzca los datos iniciales: El modelo Levine 2018 combina nueve biomarcadores y la edad cronológica. PhenoAge es una edad equivalente del riesgo poblacional en el modelo NHANES, no la edad de los órganos ni la esperanza de vida individual. La diferencia respecto a la edad es una resta, no una velocidad de envejecimiento ni el residuo estadístico PhenoAgeAccel.
+2. Ajuste los parámetros: xb = −19.907 − 0.0336·A + 0.0095·C + 0.1953·G + 0.0954·ln(CRP) − 0.012·L + 0.0268·M + 0.3306·R + 0.00188·P + 0.0554·W + 0.0804·a
+H = exp(xb) × (exp(120 × 0.0076927) − 1) / 0.0076927
+PhenoAge = 141.50225 + ln(0.00553 × H) / 0.09165
+A: albúmina, g/L; C: creatinina, µmol/L; G: glucosa, mmol/L; CRP: PCR, mg/dL (entrada mg/L ÷ 10); L: linfocitos, %; M: VCM, fL; R: RDW, %; P: fosfatasa alcalina, U/L; W: leucocitos, 10⁹/L; a: edad, años.
+3. Lea el resultado: Modelo de investigación para edades de 20–84 años. Una enfermedad aguda cambia los biomarcadores y el resultado. No es un diagnóstico, una duración de vida ni una prueba de rejuvenecimiento. La PCR debe estar medida y ser positiva; un resultado bajo el límite de detección no puede sustituirse por cero.
 
 ### Método y fórmula
 
-PhenoAge (Levine et al., 2018) es una medida validada de edad biológica obtenida con datos de NHANES III (9926 personas) y comprobada en NHANES IV. De 42 marcadores clínicos, el modelo seleccionó nueve que mejor predicen la mortalidad además de la edad cronológica: albúmina, creatinina, glucosa, proteína C reactiva, porcentaje de linfocitos, volumen corpuscular medio, amplitud de distribución eritrocitaria, fosfatasa alcalina y recuento de leucocitos. Una combinación lineal de estos marcadores con la edad se transforma mediante un modelo de Gompertz en riesgo de mortalidad a 10 años, y este en la «edad» a la que ese riesgo es típico en la población. La diferencia entre PhenoAge y la edad cronológica es la aceleración del envejecimiento, ligada al riesgo cardiovascular, diabetes, cáncer y demencia.
+El modelo Levine 2018 combina nueve biomarcadores y la edad cronológica. PhenoAge es una edad equivalente del riesgo poblacional en el modelo NHANES, no la edad de los órganos ni la esperanza de vida individual. La diferencia respecto a la edad es una resta, no una velocidad de envejecimiento ni el residuo estadístico PhenoAgeAccel.
 
-xb = −19,907 − 0,0336·Albúmina(g/L) + 0,0095·Creatinina(µmol/L) + 0,1953·Glucosa(mmol/L) + 0,0954·ln(PCR, mg/dL) − 0,0120·Linfocitos(%) + 0,0268·VCM(fL) + 0,3306·RDW(%) + 0,00188·FA(U/L) + 0,0554·Leucocitos(10⁹/L) + 0,0804·Edad
-Riesgo a 120 meses = 1 − exp(−e^xb · (e^(120·0,0076927) − 1) / 0,0076927)
-PhenoAge = 141,50225 + ln(−0,00553 · ln(1 − Riesgo)) / 0,09165
+xb = −19.907 − 0.0336·A + 0.0095·C + 0.1953·G + 0.0954·ln(CRP) − 0.012·L + 0.0268·M + 0.3306·R + 0.00188·P + 0.0554·W + 0.0804·a
+H = exp(xb) × (exp(120 × 0.0076927) − 1) / 0.0076927
+PhenoAge = 141.50225 + ln(0.00553 × H) / 0.09165
+A: albúmina, g/L; C: creatinina, µmol/L; G: glucosa, mmol/L; CRP: PCR, mg/dL (entrada mg/L ÷ 10); L: linfocitos, %; M: VCM, fL; R: RDW, %; P: fosfatasa alcalina, U/L; W: leucocitos, 10⁹/L; a: edad, años.
 
 ### Limitaciones
 
-El modelo se obtuvo en población estadounidense de 20+ años y estima el riesgo a nivel de grupo: el error individual es de varios años. Los procesos agudos (infección, traumatismo, deshidratación) distorsionan mucho la PCR, los leucocitos y la creatinina; use análisis realizados sin enfermedad. No está validado en embarazadas, deportistas con gran masa muscular (creatinina) ni pacientes en diálisis. PhenoAge es una herramienta de seguimiento, no un diagnóstico, y no sustituye la valoración del riesgo cardiovascular por SCORE2.
+Modelo de investigación para edades de 20–84 años. Una enfermedad aguda cambia los biomarcadores y el resultado. No es un diagnóstico, una duración de vida ni una prueba de rejuvenecimiento. La PCR debe estar medida y ser positiva; un resultado bajo el límite de detección no puede sustituirse por cero.
 
 ### Fuentes
 
-- [Levine M.E. et al. An epigenetic biomarker of aging for lifespan and healthspan. Aging (Albany NY), 2018;10(4):573–591](https://pubmed.ncbi.nlm.nih.gov/29676998/)
-- [Liu Z. et al. A new aging measure captures morbidity and mortality risk across diverse subpopulations from NHANES IV: a cohort study. PLoS Med, 2018;15(12):e1002718](https://pubmed.ncbi.nlm.nih.gov/30596641/)
+- [Levine ME et al. An epigenetic biomarker of aging for lifespan and healthspan. Aging (Albany NY), 2018](https://pubmed.ncbi.nlm.nih.gov/29676998/)
+- [Liu Z et al. A new aging measure captures morbidity and mortality risk across diverse subpopulations from NHANES IV: A cohort study. PLoS Med, 2018](https://pubmed.ncbi.nlm.nih.gov/30596641/)
 
 ## Cómo integrar esta calculadora
 

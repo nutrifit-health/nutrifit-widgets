@@ -1,4 +1,4 @@
-# Dynamic Weight Loss Forecast Calculator (Kevin Hall Model)
+# Hall–Chow weight-change scenario
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/weight-loss-forecast.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/weight-loss-forecast.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/weight-loss-forecast.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/weight-loss-forecast.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/weight-loss-forecast.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/weight-loss-forecast.md)
 
@@ -6,29 +6,28 @@
 
 `weight-loss-forecast` · [NutriFit](https://nutrifit.health/calculators/weight-loss-forecast)
 
-Generates a realistic, non-linear weight loss trajectory using the NIH/NIDDK model of Kevin Hall, accounting for adaptive thermogenesis and body composition changes.
+A simplified model with average parameters illustrates weight change after a sustained reduction in baseline energy intake, with unchanged activity.
 
-### How to use
+### Usage
 
-1. Maintain a moderate deficit (15–20%): A 300–500 kcal deficit preserves psychological adherence, spares lean muscle mass, and minimizes metabolic resistance.
-2. Consume adequate protein: Consuming 1.8–2.4 g/kg of protein during caloric restriction guarantees that 85–90% of weight lost comes from adipose tissue.
-3. Plan structured diet breaks: Every 8–12 weeks of dieting, spend 1–2 weeks eating at maintenance calories (TDEE). This resets leptin and thyroid hormones (T3), attenuating adaptation.
+1. Enter the starting values: Use actual values and the appropriate units.
+2. Adjust the parameters: Adjust the starting assumptions for your situation.
+3. Read the result: Consider the model limitations; a calculation is not a measurement.
 
 ### Method and formula
 
-Replaces the flawed static 3,500-kcal rule with the validated dynamic energy balance model (Hall et al., Lancet 2011). Incorporates metabolic slowdown (~22 kcal/kg lost) and Forbes body fat partitioning.
+W(t)=W0−D/22×(1−exp(−22×t/9100)); t is days, D is intake reduction in kcal/day. Average parameters: ρ=9100 kcal/kg, ε=22 kcal/(kg·day). Linear comparison: loss D×t/7700.
 
-Metabolic adaptation = 22 kcal/kg lost + adaptive thermogenesis; Effective Deficit = Prescribed Deficit − Adaptation; Fat loss partition p = Forbes(F, W); Numerical iteration week-by-week.
+W(t)=W0−D/22×(1−exp(−22×t/9100)); t is days, D is intake reduction in kcal/day. Average parameters: ρ=9100 kcal/kg, ε=22 kcal/(kg·day). Linear comparison: loss D×t/7700.
 
 ### Limitations
 
-Assumes strict adherence to the prescribed caloric deficit. Transient water fluctuations from cortisol or sodium can mask fat loss on scale weight.
+This is the linearized two-parameter Hall–Chow model (2011), not the full individual NIH Body Weight Planner. It does not predict fat, muscle or an exact plateau date. Scenario for adults, excluding pregnancy and breastfeeding. Baseline intake is assumed to maintain weight and the reduction to be sustained; water, medicines, illness and adherence are not modelled. This does not prescribe a calorie deficit.
 
 ### Sources
 
-- [Hall K.D. et al. Quantification of the effect of energy imbalance on bodyweight. Lancet, 2011;378(9793):826–837](https://pubmed.ncbi.nlm.nih.gov/21872751/)
-- [Thomas D.M. et al. Can a weight loss of one pound a week be achieved with a 3,500-kcal deficit? Commentary on a commonly accepted rule. Int J Obes, 2013;37(12):1611–1613](https://pubmed.ncbi.nlm.nih.gov/23628852/)
-- [Forbes G.B. Lean body mass-body fat interrelationships in humans. Nutr Rev, 1987;45(8):225–231](https://pubmed.ncbi.nlm.nih.gov/3306482/)
+- [Hall K.D., Chow C.C. Estimating changes in free-living energy intake and its confidence interval. Am J Clin Nutr, 2011;94(1):66–74. Linearized energy-balance model](https://pmc.ncbi.nlm.nih.gov/articles/PMC3127505/)
+- [Hall KD et al. Quantification of the effect of energy imbalance on bodyweight. Lancet, 2011](https://pubmed.ncbi.nlm.nih.gov/21872751/)
 
 ## Embed this calculator
 
@@ -59,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/weight-loss-forecast?lang=en&theme=auto"
-  title="Dynamic Weight Loss Forecast Calculator (Kevin Hall Model)" loading="lazy" referrerpolicy="no-referrer"
+  title="Hall–Chow weight-change scenario" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

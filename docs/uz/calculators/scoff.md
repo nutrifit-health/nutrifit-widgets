@@ -10,9 +10,9 @@ Anoreksiya va bulimiya kabi ovqatlanish buzilishlari xavfini birlamchi aniqlash 
 
 ### Foydalanish tartibi
 
-1. Barcha 5 ta savolni diqqat bilan o‘qing: So‘nggi oylardagi taomlanish odatlaringiz va tana vazningizga munosabatingizni tahlil qiling.
-2. Samimiy 'Ha' yoki 'Yo‘q' deb javob bering: O‘z holatingizni xaspo‘shlamasdan va kamaytirmasdan ochiq javob bering.
-3. Skrining xulosasini bilib oling: Klinik xavf mavjudligini tekshiring va shifokor tavsiyalari bilan tanishing.
+1. Yo‘riqnomani o‘qing: Ko‘rsatilgan davr va har bir fikrning ma’nosini hisobga oling.
+2. Javoblarni tanlang: Har bir bandga mos variantni tanlab javob bering.
+3. Natijani ko‘ring: Ijobiy skrining — qo‘shimcha baholash kerak
 
 ### Usul va formula
 
@@ -22,12 +22,12 @@ SCOFF umumiy bali = Tasdiqlovchi javoblar soni (0–5). Natija ≥ 2 bo‘lganda
 
 ### Cheklovlar
 
-SCOFF testi faqatgina birlamchi skrining vositasi hisoblanadi. U yakuniy tibbiy tashxis qo‘ymaydi va mutaxassis konsultatsiyasini talab qiladi.
+Ma’lumot uchun berilgan natija tashxis qo‘ymaydi va davolash buyurmaydi. Tarjima axborot uchun moslashtirilgan; uning alohida psixometrik validatsiyasi tasdiqlanmagan.
 
 ### Manbalar
 
-- [Morgan J.F. et al. The SCOFF questionnaire: assessment of a new screening tool for eating disorders. BMJ, 1999;319(7223):1467–1468](https://pubmed.ncbi.nlm.nih.gov/10582927/)
-- [Luck A.J. et al. The SCOFF questionnaire and clinical interview for detecting eating disorders. BMJ, 2002;325(7367):755–756](https://pubmed.ncbi.nlm.nih.gov/12364305/)
+- [Morgan JF et al. The SCOFF questionnaire: assessment of a new screening tool for eating disorders. BMJ, 1999](https://pubmed.ncbi.nlm.nih.gov/10582927/)
+- [Luck AJ et al. The SCOFF questionnaire and clinical interview for eating disorders in general practice: comparative study. BMJ, 2002](https://pubmed.ncbi.nlm.nih.gov/12364305/)
 
 ## Ushbu kalkulyatorni joylashtirish
 

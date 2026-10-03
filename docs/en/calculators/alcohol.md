@@ -1,4 +1,4 @@
-# Alcohol Clearance & Sobriety Calculator (Widmark)
+# Ethanol and illustrative Widmark estimate
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/alcohol.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/alcohol.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/alcohol.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/alcohol.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/alcohol.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/alcohol.md)
 
@@ -6,28 +6,28 @@
 
 `alcohol` · [NutriFit](https://nutrifit.health/calculators/alcohol)
 
-Calculates peak and current blood alcohol concentration (BAC in ‰), precise time to complete sobriety, and empty caloric load from ethanol.
+Calculates ethanol amount, ethanol calories and an approximate concentration using a simplified model.
 
-### How to use
+### Usage
 
-1. Gastric and intestinal absorption: Approximately 20% of alcohol is absorbed through gastric mucosa, while 80% is rapidly absorbed in the duodenum and jejunum. Food delays gastric emptying, flattening peak BAC.
-2. Hepatic enzymatic breakdown: The liver metabolizes up to 95% of ethanol at a constant rate via alcohol dehydrogenase (ADH) into toxic acetaldehyde, which aldehyde dehydrogenase (ALDH) rapidly converts to acetate.
-3. Zero-order linear elimination: Hepatic clearance saturates quickly (zero-order kinetics): the rate of blood alcohol decline is strictly ~0.15 ‰ per hour regardless of how much was consumed.
+1. Enter the starting values: Use actual values and the appropriate units.
+2. Adjust the parameters: Adjust the starting assumptions for your situation.
+3. Read the result: Consider the model limitations; a calculation is not a measurement.
 
 ### Method and formula
 
-Based on Erik Widmark’s pharmacokinetic model (1932) with updates by A.W. Jones (2010). Factors in gender-specific body water distribution (r = 0.68 for men, 0.55 for women), gastric ADH oxidation, and linear elimination rate (0.15 ‰/h).
+Ethanol, g = volume, mL × ABV / 100 × 0.789. C0 = ethanol / (weight × r); C(t) = max(0, C0 − 0.15 × t). r = 0.68 for men and 0.55 for women.
 
-Pure Ethanol (g) = Volume (mL) × (ABV% / 100) × 0.789; Peak BAC = (Ethanol × Absorption) / (Weight × r); Current BAC = max(0, Peak BAC − 0.15 × Hours); Time = Peak BAC / 0.15.
+Ethanol, g = volume, mL × ABV / 100 × 0.789. C0 = ethanol / (weight × r); C(t) = max(0, C0 − 0.15 × t). r = 0.68 for men and 0.55 for women.
 
 ### Limitations
 
-Metabolic rate varies (0.10–0.20 ‰/h) based on liver function and genetics. Results are educational and do not serve as legal evidence for operating motor vehicles.
+Average coefficients do not describe an individual. The model treats the entered amount as one dose and does not model absorption, food or drinking duration. The result cannot establish sobriety, a safe driving time or legal compliance. Even a calculated zero does not confirm absence of alcohol.
 
 ### Sources
 
 - [Widmark E.M.P. Die theoretischen Grundlagen und die praktische Verwendbarkeit der gerichtlich-medizinischen Alkoholbestimmung. Urban & Schwarzenberg, Berlin, 1932](https://doi.org/10.1007/978-3-642-91176-8)
-- [Jones A.W. Evidence-based survey of the elimination rates of ethanol from blood with applications in forensic casework and pharmacokinetics. Forensic Sci Int, 2010;200(1-3):1–20](https://pubmed.ncbi.nlm.nih.gov/20434270/)
+- [Jones AW. et al. Evidence-based survey of the elimination rates of ethanol from blood with applications in forensic casework. Forensic Sci Int, 2010](https://pubmed.ncbi.nlm.nih.gov/20304569/)
 - [World Health Organization. Global status report on alcohol and health. Geneva, 2024](https://www.who.int/publications/i/item/9789240096745)
 
 ## Embed this calculator
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/alcohol?lang=en&theme=auto"
-  title="Alcohol Clearance &amp; Sobriety Calculator (Widmark)" loading="lazy" referrerpolicy="no-referrer"
+  title="Ethanol and illustrative Widmark estimate" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

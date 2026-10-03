@@ -12,6 +12,8 @@ For `nutrition`: find public foods or recipes, add their weights in grams and en
 
 The NutriFit server sums available nutrient values from the selected public foods and recipes at the supplied ingredient weights. It returns dish totals and values per 100 g based on the finished dish weight. PDF performs a fresh server calculation; CSV exports the displayed result.
 
+Enter each ingredient’s weight in the form selected from the catalog (raw or cooked), and the finished dish weight for values per 100 g. Cooking and draining nutrient losses are not modeled.
+
 ## Limitations
 
 Up to 50 ingredients. Enter weights in grams and a positive finished dish weight. Missing values remain incomplete, not zero. Ingredient and recipe data may change; a PDF may differ from the earlier screen result. This calculation is an estimate and does not diagnose conditions or prescribe treatment.

@@ -10,9 +10,12 @@ CKD-EPI 2021 bo‘yicha hisobiy KFT (kreatinin, ixtiyoriy sistatin C), Kokroft �
 
 ### Foydalanish tartibi
 
-1. Blankdan kreatininni toping: Zardob kreatinini asosiy bioximiyaga kiradi. MDH va Yevropa laboratoriyalari mkmol/l, AQSh va Lotin Amerikasi — mg/dl beradi. Kerakli birlikni tanlang.
-2. Jins va yoshni ko‘rsating: Mushak massasi, demak «normal» kreatinin ham erkaklar va ayollarda farq qiladi va yosh bilan pasayadi — tenglama buni hisobga oladi. 2021 yilgi versiyada irqiy tuzatish chiqarib tashlangan.
-3. Bo‘lsa, sistatin C qo‘shing: Sistatin C mushak massasi va ratsionga bog‘liq emas. Birlashgan tenglama albuminuriyasiz eGFRcr 45–59 da SBK ni tasdiqlash uchun KDIGO 2024 tomonidan tavsiya etilgan.
+1. Boshlang‘ich ma’lumotlarni kiriting: Koptokcha filtratsiya tezligi — buyrak funksiyasining asosiy ko‘rsatkichi. CKD-EPI 2021 tenglamasi (Inker et al., NEJM) uni zardob kreatinini, yosh va jins bo‘yicha amaliyotdan chiqarilgan irqiy koeffitsientsiz chiqaradi. Sistatin C mavjud bo‘lganda CKD-EPI 2021 cr-cys birlashgan tenglamasi qo‘llaniladi — u nostandart mushak massasi bo‘lgan odamlarda (sportchilar, sarkopeniya, amputatsiyalar, veganlar) aniqroq. Qo‘shimcha kalkulyator dori dozalash uchun hozirgacha qo‘llaniladigan Kokroft — Golt bo‘yicha kreatinin klirensini va KDIGO bo‘yicha G1–G5 SBK bosqichini ko‘rsatadi.
+2. Parametrlarni aniqlashtiring: eGFRcr = 142 × min(Scr/κ, 1)^α × max(Scr/κ, 1)^−1,200 × 0,9938^Yosh × 1,012 [ayol]
+κ = 0,7 (ayol) / 0,9 (erkak);  α = −0,241 (ayol) / −0,302 (erkak);  Scr — kreatinin, mg/dl (= mkmol/l / 88,4)
+eGFRcr-cys = 135 × min(Scr/κ,1)^α × max(Scr/κ,1)^−0,544 × min(Scys/0,8,1)^−0,323 × max(Scys/0,8,1)^−0,778 × 0,9961^Yosh × 0,963 [ayol]
+Kokroft — Golt (ml/min) = (140 − Yosh) × Vazn (kg) × 0,85 [ayol] / (72 × Scr, mg/dl)
+3. Natijani o‘qing: CKD-EPI 2021 filtratsiyani; Cockcroft–Gault tana yuzasiga indekslanmagan kreatinin klirensini mL/min da baholaydi. Surunkali buyrak kasalligi kamida uch oy davom etgan o‘zgarishlarni talab qiladi; bitta qiymat dializ zaruratini belgilamaydi.
 
 ### Usul va formula
 
@@ -25,13 +28,13 @@ Kokroft — Golt (ml/min) = (140 − Yosh) × Vazn (kg) × 0,85 [ayol] / (72 × 
 
 ### Cheklovlar
 
-Hisobiy KFT barqaror holatdagi 18 yoshdan katta kattalar uchun validatsiyalangan: buyrakning o‘tkir shikastlanishi, homiladorlik, tana vazni va mushak massasining ekstremal qiymatlari, amputatsiyalar va kreatinin sekretsiyasiga ta’sir qiluvchi preparatlar (trimetoprim, simetidin) qabul qilishda u noaniq. Bitta eGFR < 60 qiymati SBK degani emas — tashxis 3 oydan keyin tasdiqlash va albuminuriyani baholashni talab qiladi. Kokroft — Golt formulasi tana yuzasiga normalanmagan va semizlikda klirensni oshirib ko‘rsatadi.
+CKD-EPI 2021 filtratsiyani; Cockcroft–Gault tana yuzasiga indekslanmagan kreatinin klirensini mL/min da baholaydi. Surunkali buyrak kasalligi kamida uch oy davom etgan o‘zgarishlarni talab qiladi; bitta qiymat dializ zaruratini belgilamaydi.
 
 ### Manbalar
 
-- [Inker L.A. et al. New creatinine- and cystatin C-based equations to estimate GFR without race. N Engl J Med, 2021;385(19):1737–1749](https://pubmed.ncbi.nlm.nih.gov/34554658/)
+- [Inker LA et al. New Creatinine- and Cystatin C-Based Equations to Estimate GFR without Race. N Engl J Med, 2021](https://pubmed.ncbi.nlm.nih.gov/34554658/)
 - [KDIGO 2012 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int Suppl, 2013;3(1):1–150](https://kdigo.org/guidelines/ckd-evaluation-and-management/)
-- [Cockcroft D.W., Gault M.H. Prediction of creatinine clearance from serum creatinine. Nephron, 1976;16(1):31–41](https://pubmed.ncbi.nlm.nih.gov/1244564/)
+- [Cockcroft DW et al. Prediction of creatinine clearance from serum creatinine. Nephron, 1976](https://pubmed.ncbi.nlm.nih.gov/1244564/)
 
 ## Ushbu kalkulyatorni joylashtirish
 

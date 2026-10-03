@@ -1,4 +1,4 @@
-# Калькулятор Омега-3 (дозування EPA + DHA та індекс)
+# Довідкові орієнтири EPA та DHA
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/omega-3.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/omega-3.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/omega-3.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/omega-3.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/omega-3.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/omega-3.md)
 
@@ -6,29 +6,27 @@
 
 `omega-3` · [NutriFit](https://nutrifit.health/uk/calculators/omega-3)
 
-Визначає оптимальну добову дозу ейкозапентаєнової (EPA) та докозагексаєнової (DHA) кислот під конкретні клінічні цілі та спосіб життя.
+AI EFSA для дорослих — 250 мг EPA+DHA на добу з їжі та добавок разом. Під час вагітності й лактації додатково до цієї кількості вказано 100–200 мг DHA на добу. Це не фіксоване співвідношення EPA:DHA і не маса всього риб’ячого жиру.
 
 ### Порядок використання
 
-1. Дивіться на склад капсули (EPA + DHA): Напис «1000 мг риб'ячого жиру» часто приховує лише 300 мг EPA+DHA. Додавайте саме міліграми EPA та DHA на етикетці.
-2. Обирайте правильну форму (rTG або TG): Реестерифіковані тригліцериди (rTG) мають найвищу біодоступність порівняно з дешевими етиловими ефірами (EE).
-3. Перевіряйте індекс окиснення (TOTOX): Якісний риб'ячий жир має індекс TOTOX < 26 та сертифікат IFOS. Він не повинен мати запаху тухлої риби.
+1. Введіть дані: AI EFSA для дорослих — 250 мг EPA+DHA на добу з їжі та добавок разом. Під час вагітності й лактації додатково до цієї кількості вказано 100–200 мг DHA на добу. Це не фіксоване співвідношення EPA:DHA і не маса всього риб’ячого жиру.
+2. Порівняйте орієнтири: AI EFSA для дорослих — 250 мг EPA+DHA на добу з їжі та добавок разом. Під час вагітності й лактації додатково до цієї кількості вказано 100–200 мг DHA на добу. Це не фіксоване співвідношення EPA:DHA і не маса всього риб’ячого жиру.
+3. Врахуйте обмеження: Орієнтир не означає обов’язковий прийом добавки й не замінює оцінку раціону. Форма не призначає лікування гіпертригліцеридемії чи депресії та не діагностує дефіцит за омега-3 індексом. Ліки, взаємодії та індивідуальні дози обговорюють із лікарем.
 
-### Методика та формула
+### Методика і формула
 
-Базується на клінічних гайдлайнах GOED, Американської кардіологічної асоціації (AHA) та ISSFAL. Враховує цільове значення Омега-3 індексу мембран еритроцитів (> 8%).
+AI EFSA для дорослих — 250 мг EPA+DHA на добу з їжі та добавок разом. Під час вагітності й лактації додатково до цієї кількості вказано 100–200 мг DHA на добу. Це не фіксоване співвідношення EPA:DHA і не маса всього риб’ячого жиру.
 
-Базове здоров'я: 500 мг/добу; Кардіопротекція: 1000 мг/добу; Гіпертригліцеридемія: 2000–4000 мг/добу; Вагітність: 600 мг (акцент на DHA); Депресія: 1000–2000 мг (EPA:DHA ≥ 2:1); Спорт: 1500–2000 мг.
+AI EFSA для дорослих — 250 мг EPA+DHA на добу з їжі та добавок разом. Під час вагітності й лактації додатково до цієї кількості вказано 100–200 мг DHA на добу. Це не фіксоване співвідношення EPA:DHA і не маса всього риб’ячого жиру.
 
 ### Обмеження
 
-Прийом доз понад 3000–4000 мг EPA+DHA на добу потребує контролю коагулограми через антиагрегантний ефект (розрідження крові).
+Орієнтир не означає обов’язковий прийом добавки й не замінює оцінку раціону. Форма не призначає лікування гіпертригліцеридемії чи депресії та не діагностує дефіцит за омега-3 індексом. Ліки, взаємодії та індивідуальні дози обговорюють із лікарем.
 
 ### Джерела
 
-- [Harris W.S., Von Schacky C. The Omega-3 Index: a new risk factor for death from coronary heart disease? Prev Med, 2004;39(1):212–220](https://pubmed.ncbi.nlm.nih.gov/15207989/)
-- [Global Organization for EPA and DHA Omega-3s (GOED). Clinical Practice Recommendations for EPA and DHA Omega-3 Intake, 2022](https://goedomega3.com/intake-recommendations)
-- [Guu T.W. et al. International Society for Nutritional Psychiatry Research Practice Guidelines for Omega-3 Fatty Acids in the Treatment of Major Depressive Disorder. Psychother Psychosom, 2019;88(5):263–273](https://pubmed.ncbi.nlm.nih.gov/31480072/)
+- [EFSA. Dietary Reference Values summary, 2017, Table 2](https://www.efsa.europa.eu/sites/default/files/2017_09_DRVs_summary_report.pdf)
 
 ## Як вбудувати цей калькулятор
 
@@ -59,7 +57,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/omega-3?lang=uk&theme=auto"
-  title="Калькулятор Омега-3 (дозування EPA + DHA та індекс)" loading="lazy" referrerpolicy="no-referrer"
+  title="Довідкові орієнтири EPA та DHA" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

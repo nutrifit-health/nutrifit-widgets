@@ -1,4 +1,4 @@
-# Тамақтану мінез-құлқын диагностикалау шебері
+# Тамақтану мінез-құлқын өзіндік бағалау
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/eating-behavior-wizard.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/eating-behavior-wizard.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/eating-behavior-wizard.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/eating-behavior-wizard.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/eating-behavior-wizard.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/eating-behavior-wizard.md)
 
@@ -6,23 +6,23 @@
 
 `eating-behavior-wizard` · [NutriFit](https://nutrifit.health/kk/calculators/eating-behavior-wizard)
 
-Терең тамақтану психотипі мен жеке стратегияны анықтау үшін жетекші валидацияланған шкалаларды біріктіретін NutriFit интеграцияланған шебері.
+SCOFF-тың бес сұрағы және тамақтану мінез-құлқын өзіндік бағалауға арналған төрт авторлық сұрақ.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Қауіптер скринингінен өтіңіз: Салмақ пен тамақты бақылауға тым қатты берілу белгілерін белгілеңіз.
-2. Тамақтану шкалаларын реттеңіз: Шектеулер, күйзелісті тамақпен басу және дәмді тағамға реакция деңгейін көрсетіңіз.
-3. Психотипіңіз бен стратегияңызды алыңыз: Жетекші тамақтану үлгіңіздің сипаттамасымен танысып, толық PDF-есепті жүктеп алыңыз.
+1. Нұсқаулықты оқыңыз: Көрсетілген мерзім мен әр тұжырымның мағынасын ескеріңіз.
+2. Жауаптарды таңдаңыз: Әр тармаққа сәйкес нұсқаны таңдап жауап беріңіз.
+3. Нәтижені қараңыз: Нәтиже жауаптарды көрсетеді; оны әдістеменің шектеулерін ескере отырып қолданыңыз.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-NutriFit көпфакторлы алгоритмі диеталық бақылау, эмоционалды тамақтану, сыртқы себептер мен ТББ қаупі белгілерін біртұтас психотипке салыстырады.
+SCOFF бес нақты «иә/жоқ» жауабы бойынша есептеледі. Қалған жауаптар тікелей көрсетіледі.
 
-DEBQ, SCOFF, IES-2 және mYFAS 2.0 шкалаларының өзара байланысына негізделген тамақтану мінез-құлқын жіктеудің кешенді матрицасы.
+SCOFF-та екі немесе одан көп «иә» жауабы — оң скрининг. Авторлық сұрақтар DEBQ, IES-2 немесе mYFAS балдарын есептемейді және психологиялық типті анықтамайды.
 
 ### Шектеулер
 
-Бұл құрал өзін-өзі тануға және маманмен жұмыс істеуге бағытталған, дәрігердің клиникалық сұхбатын алмастырмайды.
+Анықтамалық нәтиже диагноз қоймайды және ем тағайындамайды. Аударма ақпараттық бейімдеу болып табылады; оның жеке психометриялық валидациясы расталмаған.
 
 ### Дереккөздер
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/eating-behavior-wizard?lang=kk&theme=auto"
-  title="Тамақтану мінез-құлқын диагностикалау шебері" loading="lazy" referrerpolicy="no-referrer"
+  title="Тамақтану мінез-құлқын өзіндік бағалау" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

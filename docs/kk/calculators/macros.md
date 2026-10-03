@@ -1,4 +1,4 @@
-# БЖК калькуляторы
+# Авторлық макронутриент жоспарлағышы
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/macros.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/macros.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/macros.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/macros.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/macros.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/macros.md)
 
@@ -6,27 +6,27 @@
 
 `macros` · [NutriFit](https://nutrifit.health/kk/calculators/macros)
 
-Тәуліктік калориялықты дене салмағы мен мақсатты ескере отырып ақуыз, май және көмірсуларға бөледі — граммен, калориямен және пайызбен.
+Ақуыз: азайтуға 1,8–2,2 г/кг, сақтауға 1,4–1,8, қосуға 1,8–2,4; май 0,8–1,2 г/кг. Орта мәндер қолданылады; көмірсу — 4/9/4 ккал/г бойынша қалған калория.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Есептеу тәсілін таңдаңыз: Белгілі калория нормаңызды енгізіңіз немесе NutriFit жүйесіне жас, жыныс, бой, салмақ және белсенділік негізінде тәуліктік шығынды (TDEE) есептеуге мүмкіндік беріңіз.
-2. Параметрлер мен мақсатты көрсетіңіз: Мақсатты таңдаңыз: салмақ тастау (20% дефицит), салмақты сақтау немесе бұлшықет жинау (15% профицит). Салмақты кг және фунтпен енгізуге болады.
-3. Жеке БЖК жоспарын алыңыз: Ақуыз, май және көмірсулардың граммдағы, калориядағы және рацион пайызындағы нақты ғылыми нормасын бірден көріңіз.
+1. Бастапқы деректерді енгізіңіз: Ақуыз: азайтуға 1,8–2,2 г/кг, сақтауға 1,4–1,8, қосуға 1,8–2,4; май 0,8–1,2 г/кг. Орта мәндер қолданылады; көмірсу — 4/9/4 ккал/г бойынша қалған калория.
+2. Параметрлерді нақтылаңыз: Ақуыз: азайтуға 1,8–2,2 г/кг, сақтауға 1,4–1,8, қосуға 1,8–2,4; май 0,8–1,2 г/кг. Орта мәндер қолданылады; көмірсу — 4/9/4 ккал/г бойынша қалған калория.
+3. Нәтижені оқыңыз: Бұл авторлық бөлу, ISSN нақты нормасы не майдың физиологиялық минимумы емес. Ақуыз бен май калориядан асса, толық жоспар берілмейді. Ересектерге май AMDR 20–35% — бөлек бағдар, жеке тағайындау емес.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-Ақуыз бен май калория үлесінен емес, дене салмағынан есептеледі: бұл калория мөлшеріне тәуелді болмауы керек физиологиялық қажеттіліктер. Ақуыз нормасы ISSN ұстанымына сәйкес келеді (мақсатқа байланысты 1,4–2,4 г/кг). Майлар 0,8–1,2 г/кг практикалық диапазонында бағаланады және алынған энергия пайызы AMDR 20–35% эталондық диапазонымен салыстырылады. Көмірсулар қалған калорияларды алады: олар жаттығулар мен ми қызметін қуаттандырады.
+Ақуыз: азайтуға 1,8–2,2 г/кг, сақтауға 1,4–1,8, қосуға 1,8–2,4; май 0,8–1,2 г/кг. Орта мәндер қолданылады; көмірсу — 4/9/4 ккал/г бойынша қалған калория.
 
 Ақуыз(г) = салмақ × мақсат коэффициенті; Май(г) = салмақ × 0,8…1,2; Көмірсу(г) = (калориялық − ақуыз × 4 − май × 9) / 4
 
 ### Шектеулер
 
-Жалпы дене салмағынан есептеу айқын семіздікте ақуыз нормасын асырады — бұл жағдайда таза массаға есептеген дұрыс. Схема тағам қабылдау бойынша бөлуді, талшықты және көмірсуларға жеке төзімділікті ескермейді.
+Бұл авторлық бөлу, ISSN нақты нормасы не майдың физиологиялық минимумы емес. Ақуыз бен май калориядан асса, толық жоспар берілмейді. Ересектерге май AMDR 20–35% — бөлек бағдар, жеке тағайындау емес.
 
 ### Дереккөздер
 
-- [Jäger R. et al. International Society of Sports Nutrition Position Stand: Protein and Exercise. J Int Soc Sports Nutr, 2017;14:20](https://pubmed.ncbi.nlm.nih.gov/28642676/)
+- [Jäger R et al. International Society of Sports Nutrition Position Stand: protein and exercise. J Int Soc Sports Nutr, 2017](https://pubmed.ncbi.nlm.nih.gov/28642676/)
 - [Institute of Medicine. Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein, and Amino Acids, 2005 (AMDR)](https://nap.nationalacademies.org/catalog/10490)
 
 ## Осы калькуляторды ендіру
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/macros?lang=kk&theme=auto"
-  title="БЖК калькуляторы" loading="lazy" referrerpolicy="no-referrer"
+  title="Авторлық макронутриент жоспарлағышы" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

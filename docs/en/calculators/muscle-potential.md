@@ -1,4 +1,4 @@
-# Maximum Muscular Potential Calculator (Casey Butt & Berkhan)
+# Casey Butt anthropometric model
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/muscle-potential.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/muscle-potential.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/muscle-potential.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/muscle-potential.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/muscle-potential.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/muscle-potential.md)
 
@@ -6,29 +6,29 @@
 
 `muscle-potential` · [NutriFit](https://nutrifit.health/calculators/muscle-potential)
 
-Estimates the maximum drug-free lean body mass and muscular circumferences (chest, arms, thighs) achievable without anabolic pharmacology.
+Heuristic estimates of mass and girths from height, wrist, ankle and assumed body fat. The original girths describe male bodybuilders at about 8–10% fat. Berkhan: separate reference of height (cm) − 100 kg.
 
-### How to use
+### Usage
 
-1. Accurately Measure Skeletal Frame: Measure wrist between hand and ulnar styloid process. Measure ankle at the narrowest section directly above the ankle bones.
-2. Specify Desired Body Fat Level: For year-round lean athletic shape, target 10–12% body fat; for competitive stage conditioning, aim for 6–8%.
-3. Compare Current Circumferences to Ceilings: The calculator computes maximum potential for biceps, chest, and thighs. These provide realistic benchmarks for your physique.
+1. Enter the starting values: Heuristic estimates of mass and girths from height, wrist, ankle and assumed body fat. The original girths describe male bodybuilders at about 8–10% fat. Berkhan: separate reference of height (cm) − 100 kg.
+2. Adjust the parameters: Max LBM = Height^1.5 × [sqrt(Wrist)/22.6670 + sqrt(Ankle)/17.0104] × [(BodyFat%/224) + 1]; Berkhan Contest Weight (~5% BF) = Height (cm) − 100.
+3. Read the result: The male sample does not establish female norms. The model does not measure genetics, prove a muscular ceiling or predict time to achievement. Selected body fat is an assumption, not a recommended target.
 
 ### Method and formula
 
-Casey Butt, Ph.D. analyzed the anthropometry of elite drug-free bodybuilders from the pre-steroid era (1940s–1950s) over a 6-year study. The model demonstrates that natural muscle mass is mechanically limited by skeletal dimensions—wrist and ankle circumferences.
+Heuristic estimates of mass and girths from height, wrist, ankle and assumed body fat. The original girths describe male bodybuilders at about 8–10% fat. Berkhan: separate reference of height (cm) − 100 kg.
 
 Max LBM = Height^1.5 × [sqrt(Wrist)/22.6670 + sqrt(Ankle)/17.0104] × [(BodyFat%/224) + 1]; Berkhan Contest Weight (~5% BF) = Height (cm) − 100.
 
 ### Limitations
 
-Designed for biological males. For biological females, maximum lean muscle mass is approximately 65–70% of male values due to endocrine profile. Assumes years of progressive overload and optimal nutrition.
+The male sample does not establish female norms. The model does not measure genetics, prove a muscular ceiling or predict time to achievement. Selected body fat is an assumption, not a recommended target.
 
 ### Sources
 
-- [Butt C. Your Maximum Muscular Potential (The Casey Butt Model). The WeighTrainer, 2009](https://www.weightrainer.net/potential.html)
+- [Casey Butt. Your Maximum Muscular Bodyweight and Measurements. Авторский текст, архивная копия.](https://forum.steelfactor.ru/index.php?app=core&attach_id=540052&module=attach&section=attach)
 - [Berkhan M. The Leangains Guide and Maximum Potential for Drug-Free Athletes, 2010](https://leangains.com/maximum-muscular-potential-of-drug-free-athletes-updated-version/)
-- [Kouri E.M. et al. Fat-free mass index in users and nonusers of anabolic-androgenic steroids. Clin J Sport Med, 1995;5(4):223–228](https://pubmed.ncbi.nlm.nih.gov/7496846/)
+- [Kouri EM et al. Fat-free mass index in users and nonusers of anabolic-androgenic steroids. Clin J Sport Med, 1995](https://pubmed.ncbi.nlm.nih.gov/7496846/)
 
 ## Embed this calculator
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/muscle-potential?lang=en&theme=auto"
-  title="Maximum Muscular Potential Calculator (Casey Butt &amp; Berkhan)" loading="lazy" referrerpolicy="no-referrer"
+  title="Casey Butt anthropometric model" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

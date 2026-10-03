@@ -1,4 +1,4 @@
-# Кэтч — МакАрдл BMR және TDEE калькуляторы
+# Майсыз масса бойынша энергия бағалары
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/katch-mcardle.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/katch-mcardle.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/katch-mcardle.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/katch-mcardle.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/katch-mcardle.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/katch-mcardle.md)
 
@@ -6,29 +6,29 @@
 
 `katch-mcardle` · [NutriFit](https://nutrifit.health/kk/calculators/katch-mcardle)
 
-Таразыдағы жалпы салмақтың орнына тек құрғақ бұлшықет массасы негізінде базалық зат алмасуды (BMR) және тәуліктік энергия шығынын (TDEE) анықтайды.
+Майсыз масса = салмақ × (1 − май / 100). Katch–McArdle: 370 + 21,6 × майсыз масса; Cunningham: 500 + 22 × майсыз масса. Katch тәуліктік бағасы таңдалған белсенділік коэффициентіне көбейтіледі.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Құрғақ массаны анықтаңыз: Ағымдағы салмақ пен май пайызын енгізіңіз. Калькулятор белсенді құрғақ массаңызды есептейді.
-2. Шынайы белсенділік деңгейін таңдаңыз: Шынайы болыңыз: егер кеңседе істеп, аптасына 3 рет жаттықсаңыз, 'Жеңіл' немесе 'Орташа' белсенділікті таңдаңыз.
-3. Миффлин формуласымен салыстырыңыз: Айырмашылықты бақылаңыз: май пайызы төмен атлеттерде қарапайым формулалар калорияны 150–300 ккал-ға кем есептейді.
+1. Бастапқы деректерді енгізіңіз: Майсыз масса = салмақ × (1 − май / 100). Katch–McArdle: 370 + 21,6 × майсыз масса; Cunningham: 500 + 22 × майсыз масса. Katch тәуліктік бағасы таңдалған белсенділік коэффициентіне көбейтіледі.
+2. Параметрлерді нақтылаңыз: LBM = Салмақ × (1 − % Май / 100); BMR (Katch) = 370 + 21,6 × LBM(кг); TDEE = BMR × Белсенділік коэффициенті; BMR (Cunningham) = 500 + 22 × LBM(кг).
+3. Нәтижені оқыңыз: Бұл калориметриялық өлшеу емес, бағалау. Май пайызы мен жуық белсенділік коэффициентінің қатесі нәтижеге әсер етеді. Формула айырмасы қайсысы сізге дәлірек екенін дәлелдемейді.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-Жалпы дене салмағына сүйенетін Миффлин — Сан Жеор немесе Харрис — Бенедикт формулаларынан айырмашылығы, Кэтч — МакАрдл теңдеуі метаболикалық белсенді құрғақ дене салмағына (LBM) негізделген. Бұл спортшылар мен май пайызы ерекше адамдар үшін жоғары дәлдікті қамтамасыз етеді.
+Майсыз масса = салмақ × (1 − май / 100). Katch–McArdle: 370 + 21,6 × майсыз масса; Cunningham: 500 + 22 × майсыз масса. Katch тәуліктік бағасы таңдалған белсенділік коэффициентіне көбейтіледі.
 
 LBM = Салмақ × (1 − % Май / 100); BMR (Katch) = 370 + 21,6 × LBM(кг); TDEE = BMR × Белсенділік коэффициенті; BMR (Cunningham) = 500 + 22 × LBM(кг).
 
 ### Шектеулер
 
-Денедегі май пайызын алдын ала білуді талап етеді. Май пайызын қате анықтау калория есебіне тікелей қателік енгізеді.
+Бұл калориметриялық өлшеу емес, бағалау. Май пайызы мен жуық белсенділік коэффициентінің қатесі нәтижеге әсер етеді. Формула айырмасы қайсысы сізге дәлірек екенін дәлелдемейді.
 
 ### Дереккөздер
 
-- [McArdle W.D., Katch F.I., Katch V.L. Exercise Physiology: Nutrition, Energy, and Human Performance. 8th ed. Wolters Kluwer, 2014](https://pubmed.ncbi.nlm.nih.gov/15570161/)
-- [Cunningham J.J. A reanalysis of balanced nutrition and the relationship to body composition and resting metabolic rate. Am J Clin Nutr, 1991;54(6):963–969](https://pubmed.ncbi.nlm.nih.gov/1957828/)
-- [Mifflin M.D. et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990;51(2):241–247](https://pubmed.ncbi.nlm.nih.gov/2305711/)
+- [McArdle W.D., Katch F.I., Katch V.L. Exercise Physiology: Nutrition, Energy, and Human Performance. 8th ed. Wolters Kluwer](https://medicine.lww.com/Book/isbn/9781451191554)
+- [Cunningham JJ. et al. Body composition as a determinant of energy expenditure: a synthetic review and a proposed general prediction equation. Am J Clin Nutr, 1991](https://pubmed.ncbi.nlm.nih.gov/1957828/)
+- [Mifflin MD et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990](https://pubmed.ncbi.nlm.nih.gov/2305711/)
 
 ## Осы калькуляторды ендіру
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/katch-mcardle?lang=kk&theme=auto"
-  title="Кэтч — МакАрдл BMR және TDEE калькуляторы" loading="lazy" referrerpolicy="no-referrer"
+  title="Майсыз масса бойынша энергия бағалары" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

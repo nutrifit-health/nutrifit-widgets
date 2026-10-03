@@ -6,28 +6,29 @@
 
 `yfas` · [NutriFit](https://nutrifit.health/uz/calculators/yfas)
 
-Yuqori kaloriyali va chuqur qayta ishlangan taomlarga addiktiv maylni aniqlash uchun Yale universiteti tomonidan moslashtirilgan ilmiy so‘rovnoma.
+mYFAS 2.0: oxirgi 12 oydagi ovqatlanish muammolari haqida 13 savol.
 
 ### Foydalanish tartibi
 
-1. Muammoli mahsulotlarni eslang: Isteʼmol qilishda o‘zingizni to‘xtatish eng qiyin bo‘lgan taomlar haqida o‘ylang (shirinliklar, gazaklar, pishiriqlar).
-2. 13 ta savolga javob bering: Agar bu holat so‘nggi 12 oy davomida muntazam kuzatilgan bo‘lsa, 'Ha' deb belgilang.
-3. Alomatlar va tashxis natijalarini ko‘ring: Tashxisiy mezonlar soni va ularning hayotingizga taʼsiri darajasini bilib oling.
+1. Yo‘riqnomani o‘qing: Ko‘rsatilgan davr va har bir fikrning ma’nosini hisobga oling.
+2. Javoblarni tanlang: Har bir bandga mos variantni tanlab javob bering.
+3. Natijani ko‘ring: Natija javoblarni aks ettiradi; uni usulning cheklovlarini hisobga olib talqin qiling.
 
 ### Usul va formula
 
-Moddalarga qaramlik bo‘yicha DSM-5 ning oziq-ovqatga moslashtirilgan 11 ta diagnostik mezoniga asoslangan 13 ta savol va klinik distress bo‘yicha 2 ta savol.
+«Hech qachon»dan «har kuni»gacha sakkizta chastota javobi. Har bir bandning o‘z chastota chegarasi bor; «ha/yo‘q» javoblari ishlatilmaydi.
 
-Oziq-ovqatga qaramlik tashxisi klinik distress/dezadaptatsiya (12 yoki 13-savollar) va kamida 2 ta alomat mavjudligini talab qiladi. 2–3: yengil; 4–5: o‘rtacha; ≥ 6: og‘ir darajadagi qaramlik.
+5 va 6-bandlar iztirob/kundalik faoliyat buzilishini baholaydi. Qolgan 11 band alomatlar sonini beradi. Iztirob bo‘lsa: 2–3 — yengil, 4–5 — o‘rtacha, 6–11 — kuchli skrining toifasi; boshqa hollarda shkala mezoni bajarilmaydi.
 
 ### Cheklovlar
 
-'Oziq-ovqatga qaramlik' tushunchasi ilmiy bahslar mavzusi hisoblanadi. So‘rovnoma shirin, yog‘li va tuzli taomlarga nisbatan kompulsiv xatti-harakatlarni aniqlaydi.
+Ma’lumot uchun berilgan natija tashxis qo‘ymaydi va davolash buyurmaydi. Tarjima axborot uchun moslashtirilgan; uning alohida psixometrik validatsiyasi tasdiqlanmagan.
 
 ### Manbalar
 
-- [Schulte E.M., Gearhardt A.N. Development of the Modified Yale Food Addiction Scale Version 2.0. Eur Eat Disord Rev, 2017;25(4):302–308](https://pubmed.ncbi.nlm.nih.gov/28543787/)
-- [Gearhardt A.N. et al. Preliminary validation of the Yale Food Addiction Scale. Appetite, 2009;52(2):430–436](https://pubmed.ncbi.nlm.nih.gov/19028533/)
+- [Schulte, Gearhardt. Modified Yale Food Addiction Scale 2.0: original form and scoring](https://sites.lsa.umich.edu/fastlab/yale-food-addiction-scale/)
+- [Schulte EM et al. Development of the Modified Yale Food Addiction Scale Version 2.0. Eur Eat Disord Rev, 2017](https://pubmed.ncbi.nlm.nih.gov/28370722/)
+- [Gearhardt AN et al. Development of the Yale Food Addiction Scale Version 2.0. Psychol Addict Behav, 2016](https://pubmed.ncbi.nlm.nih.gov/26866783/)
 
 ## Ushbu kalkulyatorni joylashtirish
 

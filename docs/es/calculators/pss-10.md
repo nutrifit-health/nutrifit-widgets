@@ -6,27 +6,28 @@
 
 `pss-10` · [NutriFit](https://nutrifit.health/es/calculators/pss-10)
 
-La clásica escala de Sheldon Cohen diseñada para medir en qué grado las situaciones vitales son percibidas como impredecibles, incontrolables y desbordantes.
+Estrés percibido durante el último mes, evaluado con los 10 ítems de PSS-10.
 
-### Cómo usar
+### Uso
 
-1. Enfóquese en el último mes: Valore sus pensamientos, emociones y vivencias cotidianas a lo largo de los últimos 30 días de manera global.
-2. Seleccione la frecuencia de respuesta: Indique para cada afirmación una opción entre 0 ('Nunca') y 4 ('Muy a menudo') con espontaneidad.
-3. Analice su perfil de estrés: Examine su nivel global de tensión percibida y aplique pautas adaptadas para fortalecer su equilibrio.
+1. Lea las instrucciones: Tenga en cuenta el periodo indicado y el significado de cada afirmación.
+2. Elija sus respuestas: Responda a cada ítem eligiendo la opción adecuada.
+3. Consulte el resultado: El resultado refleja sus respuestas; interprételo dentro de los límites de la escala.
 
 ### Método y fórmula
 
-10 preguntas valoradas en una escala del 0 al 4. Los ítems 4, 5, 7 y 8 se puntúan de forma invertida para medir la resiliencia personal y la autoeficacia percibida.
+10 respuestas de 0 a 4. Los ítems 4, 5, 7 y 8 se puntúan como 4 menos la respuesta.
 
-Puntuación total PSS-10 = Ítems directos (1, 2, 3, 6, 9, 10) + Ítems invertidos (4, 5, 7, 8). 0–13: Estrés bajo; 14–26: Estrés moderado; 27–40: Estrés alto.
+Suma de 0 a 40. Una puntuación mayor indica más estrés percibido; el autor no establece umbrales de estrés bajo, moderado o alto.
 
 ### Limitaciones
 
-Este test refleja la valoración subjetiva de sobrecarga y no un diagnóstico médico de patología física. Ante agotamiento persistente, consulte a un especialista.
+Este resultado informativo no establece un diagnóstico ni prescribe tratamiento. Las traducciones son adaptaciones informativas; no se ha confirmado su validación psicométrica por separado.
 
 ### Fuentes
 
-- [Cohen S. et al. A global measure of perceived stress. J Health Soc Behav, 1983;24(4):385–396](https://pubmed.ncbi.nlm.nih.gov/6668417/)
+- [Cohen. Perceived Stress Scale: author instructions and scoring limitations](https://www.cmu.edu/dietrich/psychology/stress-immunity-disease-lab/scales/index.html)
+- [Cohen S et al. A global measure of perceived stress. J Health Soc Behav, 1983](https://pubmed.ncbi.nlm.nih.gov/6668417/)
 - [Cohen S., Williamson G.M. Perceived stress in a probability sample of the United States. The Social Psychology of Health, 1988:31–67](https://psycnet.apa.org/record/1988-98838-002)
 
 ## Cómo integrar esta calculadora

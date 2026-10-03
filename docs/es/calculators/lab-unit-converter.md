@@ -8,7 +8,7 @@
 
 Conversión de 33 parámetros de laboratorio entre SI (mmol/L, µmol/L, nmol/L, pmol/L) y unidades convencionales (mg/dL, ng/mL, pg/mL) según la masa molar.
 
-### Cómo usar
+### Uso
 
 1. 1. Elija el parámetro: La lista incluye los 33 analitos más frecuentes: de la glucosa y el colesterol a la vitamina D, la testosterona y el cortisol. Colesterol, LDL y HDL comparten el mismo factor.
 2. 2. Indique el sentido: SI → convencional si su informe está en mmol/L o nmol/L y la referencia de un artículo extranjero en mg/dL o ng/mL. Y al revés si el análisis se hizo en el extranjero.
@@ -28,7 +28,7 @@ Los factores son válidos para sustancias puras y métodos estándar. En hormona
 
 ### Fuentes
 
-- [Young D.S. Implementation of SI units for clinical laboratory data. Style specifications and conversion tables. Ann Intern Med, 1987;106(1):114–129](https://pubmed.ncbi.nlm.nih.gov/3789557/)
+- [Young DS. et al. Implementation of SI units for clinical laboratory data. Style specifications and conversion tables. Ann Intern Med, 1987](https://pubmed.ncbi.nlm.nih.gov/3789557/)
 - [AMA Manual of Style, 11th ed. Units of Measure: Conventional Units and SI Units in Clinical Chemistry. Oxford University Press, 2020](https://academic.oup.com/amamanualofstyle/si-conversion-calculator)
 - [NIST Special Publication 811. Guide for the Use of the International System of Units (SI), 2008](https://www.nist.gov/pml/special-publication-811)
 

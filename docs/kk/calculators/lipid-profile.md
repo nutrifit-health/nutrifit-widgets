@@ -1,4 +1,4 @@
-# Липидтік профиль калькуляторы: ТТЛП, non-HDL және атерогендік индекстер
+# Липидтік профиль: есептік көрсеткіштер
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/lipid-profile.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/lipid-profile.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/lipid-profile.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/lipid-profile.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/lipid-profile.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/lipid-profile.md)
 
@@ -6,34 +6,30 @@
 
 `lipid-profile` · [NutriFit](https://nutrifit.health/kk/calculators/lipid-profile)
 
-Стандартты липидограмма бойынша екі әдіспен есептелген ТТЛП, non-HDL, қалдық холестерин және бес атерогендік индекс — ESC/EAS мақсатты мәндерімен.
+Фридвальд пен Сэмпсон бойынша LDL, non-HDL, қалдық холестерин және липидтік қатынастарды есептейді.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Үш негізгі көрсеткішті енгізіңіз: Жалпы холестерин, ЖТЛП және триглицеридтер кез келген липидограммада бар. Бланк бірліктерін таңдаңыз: ммоль/л (ТМД, Еуропа) немесе мг/дл (АҚШ, Латын Америкасының бір бөлігі).
-2. Бар болса, өлшенген ТТЛП-ны қосыңыз: ТТЛП-ны тікелей өлшеу есептеуден дәлірек. Ол болмаса — калькулятор Сэмпсон теңдеуін қолданады және зертхана бланкімен салыстыру үшін қатар Фридвальдты көрсетеді.
-3. Бір көрсеткішке емес, арақатынастарға қараңыз: Төмен ЖТЛП және жоғары триглицеридтер кезіндегі қалыпты жалпы холестерин — атерогендік профиль. AIP және атерогендік коэффициент мұны «ЖХ нормада» болғанда анықтайды.
+1. Бастапқы деректерді енгізіңіз: Нақты мәндер мен тиісті бірліктерді қолданыңыз.
+2. Параметрлерді нақтылаңыз: Бастапқы болжамдарды өз жағдайыңызға сай өзгертіңіз.
+3. Нәтижені оқыңыз: Модель шектеулерін ескеріңіз; есеп өлшеу емес.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-Жалпы холестерин, ЖТЛП және триглицеридтерден калькулятор ТТЛП-ны классикалық Фридвальд формуласы (1972) және 9 ммоль/л-ге дейінгі триглицеридтер мен төмен ТТЛП кезінде дәл болып қалатын Сэмпсон теңдеуі (NIH, 2020) бойынша шығарады. Non-HDL — бүкіл атерогендік холестерин (ТТЛП + ӨТТЛП + қалдық бөлшектер), ал қалдық холестерин — non-HDL мен ТТЛП айырмасы. Castelli индекстері (ЖХ/ЖТЛП және ТТЛП/ЖТЛП), Климовтың атерогендік коэффициенті және плазманың атерогендік индексі AIP = log10(ТГ/ЖТЛП) «жаман» және «қорғаушы» фракциялардың арақатынасын көрсетеді және қауіпті жеке көрсеткіштерден жақсырақ болжайды.
+Фридвальд: LDL = жалпы холестерин − HDL − TG/5, бәрі мг/дл, TG <400 мг/дл болғанда. Сэмпсон (2020) TG ≤800 мг/дл кезінде қолданылады; теріс бағалар көрсетілмейді. AIP = log10(TG/HDL), екеуі де ммоль/л.
 
-ТТЛП (Фридвальд, ммоль/л) = ЖХ − ЖТЛП − ТГ / 2,2   [ТГ ≤ 4,5 ммоль/л болғанда]
-ТТЛП (Сэмпсон, мг/дл) = ЖХ/0,948 − ЖТЛП/0,971 − (ТГ/8,56 + ТГ×non-HDL/2140 − ТГ²/16100) − 9,44
-non-HDL = ЖХ − ЖТЛП;  Қалдық ХС = non-HDL − ТТЛП
-АК (Климов) = (ЖХ − ЖТЛП) / ЖТЛП;  Castelli I = ЖХ/ЖТЛП;  Castelli II = ТТЛП/ЖТЛП
-AIP = log10(ТГ / ЖТЛП), ммоль/л
+Фридвальд: LDL = жалпы холестерин − HDL − TG/5, бәрі мг/дл, TG <400 мг/дл болғанда. Сэмпсон (2020) TG ≤800 мг/дл кезінде қолданылады; теріс бағалар көрсетілмейді. AIP = log10(TG/HDL), екеуі де ммоль/л.
 
 ### Шектеулер
 
-Есептелген ТТЛП — өлшеу емес, бағалау: ТГ > 4,5 ммоль/л болғанда Фридвальд формуласы қолданылмайды, ал ТГ > 9 ммоль/л және хиломикронемияда Сэмпсон теңдеуі де дәл емес. Индекстер SCORE2, аполипопротеин B және липопротеин(а) бойынша жалпы қауіпті бағалауды алмастырмайды. ТТЛП-ның мақсатты мәндері қауіп санатына байланысты (ESC/EAS 2019 бойынша 1,4-тен 3,0 ммоль/л-ге дейін) — оларды дәрігер анықтайды. Талдау зертхана ұсынымы бойынша аш қарынға немесе аш қарынсыз тапсырылады.
+LDL мақсаты жалпы жүрек-қантамыр қаупіне байланысты. Көрсеткіштер жеке тәуекелді, диагнозды немесе дәрі қажеттілігін анықтамайды. Қатынастар мен AIP әмбебап норма санаттарынсыз көрсетіледі.
 
 ### Дереккөздер
 
-- [Friedewald W.T., Levy R.I., Fredrickson D.S. Estimation of the concentration of low-density lipoprotein cholesterol in plasma, without use of the preparative ultracentrifuge. Clin Chem, 1972;18(6):499–502](https://pubmed.ncbi.nlm.nih.gov/4337382/)
-- [Sampson M. et al. A new equation for calculation of low-density lipoprotein cholesterol in patients with normolipidemia and/or hypertriglyceridemia. JAMA Cardiol, 2020;5(5):540–548](https://pubmed.ncbi.nlm.nih.gov/32101259/)
-- [Dobiášová M., Frohlich J. The plasma parameter log (TG/HDL-C) as an atherogenic index. Clin Biochem, 2001;34(7):583–588](https://pubmed.ncbi.nlm.nih.gov/11738396/)
-- [Mach F. et al. 2019 ESC/EAS Guidelines for the management of dyslipidaemias. Eur Heart J, 2020;41(1):111–188](https://pubmed.ncbi.nlm.nih.gov/31504418/)
+- [Friedewald WT et al. Estimation of the concentration of low-density lipoprotein cholesterol in plasma, without use of the preparative ultracentrifuge. Clin Chem, 1972](https://pubmed.ncbi.nlm.nih.gov/4337382/)
+- [Sampson M et al. A New Equation for Calculation of Low-Density Lipoprotein Cholesterol in Patients With Normolipidemia and/or Hypertriglyceridemia. JAMA Cardiol, 2020](https://pubmed.ncbi.nlm.nih.gov/32101259/)
+- [Dobiásová M et al. The plasma parameter log (TG/HDL-C) as an atherogenic index: correlation with lipoprotein particle size and esterification rate in apoB-lipoprotein-depleted plasma (FER(HDL)). Clin Biochem, 2001](https://pubmed.ncbi.nlm.nih.gov/11738396/)
+- [Mach F et al. 2019 ESC/EAS Guidelines for the management of dyslipidaemias: lipid modification to reduce cardiovascular risk. Eur Heart J, 2020](https://pubmed.ncbi.nlm.nih.gov/31504418/)
 
 ## Осы калькуляторды ендіру
 
@@ -64,7 +60,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/lipid-profile?lang=kk&theme=auto"
-  title="Липидтік профиль калькуляторы: ТТЛП, non-HDL және атерогендік индекстер" loading="lazy" referrerpolicy="no-referrer"
+  title="Липидтік профиль: есептік көрсеткіштер" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

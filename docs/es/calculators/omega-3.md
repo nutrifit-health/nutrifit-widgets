@@ -1,4 +1,4 @@
-# Calculadora de Omega-3 (dosis de EPA + DHA e índice)
+# Valores de referencia de EPA y DHA
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/omega-3.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/omega-3.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/omega-3.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/omega-3.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/omega-3.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/omega-3.md)
 
@@ -6,29 +6,27 @@
 
 `omega-3` · [NutriFit](https://nutrifit.health/es/calculators/omega-3)
 
-Determina la dosis terapéutica y de mantenimiento de ácidos grasos EPA y DHA activos según indicaciones clínicas y biomarcadores analíticos.
+La IA de EFSA para adultos es 250 mg de EPA+DHA al día, sumando alimentos y suplementos. En embarazo y lactancia se indican además 100–200 mg de DHA al día. No es una proporción fija EPA:DHA ni el peso total del aceite de pescado.
 
-### Cómo usar
+### Uso
 
-1. Revisa el contenido real (EPA + DHA): Una etiqueta de '1000 mg de aceite de pescado' suele contener apenas 300 mg de EPA+DHA. Suma siempre los miligramos concretos de EPA y DHA.
-2. Elige la forma lipídica correcta (rTG o TG): Los triglicéridos reesterificados (rTG) presentan una biodisponibilidad muy superior a la de los ésteres etílicos (EE) sintéticos.
-3. Verifica el índice de oxidación (TOTOX): Un aceite de calidad certifica un índice TOTOX < 26 y sello IFOS (International Fish Oil Standards), sin olor a pescado rancio.
+1. Introduzca los datos: La IA de EFSA para adultos es 250 mg de EPA+DHA al día, sumando alimentos y suplementos. En embarazo y lactancia se indican además 100–200 mg de DHA al día. No es una proporción fija EPA:DHA ni el peso total del aceite de pescado.
+2. Compare las referencias: La IA de EFSA para adultos es 250 mg de EPA+DHA al día, sumando alimentos y suplementos. En embarazo y lactancia se indican además 100–200 mg de DHA al día. No es una proporción fija EPA:DHA ni el peso total del aceite de pescado.
+3. Considere las limitaciones: Esta referencia no implica que sea necesario un suplemento ni sustituye la evaluación de la dieta. El formulario no prescribe tratamientos de hipertrigliceridemia o depresión ni diagnostica carencia mediante el índice omega-3. Consulte los fármacos, las interacciones y las dosis individuales con un profesional.
 
 ### Método y fórmula
 
-Basada en consensos de GOED, la Asociación Americana del Corazón (AHA) y la ISSFAL. Fija como objetivo un índice eritrocitario de Omega-3 > 8% para una protección cardiovascular óptima.
+La IA de EFSA para adultos es 250 mg de EPA+DHA al día, sumando alimentos y suplementos. En embarazo y lactancia se indican además 100–200 mg de DHA al día. No es una proporción fija EPA:DHA ni el peso total del aceite de pescado.
 
-Salud general: 500 mg/día; Cardioprotección: 1000 mg/día; Hipertrigliceridemia: 2000–4000 mg/día; Embarazo: 600 mg (énfasis en DHA); Estado de ánimo: 1000–2000 mg (EPA:DHA ≥ 2:1); Deporte: 1500–2000 mg.
+La IA de EFSA para adultos es 250 mg de EPA+DHA al día, sumando alimentos y suplementos. En embarazo y lactancia se indican además 100–200 mg de DHA al día. No es una proporción fija EPA:DHA ni el peso total del aceite de pescado.
 
 ### Limitaciones
 
-Dosis superiores a 3000–4000 mg de EPA+DHA al día ejercen un efecto antiagregante y requieren supervisión médica en pacientes bajo tratamiento anticoagulante.
+Esta referencia no implica que sea necesario un suplemento ni sustituye la evaluación de la dieta. El formulario no prescribe tratamientos de hipertrigliceridemia o depresión ni diagnostica carencia mediante el índice omega-3. Consulte los fármacos, las interacciones y las dosis individuales con un profesional.
 
 ### Fuentes
 
-- [Harris W.S., Von Schacky C. The Omega-3 Index: a new risk factor for death from coronary heart disease? Prev Med, 2004;39(1):212–220](https://pubmed.ncbi.nlm.nih.gov/15207989/)
-- [Global Organization for EPA and DHA Omega-3s (GOED). Clinical Practice Recommendations for EPA and DHA Omega-3 Intake, 2022](https://goedomega3.com/intake-recommendations)
-- [Guu T.W. et al. International Society for Nutritional Psychiatry Research Practice Guidelines for Omega-3 Fatty Acids in the Treatment of Major Depressive Disorder. Psychother Psychosom, 2019;88(5):263–273](https://pubmed.ncbi.nlm.nih.gov/31480072/)
+- [EFSA. Dietary Reference Values summary, 2017, Table 2](https://www.efsa.europa.eu/sites/default/files/2017_09_DRVs_summary_report.pdf)
 
 ## Cómo integrar esta calculadora
 
@@ -59,7 +57,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/omega-3?lang=es&theme=auto"
-  title="Calculadora de Omega-3 (dosis de EPA + DHA e índice)" loading="lazy" referrerpolicy="no-referrer"
+  title="Valores de referencia de EPA y DHA" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

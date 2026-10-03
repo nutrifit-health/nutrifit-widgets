@@ -1,4 +1,4 @@
-# Asistente de Diagnóstico de la Conducta Alimentaria
+# Autoevaluación de la conducta alimentaria
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/eating-behavior-wizard.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/eating-behavior-wizard.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/eating-behavior-wizard.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/eating-behavior-wizard.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/eating-behavior-wizard.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/eating-behavior-wizard.md)
 
@@ -6,23 +6,23 @@
 
 `eating-behavior-wizard` · [NutriFit](https://nutrifit.health/es/calculators/eating-behavior-wizard)
 
-Asistente diagnóstico integrador de NutriFit que sintetiza las principales escalas validadas para identificar su arquetipo de alimentación y estrategia personalizada.
+Cinco preguntas de SCOFF y cuatro preguntas propias para reflexionar sobre la conducta alimentaria.
 
-### Cómo usar
+### Uso
 
-1. Realice el cribado de riesgos clínicos: Indique la presencia de señales vinculadas a la obsesión por el peso y el control estricto de la comida.
-2. Ajuste las dimensiones de conducta alimentaria: Señale la intensidad de sus restricciones dietéticas, ingesta emocional y respuesta a estímulos externos.
-3. Obtenga su arquetipo y plan de acción: Lea la descripción de su patrón dominante y descargue su informe detallado en formato PDF.
+1. Lea las instrucciones: Tenga en cuenta el periodo indicado y el significado de cada afirmación.
+2. Elija sus respuestas: Responda a cada ítem eligiendo la opción adecuada.
+3. Consulte el resultado: El resultado refleja sus respuestas; interprételo dentro de los límites de la escala.
 
 ### Método y fórmula
 
-Algoritmo multifactorial de NutriFit que relaciona marcadores de restricción dietética, ingesta emocional, reactividad externa y riesgo de TCA en un perfil único.
+SCOFF se calcula con cinco respuestas reales de sí/no. Las demás respuestas se muestran directamente.
 
-Matriz de clasificación psicométrica basada en la correlación cruzada de las escalas DEBQ, SCOFF, IES-2 y mYFAS 2.0.
+Dos o más respuestas afirmativas en SCOFF indican un cribado positivo. Las preguntas propias no calculan DEBQ, IES-2 ni mYFAS ni determinan un tipo psicológico.
 
 ### Limitaciones
 
-Herramienta orientada al autoconocimiento y apoyo nutricional. No sustituye la entrevista clínica ni el diagnóstico médico formal.
+Este resultado informativo no establece un diagnóstico ni prescribe tratamiento. Las traducciones son adaptaciones informativas; no se ha confirmado su validación psicométrica por separado.
 
 ### Fuentes
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/eating-behavior-wizard?lang=es&theme=auto"
-  title="Asistente de Diagnóstico de la Conducta Alimentaria" loading="lazy" referrerpolicy="no-referrer"
+  title="Autoevaluación de la conducta alimentaria" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

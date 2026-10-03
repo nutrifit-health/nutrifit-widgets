@@ -6,28 +6,29 @@
 
 `isi` · [NutriFit](https://nutrifit.health/calculators/isi)
 
-A concise 7-item clinical instrument designed to evaluate the nature, severity, and daytime impact of insomnia symptoms.
+Sleep assessment over the last 2 weeks: 7 items with distinct 0–4 scales; total 0–28. Satisfaction, noticeability, worry and impact on daily life have their own responses.
 
-### How to use
+### Usage
 
-1. Reflect on the past 2 weeks: Evaluate how you have been sleeping and how rested you have felt during the day over the last 14 days.
-2. Answer all 7 questions: Rate the severity of each issue from 0 ('None') to 4 ('Very severe').
-3. Review your score and sleep recommendations: Check your severity category and implement targeted sleep hygiene strategies.
+1. Enter the starting values: Sleep assessment over the last 2 weeks: 7 items with distinct 0–4 scales; total 0–28. Satisfaction, noticeability, worry and impact on daily life have their own responses.
+2. Adjust the parameters: Sleep assessment over the last 2 weeks: 7 items with distinct 0–4 scales; total 0–28. Satisfaction, noticeability, worry and impact on daily life have their own responses.
+3. Read the result: Informational translation for self-assessment. Validation of this particular adaptation has not been confirmed. A score does not establish a diagnosis, and a low score does not rule out illness.
 
 ### Method and formula
 
-7 questions rated from 0 to 4 points. Total score ranges from 0 to 28, covering sleep onset, sleep maintenance, early morning awakenings, and daytime impairment.
+Sleep assessment over the last 2 weeks: 7 items with distinct 0–4 scales; total 0–28. Satisfaction, noticeability, worry and impact on daily life have their own responses.
 
-Total ISI Score = Sum of all 7 items (0–28). 0–7: No clinically significant insomnia; 8–14: Subthreshold (mild); 15–21: Clinical insomnia (moderate); 22–28: Severe clinical insomnia.
+Sleep assessment over the last 2 weeks: 7 items with distinct 0–4 scales; total 0–28. Satisfaction, noticeability, worry and impact on daily life have their own responses.
 
 ### Limitations
 
-This index is intended for screening. If obstructive sleep apnea, restless legs syndrome, or chronic parasomnia is suspected, polysomnography is required.
+Informational translation for self-assessment. Validation of this particular adaptation has not been confirmed. A score does not establish a diagnosis, and a low score does not rule out illness.
 
 ### Sources
 
-- [Morin C.M. et al. The Insomnia Severity Index: psychometric indicators to detect insomnia cases. Sleep, 2011;34(5):601–608](https://pubmed.ncbi.nlm.nih.gov/21532953/)
-- [Bastien C.H. et al. Validation of the Insomnia Severity Index as an outcome measure. Sleep Med, 2001;2(4):297–307](https://pubmed.ncbi.nlm.nih.gov/11438246/)
+- [Morin CM et al. The Insomnia Severity Index: psychometric indicators to detect insomnia cases and evaluate treatment response. Sleep, 2011](https://pubmed.ncbi.nlm.nih.gov/21532953/)
+- [Bastien CH et al. Validation of the Insomnia Severity Index as an outcome measure for insomnia research. Sleep Med, 2001](https://pubmed.ncbi.nlm.nih.gov/11438246/)
+- [PhenX Toolkit. Insomnia Severity Index: patient questionnaire, last two weeks, protocol 640801](https://www.phenxtoolkit.org/protocols/view/640801?origin=subcollection)
 
 ## Embed this calculator
 

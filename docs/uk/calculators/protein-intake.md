@@ -1,4 +1,4 @@
-# Калькулятор добової норми білка (ISSN та ESPEN)
+# Довідкові орієнтири білка
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/protein-intake.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/protein-intake.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/protein-intake.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/protein-intake.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/protein-intake.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/protein-intake.md)
 
@@ -6,29 +6,29 @@
 
 `protein-intake` · [NutriFit](https://nutrifit.health/uk/calculators/protein-intake)
 
-Розраховує оптимальну добову кількість протеїну з урахуванням цілей (схуднення, гіпертрофія, здоров'я 65+), типу харчування та синтезу м'язового білка (MPS).
+Для здорових дорослих EFSA PRI — 0,83 г/кг/добу. Для здорових людей, що тренуються, ISSN наводить 1,4–2,0 г/кг/добу; ESPEN для здорових літніх людей — 1,0–1,2. Кількість розраховано за введеною фактичною масою тіла. Діапазон не є верхньою межею безпеки.
 
 ### Порядок використання
 
-1. Дізнайтеся свою цільову цифру: Введіть вагу та мету. Калькулятор визначить добовий грамаж і порцію на один прийом їжі.
-2. Розподіліть по 25–40 г на прийом: Разовий прийом 30 г білка (пачка кисломолочного сиру, 150 г курячого філе або риби) активує лейциновий тригер м'язового анаболізму.
-3. Урізноманітнюйте джерела: Комбінуйте тваринний (яйця, птиця, риба, кисломолочні продукти) та рослинний білок (тофу, сочевиця, нут, темпе).
+1. Введіть дані: Для здорових дорослих EFSA PRI — 0,83 г/кг/добу. Для здорових людей, що тренуються, ISSN наводить 1,4–2,0 г/кг/добу; ESPEN для здорових літніх людей — 1,0–1,2. Кількість розраховано за введеною фактичною масою тіла. Діапазон не є верхньою межею безпеки.
+2. Порівняйте орієнтири: Для здорових дорослих EFSA PRI — 0,83 г/кг/добу. Для здорових людей, що тренуються, ISSN наводить 1,4–2,0 г/кг/добу; ESPEN для здорових літніх людей — 1,0–1,2. Кількість розраховано за введеною фактичною масою тіла. Діапазон не є верхньою межею безпеки.
+3. Врахуйте обмеження: Це популяційні орієнтири, а не індивідуальна оптимальна доза. Форма не призначає харчування при хворобі нирок, вагітності, захворюванні, недостатньому харчуванні або значному надлишку маси. У цих випадках потрібен індивідуальний вибір розрахункової маси та норми.
 
-### Методика та формула
+### Методика і формула
 
-Розрахунок базується на клінічних консенсусах Міжнародного товариства спортивного харчування (ISSN, 2017) та Європейської асоціації клінічного харчування та метаболізму (ESPEN). При ожирінні (ІМТ > 28) розрахунок автоматично переводиться на скориговану масу тіла (AdjBW), щоб запобігти гіперфільтрації в нирках.
+Для здорових дорослих EFSA PRI — 0,83 г/кг/добу. Для здорових людей, що тренуються, ISSN наводить 1,4–2,0 г/кг/добу; ESPEN для здорових літніх людей — 1,0–1,2. Кількість розраховано за введеною фактичною масою тіла. Діапазон не є верхньою межею безпеки.
 
-Базова норма: 1,0–1,4 г/кг; Набір м'язів: 1,6–2,2 г/кг; Дефіцит (сушка): 2,0–2,4 г/кг; Витривалість: 1,2–1,6 г/кг; Вік 65+: 1,2–1,5 г/кг; ХХН (стадії 3–4): 0,6–0,8 г/кг. Вегетаріанство: +10% до норми.
+Для здорових дорослих EFSA PRI — 0,83 г/кг/добу. Для здорових людей, що тренуються, ISSN наводить 1,4–2,0 г/кг/добу; ESPEN для здорових літніх людей — 1,0–1,2. Кількість розраховано за введеною фактичною масою тіла. Діапазон не є верхньою межею безпеки.
 
 ### Обмеження
 
-При хронічній хворобі нирок (ХХН) зі зниженням ШКФ < 60 мл/хв норма білка має бути суворо узгоджена з лікарем-нефрологом.
+Це популяційні орієнтири, а не індивідуальна оптимальна доза. Форма не призначає харчування при хворобі нирок, вагітності, захворюванні, недостатньому харчуванні або значному надлишку маси. У цих випадках потрібен індивідуальний вибір розрахункової маси та норми.
 
 ### Джерела
 
-- [Jäger R. et al. International Society of Sports Nutrition Position Stand: protein and exercise. J Int Soc Sports Nutr, 2017;14:20](https://pubmed.ncbi.nlm.nih.gov/28642676/)
-- [Deutz N.E. et al. Protein intake and exercise for optimal muscle function with aging: recommendations from the ESPEN Expert Group. Clin Nutr, 2014;33(6):929–936](https://pubmed.ncbi.nlm.nih.gov/24814383/)
-- [Morton R.W. et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on gains in muscle mass and strength in healthy adults. Br J Sports Med, 2018;52(6):376–384](https://pubmed.ncbi.nlm.nih.gov/28698222/)
+- [EFSA. Population reference intakes for protein, 2012](https://www.efsa.europa.eu/en/press/news/120209)
+- [ISSN. Protein and exercise, 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/)
+- [ESPEN Expert Group. Protein intake and exercise with aging, 2014](https://pmc.ncbi.nlm.nih.gov/articles/PMC4208946/)
 
 ## Як вбудувати цей калькулятор
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/protein-intake?lang=uk&theme=auto"
-  title="Калькулятор добової норми білка (ISSN та ESPEN)" loading="lazy" referrerpolicy="no-referrer"
+  title="Довідкові орієнтири білка" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

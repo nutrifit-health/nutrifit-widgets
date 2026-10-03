@@ -1,4 +1,4 @@
-# Kofeinning chiqib ketishi va uxlash vaqti kalkulyatori
+# Kofein qoldig‘i: model hisobi
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/caffeine.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/caffeine.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/caffeine.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/caffeine.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/caffeine.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/caffeine.md)
 
@@ -6,29 +6,29 @@
 
 `caffeine` · [NutriFit](https://nutrifit.health/uz/calculators/caffeine)
 
-Qonda kofein parchalanish dinamikasini, yarimparchalanish davrini va uxlash vaqtida qoladigan qoldiq miqdorini hisoblaydi.
+Tanlangan yarim chiqarilish davri bo‘yicha hozirgi va uyqu paytidagi kofein qoldig‘ini baholaydi.
 
 ### Foydalanish tartibi
 
-1. Birinchi finjonni uyg‘ongandan keyin 60–90 daqiqaga kechiktiring: Ertalabki kortizol cho‘qqisiga kechasi to‘plangan adenozin qoldiqlarini tabiiy tozalashga imkon bering.
-2. Kofein to‘xtatish vaqtiga rioya qiling: Yarimparchalanish davri 5 soat bo‘lganida, ichilgan kofeinning to‘rtdan bir qismi 10–12 soatdan keyin ham miyada qoladi. Soat 23:00 da yotganda 14:00 dan keyin qahva ichmang.
-3. Yashirin manbalarni hisobga oling: Qora shokolad, kola, ko‘k choy va og‘riq qoldiruvchi dorilar ham sezilarli kofein saqlaydi.
+1. Boshlang‘ich ma’lumotlarni kiriting: Haqiqiy qiymatlar va mos birliklardan foydalaning.
+2. Parametrlarni aniqlashtiring: Boshlang‘ich taxminlarni holatingizga moslang.
+3. Natijani o‘qing: Model cheklovlarini hisobga oling; hisob o‘lchov emas.
 
 ### Usul va formula
 
-EFSA (2015) va AASM maʼlumotlari bo‘yicha jigar CYP1A2 sitoxromi orqali kofein metabolizmiga asoslangan. O‘rtacha yarimparchalanish davri 5 soatni tashkil etadi; chekish uni 3 soatgacha tezlashtiradi, KOK qabul qilish 9 soatgacha, homiladorlik esa 12 soatgacha uzaytiradi.
+Qoldiq = doza × 2^(−t / T½). Kunlik yig‘indiga faqat oxirgi 24 soatda kiritilgan dozalar kiradi.
 
-C(t) = C0 × e^(−k × t), bu yerda k = ln(2) / t_half; Standart t_half = 5,0 soat; Chekish = 3,0 soat; KOK = 9,0 soat; Homiladorlik = 12,0 soat; EFSA meʼyori = 400 mg/kun.
+Qoldiq = doza × 2^(−t / T½). Kunlik yig‘indiga faqat oxirgi 24 soatda kiritilgan dozalar kiradi.
 
 ### Cheklovlar
 
-Klirens tezligi CYP1A2 genotipiga qarab farqlanadi. Yuqori sezuvchan shaxslar past dozalarda ham xavotir yoki taxikardiya his qilishlari mumkin.
+Yarim chiqarilish davri odamga qarab va homiladorlik, kasalliklar hamda dorilar ta’sirida o‘zgaradi. Taxmin kiriting; 5 soat sizning o‘lchangan chiqarilish tezligingiz emas. Qoldiq uyqu sifatini bashorat qilmaydi. EFSA ning sog‘lom kattalar uchun 400 mg/kun va homiladorlikda 200 mg/kun ko‘rsatkichlari shaxsiy xavfsizlikni kafolatlamaydi.
 
 ### Manbalar
 
 - [EFSA Panel on Dietetic Products, Nutrition and Allergies. Scientific Opinion on the safety of caffeine. EFSA Journal, 2015;13(5):4102](https://doi.org/10.2903/j.efsa.2015.4102)
-- [Guest N.S. et al. International society of sports nutrition position stand: caffeine and exercise performance. J Int Soc Sports Nutr, 2021;18(1):1](https://pubmed.ncbi.nlm.nih.gov/33388079/)
-- [Drake C. et al. Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed. J Clin Sleep Med, 2013;9(11):1195–1200](https://pubmed.ncbi.nlm.nih.gov/24235826/)
+- [Guest NS et al. International society of sports nutrition position stand: caffeine and exercise performance. J Int Soc Sports Nutr, 2021](https://pubmed.ncbi.nlm.nih.gov/33388079/)
+- [Drake C et al. Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed. J Clin Sleep Med, 2013](https://pubmed.ncbi.nlm.nih.gov/24235903/)
 
 ## Ushbu kalkulyatorni joylashtirish
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/caffeine?lang=uz&theme=auto"
-  title="Kofeinning chiqib ketishi va uxlash vaqti kalkulyatori" loading="lazy" referrerpolicy="no-referrer"
+  title="Kofein qoldig‘i: model hisobi" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

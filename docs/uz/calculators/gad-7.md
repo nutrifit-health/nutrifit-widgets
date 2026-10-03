@@ -6,28 +6,28 @@
 
 `gad-7` · [NutriFit](https://nutrifit.health/uz/calculators/gad-7)
 
-Umumiy xavotir darajasi va hissiy taranglikni tezkor baholash uchun mo‘ljallangan xalqaro klinik so‘rovnoma.
+Oxirgi 2 haftadagi xavotir alomatlarining ifodalanishi: chastota bo‘yicha 0–3 ballik 7 javob; yig‘indi 0–21.
 
 ### Foydalanish tartibi
 
-1. Oxirgi 14 kundagi alomatlarni baholang: So‘nggi 2 hafta davomida asabiylik, qo‘rquv yoki taranglik sizni qanchalik tez-tez bezovta qilganini eslang.
-2. Javob variantlarini tanlang: Har bir alomat tezligini 0 ('Umuman yo‘q') dan 3 ('Deyarli har kuni') gacha belgilang.
-3. Natija va tavsiyalarni oling: O‘z xavotir darajangizni bilib oling va asab tizimini meʼyorga keltirish bo‘yicha tavsiyalar bilan tanishing.
+1. Boshlang‘ich ma’lumotlarni kiriting: Oxirgi 2 haftadagi xavotir alomatlarining ifodalanishi: chastota bo‘yicha 0–3 ballik 7 javob; yig‘indi 0–21.
+2. Parametrlarni aniqlashtiring: Oxirgi 2 haftadagi xavotir alomatlarining ifodalanishi: chastota bo‘yicha 0–3 ballik 7 javob; yig‘indi 0–21.
+3. Natijani o‘qing: O‘zini baholash uchun axborot tarjimasi. Aynan shu moslamaning validatsiyasi tasdiqlanmagan. Ball tashxis qo‘ymaydi, past natija kasallikni istisno qilmaydi.
 
 ### Usul va formula
 
-So‘nggi 2 hafta davomidagi xavotir alomatlarini 0 dan 3 ballgacha baholovchi 7 ta savol.
+Oxirgi 2 haftadagi xavotir alomatlarining ifodalanishi: chastota bo‘yicha 0–3 ballik 7 javob; yig‘indi 0–21.
 
-GAD-7 umumiy bali = 7 ta savol ballari yig‘indisi (0–21). 0–4: minimal; 5–9: yengil; 10–14: o‘rtacha; 15–21: kuchli (og‘ir) xavotir.
+Oxirgi 2 haftadagi xavotir alomatlarining ifodalanishi: chastota bo‘yicha 0–3 ballik 7 javob; yig‘indi 0–21.
 
 ### Cheklovlar
 
-Skrining tibbiy tashxis sanalmaydi. Vahima xurujlari (panik ataka) yoki fobiyalar bo‘lsa, mutaxassisga murojaat qiling.
+O‘zini baholash uchun axborot tarjimasi. Aynan shu moslamaning validatsiyasi tasdiqlanmagan. Ball tashxis qo‘ymaydi, past natija kasallikni istisno qilmaydi.
 
 ### Manbalar
 
-- [Spitzer R.L. et al. A brief measure for assessing generalized anxiety disorder: the GAD-7. Arch Intern Med, 2006;166(10):1092–1097](https://pubmed.ncbi.nlm.nih.gov/16717171/)
-- [Löwe B. et al. Validation and standardization of the Generalized Anxiety Disorder Screener (GAD-7). Med Care, 2008;46(3):266–274](https://pubmed.ncbi.nlm.nih.gov/18388841/)
+- [Spitzer RL et al. A brief measure for assessing generalized anxiety disorder: the GAD-7. Arch Intern Med, 2006](https://pubmed.ncbi.nlm.nih.gov/16717171/)
+- [Löwe B et al. Validation and standardization of the Generalized Anxiety Disorder Screener (GAD-7) in the general population. Med Care, 2008](https://pubmed.ncbi.nlm.nih.gov/18388841/)
 
 ## Ushbu kalkulyatorni joylashtirish
 

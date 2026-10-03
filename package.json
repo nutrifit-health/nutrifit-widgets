@@ -1,6 +1,6 @@
 {
   "name": "@nutrifit/widgets",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "49 embeddable nutrition and fitness calculators: TDEE, calories, macros, water intake, body fat, laboratory values and questionnaires. React components, JavaScript widgets and iframe embeds in six languages.",
   "author": {
     "name": "NUTRIFIT LLC",

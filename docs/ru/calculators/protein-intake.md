@@ -1,4 +1,4 @@
-# Калькулятор суточной нормы белка (ISSN и ESPEN)
+# Справочные ориентиры белка
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/protein-intake.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/protein-intake.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/protein-intake.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/protein-intake.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/protein-intake.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/protein-intake.md)
 
@@ -6,29 +6,29 @@
 
 `protein-intake` · [NutriFit](https://nutrifit.health/ru/calculators/protein-intake)
 
-Рассчитывает оптимальное суточное количество протеина с учётом целей (похудение, гипертрофия, здоровье 65+), типа питания и синтеза мышечного белка (MPS).
+Для здоровых взрослых EFSA PRI — 0,83 г/кг/сут. Для здоровых тренирующихся ISSN приводит диапазон 1,4–2,0 г/кг/сут; ESPEN для здоровых пожилых — 1,0–1,2. Количество рассчитано по введённой фактической массе тела; диапазон не является верхним пределом безопасности.
 
 ### Порядок использования
 
-1. Узнайте свою целевую цифру: Введите вес и цель. Калькулятор определит суточный граммаж и порцию на один приём пищи.
-2. Распределите по 25–40 г на приём: Разовый приём 30 г белка (пачка творога, 150 г куриной грудки или рыбы) активирует лейциновый триггер мышечного анаболизма.
-3. Разнообразьте источники: Комбинируйте животный (яйца, птица, рыба, кисломолочные продукты) и растительный белок (тофу, чечевица, нут, темпе).
+1. Введите данные: Для здоровых взрослых EFSA PRI — 0,83 г/кг/сут. Для здоровых тренирующихся ISSN приводит диапазон 1,4–2,0 г/кг/сут; ESPEN для здоровых пожилых — 1,0–1,2. Количество рассчитано по введённой фактической массе тела; диапазон не является верхним пределом безопасности.
+2. Сравните ориентиры: Для здоровых взрослых EFSA PRI — 0,83 г/кг/сут. Для здоровых тренирующихся ISSN приводит диапазон 1,4–2,0 г/кг/сут; ESPEN для здоровых пожилых — 1,0–1,2. Количество рассчитано по введённой фактической массе тела; диапазон не является верхним пределом безопасности.
+3. Учитывайте ограничения: Это популяционные ориентиры, а не персональная оптимальная доза. Расчёт не подходит для назначения питания при болезни почек, беременности, заболевании, недостаточном питании или выраженном избытке массы. Эти ситуации требуют индивидуального выбора расчётной массы и нормы.
 
 ### Методика и формула
 
-Расчёт базируется на клинических консенсусах Международного общества спортивного питания (ISSN, 2017) и Европейской ассоциации клинического питания и метаболизма (ESPEN). При ожирении (ИМТ > 28) расчёт автоматически переводится на скорректированную массу тела (AdjBW), чтобы предотвратить гиперфильтрацию в почках.
+Для здоровых взрослых EFSA PRI — 0,83 г/кг/сут. Для здоровых тренирующихся ISSN приводит диапазон 1,4–2,0 г/кг/сут; ESPEN для здоровых пожилых — 1,0–1,2. Количество рассчитано по введённой фактической массе тела; диапазон не является верхним пределом безопасности.
 
-Базовая норма: 1,0–1,2 г/кг; Набор мышц: 1,6–2,2 г/кг; Дефицит (сушка): 2,0–2,4 г/кг; Выносливость: 1,2–1,6 г/кг; Возраст 65+: 1,2–1,5 г/кг; ХБП (стадии 3–4): 0,6–0,8 г/кг. Вегетарианство: +10% к норме.
+Для здоровых взрослых EFSA PRI — 0,83 г/кг/сут. Для здоровых тренирующихся ISSN приводит диапазон 1,4–2,0 г/кг/сут; ESPEN для здоровых пожилых — 1,0–1,2. Количество рассчитано по введённой фактической массе тела; диапазон не является верхним пределом безопасности.
 
 ### Ограничения
 
-При хронической болезни почек (ХБП) со снижением СКФ < 60 мл/мин норма белка должна быть строго согласована с врачом-нефрологом.
+Это популяционные ориентиры, а не персональная оптимальная доза. Расчёт не подходит для назначения питания при болезни почек, беременности, заболевании, недостаточном питании или выраженном избытке массы. Эти ситуации требуют индивидуального выбора расчётной массы и нормы.
 
 ### Источники
 
-- [Jäger R. et al. International Society of Sports Nutrition Position Stand: protein and exercise. J Int Soc Sports Nutr, 2017;14:20](https://pubmed.ncbi.nlm.nih.gov/28642676/)
-- [Deutz N.E. et al. Protein intake and exercise for optimal muscle function with aging: recommendations from the ESPEN Expert Group. Clin Nutr, 2014;33(6):929–936](https://pubmed.ncbi.nlm.nih.gov/24814383/)
-- [Morton R.W. et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on gains in muscle mass and strength in healthy adults. Br J Sports Med, 2018;52(6):376–384](https://pubmed.ncbi.nlm.nih.gov/28698222/)
+- [EFSA. Population reference intakes for protein, 2012](https://www.efsa.europa.eu/en/press/news/120209)
+- [ISSN. Protein and exercise, 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/)
+- [ESPEN Expert Group. Protein intake and exercise with aging, 2014](https://pmc.ncbi.nlm.nih.gov/articles/PMC4208946/)
 
 ## Как встроить этот калькулятор
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/protein-intake?lang=ru&theme=auto"
-  title="Калькулятор суточной нормы белка (ISSN и ESPEN)" loading="lazy" referrerpolicy="no-referrer"
+  title="Справочные ориентиры белка" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

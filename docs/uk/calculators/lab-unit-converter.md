@@ -14,7 +14,7 @@
 2. Вкажіть напрямок: СІ → традиційні, якщо бланк у ммоль/л або нмоль/л, а референс із зарубіжної статті — у мг/дл або нг/мл. І навпаки, якщо аналіз складено за кордоном.
 3. Звірте референс, а не лише число: Референтні інтервали залежать від методу лабораторії. Перерахуйте і межі норми з бланка, щоб порівнювати значення з правильним діапазоном.
 
-### Методика та формула
+### Методика і формула
 
 Коефіцієнт переводить масову концентрацію в молярну з урахуванням молярної маси та одиниці об'єму. Використовуються поширені лабораторні коефіцієнти AMA та Labcorp. Для інсуліну та пролактину коефіцієнт залежить від калібрування аналізу. Для сечовини одиниця мг/дл позначає BUN — масу азоту сечовини.
 
@@ -26,7 +26,7 @@ SI = значення в масових одиницях × коефіцієнт
 
 ### Джерела
 
-- [Young D.S. Implementation of SI units for clinical laboratory data. Style specifications and conversion tables. Ann Intern Med, 1987;106(1):114–129](https://pubmed.ncbi.nlm.nih.gov/3789557/)
+- [Young DS. et al. Implementation of SI units for clinical laboratory data. Style specifications and conversion tables. Ann Intern Med, 1987](https://pubmed.ncbi.nlm.nih.gov/3789557/)
 - [AMA Manual of Style, 11th ed. Units of Measure: Conventional Units and SI Units in Clinical Chemistry. Oxford University Press, 2020](https://academic.oup.com/amamanualofstyle/si-conversion-calculator)
 - [NIST Special Publication 811. Guide for the Use of the International System of Units (SI), 2008](https://www.nist.gov/pml/special-publication-811)
 

@@ -1,4 +1,4 @@
-# Калькулятор суточной нормы калорий (TDEE)
+# Оценка суточного расхода энергии TDEE
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/tdee.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/tdee.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/tdee.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/tdee.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/tdee.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/tdee.md)
 
@@ -6,27 +6,27 @@
 
 `tdee` · [NutriFit](https://nutrifit.health/ru/calculators/tdee)
 
-Считает базовый обмен и полный суточный расход энергии, а также калорийность под снижение, удержание и набор массы тела.
+Mifflin–St Jeor оценивает расход в покое. TDEE = эта оценка × выбранный коэффициент активности. −20% и +15% — авторские сценарии дефицита и профицита.
 
 ### Порядок использования
 
-1. Укажите параметры тела: Введите точный вес, рост, пол и возраст. Это необходимо для вычисления базового метаболизма (BMR).
-2. Оцените уровень активности: Честно выберите вашу активность в течение недели. При сидячей работе не завышайте уровень без регулярного спорта.
-3. Посмотрите значения под цель: Поддержание соответствует TDEE; цель снижения массы — на 20% ниже TDEE, цель набора — на 15% выше.
+1. Введите исходные данные: Mifflin–St Jeor оценивает расход в покое. TDEE = эта оценка × выбранный коэффициент активности. −20% и +15% — авторские сценарии дефицита и профицита.
+2. Уточните параметры: Mifflin–St Jeor оценивает расход в покое. TDEE = эта оценка × выбранный коэффициент активности. −20% и +15% — авторские сценарии дефицита и профицита.
+3. Прочитайте результат: Для взрослых. Коэффициенты активности — приближения, а не измеренный PAL. Формула не определяет индивидуальную потребность или безопасный дефицит; ошибка оценки не доказывает нарушение обмена.
 
 ### Методика и формула
 
-Базовый обмен (BMR) рассчитывается по уравнению Миффлина-Сан Жеора 1990 года — это текущий стандарт оценки покоя у здоровых взрослых. Полный суточный расход (TDEE) получается умножением BMR на коэффициент активности. Калорийность для снижения массы — минус 20% от TDEE, для набора — плюс 15%: такие темпы позволяют менять массу тела без потери мышечной ткани и без резких скачков.
+Mifflin–St Jeor оценивает расход в покое. TDEE = эта оценка × выбранный коэффициент активности. −20% и +15% — авторские сценарии дефицита и профицита.
 
 BMR (муж) = 10 × вес(кг) + 6,25 × рост(см) − 5 × возраст + 5; BMR (жен) = 10 × вес(кг) + 6,25 × рост(см) − 5 × возраст − 161; TDEE = BMR × коэффициент активности
 
 ### Ограничения
 
-Уравнение выведено на здоровых взрослых и даёт ошибку около ±10%. Оно не учитывает состав тела: при высокой мышечной массе результат занижен, при ожирении — завышен. Для беременных, детей, спортсменов высокого уровня и людей с заболеваниями щитовидной железы нужны отдельные методики.
+Для взрослых. Коэффициенты активности — приближения, а не измеренный PAL. Формула не определяет индивидуальную потребность или безопасный дефицит; ошибка оценки не доказывает нарушение обмена.
 
 ### Источники
 
-- [Mifflin M.D., St Jeor S.T. et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990;51(2):241–247](https://pubmed.ncbi.nlm.nih.gov/2305711/)
+- [Mifflin MD et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990](https://pubmed.ncbi.nlm.nih.gov/2305711/)
 - [FAO/WHO/UNU. Human Energy Requirements. Report of a Joint Expert Consultation, 2004](https://www.fao.org/4/y5686e/y5686e00.htm)
 
 ## Как встроить этот калькулятор
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/tdee?lang=ru&theme=auto"
-  title="Калькулятор суточной нормы калорий (TDEE)" loading="lazy" referrerpolicy="no-referrer"
+  title="Оценка суточного расхода энергии TDEE" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

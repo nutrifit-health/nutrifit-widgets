@@ -6,31 +6,30 @@
 
 `iron-deficiency` · [NutriFit](https://nutrifit.health/es/calculators/iron-deficiency)
 
-Saturación de transferrina, umbral de ferritina ajustado por PCR, estadio del déficit de hierro (latente, sin anemia, ferropénica, de inflamación) y déficit calculado por Ganzoni.
+TSAT = hierro / capacidad total de fijación × 100%. Modelo de Ganzoni: peso × (15 − Hb en g/dL) × 2,4 + 500 mg para peso ≥ 35 kg. Solo aparece si Hb y ferritina están por debajo de los umbrales seleccionados.
 
-### Cómo usar
+### Uso
 
-1. 1. Reúna cuatro parámetros: Ferritina, hierro sérico, CTFH (o transferrina) y hemoglobina. Todos de una misma extracción matutina en ayunas, sin tomar hierro en las 24 horas previas.
-2. 2. Añada la PCR: Sin PCR, una ferritina normal puede tomarse por ausencia de déficit durante una inflamación activa. La calculadora sube el umbral de ferritina a 100 µg/L si la PCR supera 5 mg/L.
-3. 3. Lea el estadio: El déficit de hierro avanza por escalones: primero se agotan los depósitos (ferritina), luego cae el transporte (TSAT) y solo después la hemoglobina. La anemia es la última etapa.
+1. Introduzca los datos iniciales: TSAT = hierro / capacidad total de fijación × 100%. Modelo de Ganzoni: peso × (15 − Hb en g/dL) × 2,4 + 500 mg para peso ≥ 35 kg. Solo aparece si Hb y ferritina están por debajo de los umbrales seleccionados.
+2. Ajuste los parámetros: TSAT = hierro / capacidad total de fijación × 100%. Modelo de Ganzoni: peso × (15 − Hb en g/dL) × 2,4 + 500 mg para peso ≥ 35 kg. Solo aparece si Hb y ferritina están por debajo de los umbrales seleccionados.
+TIBC (µmol/L) = transferrin (g/L) × 25.1. Iron: µg/dL × 0.179 = µmol/L. Hb: g/L ÷ 10 = g/dL.
+3. Lea el resultado: Son patrones descriptivos, no diagnósticos. Umbrales de Hb: 130 g/L en hombres y 120 g/L en mujeres no embarazadas; ferritina OMS 2020: 15 µg/L, o 70 µg/L con PCR > 5 mg/L. La Hb objetivo, el peso y los depósitos de Ganzoni requieren selección individual; no es una dosis de medicamento.
 
 ### Método y fórmula
 
-La ferritina refleja los depósitos de hierro, pero sube con la inflamación, por lo que la OMS 2020 recomienda un umbral de 15 µg/L para depósitos agotados, un umbral clínico de 30 µg/L y 70–100 µg/L con PCR elevada. La saturación de transferrina (TSAT) es la fracción de la proteína transportadora ocupada por hierro: por debajo del 20 % indica falta de hierro para la eritropoyesis sea cual sea la causa. Combinar ferritina, TSAT y hemoglobina permite distinguir déficit latente, déficit sin anemia, anemia ferropénica y anemia de inflamación crónica. La fórmula de Ganzoni (1970) estima el hierro total necesario para recuperar la hemoglobina y los depósitos; se usa para dimensionar el hierro intravenoso.
+TSAT = hierro / capacidad total de fijación × 100%. Modelo de Ganzoni: peso × (15 − Hb en g/dL) × 2,4 + 500 mg para peso ≥ 35 kg. Solo aparece si Hb y ferritina están por debajo de los umbrales seleccionados.
 
-TSAT (%) = Hierro sérico / CTFH × 100
-CTFH (µmol/L) ≈ Transferrina (g/L) × 25,1
-Déficit de hierro (mg, Ganzoni) = Peso (kg) × (Hb objetivo − Hb, g/dL) × 2,4 + Depósitos (500 mg con peso ≥ 35 kg)
-Conversión: hierro µg/dL × 0,179 = µmol/L; Hb g/L / 10 = g/dL
+TSAT = hierro / capacidad total de fijación × 100%. Modelo de Ganzoni: peso × (15 − Hb en g/dL) × 2,4 + 500 mg para peso ≥ 35 kg. Solo aparece si Hb y ferritina están por debajo de los umbrales seleccionados.
+TIBC (µmol/L) = transferrin (g/L) × 25.1. Iron: µg/dL × 0.179 = µmol/L. Hb: g/L ÷ 10 = g/dL.
 
 ### Limitaciones
 
-El hierro sérico oscila a lo largo del día y tras las comidas: se extrae por la mañana en ayunas; la TSAT no es fiable en inflamación aguda ni tras tomar hierro la víspera. La ferritina sube con inflamación, hepatopatía, tumores y síndrome metabólico, por lo que con PCR por encima de 5 mg/L la calculadora eleva el umbral a 100 µg/L. La fórmula de Ganzoni asume una hemoglobina objetivo de 15 g/dL y depósitos de 500 mg; el médico los ajusta individualmente. El resultado no sustituye la consulta hematológica.
+Son patrones descriptivos, no diagnósticos. Umbrales de Hb: 130 g/L en hombres y 120 g/L en mujeres no embarazadas; ferritina OMS 2020: 15 µg/L, o 70 µg/L con PCR > 5 mg/L. La Hb objetivo, el peso y los depósitos de Ganzoni requieren selección individual; no es una dosis de medicamento.
 
 ### Fuentes
 
 - [WHO guideline on use of ferritin concentrations to assess iron status in individuals and populations. Geneva: World Health Organization, 2020](https://www.who.int/publications/i/item/9789240000124)
-- [Ganzoni A.M. Intravenous iron-dextran: therapeutic and experimental possibilities. Schweiz Med Wochenschr, 1970;100(7):301–303](https://pubmed.ncbi.nlm.nih.gov/5413918/)
+- [Ganzoni AM. et al. [Intravenous iron-dextran: therapeutic and experimental possibilities]. Schweiz Med Wochenschr, 1970](https://pubmed.ncbi.nlm.nih.gov/5413918/)
 - [Venofer. Summary of Product Characteristics: Ganzoni formula and iron stores](https://www.medicines.org.uk/emc/product/5911/smpc)
 
 ## Cómo integrar esta calculadora

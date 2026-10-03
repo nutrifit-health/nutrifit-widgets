@@ -8,7 +8,7 @@
 
 Conversion of 33 lab analytes between SI (mmol/L, µmol/L, nmol/L, pmol/L) and conventional units (mg/dL, ng/mL, pg/mL) by molar mass.
 
-### How to use
+### Usage
 
 1. Choose the analyte: The list has the 33 most common analytes — from glucose and cholesterol to vitamin D, testosterone and cortisol. Cholesterol, LDL and HDL share one factor.
 2. Set the direction: SI → conventional if your report is in mmol/L or nmol/L and the reference from a foreign paper is in mg/dL or ng/mL. And vice versa if the test was done abroad.
@@ -26,7 +26,7 @@ Unit conversion does not interpret results or diagnose. Reference intervals depe
 
 ### Sources
 
-- [Young D.S. Implementation of SI units for clinical laboratory data. Style specifications and conversion tables. Ann Intern Med, 1987;106(1):114–129](https://pubmed.ncbi.nlm.nih.gov/3789557/)
+- [Young DS. et al. Implementation of SI units for clinical laboratory data. Style specifications and conversion tables. Ann Intern Med, 1987](https://pubmed.ncbi.nlm.nih.gov/3789557/)
 - [AMA Manual of Style, 11th ed. Units of Measure: Conventional Units and SI Units in Clinical Chemistry. Oxford University Press, 2020](https://academic.oup.com/amamanualofstyle/si-conversion-calculator)
 - [NIST Special Publication 811. Guide for the Use of the International System of Units (SI), 2008](https://www.nist.gov/pml/special-publication-811)
 

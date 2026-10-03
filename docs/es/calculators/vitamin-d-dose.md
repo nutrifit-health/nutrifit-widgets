@@ -1,4 +1,4 @@
-# Calculadora de dosis de vitamina D según el nivel de 25(OH)D
+# Vitamina D: estimación del modelo van Groningen
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/vitamin-d-dose.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/vitamin-d-dose.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/vitamin-d-dose.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/vitamin-d-dose.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/vitamin-d-dose.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/vitamin-d-dose.md)
 
@@ -6,30 +6,27 @@
 
 `vitamin-d-dose` · [NutriFit](https://nutrifit.health/es/calculators/vitamin-d-dose)
 
-Dosis de carga según la fórmula de van Groningen y de mantenimiento según la Endocrine Society, ajustadas por peso y obesidad; estado de 25(OH)D y plazo del control.
+25(OH)D en dos unidades y una estimación de investigación basada en el peso. No se prescribe una pauta automática.
 
-### Cómo usar
+### Uso
 
-1. 1. Mida la 25(OH)D: Precisamente la 25-hidroxivitamina D (calcidiol), no la 1,25(OH)₂D. Las unidades del informe son nmol/L o ng/mL; elija la correcta y la calculadora convierte.
-2. 2. Elija el objetivo: 75 nmol/L (30 ng/mL) es la referencia de la Endocrine Society para efectos extraóseos. 50 nmol/L basta para el hueso según el IOM. No es necesario superar 100 nmol/L.
-3. 3. Indique peso y talla: La vitamina D es liposoluble y se distribuye en el tejido adiposo, por lo que la dosis depende del peso, y en obesidad la de mantenimiento se multiplica por 2–3.
+1. Introduzca los datos iniciales: El modelo van Groningen (2010) relaciona la cantidad total de colecalciferol con el peso y el 25(OH)D inicial. Esta herramienta usa el objetivo de investigación de 75 nmol/L, un nivel inicial inferior a 50 nmol/L y un peso de 35–125 kg. El límite inferior de peso restringe la interfaz al contexto adulto; un médico evalúa la edad y las exclusiones clínicas. No determina una pauta, dosis de mantenimiento ni intervalo de control. Endocrine Society 2024 no establece un objetivo universal de 25(OH)D para prevenir enfermedades en personas sanas.
+2. Ajuste los parámetros: Estimación total del modelo (UI) = 40 × (75 − 25(OH)D, nmol/L) × peso (kg). 1 ng/mL = 2,496 nmol/L.
+3. Lea el resultado: Es un cálculo de investigación para consultar con un médico, no una prescripción individual. No lo use para automedicarse durante el embarazo, en niños ni con trastornos del calcio, enfermedad renal, malabsorción o enfermedades granulomatosas. No considera medicamentos ni suplementos; el total no debe tomarse como una dosis única.
 
 ### Método y fórmula
 
-El nivel de 25-hidroxivitamina D es el único marcador válido del estado de vitamina D. La dosis de carga se calcula con la fórmula de van Groningen (2010), obtenida en 208 pacientes con déficit: en total 40 UI por cada nmol/L de diferencia entre el objetivo y el nivel actual por cada kilogramo de peso, con un máximo de 300 000 UI. La calculadora la reparte en 8 semanas de toma diaria o semanal. La dosis de mantenimiento es de 1500–2000 UI/día según la Endocrine Society, 2–3 veces mayor en obesidad (IMC ≥ 30) por el secuestro de la vitamina en el tejido adiposo. Control a las 12 semanas de la carga.
+El modelo van Groningen (2010) relaciona la cantidad total de colecalciferol con el peso y el 25(OH)D inicial. Esta herramienta usa el objetivo de investigación de 75 nmol/L, un nivel inicial inferior a 50 nmol/L y un peso de 35–125 kg. El límite inferior de peso restringe la interfaz al contexto adulto; un médico evalúa la edad y las exclusiones clínicas. No determina una pauta, dosis de mantenimiento ni intervalo de control. Endocrine Society 2024 no establece un objetivo universal de 25(OH)D para prevenir enfermedades en personas sanas.
 
-Dosis de carga (UI) = 40 × (25(OH)D objetivo − 25(OH)D actual, nmol/L) × Peso (kg), máximo 300 000 UI
-Dosis diaria = Dosis de carga / 56 días;  Dosis semanal = Dosis de carga / 8
-Mantenimiento = 2000 UI/día (× 2,5 con IMC ≥ 30)
-Conversión: 1 ng/mL = 2,496 nmol/L; 1 µg de colecalciferol = 40 UI
+Estimación total del modelo (UI) = 40 × (75 − 25(OH)D, nmol/L) × peso (kg). 1 ng/mL = 2,496 nmol/L.
 
 ### Limitaciones
 
-La fórmula está validada en adultos sin malabsorción ni insuficiencia renal. En hipercalcemia, sarcoidosis y otras granulomatosis, ERC 4–5, malabsorción, embarazo y con tiazidas o anticonvulsivantes, solo el médico fija la dosis. Niveles por encima de 125 nmol/L no aportan beneficio adicional; por encima de 250 nmol/L hay riesgo de toxicidad. La calculadora no sustituye la prescripción médica ni tiene en cuenta la vitamina D de otros suplementos y fármacos.
+Es un cálculo de investigación para consultar con un médico, no una prescripción individual. No lo use para automedicarse durante el embarazo, en niños ni con trastornos del calcio, enfermedad renal, malabsorción o enfermedades granulomatosas. No considera medicamentos ni suplementos; el total no debe tomarse como una dosis única.
 
 ### Fuentes
 
-- [van Groningen L. et al. Cholecalciferol loading dose guideline for vitamin D-deficient adults. Eur J Endocrinol, 2010;162(4):805–811](https://pubmed.ncbi.nlm.nih.gov/20139241/)
+- [van Groningen L et al. Cholecalciferol loading dose guideline for vitamin D-deficient adults. Eur J Endocrinol, 2010](https://pubmed.ncbi.nlm.nih.gov/20139241/)
 - [Endocrine Society. Vitamin D for the Prevention of Disease: Clinical Practice Guideline, 2024](https://www.endocrine.org/clinical-practice-guidelines/vitamin-d-for-prevention-of-disease)
 
 ## Cómo integrar esta calculadora
@@ -61,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/vitamin-d-dose?lang=es&theme=auto"
-  title="Calculadora de dosis de vitamina D según el nivel de 25(OH)D" loading="lazy" referrerpolicy="no-referrer"
+  title="Vitamina D: estimación del modelo van Groningen" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

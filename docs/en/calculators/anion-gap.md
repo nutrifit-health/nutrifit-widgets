@@ -6,32 +6,31 @@
 
 `anion-gap` · [NutriFit](https://nutrifit.health/calculators/anion-gap)
 
-Anion gap corrected for albumin (Figge) and the ΔAG/ΔHCO₃ delta ratio to distinguish high- and normal-anion-gap acidosis.
+Anion gap = Na − Cl − HCO₃; albumin adjustment = 0.25 × (40 − albumin in g/L). Delta ratio = (corrected gap − selected reference) / (reference bicarbonate − HCO₃).
 
-### How to use
+### Usage
 
-1. Take electrolytes from one sample: Sodium, chloride and bicarbonate (or total CO₂) must come from one draw, ideally alongside blood gases. Different samples give a meaningless gap.
-2. Add albumin: In ICU patients, cirrhosis, nephrotic syndrome and wasting albumin is often 20–30 g/L: without correction a high anion gap masquerades as normal.
-3. Interpret the delta ratio in context: The delta ratio helps spot a second disorder (bicarbonate loss or alkalosis) behind a high-AG acidosis, but needs pH, lactate and the clinical picture.
+1. Enter the starting values: Anion gap = Na − Cl − HCO₃; albumin adjustment = 0.25 × (40 − albumin in g/L). Delta ratio = (corrected gap − selected reference) / (reference bicarbonate − HCO₃).
+2. Adjust the parameters: Anion gap = Na − Cl − HCO₃; albumin adjustment = 0.25 × (40 − albumin in g/L). Delta ratio = (corrected gap − selected reference) / (reference bicarbonate − HCO₃).
+Reference values depend on the laboratory method. Delta is calculated only with a positive numerator and denominator. A number alone cannot establish a diagnosis without pH, blood gases and clinical context.
+3. Read the result: Reference values depend on the laboratory method. Delta is calculated only with a positive numerator and denominator. A number alone cannot establish a diagnosis without pH, blood gases and clinical context.
 
 ### Method and formula
 
-The anion gap is the difference between measured serum cations and anions, reflecting "unmeasured" anions: phosphates, sulfates, organic acids and negatively charged albumin. In metabolic acidosis it rises if acids accumulate (lactate, ketones, uremic toxins, toxic alcohols) and stays normal if bicarbonate is lost (diarrhea, renal tubular acidosis) and replaced by chloride. Since albumin is the main unmeasured anion, hypoalbuminemia falsely lowers the gap: Figge (1998) proposed a correction of 2.5 mmol/L per 1 g/dL fall in albumin. The delta ratio compares the rise in the gap with the fall in bicarbonate and reveals mixed disorders.
+Anion gap = Na − Cl − HCO₃; albumin adjustment = 0.25 × (40 − albumin in g/L). Delta ratio = (corrected gap − selected reference) / (reference bicarbonate − HCO₃).
 
-AG = Na − (Cl + HCO₃), mmol/L, without potassium.
-Figge adjustment: AG + 0.25 × (40 − albumin, g/L).
-Delta ratio = (adjusted AG − 12) / (24 − HCO₃).
-Calculated only if AG > 12 and HCO₃ < 24. Delta-ratio bands suggest possible mixed disturbances; they are not diagnoses.
+Anion gap = Na − Cl − HCO₃; albumin adjustment = 0.25 × (40 − albumin in g/L). Delta ratio = (corrected gap − selected reference) / (reference bicarbonate − HCO₃).
+Reference values depend on the laboratory method. Delta is calculated only with a positive numerator and denominator. A number alone cannot establish a diagnosis without pH, blood gases and clinical context.
 
 ### Limitations
 
-The anion gap reference depends on the analyzer: modern ion-selective electrodes give 3–11 mmol/L, older methods 8–16. Check your lab’s reference. The calculation excludes potassium; if your lab includes it, the reference is 4–5 higher. The delta ratio is a rough guide that needs context (pH, pCO₂, lactate, ketones). The calculator is meant for interpretation of acid-base disorders by professionals and does not replace blood gas analysis.
+Reference values depend on the laboratory method. Delta is calculated only with a positive numerator and denominator. A number alone cannot establish a diagnosis without pH, blood gases and clinical context.
 
 ### Sources
 
-- [Kraut J.A., Madias N.E. Serum anion gap: its uses and limitations in clinical medicine. Clin J Am Soc Nephrol, 2007;2(1):162–174](https://pubmed.ncbi.nlm.nih.gov/17699401/)
-- [Figge J., Jabor A., Kazda A., Fencl V. Anion gap and hypoalbuminemia. Crit Care Med, 1998;26(11):1807–1810](https://pubmed.ncbi.nlm.nih.gov/9824071/)
-- [Berend K., de Vries A.P., Gans R.O. Physiological approach to assessment of acid-base disturbances. N Engl J Med, 2014;371(15):1434–1445](https://pubmed.ncbi.nlm.nih.gov/25295502/)
+- [Kraut JA et al. Serum anion gap: its uses and limitations in clinical medicine. Clin J Am Soc Nephrol, 2007](https://pubmed.ncbi.nlm.nih.gov/17699401/)
+- [Figge J et al. Anion gap and hypoalbuminemia. Crit Care Med, 1998](https://pubmed.ncbi.nlm.nih.gov/9824071/)
+- [Berend K et al. Physiological approach to assessment of acid-base disturbances. N Engl J Med, 2014](https://pubmed.ncbi.nlm.nih.gov/25295502/)
 
 ## Embed this calculator
 

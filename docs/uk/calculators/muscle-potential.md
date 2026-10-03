@@ -1,4 +1,4 @@
-# Калькулятор м'язового потенціалу (Кейсі Батт та Мартін Беркхан)
+# Антропометрична модель Casey Butt
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/muscle-potential.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/muscle-potential.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/muscle-potential.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/muscle-potential.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/muscle-potential.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/muscle-potential.md)
 
@@ -6,29 +6,29 @@
 
 `muscle-potential` · [NutriFit](https://nutrifit.health/uk/calculators/muscle-potential)
 
-Визначає максимально досяжну суху м'язову масу та граничні обхвати тіла (груди, біцепс, стегно) без використання анаболічних стероїдів.
+Евристична оцінка маси й обхватів за зростом, зап’ястям, щиколоткою та припущенням жиру. Авторські обхвати описують чоловіків-бодибілдерів за приблизно 8–10% жиру. Berkhan: окремий орієнтир зріст (см) − 100 кг.
 
 ### Порядок використання
 
-1. Точно виміряйте кістки: Зап'ястя вимірюється між кистю та голівкою ліктьової кістки. Щиколотка — у найвужчому місці трохи вище виступаючих кісточок суглоба.
-2. Вкажіть бажаний відсоток жиру: Для цілорічної відмінної форми орієнтуйтеся на 10–12% жиру; для змагального рельєфу — 6–8%.
-3. Порівняйте поточні заміри з максимумом: Калькулятор покаже граничні обхвати біцепса, грудей та стегон. Це реалістичні орієнтири вашого тіла.
+1. Введіть вихідні дані: Евристична оцінка маси й обхватів за зростом, зап’ястям, щиколоткою та припущенням жиру. Авторські обхвати описують чоловіків-бодибілдерів за приблизно 8–10% жиру. Berkhan: окремий орієнтир зріст (см) − 100 кг.
+2. Уточніть параметри: Max LBM = Зріст^1,5 × [sqrt(Зап'ястя)/22,6670 + sqrt(Щиколотка)/17,0104] × [(% Жиру/224) + 1]; Вага Беркхана (~5% жиру) = Зріст (см) − 100.
+3. Прочитайте результат: Чоловіча вибірка не обґрунтовує жіночі норми. Модель не вимірює генетику, не доводить межу росту м’язів і не прогнозує термін. Заданий жир — припущення, не рекомендована ціль.
 
-### Методика та формула
+### Методика і формула
 
-Дослідження Кейсі Батта (Casey Butt, Ph.D.) протягом 6 років аналізували антропометрію сотень елітних чемпіонів світу з бодибілдингу достероїдної ери (1940–1950-ті рр.). Модель довела, що гранична маса м'язів суворо обмежена товщиною кісткового скелета — обхватами зап'ястя та щиколотки.
+Евристична оцінка маси й обхватів за зростом, зап’ястям, щиколоткою та припущенням жиру. Авторські обхвати описують чоловіків-бодибілдерів за приблизно 8–10% жиру. Berkhan: окремий орієнтир зріст (см) − 100 кг.
 
 Max LBM = Зріст^1,5 × [sqrt(Зап'ястя)/22,6670 + sqrt(Щиколотка)/17,0104] × [(% Жиру/224) + 1]; Вага Беркхана (~5% жиру) = Зріст (см) − 100.
 
 ### Обмеження
 
-Модель розроблена для чоловіків. У жінок через гормональний фон гранична м'язова маса становить приблизно 65–70% від чоловічої формули. Передбачає роки ідеального тренінгу та харчування.
+Чоловіча вибірка не обґрунтовує жіночі норми. Модель не вимірює генетику, не доводить межу росту м’язів і не прогнозує термін. Заданий жир — припущення, не рекомендована ціль.
 
 ### Джерела
 
-- [Butt C. Your Maximum Muscular Potential (The Casey Butt Model). The WeighTrainer, 2009](https://www.weightrainer.net/potential.html)
+- [Casey Butt. Your Maximum Muscular Bodyweight and Measurements. Авторский текст, архивная копия.](https://forum.steelfactor.ru/index.php?app=core&attach_id=540052&module=attach&section=attach)
 - [Berkhan M. The Leangains Guide and Maximum Potential for Drug-Free Athletes, 2010](https://leangains.com/maximum-muscular-potential-of-drug-free-athletes-updated-version/)
-- [Kouri E.M. et al. Fat-free mass index in users and nonusers of anabolic-androgenic steroids. Clin J Sport Med, 1995;5(4):223–228](https://pubmed.ncbi.nlm.nih.gov/7496846/)
+- [Kouri EM et al. Fat-free mass index in users and nonusers of anabolic-androgenic steroids. Clin J Sport Med, 1995](https://pubmed.ncbi.nlm.nih.gov/7496846/)
 
 ## Як вбудувати цей калькулятор
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/muscle-potential?lang=uk&theme=auto"
-  title="Калькулятор м'язового потенціалу (Кейсі Батт та Мартін Беркхан)" loading="lazy" referrerpolicy="no-referrer"
+  title="Антропометрична модель Casey Butt" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

@@ -6,20 +6,21 @@
 
 `fib-4` · [NutriFit](https://nutrifit.health/kk/calculators/fib-4)
 
-Жас, АСТ, АЛТ және тромбоциттер бойынша FIB-4 және APRI: есептеу, қауіп шектері және келесі қадамдар.
+FIB-4 (Sterling 2006) жас, AST, ALT және тромбоциттерді пайдаланады. AASLD 2023 шектері метаболикалық майлы бауыр ауруында айқын фиброз ықтималдығын бағалайды, сатысын анықтамайды. 35–65 жаста төменгі шек 1,3; 65 жастан жоғарыда 2,0; жоғарғы шек 2,67. 35 жасқа дейін санат берілмейді; жедел ауру кезінде түсіндірілмейді. APRI (Wai 2003) және 0,5/1,5 шектері созылмалы C гепатитіндегі елеулі фиброзға қатысты, басқа ауруларға автоматты қолданылмайды.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Жасты және талдауларды енгізіңіз: Қажет: биохимиядан АСТ және АЛТ, жалпы қан талдауынан тромбоциттер.
-2. АСТ нормасын көрсетіңіз: Зертхананың жоғарғы шегін енгізіңіз (әдепкі 40 Б/л).
-3. Қауіп санатымен танысыңыз: Төмен қауіпте 1–2 жылда бір бақылау жеткілікті. Жоғары қауіпте эластография қажет.
+1. Бастапқы деректерді енгізіңіз: FIB-4 (Sterling 2006) жас, AST, ALT және тромбоциттерді пайдаланады. AASLD 2023 шектері метаболикалық майлы бауыр ауруында айқын фиброз ықтималдығын бағалайды, сатысын анықтамайды. 35–65 жаста төменгі шек 1,3; 65 жастан жоғарыда 2,0; жоғарғы шек 2,67. 35 жасқа дейін санат берілмейді; жедел ауру кезінде түсіндірілмейді. APRI (Wai 2003) және 0,5/1,5 шектері созылмалы C гепатитіндегі елеулі фиброзға қатысты, басқа ауруларға автоматты қолданылмайды.
+2. Параметрлерді нақтылаңыз: FIB-4 = age × AST / (platelets × √ALT); APRI = (AST / AST_ULN) × 100 / platelets.
+FIB-4 (Sterling 2006) жас, AST, ALT және тромбоциттерді пайдаланады. AASLD 2023 шектері метаболикалық майлы бауыр ауруында айқын фиброз ықтималдығын бағалайды, сатысын анықтамайды. 35–65 жаста төменгі шек 1,3; 65 жастан жоғарыда 2,0; жоғарғы шек 2,67. 35 жасқа дейін санат берілмейді; жедел ауру кезінде түсіндірілмейді. APRI (Wai 2003) және 0,5/1,5 шектері созылмалы C гепатитіндегі елеулі фиброзға қатысты, басқа ауруларға автоматты қолданылмайды.
+3. Нәтижені оқыңыз: Фиброз ықтималдығын бағалауға көмектеседі, бірақ эластографияны алмастырмайды. 35 жасқа дейін қолдану шектелген.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-FIB-4 (Sterling, 2006) бауырдың айқын фиброзын анықтау үшін жасты, АСТ, АЛТ және тромбоциттерді біріктіреді. EASL 2021 бойынша < 65 жас үшін төмен қауіп шегі 1,30, ал ≥ 65 жас үшін 2,00 құрайды.
+FIB-4 (Sterling 2006) жас, AST, ALT және тромбоциттерді пайдаланады. AASLD 2023 шектері метаболикалық майлы бауыр ауруында айқын фиброз ықтималдығын бағалайды, сатысын анықтамайды. 35–65 жаста төменгі шек 1,3; 65 жастан жоғарыда 2,0; жоғарғы шек 2,67. 35 жасқа дейін санат берілмейді; жедел ауру кезінде түсіндірілмейді. APRI (Wai 2003) және 0,5/1,5 шектері созылмалы C гепатитіндегі елеулі фиброзға қатысты, басқа ауруларға автоматты қолданылмайды.
 
-FIB-4 = Жас (жыл) × АСТ (Б/л) / [ Тромбоциттер (10⁹/л) × √(АЛТ, Б/л) ]
-APRI = ( АСТ / ЖШ_АСТ ) × 100 / Тромбоциттер (10⁹/л)
+FIB-4 = age × AST / (platelets × √ALT); APRI = (AST / AST_ULN) × 100 / platelets.
+FIB-4 (Sterling 2006) жас, AST, ALT және тромбоциттерді пайдаланады. AASLD 2023 шектері метаболикалық майлы бауыр ауруында айқын фиброз ықтималдығын бағалайды, сатысын анықтамайды. 35–65 жаста төменгі шек 1,3; 65 жастан жоғарыда 2,0; жоғарғы шек 2,67. 35 жасқа дейін санат берілмейді; жедел ауру кезінде түсіндірілмейді. APRI (Wai 2003) және 0,5/1,5 шектері созылмалы C гепатитіндегі елеулі фиброзға қатысты, басқа ауруларға автоматты қолданылмайды.
 
 ### Шектеулер
 
@@ -27,9 +28,10 @@ APRI = ( АСТ / ЖШ_АСТ ) × 100 / Тромбоциттер (10⁹/л)
 
 ### Дереккөздер
 
-- [Sterling R.K. et al. Development of a simple noninvasive index to predict significant fibrosis in patients with HIV/HCV coinfection. Hepatology, 2006;43(6):1317–1325](https://pubmed.ncbi.nlm.nih.gov/16729309/)
-- [Wai C.T. et al. A simple noninvasive index can predict both significant fibrosis and cirrhosis in patients with chronic hepatitis C. Hepatology, 2003;38(2):518–526](https://pubmed.ncbi.nlm.nih.gov/12883497/)
-- [EASL Clinical Practice Guidelines on non-invasive tests for evaluation of liver disease severity and prognosis — 2021 update. J Hepatol, 2021;75(3):659–689](https://pubmed.ncbi.nlm.nih.gov/34166721/)
+- [Rinella M.E. et al. AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease. Hepatology, 2023.](https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/)
+- [Sterling RK et al. Development of a simple noninvasive index to predict significant fibrosis in patients with HIV/HCV coinfection. Hepatology, 2006](https://pubmed.ncbi.nlm.nih.gov/16729309/)
+- [Wai CT et al. A simple noninvasive index can predict both significant fibrosis and cirrhosis in patients with chronic hepatitis C. Hepatology, 2003](https://pubmed.ncbi.nlm.nih.gov/12883497/)
+- [European Association for the Study of the Liver. et al. EASL Clinical Practice Guidelines on non-invasive tests for evaluation of liver disease severity and prognosis - 2021 update. J Hepatol, 2021](https://pubmed.ncbi.nlm.nih.gov/34166721/)
 
 ## Осы калькуляторды ендіру
 

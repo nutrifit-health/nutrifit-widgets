@@ -1,4 +1,4 @@
-# HbA1c ↔ Average Glucose (eAG) Converter
+# HbA1c and average glucose conversion
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/hba1c-eag.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/hba1c-eag.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/hba1c-eag.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/hba1c-eag.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/hba1c-eag.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/hba1c-eag.md)
 
@@ -6,31 +6,28 @@
 
 `hba1c-eag` · [NutriFit](https://nutrifit.health/calculators/hba1c-eag)
 
-HbA1c to 3-month average glycemia by the ADAG formula, reverse calculation and % ↔ mmol/mol conversion with ADA categories.
+Estimated average glucose over about 2–3 months from laboratory HbA1c, or an approximate reverse estimate.
 
-### How to use
+### Usage
 
-1. Choose what you have: If you have an HbA1c result, enter it. If you keep a meter or CGM and know your 2–3-month average glucose, switch to the reverse calculation.
-2. Set the units on your report: HbA1c is reported in percent (NGSP, USA and CIS) or mmol/mol (IFCC, Europe). 6.5% equals 48 mmol/mol — the calculator converts automatically.
-3. Compare eAG with your meter readings: If your meter average is noticeably below eAG, you are probably testing mostly fasting and missing post-meal peaks. A gap over 1.5 mmol/L is worth discussing with a physician.
+1. Enter the starting values: Use actual values and the appropriate units.
+2. Adjust the parameters: Adjust the starting assumptions for your situation.
+3. Read the result: Consider the model limitations; a calculation is not a measurement.
 
 ### Method and formula
 
-Glycated hemoglobin reflects average glucose over 8–12 weeks — the lifespan of a red blood cell. The A1c-Derived Average Glucose study (ADAG, Nathan 2008) matched HbA1c against continuous glucose monitoring in 507 people and derived a linear relationship: eAG (mg/dL) = 28.7 × HbA1c − 46.7. The calculator works both ways — from HbA1c to average glucose and from a known average (e.g. from a meter or CGM) to the expected HbA1c — and converts NGSP percent to IFCC units (mmol/mol) used in Europe and Australia.
+The ADAG relationship is a population-based estimate, not an exact match for every individual. NGSP/IFCC conversion uses the official master equation.
 
-eAG (mg/dL) = 28.7 × HbA1c (%) − 46.7
-eAG (mmol/L) = 1.59 × HbA1c (%) − 2.59
-HbA1c (mmol/mol, IFCC) = (HbA1c (%, NGSP) − 2.15) × 10.929
-Reverse: HbA1c (%) = (eAG, mg/dL + 46.7) / 28.7
+eAG (mg/dL) = 28.7 × HbA1c (%) − 46.7; eAG (mmol/L) = eAG (mg/dL) / 18.016; IFCC (mmol/mol) = (NGSP (%) − 2.152) / 0.09148; NGSP (%) = 0.09148 × IFCC + 2.152.
 
 ### Limitations
 
-HbA1c is inaccurate in conditions that alter red-cell lifespan or hemoglobin structure: anemia, hemoglobinopathies, pregnancy, CKD, recent blood loss or transfusion, iron and B12 deficiency. In 10–15% of people the individual HbA1c–glucose relationship differs noticeably from the average (the "glycation gap"), so eAG is a population estimate, not a measurement. A diabetes diagnosis requires confirmation by a repeat test.
+A reverse estimate from average glucose does not replace an HbA1c test or establish a diagnosis. Anaemia, altered red-cell lifespan, haemoglobin variants and pregnancy can affect the relationship. Diagnostic conclusions require clinical assessment and usually repeat confirmation.
 
 ### Sources
 
-- [Nathan D.M. et al. Translating the A1C assay into estimated average glucose values. Diabetes Care, 2008;31(8):1473–1478](https://pubmed.ncbi.nlm.nih.gov/18540046/)
-- [American Diabetes Association. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes — 2024. Diabetes Care, 2024;47(Suppl 1):S20–S42](https://pubmed.ncbi.nlm.nih.gov/38078589/)
+- [Nathan DM et al. Translating the A1C assay into estimated average glucose values. Diabetes Care, 2008](https://pubmed.ncbi.nlm.nih.gov/18540046/)
+- [American Diabetes Association Professional Practice Committee. et al. 2. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes-2024. Diabetes Care, 2024](https://pubmed.ncbi.nlm.nih.gov/38078589/)
 - [NGSP. IFCC Standardization of HbA1c: master equation NGSP ↔ IFCC](https://ngsp.org/ifcc.asp)
 
 ## Embed this calculator
@@ -62,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/hba1c-eag?lang=en&theme=auto"
-  title="HbA1c ↔ Average Glucose (eAG) Converter" loading="lazy" referrerpolicy="no-referrer"
+  title="HbA1c and average glucose conversion" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

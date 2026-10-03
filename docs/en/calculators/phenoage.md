@@ -6,30 +6,34 @@
 
 `phenoage` · [NutriFit](https://nutrifit.health/calculators/phenoage)
 
-A research estimate using nine biomarkers and age. The result does not predict individual life expectancy.
+The Levine 2018 model combines nine biomarkers and chronological age. PhenoAge is an age equivalent of population risk in the NHANES model, not organ age or individual life expectancy. The difference from age is subtraction, not an aging rate or the statistical PhenoAgeAccel residual.
 
-### How to use
+### Usage
 
-1. Get a CBC with differential and a chemistry panel: Needed: albumin, creatinine, fasting glucose, CRP (preferably high-sensitivity), alkaline phosphatase — from chemistry; white cells, lymphocyte %, MCV, RDW — from the blood count.
-2. Enter values in SI units: Albumin in g/L (not g/dL), creatinine in µmol/L, glucose in mmol/L, CRP in mg/L. If your report uses other units, use the unit converter.
-3. Track the trend, not a single number: Interpret the laboratory results with a clinician. A change in the number does not prove rejuvenation or intervention effectiveness.
+1. Enter the starting values: The Levine 2018 model combines nine biomarkers and chronological age. PhenoAge is an age equivalent of population risk in the NHANES model, not organ age or individual life expectancy. The difference from age is subtraction, not an aging rate or the statistical PhenoAgeAccel residual.
+2. Adjust the parameters: xb = −19.907 − 0.0336·A + 0.0095·C + 0.1953·G + 0.0954·ln(CRP) − 0.012·L + 0.0268·M + 0.3306·R + 0.00188·P + 0.0554·W + 0.0804·a
+H = exp(xb) × (exp(120 × 0.0076927) − 1) / 0.0076927
+PhenoAge = 141.50225 + ln(0.00553 × H) / 0.09165
+A: albumin, g/L; C: creatinine, µmol/L; G: glucose, mmol/L; CRP: mg/dL (input mg/L ÷ 10); L: lymphocytes, %; M: MCV, fL; R: RDW, %; P: ALP, U/L; W: WBC, 10⁹/L; a: age, years.
+3. Read the result: Research model for ages 20–84. Acute illness changes biomarkers and the result. This is not a diagnosis, lifespan or proof of rejuvenation. CRP must be measured and positive; a result below the detection limit cannot be replaced with zero.
 
 ### Method and formula
 
-The Levine 2018 model combines nine biomarkers and chronological age. Coefficients were trained on NHANES; a Gompertz transformation expresses the profile as an age equivalent of population risk. No individual mortality forecast is shown. The difference from chronological age is simple subtraction, not the statistical PhenoAgeAccel residual or a rate of aging.
+The Levine 2018 model combines nine biomarkers and chronological age. PhenoAge is an age equivalent of population risk in the NHANES model, not organ age or individual life expectancy. The difference from age is subtraction, not an aging rate or the statistical PhenoAgeAccel residual.
 
-xb = −19.907 − 0.0336·Albumin(g/L) + 0.0095·Creatinine(µmol/L) + 0.1953·Glucose(mmol/L) + 0.0954·ln(CRP, mg/dL) − 0.0120·Lymphocytes(%) + 0.0268·MCV(fL) + 0.3306·RDW(%) + 0.00188·ALP(U/L) + 0.0554·WBC(10⁹/L) + 0.0804·Age
-120-month risk = 1 − exp(−e^xb · (e^(120·0.0076927) − 1) / 0.0076927)
-PhenoAge = 141.50225 + ln(−0.00553 · ln(1 − Risk)) / 0.09165
+xb = −19.907 − 0.0336·A + 0.0095·C + 0.1953·G + 0.0954·ln(CRP) − 0.012·L + 0.0268·M + 0.3306·R + 0.00188·P + 0.0554·W + 0.0804·a
+H = exp(xb) × (exp(120 × 0.0076927) − 1) / 0.0076927
+PhenoAge = 141.50225 + ln(0.00553 × H) / 0.09165
+A: albumin, g/L; C: creatinine, µmol/L; G: glucose, mmol/L; CRP: mg/dL (input mg/L ÷ 10); L: lymphocytes, %; M: MCV, fL; R: RDW, %; P: ALP, U/L; W: WBC, 10⁹/L; a: age, years.
 
 ### Limitations
 
-Research tool for ages 20–84. Acute illness changes biomarkers and the result. The number is not a diagnosis, lifespan or proof of rejuvenation. CRP below the detection limit requires a quantitative result rather than substituting zero.
+Research model for ages 20–84. Acute illness changes biomarkers and the result. This is not a diagnosis, lifespan or proof of rejuvenation. CRP must be measured and positive; a result below the detection limit cannot be replaced with zero.
 
 ### Sources
 
-- [Levine M.E. et al. An epigenetic biomarker of aging for lifespan and healthspan. Aging (Albany NY), 2018;10(4):573–591](https://pubmed.ncbi.nlm.nih.gov/29676998/)
-- [Liu Z. et al. A new aging measure captures morbidity and mortality risk across diverse subpopulations from NHANES IV: a cohort study. PLoS Med, 2018;15(12):e1002718](https://pubmed.ncbi.nlm.nih.gov/30596641/)
+- [Levine ME et al. An epigenetic biomarker of aging for lifespan and healthspan. Aging (Albany NY), 2018](https://pubmed.ncbi.nlm.nih.gov/29676998/)
+- [Liu Z et al. A new aging measure captures morbidity and mortality risk across diverse subpopulations from NHANES IV: A cohort study. PLoS Med, 2018](https://pubmed.ncbi.nlm.nih.gov/30596641/)
 
 ## Embed this calculator
 

@@ -1,4 +1,4 @@
-# FFMI Calculator (Fat-Free Mass Index)
+# Fat-free mass index (FFMI)
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/ffmi.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/ffmi.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/ffmi.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/ffmi.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/ffmi.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/ffmi.md)
 
@@ -6,28 +6,27 @@
 
 `ffmi` · [NutriFit](https://nutrifit.health/calculators/ffmi)
 
-Determines lean muscular mass relative to height, distinguishing genuine hypertrophy from body fat accumulation.
+Fat-free mass = weight × (1 − body fat percentage / 100); FFMI = fat-free mass / height², with height in metres. For men: normalized FFMI = FFMI + 6.3 × (1.8 − height), following the Kouri (1995) abstract.
 
-### How to use
+### Usage
 
-1. Accurately measure height and weight: Weigh yourself in the morning fasted after using the restroom. Measure barefoot standing height against a stadiometer.
-2. Determine your body fat percentage: Use a 3–7 site caliper protocol, calibrated multi-frequency bioimpedance, or ideally a DEXA dual-energy X-ray scan.
-3. Interpret the normalized score: The normalized score eliminates mathematical distortion for taller (>180 cm) or shorter (<170 cm) individuals, allowing fair comparison to normative tables.
+1. Enter the starting values: Fat-free mass = weight × (1 − body fat percentage / 100); FFMI = fat-free mass / height², with height in metres. For men: normalized FFMI = FFMI + 6.3 × (1.8 − height), following the Kouri (1995) abstract.
+2. Adjust the parameters: Fat-free mass = weight × (1 − body fat percentage / 100); FFMI = fat-free mass / height², with height in metres. For men: normalized FFMI = FFMI + 6.3 × (1.8 − height), following the Kouri (1995) abstract.
+3. Read the result: The original study included men. Normalization is not calculated for women. The value depends on body fat estimation accuracy; it does not diagnose steroid use, establish a genetic limit or define a universal health category.
 
 ### Method and formula
 
-Standard BMI cannot differentiate between muscle mass and adipose tissue. The Fat-Free Mass Index (FFMI) isolates lean tissue and introduces a height-normalization factor (Kouri et al., 1995) to benchmark muscularity across varying statures.
+Fat-free mass = weight × (1 − body fat percentage / 100); FFMI = fat-free mass / height², with height in metres. For men: normalized FFMI = FFMI + 6.3 × (1.8 − height), following the Kouri (1995) abstract.
 
-Lean Body Mass (LBM) = Weight × (1 − % Body Fat / 100); Baseline FFMI = LBM / Height(m)²; Normalized FFMI = Baseline FFMI + 6.1 × (1.80 − Height(m)).
+Fat-free mass = weight × (1 − body fat percentage / 100); FFMI = fat-free mass / height², with height in metres. For men: normalized FFMI = FFMI + 6.3 × (1.8 − height), following the Kouri (1995) abstract.
 
 ### Limitations
 
-Calculation accuracy depends directly on the precision of body fat measurement. DEXA scans and hydrostatic weighing provide the highest reliability.
+The original study included men. Normalization is not calculated for women. The value depends on body fat estimation accuracy; it does not diagnose steroid use, establish a genetic limit or define a universal health category.
 
 ### Sources
 
-- [Kouri E.M. et al. Fat-free mass index in users and nonusers of anabolic-androgenic steroids. Clin J Sport Med, 1995;5(4):223–228](https://pubmed.ncbi.nlm.nih.gov/7496846/)
-- [Trexler E.T. et al. Physiological changes after a female bodybuilding contest preparation. J Int Soc Sports Nutr, 2017;14:34](https://pubmed.ncbi.nlm.nih.gov/28878643/)
+- [Kouri EM et al. Fat-free mass index in users and nonusers of anabolic-androgenic steroids. Clin J Sport Med, 1995](https://pubmed.ncbi.nlm.nih.gov/7496846/)
 
 ## Embed this calculator
 
@@ -58,7 +57,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/ffmi?lang=en&theme=auto"
-  title="FFMI Calculator (Fat-Free Mass Index)" loading="lazy" referrerpolicy="no-referrer"
+  title="Fat-free mass index (FFMI)" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

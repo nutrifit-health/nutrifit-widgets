@@ -6,22 +6,21 @@
 
 `fib-4` · [NutriFit](https://nutrifit.health/es/calculators/fib-4)
 
-Valoración no invasiva de la fibrosis hepática con FIB-4 y APRI y umbrales ajustados por edad de la EASL 2021: el primer paso del cribado en NAFLD, hepatitis y hepatopatía alcohólica.
+FIB-4 (Sterling 2006) usa edad, AST, ALT y plaquetas. Los umbrales AASLD 2023 evalúan la probabilidad de fibrosis avanzada en la enfermedad hepática grasa metabólica, no su estadio. Edades 35–65: umbral inferior 1,3; mayores de 65: 2,0; umbral superior 2,67. No se asigna categoría por debajo de 35 años; no se interpreta durante una enfermedad aguda. APRI (Wai 2003) y los umbrales 0,5/1,5 se refieren a fibrosis significativa en hepatitis C crónica y no se trasladan automáticamente a otras enfermedades.
 
-### Cómo usar
+### Uso
 
-1. 1. Tome AST, ALT y plaquetas: Las transaminasas de la bioquímica; las plaquetas, del hemograma. Los análisis deben ser del mismo periodo (1–2 semanas) y fuera de una enfermedad aguda.
-2. 2. Indique la edad y el LSN de AST: El FIB-4 depende de la edad: a partir de los 65 años el umbral de riesgo bajo sube a 2,0. Para el APRI hace falta el límite superior normal de AST de su laboratorio.
-3. 3. Siga el algoritmo: FIB-4 bajo: seguimiento y control de factores de riesgo. Zona gris: elastografía. Alto: hepatólogo. Es la vía oficial de la EASL/AASLD para NAFLD.
+1. Introduzca los datos iniciales: FIB-4 (Sterling 2006) usa edad, AST, ALT y plaquetas. Los umbrales AASLD 2023 evalúan la probabilidad de fibrosis avanzada en la enfermedad hepática grasa metabólica, no su estadio. Edades 35–65: umbral inferior 1,3; mayores de 65: 2,0; umbral superior 2,67. No se asigna categoría por debajo de 35 años; no se interpreta durante una enfermedad aguda. APRI (Wai 2003) y los umbrales 0,5/1,5 se refieren a fibrosis significativa en hepatitis C crónica y no se trasladan automáticamente a otras enfermedades.
+2. Ajuste los parámetros: FIB-4 = age × AST / (platelets × √ALT); APRI = (AST / AST_ULN) × 100 / platelets.
+FIB-4 (Sterling 2006) usa edad, AST, ALT y plaquetas. Los umbrales AASLD 2023 evalúan la probabilidad de fibrosis avanzada en la enfermedad hepática grasa metabólica, no su estadio. Edades 35–65: umbral inferior 1,3; mayores de 65: 2,0; umbral superior 2,67. No se asigna categoría por debajo de 35 años; no se interpreta durante una enfermedad aguda. APRI (Wai 2003) y los umbrales 0,5/1,5 se refieren a fibrosis significativa en hepatitis C crónica y no se trasladan automáticamente a otras enfermedades.
+3. Lea el resultado: El FIB-4 excluye la fibrosis avanzada, pero la confirma mal: hasta el 30 % de los valores caen en la «zona gris» 1,3–2,67 y requieren elastografía (FibroScan) o test ELF. El índice no está validado por debajo de los 35 años (subestima) y sobreestima el riesgo a partir de los 65 sin ajustar el umbral. La trombocitopenia de otro origen (inmune, hematológica), la hepatitis aguda, el alcohol la víspera y las lesiones musculares (AST) distorsionan el resultado. El índice no sustituye la visita al hepatólogo ni establece la causa del daño hepático.
 
 ### Método y fórmula
 
-FIB-4 (Sterling, 2006) combina cuatro parámetros rutinarios (edad, AST, ALT y plaquetas) en un índice que refleja la probabilidad de fibrosis avanzada (F3–F4). Las plaquetas bajan con la hipertensión portal y el cociente AST/ALT sube a medida que progresa la enfermedad. La EASL 2021 y la AASLD 2023 recomiendan el FIB-4 como prueba de primera línea en NAFLD/MASLD: un valor por debajo de 1,3 (2,0 a partir de los 65 años) excluye la fibrosis avanzada con un valor predictivo negativo cercano al 90 %; por encima de 2,67 exige elastografía y consulta con hepatología. APRI (Wai, 2003) es un índice más simple basado en AST y plaquetas, validado en hepatitis víricas.
+FIB-4 (Sterling 2006) usa edad, AST, ALT y plaquetas. Los umbrales AASLD 2023 evalúan la probabilidad de fibrosis avanzada en la enfermedad hepática grasa metabólica, no su estadio. Edades 35–65: umbral inferior 1,3; mayores de 65: 2,0; umbral superior 2,67. No se asigna categoría por debajo de 35 años; no se interpreta durante una enfermedad aguda. APRI (Wai 2003) y los umbrales 0,5/1,5 se refieren a fibrosis significativa en hepatitis C crónica y no se trasladan automáticamente a otras enfermedades.
 
-FIB-4 = Edad (años) × AST (U/L) / [ Plaquetas (10⁹/L) × √ALT (U/L) ]
-APRI = [ AST / LSN de AST ] × 100 / Plaquetas (10⁹/L)
-Umbrales FIB-4: < 1,3 (< 2,0 con edad ≥ 65) riesgo bajo; 1,3–2,67 indeterminado; > 2,67 alto
-Umbrales APRI: < 0,5 bajo; > 1,5 fibrosis significativa probable
+FIB-4 = age × AST / (platelets × √ALT); APRI = (AST / AST_ULN) × 100 / platelets.
+FIB-4 (Sterling 2006) usa edad, AST, ALT y plaquetas. Los umbrales AASLD 2023 evalúan la probabilidad de fibrosis avanzada en la enfermedad hepática grasa metabólica, no su estadio. Edades 35–65: umbral inferior 1,3; mayores de 65: 2,0; umbral superior 2,67. No se asigna categoría por debajo de 35 años; no se interpreta durante una enfermedad aguda. APRI (Wai 2003) y los umbrales 0,5/1,5 se refieren a fibrosis significativa en hepatitis C crónica y no se trasladan automáticamente a otras enfermedades.
 
 ### Limitaciones
 
@@ -29,9 +28,10 @@ El FIB-4 excluye la fibrosis avanzada, pero la confirma mal: hasta el 30 % de lo
 
 ### Fuentes
 
-- [Sterling R.K. et al. Development of a simple noninvasive index to predict significant fibrosis in patients with HIV/HCV coinfection. Hepatology, 2006;43(6):1317–1325](https://pubmed.ncbi.nlm.nih.gov/16729309/)
-- [Wai C.T. et al. A simple noninvasive index can predict both significant fibrosis and cirrhosis in patients with chronic hepatitis C. Hepatology, 2003;38(2):518–526](https://pubmed.ncbi.nlm.nih.gov/12883497/)
-- [EASL Clinical Practice Guidelines on non-invasive tests for evaluation of liver disease severity and prognosis — 2021 update. J Hepatol, 2021;75(3):659–689](https://pubmed.ncbi.nlm.nih.gov/34166721/)
+- [Rinella M.E. et al. AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease. Hepatology, 2023.](https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/)
+- [Sterling RK et al. Development of a simple noninvasive index to predict significant fibrosis in patients with HIV/HCV coinfection. Hepatology, 2006](https://pubmed.ncbi.nlm.nih.gov/16729309/)
+- [Wai CT et al. A simple noninvasive index can predict both significant fibrosis and cirrhosis in patients with chronic hepatitis C. Hepatology, 2003](https://pubmed.ncbi.nlm.nih.gov/12883497/)
+- [European Association for the Study of the Liver. et al. EASL Clinical Practice Guidelines on non-invasive tests for evaluation of liver disease severity and prognosis - 2021 update. J Hepatol, 2021](https://pubmed.ncbi.nlm.nih.gov/34166721/)
 
 ## Cómo integrar esta calculadora
 

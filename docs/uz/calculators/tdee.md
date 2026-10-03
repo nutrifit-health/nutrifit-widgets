@@ -1,4 +1,4 @@
-# Kunlik kaloriya normasi kalkulyatori (TDEE)
+# Kunlik energiya sarfi bahosi TDEE
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/tdee.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/tdee.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/tdee.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/tdee.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/tdee.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/tdee.md)
 
@@ -6,27 +6,27 @@
 
 `tdee` · [NutriFit](https://nutrifit.health/uz/calculators/tdee)
 
-Asosiy almashinuv va kunlik umumiy energiya sarfini, shuningdek vaznni kamaytirish, saqlash va to‘plash uchun kaloriyani hisoblaydi.
+Mifflin–St Jeor tinchlik sarfini baholaydi. TDEE = baho × tanlangan faollik koeffitsienti. −20% va +15% — muallifning kamomad va ortiqcha ssenariylari.
 
 ### Foydalanish tartibi
 
-1. Tana parametrlarini ko‘rsating: Aniq vazn, bo‘y, jins va yoshni kiriting. Bu asosiy metabolizmni (BMR) hisoblash uchun zarur.
-2. Faollik darajasini baholang: Haftalik faolligingizni xolisona tanlang. O‘tirib ishlaganda doimiy sportsiz faollik darajasini oshirib ko‘rsatmang.
-3. Maqsad qiymatlarini ko‘ring: Vaznni saqlash TDEE ga teng; kamaytirish maqsadi TDEE dan 20% past, oshirish maqsadi 15% yuqori.
+1. Boshlang‘ich ma’lumotlarni kiriting: Mifflin–St Jeor tinchlik sarfini baholaydi. TDEE = baho × tanlangan faollik koeffitsienti. −20% va +15% — muallifning kamomad va ortiqcha ssenariylari.
+2. Parametrlarni aniqlashtiring: Mifflin–St Jeor tinchlik sarfini baholaydi. TDEE = baho × tanlangan faollik koeffitsienti. −20% va +15% — muallifning kamomad va ortiqcha ssenariylari.
+3. Natijani o‘qing: Kattalar uchun. Koeffitsientlar taxminiy, o‘lchangan PAL emas. Formula individual ehtiyoj va xavfsiz kamomadni aniqlamaydi; xato metabolik buzilishni isbotlamaydi.
 
 ### Usul va formula
 
-Asosiy almashinuv (BMR) 1990-yilgi Mifflin-St Jeor tenglamasi bilan hisoblanadi — bu sog‘lom kattalarda tinch holatdagi sarfni baholashning amaldagi standarti. Kunlik umumiy sarf (TDEE) BMR ni faollik koeffitsiyentiga ko‘paytirish orqali olinadi. Vaznni kamaytirish kaloriyasi TDEE dan 20% kam, to‘plash uchun 15% ko‘p: bunday sur’at mushak to‘qimasini yo‘qotmasdan va keskin sakrashlarsiz vaznni o‘zgartiradi.
+Mifflin–St Jeor tinchlik sarfini baholaydi. TDEE = baho × tanlangan faollik koeffitsienti. −20% va +15% — muallifning kamomad va ortiqcha ssenariylari.
 
 BMR (erkak) = 10 × vazn(kg) + 6,25 × bo‘y(sm) − 5 × yosh + 5; BMR (ayol) = 10 × vazn(kg) + 6,25 × bo‘y(sm) − 5 × yosh − 161; TDEE = BMR × faollik koeffitsiyenti
 
 ### Cheklovlar
 
-Tenglama sog‘lom kattalarda olingan va taxminan ±10% xatolik beradi. U tana tarkibini hisobga olmaydi: mushak massasi yuqori bo‘lganda natija pasaytirilgan, semizlikda oshirilgan bo‘ladi. Homiladorlar, bolalar, yuqori darajadagi sportchilar va qalqonsimon bez kasalliklari bo‘lganlar uchun alohida metodikalar kerak.
+Kattalar uchun. Koeffitsientlar taxminiy, o‘lchangan PAL emas. Formula individual ehtiyoj va xavfsiz kamomadni aniqlamaydi; xato metabolik buzilishni isbotlamaydi.
 
 ### Manbalar
 
-- [Mifflin M.D., St Jeor S.T. et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990;51(2):241–247](https://pubmed.ncbi.nlm.nih.gov/2305711/)
+- [Mifflin MD et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990](https://pubmed.ncbi.nlm.nih.gov/2305711/)
 - [FAO/WHO/UNU. Human Energy Requirements. Report of a Joint Expert Consultation, 2004](https://www.fao.org/4/y5686e/y5686e00.htm)
 
 ## Ushbu kalkulyatorni joylashtirish
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/tdee?lang=uz&theme=auto"
-  title="Kunlik kaloriya normasi kalkulyatori (TDEE)" loading="lazy" referrerpolicy="no-referrer"
+  title="Kunlik energiya sarfi bahosi TDEE" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

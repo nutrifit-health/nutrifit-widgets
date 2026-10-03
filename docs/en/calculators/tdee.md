@@ -1,4 +1,4 @@
-# Daily calorie needs calculator (TDEE)
+# Estimated total daily energy expenditure (TDEE)
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/tdee.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/tdee.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/tdee.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/tdee.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/tdee.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/tdee.md)
 
@@ -6,27 +6,27 @@
 
 `tdee` · [NutriFit](https://nutrifit.health/calculators/tdee)
 
-Calculates basal metabolic rate and total daily energy expenditure, plus calorie targets for losing, maintaining and gaining weight.
+Mifflin–St Jeor estimates resting expenditure. TDEE = that estimate × selected activity factor. −20% and +15% are author-defined deficit and surplus scenarios.
 
-### How to use
+### Usage
 
-1. Enter body stats: Provide accurate weight, height, sex, and age to compute your Basal Metabolic Rate (BMR).
-2. Select activity level: Be honest with your weekly routine. If working a desk job, do not overestimate your activity without consistent sports.
-3. Review goal targets: Maintenance uses TDEE; the weight-loss target is 20% below TDEE and the weight-gain target is 15% above it.
+1. Enter the starting values: Mifflin–St Jeor estimates resting expenditure. TDEE = that estimate × selected activity factor. −20% and +15% are author-defined deficit and surplus scenarios.
+2. Adjust the parameters: Mifflin–St Jeor estimates resting expenditure. TDEE = that estimate × selected activity factor. −20% and +15% are author-defined deficit and surplus scenarios.
+3. Read the result: For adults. Activity factors are approximations, not measured PAL. The equation does not determine individual needs or a safe deficit; prediction error does not prove a metabolic disorder.
 
 ### Method and formula
 
-Basal metabolic rate (BMR) is calculated with the Mifflin-St Jeor equation of 1990 — the current standard for healthy adults. Total daily energy expenditure (TDEE) is BMR multiplied by an activity factor. The weight-loss target is 20% below TDEE and the gain target is 15% above it: these rates change body weight without losing muscle tissue and without sharp swings.
+Mifflin–St Jeor estimates resting expenditure. TDEE = that estimate × selected activity factor. −20% and +15% are author-defined deficit and surplus scenarios.
 
 BMR (men) = 10 × weight(kg) + 6.25 × height(cm) − 5 × age + 5; BMR (women) = 10 × weight(kg) + 6.25 × height(cm) − 5 × age − 161; TDEE = BMR × activity factor
 
 ### Limitations
 
-The equation was derived on healthy adults and carries an error of about ±10%. It ignores body composition: with high muscle mass the result is underestimated, with obesity it is overestimated. Pregnancy, childhood, elite sport and thyroid disorders require separate methods.
+For adults. Activity factors are approximations, not measured PAL. The equation does not determine individual needs or a safe deficit; prediction error does not prove a metabolic disorder.
 
 ### Sources
 
-- [Mifflin M.D., St Jeor S.T. et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990;51(2):241–247](https://pubmed.ncbi.nlm.nih.gov/2305711/)
+- [Mifflin MD et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990](https://pubmed.ncbi.nlm.nih.gov/2305711/)
 - [FAO/WHO/UNU. Human Energy Requirements. Report of a Joint Expert Consultation, 2004](https://www.fao.org/4/y5686e/y5686e00.htm)
 
 ## Embed this calculator
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/tdee?lang=en&theme=auto"
-  title="Daily calorie needs calculator (TDEE)" loading="lazy" referrerpolicy="no-referrer"
+  title="Estimated total daily energy expenditure (TDEE)" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

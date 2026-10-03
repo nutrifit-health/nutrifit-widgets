@@ -8,13 +8,13 @@
 
 Молярлық массалар бойынша 33 зертханалық көрсеткішті ХЖ (ммоль/л, мкмоль/л, нмоль/л) және дәстүрлі бірліктер (мг/дл, нг/мл) арасында қайта есептеу.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
 1. Көрсеткішті таңдаңыз: Тізімде 33 ең жиі талдау бар: глюкоза мен холестериннен D дәруменіне, тестостеронға және кортизолға дейін.
 2. Бағытты көрсетіңіз: Егер бланк ммоль/л немесе нмоль/л болса, ал шетелдік мақаладан референс мг/дл болса, ХЖ → дәстүрлі бағытын таңдаңыз.
 3. Тек санды емес, референсті де салыстырыңыз: Референттік аралықтар зертхана әдісіне байланысты. Дұрыс диапазонмен салыстыру үшін бланкідегі норма шектерін де қайта есептеңіз.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
 Коэффициент массалық концентрацияны молярлық масса мен көлем бірлігін ескере отырып молярлыққа ауыстырады. AMA және Labcorp кең таралған зертханалық коэффициенттері қолданылады.
 
@@ -26,7 +26,7 @@ SI = массалық бірліктегі мән × коэффициент. К�
 
 ### Дереккөздер
 
-- [Young D.S. Implementation of SI units for clinical laboratory data. Style specifications and conversion tables. Ann Intern Med, 1987;106(1):114–129](https://pubmed.ncbi.nlm.nih.gov/3789557/)
+- [Young DS. et al. Implementation of SI units for clinical laboratory data. Style specifications and conversion tables. Ann Intern Med, 1987](https://pubmed.ncbi.nlm.nih.gov/3789557/)
 - [AMA Manual of Style, 11th ed. Units of Measure: Conventional Units and SI Units in Clinical Chemistry. Oxford University Press, 2020](https://academic.oup.com/amamanualofstyle/si-conversion-calculator)
 - [NIST Special Publication 811. Guide for the Use of the International System of Units (SI), 2008](https://www.nist.gov/pml/special-publication-811)
 

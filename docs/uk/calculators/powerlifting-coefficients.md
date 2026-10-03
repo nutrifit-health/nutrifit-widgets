@@ -1,4 +1,4 @@
-# Калькулятор коефіцієнтів пауерліфтингу (DOTS, Wilks, IPF GL)
+# Коефіцієнти триборства DOTS, Wilks і IPF GL
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/powerlifting-coefficients.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/powerlifting-coefficients.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/powerlifting-coefficients.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/powerlifting-coefficients.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/powerlifting-coefficients.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/powerlifting-coefficients.md)
 
@@ -6,27 +6,27 @@
 
 `powerlifting-coefficients` · [NutriFit](https://nutrifit.health/uk/calculators/powerlifting-coefficients)
 
-Порівнює абсолютну силу атлетів різних вагових категорій та статі у триборстві (присідання, жим, тяга) за формулами DOTS, Wilks та IPF GL Points.
+Вкажіть масу на зважуванні та суму найкращих успішних присідання, жиму й тяги в кілограмах. DOTS, класичний Wilks і IPF GL 2020 для класичного триборства.
 
 ### Порядок використання
 
-1. Складіть найкращі ваги у трьох рухах: Підсумуйте максимальну вагу в присіданнях, жимі лежачи та становій тязі, виконаних за змагальними правилами.
-2. Вкажіть точну власну вагу на зважуванні: Використовуйте ранкову вагу на змагальному зважуванні (до виходу на помост).
-3. Оцініть свої бали DOTS та IPF GL: Порівняйте результат зі шкалою майстерності: 300 балів — міцний любитель, 400 — кандидат у майстри спорту, 500 — еліта.
+1. Введіть вихідні дані: Вкажіть масу на зважуванні та суму найкращих успішних присідання, жиму й тяги в кілограмах. DOTS, класичний Wilks і IPF GL 2020 для класичного триборства. DOTS обмежує масу для коефіцієнта до 40–210 кг у чоловіків і 40–150 кг у жінок; поза межами використовує крайнє значення.
+2. Уточніть параметри: DOTS: Коефіцієнт = 500 / (A×Вага^4 + B×Вага^3 + C×Вага^2 + D×Вага + E); Бали DOTS = Сума (кг) × Коефіцієнт; IPF GL Points: 100 × Сума / (A − B × e^(−C × Вага)); Wilks: поліном 5-го ступеня.
+3. Прочитайте результат: Формули дають різні порівняльні бали, не універсальний розряд. Цей IPF GL не призначений для окремого жиму чи екіпірувального триборства. Порівнюйте однакові дисципліни; вікові поправки не включені.
 
-### Методика та формула
+### Методика і формула
 
-Закон алометричного масштабування показує, що сила м'язів пропорційна площі їхнього поперечного перерізу (зріст у квадраті), тоді як маса тіла зростає пропорційно об'єму (зріст у кубі). Коефіцієнти пауерліфтингу використовують поліноміальні рівняння високих порядків, щоб зрівняти шанси легковаговиків та великоваговиків.
+Вкажіть масу на зважуванні та суму найкращих успішних присідання, жиму й тяги в кілограмах. DOTS, класичний Wilks і IPF GL 2020 для класичного триборства. DOTS обмежує масу для коефіцієнта до 40–210 кг у чоловіків і 40–150 кг у жінок; поза межами використовує крайнє значення.
 
 DOTS: Коефіцієнт = 500 / (A×Вага^4 + B×Вага^3 + C×Вага^2 + D×Вага + E); Бали DOTS = Сума (кг) × Коефіцієнт; IPF GL Points: 100 × Сума / (A − B × e^(−C × Вага)); Wilks: поліном 5-го ступеня.
 
 ### Обмеження
 
-Призначені для стандартного змагального триборства (пауерліфтинг). Не застосовуються для гирьового спорту, важкої атлетики (де використовується формула Сінклера) або армреслінгу.
+Формули дають різні порівняльні бали, не універсальний розряд. Цей IPF GL не призначений для окремого жиму чи екіпірувального триборства. Порівнюйте однакові дисципліни; вікові поправки не включені.
 
 ### Джерела
 
-- [Perotti L. et al. The DOTS Formula: A new formula for evaluating strength athletes across weight classes, 2019](https://pubmed.ncbi.nlm.nih.gov/31804245/)
+- [OpenPowerlifting. Reference DOTS implementation and attribution to Tim Konertz.](https://gitlab.com/openpowerlifting/opl-data/blob/main/crates/coefficients/src/dots.rs)
 - [Wilks R. The Wilks Formula for Powerlifting. Australian Powerlifting Federation, 1997](https://www.powerlifting.sport/)
 - [International Powerlifting Federation. IPF GL Points Formula for Classic and Equipped Powerlifting, 2020](https://www.powerlifting.sport/rules/codes/info/ipf-formula)
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/powerlifting-coefficients?lang=uk&theme=auto"
-  title="Калькулятор коефіцієнтів пауерліфтингу (DOTS, Wilks, IPF GL)" loading="lazy" referrerpolicy="no-referrer"
+  title="Коефіцієнти триборства DOTS, Wilks і IPF GL" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

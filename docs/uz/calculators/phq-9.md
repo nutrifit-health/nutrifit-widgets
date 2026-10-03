@@ -6,28 +6,28 @@
 
 `phq-9` · [NutriFit](https://nutrifit.health/uz/calculators/phq-9)
 
-DSM-5 mezonlari asosida depressiya darajasini aniqlash va birlamchi skrining qilish uchun xalqaro oltin standart.
+Oxirgi 2 haftadagi depressiv alomatlarning ifodalanishi: chastota bo‘yicha 0–3 ballik 9 javob; yig‘indi 0–27.
 
 ### Foydalanish tartibi
 
-1. So‘nggi 2 haftani yodga oling: Oxirgi 14 kun davomidagi umumiy holatingiz va har bir alomat qanchalik tez-tez bezovta qilganini baholang.
-2. Barcha 9 ta savolga javob bering: Har bir holatning uchrash tezligini 'Umuman yo‘q' (0) dan 'Deyarli har kuni' (3) gacha tanlang.
-3. Klinik xulosani o‘rganing: Alomatlarning og‘irlik toifasi va mutaxassislarning amaliy tavsiyalari bilan tanishing.
+1. Boshlang‘ich ma’lumotlarni kiriting: Oxirgi 2 haftadagi depressiv alomatlarning ifodalanishi: chastota bo‘yicha 0–3 ballik 9 javob; yig‘indi 0–27.
+2. Parametrlarni aniqlashtiring: Oxirgi 2 haftadagi depressiv alomatlarning ifodalanishi: chastota bo‘yicha 0–3 ballik 9 javob; yig‘indi 0–27.
+3. Natijani o‘qing: O‘zini baholash uchun axborot tarjimasi. Aynan shu moslamaning validatsiyasi tasdiqlanmagan. Ball tashxis qo‘ymaydi, past natija kasallikni istisno qilmaydi. 9-bandga har qanday noldan yuqori javob jami balldan qat’i nazar o‘lim yoki o‘ziga zarar yetkazish haqidagi fikrlarni mutaxassis bilan alohida muhokama qilishni talab etadi. Bevosita xavf bo‘lsa, shoshilinch yordamga murojaat qiling.
 
 ### Usul va formula
 
-So‘nggi 2 hafta davomida depressiv alomatlarning uchrash tezligini 0 dan ('Umuman yo‘q') 3 gacha ('Deyarli har kuni') baholovchi 9 ta savol.
+Oxirgi 2 haftadagi depressiv alomatlarning ifodalanishi: chastota bo‘yicha 0–3 ballik 9 javob; yig‘indi 0–27.
 
-PHQ-9 umumiy bali = Barcha 9 ta savol ballari yig‘indisi (0–27). 0–4: minimal; 5–9: yengil; 10–14: o‘rtacha; 15–19: o‘rtacha og‘ir; 20–27: og‘ir depressiya.
+Oxirgi 2 haftadagi depressiv alomatlarning ifodalanishi: chastota bo‘yicha 0–3 ballik 9 javob; yig‘indi 0–27.
 
 ### Cheklovlar
 
-Ushbu skrining shifokor-psixiatr yoki psixoterapevt qabulini almashtirmaydi. 9-savolga ijobiy javob berilganda zudlik bilan shifokorga murojaat qilish zarur.
+O‘zini baholash uchun axborot tarjimasi. Aynan shu moslamaning validatsiyasi tasdiqlanmagan. Ball tashxis qo‘ymaydi, past natija kasallikni istisno qilmaydi. 9-bandga har qanday noldan yuqori javob jami balldan qat’i nazar o‘lim yoki o‘ziga zarar yetkazish haqidagi fikrlarni mutaxassis bilan alohida muhokama qilishni talab etadi. Bevosita xavf bo‘lsa, shoshilinch yordamga murojaat qiling.
 
 ### Manbalar
 
-- [Kroenke K. et al. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med, 2001;16(9):606–613](https://pubmed.ncbi.nlm.nih.gov/11556941/)
-- [Spitzer R.L. et al. Validation and utility of a self-report version of PRIME-MD: the PHQ primary care study. JAMA, 1999;282(18):1737–1744](https://pubmed.ncbi.nlm.nih.gov/10568646/)
+- [Kroenke K et al. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med, 2001](https://pubmed.ncbi.nlm.nih.gov/11556941/)
+- [Spitzer RL et al. Validation and utility of a self-report version of PRIME-MD: the PHQ primary care study. Primary Care Evaluation of Mental Disorders. Patient Health Questionnaire. JAMA, 1999](https://pubmed.ncbi.nlm.nih.gov/10568646/)
 
 ## Ushbu kalkulyatorni joylashtirish
 

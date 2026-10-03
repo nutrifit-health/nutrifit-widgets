@@ -1,4 +1,4 @@
-# Калькулятор глікемічного навантаження
+# Глікемічне навантаження порції
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/glycemic-load.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/glycemic-load.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/glycemic-load.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/glycemic-load.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/glycemic-load.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/glycemic-load.md)
 
@@ -6,28 +6,28 @@
 
 `glycemic-load` · [NutriFit](https://nutrifit.health/uk/calculators/glycemic-load)
 
-Рахує глікемічне навантаження порції за глікемічним індексом і вмістом вуглеводів — величину, що відображає реальний відгук глюкози краще, ніж сам лише індекс.
+ГН = ГІ × доступні вуглеводи порції / 100. Вкажіть ГІ конкретного продукту й приготування за шкалою глюкоза = 100, доступні вуглеводи на 100 г і масу порції. Початкові числа — приклад.
 
 ### Порядок використання
 
-1. Оберіть продукт або введіть ГІ: Скористайтеся базою міжнародних таблиць (Atkinson 2021) або вкажіть глікемічний індекс вручну.
-2. Вкажіть вуглеводи та розмір порції: Введіть вміст вуглеводів на 100 г та фактичну вагу вашої порції в грамах.
-3. Оцініть метаболічний вплив: Дізнайтеся реальний вплив на рівень цукру: низьке (≤10), середнє (11–19) або високе (≥20) навантаження.
+1. Введіть вихідні дані: ГН = ГІ × доступні вуглеводи порції / 100. Вкажіть ГІ конкретного продукту й приготування за шкалою глюкоза = 100, доступні вуглеводи на 100 г і масу порції. Початкові числа — приклад.
+2. Уточніть параметри: ГН = ГІ × доступні вуглеводи порції / 100. Вкажіть ГІ конкретного продукту й приготування за шкалою глюкоза = 100, доступні вуглеводи на 100 г і масу порції. Початкові числа — приклад.
+3. Прочитайте результат: ГН не прогнозує особисту глюкозу чи дозу інсуліну. Категорії порції не задають універсальну добову норму. Неперевірені усереднені числа для конкретних продуктів автоматично не підставляють.
 
-### Методика та формула
+### Методика і формула
 
-Глікемічний індекс показує швидкість підйому глюкози після порції продукту, що містить 50 г вуглеводів, але нічого не каже про розмір реальної порції. Глікемічне навантаження враховує і те, і те: індекс множиться на кількість вуглеводів у конкретній порції та ділиться на 100. Тому кавун із високим індексом дає низьке навантаження — вуглеводів у порції мало.
+ГН = ГІ × доступні вуглеводи порції / 100. Вкажіть ГІ конкретного продукту й приготування за шкалою глюкоза = 100, доступні вуглеводи на 100 г і масу порції. Початкові числа — приклад.
 
 Вуглеводи порції(г) = вуглеводи на 100 г × маса порції / 100; ГН = ГІ × вуглеводи порції / 100
 
 ### Обмеження
 
-Табличні значення індексу усереднені: сорт, стиглість, помел, спосіб приготування та поєднання з білком, жиром і клітковиною змінюють відгук глюкози. Індивідуальна реакція різниться суттєво, і за діабету розрахунок не замінює вимірювання глюкози чи дані моніторингу.
+ГН не прогнозує особисту глюкозу чи дозу інсуліну. Категорії порції не задають універсальну добову норму. Неперевірені усереднені числа для конкретних продуктів автоматично не підставляють.
 
 ### Джерела
 
-- [Atkinson F.S., Brand-Miller J.C. et al. International tables of glycemic index and glycemic load values 2021. Am J Clin Nutr, 2021;114(5):1625–1632](https://pubmed.ncbi.nlm.nih.gov/34258626/)
-- [Augustin L.S.A. et al. Glycemic index, glycemic load and glycemic response: International Scientific Consensus Summit. Nutr Metab Cardiovasc Dis, 2015;25(9):795–815](https://pubmed.ncbi.nlm.nih.gov/26160327/)
+- [Atkinson FS et al. International tables of glycemic index and glycemic load values 2021: a systematic review. Am J Clin Nutr, 2021](https://pubmed.ncbi.nlm.nih.gov/34258626/)
+- [Augustin LSA et al. Glycemic index, glycemic load and glycemic response: An International Scientific Consensus Summit from the International Carbohydrate Quality Consortium (ICQC). Nutr Metab Cardiovasc Dis, 2015](https://pubmed.ncbi.nlm.nih.gov/26160327/)
 
 ## Як вбудувати цей калькулятор
 
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/glycemic-load?lang=uk&theme=auto"
-  title="Калькулятор глікемічного навантаження" loading="lazy" referrerpolicy="no-referrer"
+  title="Глікемічне навантаження порції" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

@@ -6,28 +6,30 @@
 
 `iron-deficiency` · [NutriFit](https://nutrifit.health/uz/calculators/iron-deficiency)
 
-TSAT, CRP uchun sozlangan ferritin mos yozuvlar chegarasi va Ganzoni arifmetik modeli. Ushbu parametrlarning kombinatsiyasi tashxis qo&#39;yish uchun asos bo&#39;lmaydi.
+TSAT = temir / umumiy temir bog‘lash qobiliyati × 100%. Ganzoni modeli: vazn × (15 − Hb, g/dL) × 2,4 + 35 kg va undan yuqori vazn uchun 500 mg. Faqat Hb va ferritin ikkalasi tanlangan chegaralardan past bo‘lganda ko‘rsatiladi.
 
 ### Foydalanish tartibi
 
-1. Sinov natijalarini tayyorlang: Bitta laboratoriya testi natijalaridan foydalaning: ferritin, temir, TIBC yoki transferrin, gemoglobin va CRP. Testga tayyorgarlik ko&#39;rish bo&#39;yicha ko&#39;rsatmalar uchun laboratoriya bilan bog&#39;laning.
-2. SRB qo&#39;shish: CRP 5 mg/L dan yuqori o&#39;lchanganda, ferritin mos yozuvlar diapazoni 15 dan 70 mkg/L gacha o&#39;zgaradi. Bu talqindagi barcha noaniqliklarni bartaraf etmaydi.
-3. Ko&#39;rsatkichlar kombinatsiyasini muhokama qiling: Gemoglobinning pastligi har doim ham temir tanqisligi bilan bog&#39;liq emas va uning yo&#39;qligi temir tanqisligini istisno qilmaydi. Natijalarni alomatlaringiz va klinik holatingizga qarab baholang.
+1. Boshlang‘ich ma’lumotlarni kiriting: TSAT = temir / umumiy temir bog‘lash qobiliyati × 100%. Ganzoni modeli: vazn × (15 − Hb, g/dL) × 2,4 + 35 kg va undan yuqori vazn uchun 500 mg. Faqat Hb va ferritin ikkalasi tanlangan chegaralardan past bo‘lganda ko‘rsatiladi.
+2. Parametrlarni aniqlashtiring: TSAT = temir / umumiy temir bog‘lash qobiliyati × 100%. Ganzoni modeli: vazn × (15 − Hb, g/dL) × 2,4 + 35 kg va undan yuqori vazn uchun 500 mg. Faqat Hb va ferritin ikkalasi tanlangan chegaralardan past bo‘lganda ko‘rsatiladi.
+TIBC (µmol/L) = transferrin (g/L) × 25.1. Iron: µg/dL × 0.179 = µmol/L. Hb: g/L ÷ 10 = g/dL.
+3. Natijani o‘qing: Bular ko‘rsatkichlarning tavsifiy birikmalari, tashxis emas. Hb chegarasi: erkaklarda 130 g/L, homilador bo‘lmagan ayollarda 120 g/L; WHO 2020 ferritin: 15 µg/L, CRP > 5 mg/L bo‘lsa 70 µg/L. Ganzoni maqsadli Hb, vazn va zaxirasi individual tanlanishi kerak; natija dori dozasi emas.
 
 ### Usul va formula
 
-TSAT - bu sarum temirining TIBC ga teng birliklarda nisbati. Transferringa asoslangan TIBC taxminiy hisoblanadi. JSST 2020 ferritin ma&#39;lumotnoma qiymati qo&#39;llaniladi: yallig&#39;lanishsiz 15 mkg/L va CRP &gt; 5 mg/L bilan 70 mkg/L. Kasalliklar va klinik sharoit turli chegaralarni talab qilishi mumkin. Ko&#39;rsatkichlarning kombinatsiyasi anemiya sababini aniqlamaydi. Ganzoni ayollarda 120 g/L dan past Hb yoki erkaklarda 130 g/L uchun, belgilangan maqsad 150 g/L va 500 mg depo bilan, faqat vazni ≥ 35 kg uchun ko&#39;rsatiladi.
+TSAT = temir / umumiy temir bog‘lash qobiliyati × 100%. Ganzoni modeli: vazn × (15 − Hb, g/dL) × 2,4 + 35 kg va undan yuqori vazn uchun 500 mg. Faqat Hb va ferritin ikkalasi tanlangan chegaralardan past bo‘lganda ko‘rsatiladi.
 
-TSAT (%) = Sarum temir / TIBC × 100&#10; TLC (µmol/l) ≈ Transferrin (g/l) × 25.1&#10; Temir tanqisligi (mg, Ganzoni) = Og&#39;irligi (kg) × (Nishonli Hb − Hb, g/dL) × 2.4 + Depot (35 kg ≥ vazn uchun 500 mg)&#10; Konversiya: Temir mkg/dL x 0.179 = μmol/L; Hb g/L / 10 = g/dL
+TSAT = temir / umumiy temir bog‘lash qobiliyati × 100%. Ganzoni modeli: vazn × (15 − Hb, g/dL) × 2,4 + 35 kg va undan yuqori vazn uchun 500 mg. Faqat Hb va ferritin ikkalasi tanlangan chegaralardan past bo‘lganda ko‘rsatiladi.
+TIBC (µmol/L) = transferrin (g/L) × 25.1. Iron: µg/dL × 0.179 = µmol/L. Hb: g/L ÷ 10 = g/dL.
 
 ### Cheklovlar
 
-Homilador bo&#39;lmagan kattalar uchun. O&#39;lchangan CRP ni kiriting; noma&#39;lum natija nolga teng deb hisoblanmaydi. Ferritin va TSAT yallig&#39;lanishga, laboratoriya test natijalariga va yaqinda o&#39;tkazilgan davolanishga bog&#39;liq. Ganzoni hisoblashi yuborish yo&#39;lini, preparatni, dozani yoki davolash davomiyligini aniqlamaydi.
+Bular ko‘rsatkichlarning tavsifiy birikmalari, tashxis emas. Hb chegarasi: erkaklarda 130 g/L, homilador bo‘lmagan ayollarda 120 g/L; WHO 2020 ferritin: 15 µg/L, CRP > 5 mg/L bo‘lsa 70 µg/L. Ganzoni maqsadli Hb, vazn va zaxirasi individual tanlanishi kerak; natija dori dozasi emas.
 
 ### Manbalar
 
 - [WHO guideline on use of ferritin concentrations to assess iron status in individuals and populations. Geneva: World Health Organization, 2020](https://www.who.int/publications/i/item/9789240000124)
-- [Ganzoni A.M. Intravenous iron-dextran: therapeutic and experimental possibilities. Schweiz Med Wochenschr, 1970;100(7):301–303](https://pubmed.ncbi.nlm.nih.gov/5413918/)
+- [Ganzoni AM. et al. [Intravenous iron-dextran: therapeutic and experimental possibilities]. Schweiz Med Wochenschr, 1970](https://pubmed.ncbi.nlm.nih.gov/5413918/)
 - [Venofer. Summary of Product Characteristics: Ganzoni formula and iron stores](https://www.medicines.org.uk/emc/product/5911/smpc)
 
 ## Ushbu kalkulyatorni joylashtirish

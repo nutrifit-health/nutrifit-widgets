@@ -8,11 +8,14 @@
 
 TFG estimada por CKD-EPI 2021 (creatinina, opcionalmente cistatina C), aclaramiento de creatinina por Cockcroft-Gault y estadio de ERC según KDIGO, con conversión µmol/L y mg/dL.
 
-### Cómo usar
+### Uso
 
-1. Busque la creatinina en el informe: La creatinina sérica forma parte de la bioquímica básica. Los laboratorios de Europa y la CEI informan µmol/L; EE. UU. y Latinoamérica, mg/dL. Elija la unidad correspondiente.
-2. Indique sexo y edad: La masa muscular, y por tanto la creatinina «normal», difiere entre hombres y mujeres y baja con la edad; la ecuación lo tiene en cuenta. El coeficiente racial se eliminó en la versión de 2021.
-3. Añada la cistatina C si la tiene: La cistatina C no depende de la masa muscular ni de la dieta. KDIGO 2024 recomienda la ecuación combinada para confirmar la ERC con eGFRcr 45–59 sin albuminuria.
+1. Introduzca los datos iniciales: La tasa de filtrado glomerular es el principal indicador de la función renal. La ecuación CKD-EPI 2021 (Inker et al., NEJM) la deriva de la creatinina sérica, la edad y el sexo sin el coeficiente racial, retirado de la práctica. Si se dispone de cistatina C se usa la ecuación combinada CKD-EPI 2021 cr-cys, más precisa en personas con masa muscular atípica (deportistas, sarcopenia, amputaciones, veganos). La calculadora muestra además el aclaramiento de creatinina por Cockcroft-Gault, aún usado para dosificar fármacos, y el estadio de ERC G1–G5 según KDIGO.
+2. Ajuste los parámetros: eGFRcr = 142 × min(Scr/κ, 1)^α × max(Scr/κ, 1)^−1,200 × 0,9938^Edad × 1,012 [mujer]
+κ = 0,7 (mujer) / 0,9 (hombre);  α = −0,241 (mujer) / −0,302 (hombre);  Scr — creatinina, mg/dL (= µmol/L / 88,4)
+eGFRcr-cys = 135 × min(Scr/κ,1)^α × max(Scr/κ,1)^−0,544 × min(Scys/0,8,1)^−0,323 × max(Scys/0,8,1)^−0,778 × 0,9961^Edad × 0,963 [mujer]
+Cockcroft-Gault (mL/min) = (140 − Edad) × Peso (kg) × 0,85 [mujer] / (72 × Scr, mg/dL)
+3. Lea el resultado: CKD-EPI 2021 estima el filtrado; Cockcroft–Gault estima el aclaramiento de creatinina en mL/min sin indexarlo a superficie corporal. La enfermedad renal crónica requiere alteraciones persistentes durante al menos tres meses; un valor aislado no determina la necesidad de diálisis.
 
 ### Método y fórmula
 
@@ -25,13 +28,13 @@ Cockcroft-Gault (mL/min) = (140 − Edad) × Peso (kg) × 0,85 [mujer] / (72 × 
 
 ### Limitaciones
 
-La TFG estimada está validada para adultos estables desde los 18 años: en daño renal agudo, embarazo, pesos o masas musculares extremos, amputaciones y con fármacos que afectan a la secreción de creatinina (trimetoprim, cimetidina) es imprecisa. Un solo eGFR < 60 no significa ERC: el diagnóstico exige confirmación a los 3 meses y valoración de la albuminuria. Cockcroft-Gault no está normalizado a superficie corporal y sobreestima el aclaramiento en obesidad.
+CKD-EPI 2021 estima el filtrado; Cockcroft–Gault estima el aclaramiento de creatinina en mL/min sin indexarlo a superficie corporal. La enfermedad renal crónica requiere alteraciones persistentes durante al menos tres meses; un valor aislado no determina la necesidad de diálisis.
 
 ### Fuentes
 
-- [Inker L.A. et al. New creatinine- and cystatin C-based equations to estimate GFR without race. N Engl J Med, 2021;385(19):1737–1749](https://pubmed.ncbi.nlm.nih.gov/34554658/)
+- [Inker LA et al. New Creatinine- and Cystatin C-Based Equations to Estimate GFR without Race. N Engl J Med, 2021](https://pubmed.ncbi.nlm.nih.gov/34554658/)
 - [KDIGO 2012 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int Suppl, 2013;3(1):1–150](https://kdigo.org/guidelines/ckd-evaluation-and-management/)
-- [Cockcroft D.W., Gault M.H. Prediction of creatinine clearance from serum creatinine. Nephron, 1976;16(1):31–41](https://pubmed.ncbi.nlm.nih.gov/1244564/)
+- [Cockcroft DW et al. Prediction of creatinine clearance from serum creatinine. Nephron, 1976](https://pubmed.ncbi.nlm.nih.gov/1244564/)
 
 ## Cómo integrar esta calculadora
 

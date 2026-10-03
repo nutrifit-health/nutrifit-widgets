@@ -1,4 +1,4 @@
-# VO2 Max Calculator (Cardiorespiratory Fitness)
+# Field estimates of VO2max
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/vo2max.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/vo2max.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/vo2max.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/vo2max.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/vo2max.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/vo2max.md)
 
@@ -6,29 +6,29 @@
 
 `vo2max` · [NutriFit](https://nutrifit.health/calculators/vo2max)
 
-Evaluates aerobic power and cardiorespiratory fitness based on validated field protocols without specialized laboratory gas analysis equipment.
+Cooper: distance covered in 12 minutes. Rockport: a fast 1-mile walk (1609.344 m), elapsed time and finishing heart rate; originally tested in healthy adults aged 30–69. Uth: 15.3 × HRmax / HRrest; tested in well-trained men aged 21–51.
 
-### How to use
+### Usage
 
-1. Choose the right test protocol: Active runners should opt for the Cooper 12-minute run test. For older individuals or those returning from injury, the Rockport 1-mile walking test is the safest option.
-2. Record your performance metrics: For the Cooper test, track total meters covered on a standard 400m track or calibrated GPS. For Rockport, record exact finish time and immediate 60-second heart rate.
-3. Interpret your category and training paces: The calculator compares your score to Cooper Institute epidemiological percentiles and projects benchmark 5K and 10K training paces.
+1. Enter the starting values: Cooper: distance covered in 12 minutes. Rockport: a fast 1-mile walk (1609.344 m), elapsed time and finishing heart rate; originally tested in healthy adults aged 30–69. Uth: 15.3 × HRmax / HRrest; tested in well-trained men aged 21–51.
+2. Adjust the parameters: Cooper: distance covered in 12 minutes. Rockport: a fast 1-mile walk (1609.344 m), elapsed time and finishing heart rate; originally tested in healthy adults aged 30–69. Uth: 15.3 × HRmax / HRrest; tested in well-trained men aged 21–51.
+3. Read the result: These are indirect estimates, not gas-exchange measurements. Uth is not extrapolated here to women, or Rockport outside its stated age range. An age-predicted maximum heart rate adds uncertainty. Negative estimates, fitness categories and 5/10 km pace predictions are not provided.
 
 ### Method and formula
 
-The calculator features three scientifically validated field methods: the Cooper 12-minute run test, the Rockport 1-mile walking test, and the resting-to-maximum heart rate ratio equation (Uth et al.).
+Cooper: distance covered in 12 minutes. Rockport: a fast 1-mile walk (1609.344 m), elapsed time and finishing heart rate; originally tested in healthy adults aged 30–69. Uth: 15.3 × HRmax / HRrest; tested in well-trained men aged 21–51.
 
-Cooper: VO2max = (Distance, m − 504.9) / 44.73; Rockport: 132.853 − 0.0769 × W(lbs) − 0.3877 × Age + 6.315 × Gender − 3.2649 × Time − 0.1565 × HR; Uth: 15 × (HRmax / HRrest).
+Cooper: distance covered in 12 minutes. Rockport: a fast 1-mile walk (1609.344 m), elapsed time and finishing heart rate; originally tested in healthy adults aged 30–69. Uth: 15.3 × HRmax / HRrest; tested in well-trained men aged 21–51.
 
 ### Limitations
 
-Field protocols provide an indirect estimate with an average error of 5–10%. Pacing discipline, running surface, weather conditions, and caffeine intake can influence test outcomes.
+These are indirect estimates, not gas-exchange measurements. Uth is not extrapolated here to women, or Rockport outside its stated age range. An age-predicted maximum heart rate adds uncertainty. Negative estimates, fitness categories and 5/10 km pace predictions are not provided.
 
 ### Sources
 
-- [Cooper K.H. A means of assessing maximal oxygen intake. Correlation between field and treadmill testing. JAMA, 1968;203(3):201–204](https://pubmed.ncbi.nlm.nih.gov/5694044/)
-- [Kline G.M. et al. Estimation of VO2max from a one-mile track walk, gender, age, and body weight. Med Sci Sports Exerc, 1987;19(3):253–259](https://pubmed.ncbi.nlm.nih.gov/3600239/)
-- [Uth N. et al. Estimation of VO2max from the ratio between HRmax and HRrest--the Heart Rate Ratio Method. Eur J Appl Physiol, 2004;91(1):111–115](https://pubmed.ncbi.nlm.nih.gov/14624296/)
+- [Cooper KH. et al. A means of assessing maximal oxygen intake. Correlation between field and treadmill testing. JAMA, 1968](https://pubmed.ncbi.nlm.nih.gov/5694044/)
+- [Kline GM et al. Estimation of VO2max from a one-mile track walk, gender, age, and body weight. Med Sci Sports Exerc, 1987](https://pubmed.ncbi.nlm.nih.gov/3600239/)
+- [Uth N et al. Estimation of VO2max from the ratio between HRmax and HRrest--the Heart Rate Ratio Method. Eur J Appl Physiol, 2004](https://pubmed.ncbi.nlm.nih.gov/14624296/)
 
 ## Embed this calculator
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/vo2max?lang=en&theme=auto"
-  title="VO2 Max Calculator (Cardiorespiratory Fitness)" loading="lazy" referrerpolicy="no-referrer"
+  title="Field estimates of VO2max" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

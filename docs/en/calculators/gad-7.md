@@ -6,28 +6,28 @@
 
 `gad-7` · [NutriFit](https://nutrifit.health/calculators/gad-7)
 
-An international clinical screening instrument designed to rapidly evaluate the severity of generalized anxiety and emotional tension.
+Anxiety symptom severity over the last 2 weeks: 7 frequency responses scored 0–3; total 0–21.
 
-### How to use
+### Usage
 
-1. Assess symptoms over the last 14 days: Recall how frequently you have been bothered by nervousness, worrying, or inner restlessness over the past two weeks.
-2. Select your response options: Mark the frequency for each symptom from 0 ('Not at all') to 3 ('Nearly every day').
-3. Review your score and recommendations: Discover your anxiety severity level and explore structured strategies to restore nervous system balance.
+1. Enter the starting values: Anxiety symptom severity over the last 2 weeks: 7 frequency responses scored 0–3; total 0–21.
+2. Adjust the parameters: Anxiety symptom severity over the last 2 weeks: 7 frequency responses scored 0–3; total 0–21.
+3. Read the result: Informational translation for self-assessment. Validation of this particular adaptation has not been confirmed. A score does not establish a diagnosis, and a low score does not rule out illness.
 
 ### Method and formula
 
-7 items scored from 0 to 3 points assessing anxiety symptoms over the preceding 2 weeks.
+Anxiety symptom severity over the last 2 weeks: 7 frequency responses scored 0–3; total 0–21.
 
-Total GAD-7 Score = Sum of all 7 items (range 0–21). 0–4: Minimal; 5–9: Mild; 10–14: Moderate; 15–21: Severe anxiety.
+Anxiety symptom severity over the last 2 weeks: 7 frequency responses scored 0–3; total 0–21.
 
 ### Limitations
 
-This screening test does not constitute a formal psychiatric diagnosis. If you experience panic attacks, phobias, or debilitating distress, consult a qualified mental health clinician.
+Informational translation for self-assessment. Validation of this particular adaptation has not been confirmed. A score does not establish a diagnosis, and a low score does not rule out illness.
 
 ### Sources
 
-- [Spitzer R.L. et al. A brief measure for assessing generalized anxiety disorder: the GAD-7. Arch Intern Med, 2006;166(10):1092–1097](https://pubmed.ncbi.nlm.nih.gov/16717171/)
-- [Löwe B. et al. Validation and standardization of the Generalized Anxiety Disorder Screener (GAD-7). Med Care, 2008;46(3):266–274](https://pubmed.ncbi.nlm.nih.gov/18388841/)
+- [Spitzer RL et al. A brief measure for assessing generalized anxiety disorder: the GAD-7. Arch Intern Med, 2006](https://pubmed.ncbi.nlm.nih.gov/16717171/)
+- [Löwe B et al. Validation and standardization of the Generalized Anxiety Disorder Screener (GAD-7) in the general population. Med Care, 2008](https://pubmed.ncbi.nlm.nih.gov/18388841/)
 
 ## Embed this calculator
 

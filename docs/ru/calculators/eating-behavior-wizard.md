@@ -1,4 +1,4 @@
-# Мастер диагностики пищевого поведения
+# Самооценка пищевого поведения
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/eating-behavior-wizard.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/eating-behavior-wizard.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/eating-behavior-wizard.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/eating-behavior-wizard.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/eating-behavior-wizard.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/eating-behavior-wizard.md)
 
@@ -6,23 +6,23 @@
 
 `eating-behavior-wizard` · [NutriFit](https://nutrifit.health/ru/calculators/eating-behavior-wizard)
 
-Интегрированный диагностический мастер NutriFit, объединяющий ведущие валидированные шкалы для определения глубинного психотипа питания и персональной стратегии.
+Пять вопросов SCOFF и четыре авторских вопроса для самооценки пищевого поведения.
 
 ### Порядок использования
 
-1. Пройдите скрининг рисков: Отметьте маркеры критической фиксации на весе и контроле пищи.
-2. Настройте шкалы пищевого поведения: Укажите степень выраженности ограничений, заедания стресса и реакции на еду.
-3. Получите ваш психотип и стратегию: Изучите описание вашего ведущего паттерна и скачайте подробный PDF-отчет.
+1. Прочитайте инструкцию: Учитывайте указанный период и смысл каждого утверждения.
+2. Выберите ответы: Отвечайте на каждый пункт, выбирая подходящий вариант.
+3. Посмотрите результат: Результат отражает ответы; используйте его с учётом ограничений методики.
 
 ### Методика и формула
 
-Многофакторный алгоритм NutriFit сопоставляет маркеры диетического контроля, эмоционального заедания, стимульной зависимости и риска РПП в единый психотип.
+SCOFF подсчитывается по пяти фактическим ответам «да/нет». Остальные ответы показываются напрямую.
 
-Комплексная матрица классификации пищевого поведения на основе взаимной корреляции шкал DEBQ, SCOFF, IES-2 и mYFAS 2.0.
+Два и более ответа «да» в SCOFF — положительный скрининг. Авторские вопросы не рассчитывают DEBQ, IES-2 или mYFAS и не определяют психотип.
 
 ### Ограничения
 
-Инструмент предназначен для самопознания и навигации в работе с нутрициологом или психологом, не является медицинской заменой клинического интервью.
+Справочный результат не устанавливает диагноз и не назначает лечение. Перевод является информационной адаптацией; его отдельная психометрическая валидация не подтверждена.
 
 ### Источники
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/eating-behavior-wizard?lang=ru&theme=auto"
-  title="Мастер диагностики пищевого поведения" loading="lazy" referrerpolicy="no-referrer"
+  title="Самооценка пищевого поведения" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

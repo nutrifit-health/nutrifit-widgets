@@ -2,6 +2,7 @@ import type { WidgetLocale, WidgetTranslations } from './types';
 
 export const translations: Record<WidgetLocale, WidgetTranslations> = {
   en: {
+    unitEnergy: "kcal", unitMass: "g",
     whiteSource: 'Source: public food catalog and recipes.',
     pdf: 'Download PDF', pdfBusy: 'Preparing PDF…',
     ingredients: 'Ingredients', emptyIngredients: 'Search above and add the ingredients in your dish.',
@@ -9,7 +10,7 @@ export const translations: Record<WidgetLocale, WidgetTranslations> = {
     search: 'Find an ingredient', searchHint: 'Type at least 2 characters.', searching: 'Searching…',
     empty: 'No ingredients found. Try a different name.', add: 'Add', food: 'Food', recipe: 'Recipe',
     grams: 'Weight (g)', remove: 'Remove', output: 'Finished dish weight (g)',
-    outputHint: 'Use the weight after cooking for accurate values per 100 g.',
+    outputHint: "Enter each ingredient’s weight in the form selected from the catalog (raw or cooked), and the finished dish weight for values per 100 g. Cooking and draining nutrient losses are not modeled.",
     calculate: 'Calculate nutrition', calculating: 'Calculating…', limit: 'Maximum 50 ingredients.',
     total: 'Whole dish', per100g: 'Per 100 g', results: 'Nutrition',
     partial: 'Partial totals: some ingredients have missing nutrient values.',
@@ -24,6 +25,7 @@ export const translations: Record<WidgetLocale, WidgetTranslations> = {
     calories: 'Energy', protein: 'Protein', fat: 'Fat', carbs: 'Carbohydrate',
   },
   ru: {
+    unitEnergy: "\u043a\u043a\u0430\u043b", unitMass: "\u0433",
     whiteSource: 'Источник: публичный каталог продуктов и рецептов.',
     pdf: 'Скачать PDF', pdfBusy: 'Подготовка PDF…',
     ingredients: 'Ингредиенты', emptyIngredients: 'Найдите и добавьте ингредиенты вашего блюда.',
@@ -31,7 +33,7 @@ export const translations: Record<WidgetLocale, WidgetTranslations> = {
     search: 'Найти ингредиент', searchHint: 'Введите не менее 2 символов.', searching: 'Поиск…',
     empty: 'Ничего не найдено. Попробуйте другое название.', add: 'Добавить', food: 'Продукт', recipe: 'Рецепт',
     grams: 'Вес (г)', remove: 'Удалить', output: 'Вес готового блюда (г)',
-    outputHint: 'Укажите вес после приготовления для расчёта на 100 г.',
+    outputHint: "Указывайте вес ингредиента в том виде, который выбран в каталоге (сырой или готовый), и вес готового блюда для расчёта на 100 г. Потери нутриентов при приготовлении и сливе жидкости не учитываются.",
     calculate: 'Рассчитать состав', calculating: 'Расчёт…', limit: 'Не более 50 ингредиентов.',
     total: 'Всё блюдо', per100g: 'На 100 г', results: 'Пищевая ценность',
     partial: 'Частичные суммы: для некоторых ингредиентов нет данных о нутриентах.',
@@ -46,6 +48,7 @@ export const translations: Record<WidgetLocale, WidgetTranslations> = {
     calories: 'Энергия', protein: 'Белки', fat: 'Жиры', carbs: 'Углеводы',
   },
   es: {
+    unitEnergy: "kcal", unitMass: "g",
     whiteSource: 'Fuente: catálogo público de alimentos y recetas.',
     pdf: 'Descargar PDF', pdfBusy: 'Preparando PDF…',
     ingredients: 'Ingredientes', emptyIngredients: 'Busca y añade los ingredientes de tu plato.',
@@ -53,7 +56,7 @@ export const translations: Record<WidgetLocale, WidgetTranslations> = {
     search: 'Buscar ingrediente', searchHint: 'Escribe al menos 2 caracteres.', searching: 'Buscando…',
     empty: 'Sin resultados. Prueba otro nombre.', add: 'Añadir', food: 'Alimento', recipe: 'Receta',
     grams: 'Peso (g)', remove: 'Eliminar', output: 'Peso del plato terminado (g)',
-    outputHint: 'Usa el peso después de cocinar para calcular los valores por 100 g.',
+    outputHint: "Indica el peso de cada ingrediente en la forma elegida en el catálogo (crudo o cocinado) y el peso del plato terminado para calcular por 100 g. No se modelan las pérdidas de nutrientes al cocinar o escurrir.",
     calculate: 'Calcular nutrientes', calculating: 'Calculando…', limit: 'Máximo 50 ingredientes.',
     total: 'Plato completo', per100g: 'Por 100 g', results: 'Valor nutricional',
     partial: 'Totales parciales: faltan valores de nutrientes de algunos ingredientes.',
@@ -68,6 +71,7 @@ export const translations: Record<WidgetLocale, WidgetTranslations> = {
     calories: 'Energía', protein: 'Proteína', fat: 'Grasa', carbs: 'Carbohidratos',
   },
   uk: {
+    unitEnergy: "\u043a\u043a\u0430\u043b", unitMass: "\u0433",
     "whiteSource": "Джерело: публічний каталог продуктів і рецептів.",
     "pdf": "Завантажити PDF",
     "pdfBusy": "Підготовка PDF…",
@@ -85,7 +89,7 @@ export const translations: Record<WidgetLocale, WidgetTranslations> = {
     "grams": "Вага (г)",
     "remove": "Видалити",
     "output": "Вага готової страви (г)",
-    "outputHint": "Вкажіть вагу після приготування для розрахунку на 100 г.",
+    outputHint: "Вказуйте вагу інгредієнта в тому вигляді, який обрано в каталозі (сирий або готовий), і вагу готової страви для розрахунку на 100 г. Втрати нутрієнтів при приготуванні та зливанні рідини не враховуються.",
     "calculate": "Розрахувати склад",
     "calculating": "Розрахунок…",
     "limit": "Не більше 50 інгредієнтів.",
@@ -110,6 +114,7 @@ export const translations: Record<WidgetLocale, WidgetTranslations> = {
     "carbs": "Вуглеводи"
 },
   kk: {
+    unitEnergy: "\u043a\u043a\u0430\u043b", unitMass: "\u0433",
     "whiteSource": "Дереккөз: өнімдер мен рецепттердің ашық каталогы.",
     "pdf": "PDF жүктеу",
     "pdfBusy": "PDF дайындалуда…",
@@ -127,7 +132,7 @@ export const translations: Record<WidgetLocale, WidgetTranslations> = {
     "grams": "Салмақ (г)",
     "remove": "Жою",
     "output": "Дайын тағамның салмағы (г)",
-    "outputHint": "100 г үшін есептеу мақсатында дайын болғаннан кейінгі салмақты көрсетіңіз.",
+    outputHint: "Ингредиенттің салмағын каталогта таңдалған күйінде (шикі немесе дайын), ал 100 г есебі үшін дайын тағамның салмағын көрсетіңіз. Пісіру мен сұйықтықты төгу кезіндегі нутриент шығыны есептелмейді.",
     "calculate": "Құрамын есептеу",
     "calculating": "Есептелуде…",
     "limit": "Ең көбі 50 ингредиент.",
@@ -152,6 +157,7 @@ export const translations: Record<WidgetLocale, WidgetTranslations> = {
     "carbs": "Көмірсулар"
 },
   uz: {
+    unitEnergy: "kkal", unitMass: "g",
     "whiteSource": "Manba: mahsulotlar va retseptlarning ochiq katalogi.",
     "pdf": "PDF yuklab olish",
     "pdfBusy": "PDF tayyorlanmoqda…",
@@ -169,7 +175,7 @@ export const translations: Record<WidgetLocale, WidgetTranslations> = {
     "grams": "Vazn (g)",
     "remove": "O‘chirish",
     "output": "Tayyor taom vazni (g)",
-    "outputHint": "100 g uchun hisoblashda pishirgandan keyingi vaznni kiriting.",
+    outputHint: "Masalliq vaznini katalogda tanlangan holatda (xom yoki pishgan), 100 g hisob uchun esa tayyor taom vaznini kiriting. Pishirish va suyuqlikni to‘kishdagi nutrient yo‘qotilishi hisoblanmaydi.",
     "calculate": "Tarkibni hisoblash",
     "calculating": "Hisoblanmoqda…",
     "limit": "Ko‘pi bilan 50 ta masalliq.",

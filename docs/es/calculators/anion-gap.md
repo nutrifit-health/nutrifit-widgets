@@ -6,32 +6,31 @@
 
 `anion-gap` · [NutriFit](https://nutrifit.health/es/calculators/anion-gap)
 
-Anión gap corregido por albúmina (Figge) y delta ratio ΔAG/ΔHCO₃ para distinguir la acidosis con anión gap elevado y normal.
+Brecha aniónica = Na − Cl − HCO₃; ajuste por albúmina = 0,25 × (40 − albúmina en g/L). Relación delta = (brecha corregida − referencia seleccionada) / (bicarbonato de referencia − HCO₃).
 
-### Cómo usar
+### Uso
 
-1. 1. Tome los electrolitos de la misma muestra: Sodio, cloro y bicarbonato (o CO₂ total) deben proceder de la misma extracción, idealmente junto con la gasometría. Muestras distintas dan un gap sin sentido.
-2. 2. Añada la albúmina: En pacientes de UCI, cirrosis, síndrome nefrótico y desnutrición la albúmina suele ser de 20–30 g/L: sin corrección, un anión gap elevado se disfraza de normal.
-3. 3. Interprete el delta ratio en contexto: El delta ratio ayuda a ver un segundo trastorno (pérdida de bicarbonato o alcalosis) tras una acidosis con AG elevado, pero necesita pH, lactato y cuadro clínico.
+1. Introduzca los datos iniciales: Brecha aniónica = Na − Cl − HCO₃; ajuste por albúmina = 0,25 × (40 − albúmina en g/L). Relación delta = (brecha corregida − referencia seleccionada) / (bicarbonato de referencia − HCO₃).
+2. Ajuste los parámetros: Brecha aniónica = Na − Cl − HCO₃; ajuste por albúmina = 0,25 × (40 − albúmina en g/L). Relación delta = (brecha corregida − referencia seleccionada) / (bicarbonato de referencia − HCO₃).
+Las referencias dependen del método del laboratorio. Delta solo se calcula con numerador y denominador positivos. Un número aislado no establece un diagnóstico sin pH, gases sanguíneos y contexto clínico.
+3. Lea el resultado: Las referencias dependen del método del laboratorio. Delta solo se calcula con numerador y denominador positivos. Un número aislado no establece un diagnóstico sin pH, gases sanguíneos y contexto clínico.
 
 ### Método y fórmula
 
-El anión gap es la diferencia entre los cationes y aniones séricos medidos, y refleja los aniones «no medidos»: fosfatos, sulfatos, ácidos orgánicos y la albúmina con carga negativa. En la acidosis metabólica aumenta si se acumulan ácidos (lactato, cetonas, toxinas urémicas, alcoholes tóxicos) y se mantiene normal si se pierde bicarbonato (diarrea, acidosis tubular renal) y lo sustituye el cloro. Como la albúmina es el principal anión no medido, en la hipoalbuminemia el gap se reduce falsamente: Figge (1998) propuso una corrección de 2,5 mmol/L por cada 1 g/dL de descenso de la albúmina. El delta ratio compara el aumento del gap con la caída del bicarbonato y detecta trastornos mixtos.
+Brecha aniónica = Na − Cl − HCO₃; ajuste por albúmina = 0,25 × (40 − albúmina en g/L). Relación delta = (brecha corregida − referencia seleccionada) / (bicarbonato de referencia − HCO₃).
 
-Anión gap (AG) = Na⁺ − (Cl⁻ + HCO₃⁻), mmol/L; referencia 8–12 sin potasio
-AG corregido = AG + 0,25 × (40 − Albúmina, g/L)   [= AG + 2,5 × (4 − Albúmina, g/dL)]
-Delta ratio = (AG corregido − 12) / (24 − HCO₃⁻)
-< 0,4 acidosis hiperclorémica; 0,4–0,8 mixta; 0,8–2,0 acidosis pura con AG elevado; > 2,0 alcalosis metabólica concomitante
+Brecha aniónica = Na − Cl − HCO₃; ajuste por albúmina = 0,25 × (40 − albúmina en g/L). Relación delta = (brecha corregida − referencia seleccionada) / (bicarbonato de referencia − HCO₃).
+Las referencias dependen del método del laboratorio. Delta solo se calcula con numerador y denominador positivos. Un número aislado no establece un diagnóstico sin pH, gases sanguíneos y contexto clínico.
 
 ### Limitaciones
 
-La referencia del anión gap depende del analizador: los electrodos selectivos de iones modernos dan 3–11 mmol/L; los métodos antiguos, 8–16. Consulte la referencia de su laboratorio. El cálculo excluye el potasio; si su laboratorio lo incluye, la referencia es 4–5 mayor. El delta ratio es una orientación aproximada que requiere contexto (pH, pCO₂, lactato, cetonas). La calculadora está pensada para la interpretación de trastornos ácido-base por profesionales y no sustituye la gasometría.
+Las referencias dependen del método del laboratorio. Delta solo se calcula con numerador y denominador positivos. Un número aislado no establece un diagnóstico sin pH, gases sanguíneos y contexto clínico.
 
 ### Fuentes
 
-- [Kraut J.A., Madias N.E. Serum anion gap: its uses and limitations in clinical medicine. Clin J Am Soc Nephrol, 2007;2(1):162–174](https://pubmed.ncbi.nlm.nih.gov/17699401/)
-- [Figge J., Jabor A., Kazda A., Fencl V. Anion gap and hypoalbuminemia. Crit Care Med, 1998;26(11):1807–1810](https://pubmed.ncbi.nlm.nih.gov/9824071/)
-- [Berend K., de Vries A.P., Gans R.O. Physiological approach to assessment of acid-base disturbances. N Engl J Med, 2014;371(15):1434–1445](https://pubmed.ncbi.nlm.nih.gov/25295502/)
+- [Kraut JA et al. Serum anion gap: its uses and limitations in clinical medicine. Clin J Am Soc Nephrol, 2007](https://pubmed.ncbi.nlm.nih.gov/17699401/)
+- [Figge J et al. Anion gap and hypoalbuminemia. Crit Care Med, 1998](https://pubmed.ncbi.nlm.nih.gov/9824071/)
+- [Berend K et al. Physiological approach to assessment of acid-base disturbances. N Engl J Med, 2014](https://pubmed.ncbi.nlm.nih.gov/25295502/)
 
 ## Cómo integrar esta calculadora
 

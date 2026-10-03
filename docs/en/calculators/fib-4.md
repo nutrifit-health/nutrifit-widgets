@@ -6,22 +6,21 @@
 
 `fib-4` · [NutriFit](https://nutrifit.health/calculators/fib-4)
 
-FIB-4 and APRI from age, AST, ALT and platelets, with thresholds and limitations for discussion with a clinician.
+FIB-4 (Sterling 2006) uses age, AST, ALT and platelets. AASLD 2023 thresholds concern the likelihood of advanced fibrosis in metabolic fatty liver disease, not fibrosis staging. Ages 35–65: lower threshold 1.3; over 65: 2.0; upper threshold 2.67. No category is assigned below 35; do not interpret during acute illness. APRI (Wai 2003) and thresholds 0.5/1.5 concern significant fibrosis in chronic hepatitis C and do not automatically transfer to other diseases.
 
-### How to use
+### Usage
 
-1. Take AST, ALT and platelets: Transaminases from chemistry, platelets from the blood count. The tests should be from the same period (within 1–2 weeks) and outside acute illness.
-2. Enter age and the AST ULN: FIB-4 depends on age: after 65 the low-risk cut-off rises to 2.0. APRI needs your lab’s AST upper limit of normal.
-3. Follow the algorithm: Low FIB-4 — monitoring and risk-factor control. Gray zone — elastography. High — hepatologist. This is the official EASL/AASLD pathway for NAFLD.
+1. Enter the starting values: FIB-4 (Sterling 2006) uses age, AST, ALT and platelets. AASLD 2023 thresholds concern the likelihood of advanced fibrosis in metabolic fatty liver disease, not fibrosis staging. Ages 35–65: lower threshold 1.3; over 65: 2.0; upper threshold 2.67. No category is assigned below 35; do not interpret during acute illness. APRI (Wai 2003) and thresholds 0.5/1.5 concern significant fibrosis in chronic hepatitis C and do not automatically transfer to other diseases.
+2. Adjust the parameters: FIB-4 = age × AST / (platelets × √ALT); APRI = (AST / AST_ULN) × 100 / platelets.
+FIB-4 (Sterling 2006) uses age, AST, ALT and platelets. AASLD 2023 thresholds concern the likelihood of advanced fibrosis in metabolic fatty liver disease, not fibrosis staging. Ages 35–65: lower threshold 1.3; over 65: 2.0; upper threshold 2.67. No category is assigned below 35; do not interpret during acute illness. APRI (Wai 2003) and thresholds 0.5/1.5 concern significant fibrosis in chronic hepatitis C and do not automatically transfer to other diseases.
+3. Read the result: FIB-4 helps estimate the likelihood of advanced fibrosis but cannot confirm or exclude it in every individual. Accuracy is low below age 35; do not interpret it during acute illness. Non-liver causes of low platelets and muscle-related AST elevation can distort the result. Thresholds depend on age, disease cause and clinical context.
 
 ### Method and formula
 
-FIB-4 (Sterling, 2006) combines age, AST, ALT and platelets. In metabolic fatty liver disease pathways, a low result helps identify a lower likelihood of advanced fibrosis; intermediate or high results need further assessment. It is neither a fibrosis stage nor a diagnosis. APRI (Wai, 2003) was developed for chronic hepatitis C; its thresholds do not automatically transfer to other diseases.
+FIB-4 (Sterling 2006) uses age, AST, ALT and platelets. AASLD 2023 thresholds concern the likelihood of advanced fibrosis in metabolic fatty liver disease, not fibrosis staging. Ages 35–65: lower threshold 1.3; over 65: 2.0; upper threshold 2.67. No category is assigned below 35; do not interpret during acute illness. APRI (Wai 2003) and thresholds 0.5/1.5 concern significant fibrosis in chronic hepatitis C and do not automatically transfer to other diseases.
 
-FIB-4 = Age (years) × AST (U/L) / [ Platelets (10⁹/L) × √ALT (U/L) ]
-APRI = [ AST / AST ULN ] × 100 / Platelets (10⁹/L)
-FIB-4 cut-offs: < 1.3 (< 2.0 at age ≥ 65) low risk; 1.3–2.67 indeterminate; > 2.67 high
-APRI cut-offs: < 0.5 low; > 1.5 significant fibrosis likely
+FIB-4 = age × AST / (platelets × √ALT); APRI = (AST / AST_ULN) × 100 / platelets.
+FIB-4 (Sterling 2006) uses age, AST, ALT and platelets. AASLD 2023 thresholds concern the likelihood of advanced fibrosis in metabolic fatty liver disease, not fibrosis staging. Ages 35–65: lower threshold 1.3; over 65: 2.0; upper threshold 2.67. No category is assigned below 35; do not interpret during acute illness. APRI (Wai 2003) and thresholds 0.5/1.5 concern significant fibrosis in chronic hepatitis C and do not automatically transfer to other diseases.
 
 ### Limitations
 
@@ -29,9 +28,10 @@ FIB-4 helps estimate the likelihood of advanced fibrosis but cannot confirm or e
 
 ### Sources
 
-- [Sterling R.K. et al. Development of a simple noninvasive index to predict significant fibrosis in patients with HIV/HCV coinfection. Hepatology, 2006;43(6):1317–1325](https://pubmed.ncbi.nlm.nih.gov/16729309/)
-- [Wai C.T. et al. A simple noninvasive index can predict both significant fibrosis and cirrhosis in patients with chronic hepatitis C. Hepatology, 2003;38(2):518–526](https://pubmed.ncbi.nlm.nih.gov/12883497/)
-- [EASL Clinical Practice Guidelines on non-invasive tests for evaluation of liver disease severity and prognosis — 2021 update. J Hepatol, 2021;75(3):659–689](https://pubmed.ncbi.nlm.nih.gov/34166721/)
+- [Rinella M.E. et al. AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease. Hepatology, 2023.](https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/)
+- [Sterling RK et al. Development of a simple noninvasive index to predict significant fibrosis in patients with HIV/HCV coinfection. Hepatology, 2006](https://pubmed.ncbi.nlm.nih.gov/16729309/)
+- [Wai CT et al. A simple noninvasive index can predict both significant fibrosis and cirrhosis in patients with chronic hepatitis C. Hepatology, 2003](https://pubmed.ncbi.nlm.nih.gov/12883497/)
+- [European Association for the Study of the Liver. et al. EASL Clinical Practice Guidelines on non-invasive tests for evaluation of liver disease severity and prognosis - 2021 update. J Hepatol, 2021](https://pubmed.ncbi.nlm.nih.gov/34166721/)
 
 ## Embed this calculator
 

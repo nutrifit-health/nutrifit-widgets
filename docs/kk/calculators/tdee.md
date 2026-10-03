@@ -1,4 +1,4 @@
-# Тәуліктік калория нормасының калькуляторы (TDEE)
+# Тәуліктік энергия шығынының бағасы TDEE
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/tdee.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/tdee.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/tdee.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/tdee.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/tdee.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/tdee.md)
 
@@ -6,27 +6,27 @@
 
 `tdee` · [NutriFit](https://nutrifit.health/kk/calculators/tdee)
 
-Негізгі алмасуды және тәуліктік толық энергия шығынын, сондай-ақ салмақты азайту, ұстап тұру және қосу үшін калориялықты есептейді.
+Mifflin–St Jeor тыныштық шығынын бағалайды. TDEE = баға × таңдалған белсенділік коэффициенті. −20% және +15% — авторлық тапшылық пен артықтық сценарийлері.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Дене өлшемдерін көрсетіңіз: Нақты салмақ, бой, жыныс және жасты енгізіңіз. Бұл базалық зат алмасуды (BMR) есептеу үшін қажет.
-2. Белсенділік деңгейін бағалаңыз: Апта ішіндегі белсенділігіңізді шынайы таңдаңыз. Отырықшы жұмыс кезінде тұрақты спортсыз деңгейді асырмаңыз.
-3. Мақсат мәндерін қараңыз: Салмақты сақтау TDEE мәніне тең; азайту мақсаты TDEE-ден 20% төмен, қосу мақсаты 15% жоғары.
+1. Бастапқы деректерді енгізіңіз: Mifflin–St Jeor тыныштық шығынын бағалайды. TDEE = баға × таңдалған белсенділік коэффициенті. −20% және +15% — авторлық тапшылық пен артықтық сценарийлері.
+2. Параметрлерді нақтылаңыз: Mifflin–St Jeor тыныштық шығынын бағалайды. TDEE = баға × таңдалған белсенділік коэффициенті. −20% және +15% — авторлық тапшылық пен артықтық сценарийлері.
+3. Нәтижені оқыңыз: Ересектерге. Коэффициенттер — жуық мәндер, өлшенген PAL емес. Формула жеке қажеттілік пен қауіпсіз тапшылықты анықтамайды; қате зат алмасу бұзылуын дәлелдемейді.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-Негізгі алмасу (BMR) 1990 жылғы Миффлин-Сан Жеор теңдеуімен есептеледі — бұл дені сау ересектердегі тыныштық шығынын бағалаудың қазіргі стандарты. Тәуліктік толық шығын (TDEE) BMR-ді белсенділік коэффициентіне көбейту арқылы алынады. Салмақты азайту калориялығы — TDEE-ден 20% кем, қосу үшін — 15% артық: мұндай қарқын бұлшықет тінін жоғалтпай және күрт секірмей салмақты өзгертеді.
+Mifflin–St Jeor тыныштық шығынын бағалайды. TDEE = баға × таңдалған белсенділік коэффициенті. −20% және +15% — авторлық тапшылық пен артықтық сценарийлері.
 
 BMR (ер) = 10 × салмақ(кг) + 6,25 × бой(см) − 5 × жас + 5; BMR (әйел) = 10 × салмақ(кг) + 6,25 × бой(см) − 5 × жас − 161; TDEE = BMR × белсенділік коэффициенті
 
 ### Шектеулер
 
-Теңдеу дені сау ересектерде шығарылған және шамамен ±10% қателік береді. Ол дене құрамын ескермейді: бұлшықет массасы жоғары болса нәтиже төмендетілген, семіздікте — асырылған. Жүкті әйелдерге, балаларға, жоғары деңгейлі спортшыларға және қалқанша без ауруы барларға бөлек әдістеме керек.
+Ересектерге. Коэффициенттер — жуық мәндер, өлшенген PAL емес. Формула жеке қажеттілік пен қауіпсіз тапшылықты анықтамайды; қате зат алмасу бұзылуын дәлелдемейді.
 
 ### Дереккөздер
 
-- [Mifflin M.D., St Jeor S.T. et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990;51(2):241–247](https://pubmed.ncbi.nlm.nih.gov/2305711/)
+- [Mifflin MD et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990](https://pubmed.ncbi.nlm.nih.gov/2305711/)
 - [FAO/WHO/UNU. Human Energy Requirements. Report of a Joint Expert Consultation, 2004](https://www.fao.org/4/y5686e/y5686e00.htm)
 
 ## Осы калькуляторды ендіру
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/tdee?lang=kk&theme=auto"
-  title="Тәуліктік калория нормасының калькуляторы (TDEE)" loading="lazy" referrerpolicy="no-referrer"
+  title="Тәуліктік энергия шығынының бағасы TDEE" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

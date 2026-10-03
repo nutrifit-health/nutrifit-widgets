@@ -12,6 +12,8 @@ Para `nutrition`: busca alimentos o recetas públicas, añade sus pesos en gramo
 
 El servidor de NutriFit suma los nutrientes disponibles de los alimentos y recetas públicos seleccionados según el peso de los ingredientes. Devuelve los totales y valores por 100 g según el peso final del plato. El PDF calcula de nuevo en el servidor; CSV exporta el resultado mostrado.
 
+Indica el peso de cada ingrediente en la forma elegida en el catálogo (crudo o cocinado) y el peso del plato terminado para calcular por 100 g. No se modelan las pérdidas de nutrientes al cocinar o escurrir.
+
 ## Limitaciones
 
 Hasta 50 ingredientes. Introduce pesos en gramos y un peso final positivo. Los valores desconocidos se marcan como incompletos, no como cero. Los datos pueden cambiar y el PDF puede diferir del resultado anterior. Es una estimación, no un diagnóstico ni una prescripción.

@@ -1,4 +1,4 @@
-# Dutch Eating Behavior Questionnaire (DEBQ)
+# Eating behaviour: modified DEBQ adaptation
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/debq.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/debq.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/debq.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/debq.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/debq.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/debq.md)
 
@@ -6,28 +6,28 @@
 
 `debq` · [NutriFit](https://nutrifit.health/calculators/debq)
 
-A classic validated psychological instrument designed to assess three primary eating behavior patterns: restrained eating, emotional eating, and external eating.
+33 questions about usual eating behaviour. Three group means are shown without normality categories or diagnosis.
 
-### How to use
+### Usage
 
-1. Answer honestly: Select the option that best reflects your typical behavior and attitudes over recent months.
-2. Do not overthink: Your immediate spontaneous reaction is usually the most accurate reflection of your habitual patterns.
-3. Review your three subscale scores: Compare your scores with clinical normative thresholds and review customized strategies.
+1. Enter the starting values: Use actual values and the appropriate units.
+2. Adjust the parameters: Adjust the starting assumptions for your situation.
+3. Read the result: Consider the model limitations; a calculation is not a measurement.
 
 ### Method and formula
 
-The questionnaire contains 33 items rated on a 5-point Likert scale (1 to 5). It evaluates three subscales: cognitive restraint (10 items), emotional eating (13 items), and external stimulation (10 items).
+Emotional group: items 1–13; external: 14–23; restrained: 24–33. Each mean ranges from 1 to 5; item 17 is scored as 6 minus the answer.
 
-Subscale Score = Arithmetic mean of item responses (range 1.0 to 5.0). Restrained: norm ~2.4; Emotional: norm ~1.8; External: norm ~2.7.
+Emotional group: items 1–13; external: 14–23; restrained: 24–33. Each mean ranges from 1 to 5; item 17 is scored as 6 minus the answer.
 
 ### Limitations
 
-This questionnaire serves as a psychological self-assessment tool and does not constitute a clinical diagnosis. In case of significant distress, consult an eating disorder professional.
+Items have been modified and grouped. This is not a confirmed validated version of the original DEBQ; clinical norms do not apply. Permission to use the original form requires separate confirmation.
 
 ### Sources
 
 - [Van Strien T. et al. The Dutch Eating Behavior Questionnaire (DEBQ) for assessment of restrained, emotional, and external eating behavior. Int J Eat Disord, 1986;5(2):295–315](https://doi.org/10.1002/1098-108X(198602)5:2<295::AID-EAT2260050209>3.0.CO;2-T)
-- [Wardle J. Eating style: a validation study of the Dutch Eating Behaviour Questionnaire. J Psychosom Res, 1987;31(2):161–169](https://pubmed.ncbi.nlm.nih.gov/3585818/)
+- [Wardle J. et al. Eating style: a validation study of the Dutch Eating Behaviour Questionnaire in normal subjects and women with eating disorders. J Psychosom Res, 1987](https://pubmed.ncbi.nlm.nih.gov/3473234/)
 
 ## Embed this calculator
 
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/debq?lang=en&theme=auto"
-  title="Dutch Eating Behavior Questionnaire (DEBQ)" loading="lazy" referrerpolicy="no-referrer"
+  title="Eating behaviour: modified DEBQ adaptation" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

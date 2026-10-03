@@ -6,28 +6,28 @@
 
 `phq-9` · [NutriFit](https://nutrifit.health/es/calculators/phq-9)
 
-El estándar de oro internacional para el cribado primario de la depresión y la estimación de gravedad según criterios clínicos del DSM-5.
+Intensidad de síntomas depresivos durante las últimas 2 semanas: 9 respuestas de frecuencia de 0 a 3; total de 0 a 27.
 
-### Cómo usar
+### Uso
 
-1. Considere las últimas dos semanas: Evalúe su bienestar general a lo largo de los últimos 14 días atendiendo a la recurrencia de los síntomas.
-2. Responda a las 9 preguntas: Seleccione con qué frecuencia ha experimentado cada síntoma, desde 'Para nada' (0) hasta 'Casi todos los días' (3).
-3. Examine la interpretación clínica: Revise el nivel de gravedad obtenido, las recomendaciones de autocuidado y las opciones terapéuticas pertinentes.
+1. Introduzca los datos iniciales: Intensidad de síntomas depresivos durante las últimas 2 semanas: 9 respuestas de frecuencia de 0 a 3; total de 0 a 27.
+2. Ajuste los parámetros: Intensidad de síntomas depresivos durante las últimas 2 semanas: 9 respuestas de frecuencia de 0 a 3; total de 0 a 27.
+3. Lea el resultado: Traducción informativa para autoevaluación. No se ha confirmado la validación de esta adaptación concreta. La puntuación no establece un diagnóstico y un resultado bajo no descarta enfermedad. Cualquier respuesta distinta de cero al ítem 9 requiere hablar por separado sobre pensamientos de muerte o autolesión con un profesional, independientemente del total. Busque ayuda urgente si hay peligro inmediato.
 
 ### Método y fórmula
 
-9 preguntas que valoran la frecuencia de síntomas depresivos durante las últimas 2 semanas en escala de 0 ('Para nada') a 3 ('Casi todos los días').
+Intensidad de síntomas depresivos durante las últimas 2 semanas: 9 respuestas de frecuencia de 0 a 3; total de 0 a 27.
 
-Puntuación total PHQ-9 = Suma de los 9 ítems (0–27). 0–4: Mínima; 5–9: Leve; 10–14: Moderada; 15–19: Moderadamente grave; 20–27: Grave.
+Intensidad de síntomas depresivos durante las últimas 2 semanas: 9 respuestas de frecuencia de 0 a 3; total de 0 a 27.
 
 ### Limitaciones
 
-Este test no sustituye el diagnóstico realizado por un psiquiatra o psicoterapeuta. Toda respuesta afirmativa a la pregunta 9 exige atención médica profesional inmediata.
+Traducción informativa para autoevaluación. No se ha confirmado la validación de esta adaptación concreta. La puntuación no establece un diagnóstico y un resultado bajo no descarta enfermedad. Cualquier respuesta distinta de cero al ítem 9 requiere hablar por separado sobre pensamientos de muerte o autolesión con un profesional, independientemente del total. Busque ayuda urgente si hay peligro inmediato.
 
 ### Fuentes
 
-- [Kroenke K. et al. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med, 2001;16(9):606–613](https://pubmed.ncbi.nlm.nih.gov/11556941/)
-- [Spitzer R.L. et al. Validation and utility of a self-report version of PRIME-MD: the PHQ primary care study. JAMA, 1999;282(18):1737–1744](https://pubmed.ncbi.nlm.nih.gov/10568646/)
+- [Kroenke K et al. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med, 2001](https://pubmed.ncbi.nlm.nih.gov/11556941/)
+- [Spitzer RL et al. Validation and utility of a self-report version of PRIME-MD: the PHQ primary care study. Primary Care Evaluation of Mental Disorders. Patient Health Questionnaire. JAMA, 1999](https://pubmed.ncbi.nlm.nih.gov/10568646/)
 
 ## Cómo integrar esta calculadora
 

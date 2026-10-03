@@ -10,11 +10,13 @@
 
 ### Порядок використання
 
-1. Здайте глюкозу та інсулін з однієї проби: Обидва показники мають бути виміряні натще з одного забору крові — вранці після 8–12 годин без їжі, кави та тренувань. Інсулін «з іншого дня» робить індекс безглуздим.
-2. Введіть значення в одиницях бланка: Лабораторії видають глюкозу в ммоль/л або мг/дл, інсулін — у мкОд/мл (µIU/mL) або пмоль/л. Перемкніть одиниці під бланк — калькулятор перерахує сам.
-3. Порівняйте всі три індекси: Розглядайте індекси разом з оригінальними аналізами, умовами забору та референсами лабораторії. HOMA-β не дозволяє зробити висновок про виснаження підшлункової залози.
+1. Введіть вихідні дані: HOMA1 (Matthews, 1985) і QUICKI (Katz, 2000) — моделі за глюкозою та інсуліном натще. Вони описують різні аспекти одного набору даних і застосовуються переважно в дослідженнях. HOMA-IR оцінює інсулінорезистентність, HOMA-β — секрецію в межах моделі, QUICKI — чутливість до інсуліну. Індекси не замінюють клінічних критеріїв діагностики діабету.
+2. Уточніть параметри: HOMA-IR = Глюкоза (ммоль/л) × Інсулін (мкОд/мл) / 22,5
+HOMA-β (%) = 20 × Інсулін (мкОд/мл) / (Глюкоза (ммоль/л) − 3,5)
+QUICKI = 1 / [log10(Інсулін, мкОд/мл) + log10(Глюкоза, мг/дл)]
+3. Прочитайте результат: Індекси валідні лише для зразків натще (8–12 год) і не застосовуються під час інсулінотерапії, приймання секретагогів, декомпенсованого діабету 1 типу та за низької глюкози (HOMA-β не визначений при глюкозі ≤ 3,5 ммоль/л). Референсні значення інсуліну залежать від методу лабораторії, а пороги HOMA-IR — від популяції (2,0–3,8 у різних дослідженнях). Результат — не діагноз, а привід обговорити вуглеводний обмін із лікарем.
 
-### Методика та формула
+### Методика і формула
 
 HOMA1 (Matthews, 1985) і QUICKI (Katz, 2000) — моделі за глюкозою та інсуліном натще. Вони описують різні аспекти одного набору даних і застосовуються переважно в дослідженнях. HOMA-IR оцінює інсулінорезистентність, HOMA-β — секрецію в межах моделі, QUICKI — чутливість до інсуліну. Індекси не замінюють клінічних критеріїв діагностики діабету.
 
@@ -28,9 +30,9 @@ QUICKI = 1 / [log10(Інсулін, мкОд/мл) + log10(Глюкоза, мг/
 
 ### Джерела
 
-- [Matthews D.R. et al. Homeostasis model assessment: insulin resistance and β-cell function from fasting plasma glucose and insulin concentrations in man. Diabetologia, 1985;28(7):412–419](https://pubmed.ncbi.nlm.nih.gov/3899825/)
-- [Katz A. et al. Quantitative insulin sensitivity check index (QUICKI): a simple, accurate method for assessing insulin sensitivity in humans. J Clin Endocrinol Metab, 2000;85(7):2402–2410](https://pubmed.ncbi.nlm.nih.gov/10902785/)
-- [Gayoso-Diz P. et al. Insulin resistance (HOMA-IR) cut-off values and the metabolic syndrome in a general adult population. BMC Endocr Disord, 2013;13:47](https://pubmed.ncbi.nlm.nih.gov/24131857/)
+- [Matthews DR et al. Homeostasis model assessment: insulin resistance and beta-cell function from fasting plasma glucose and insulin concentrations in man. Diabetologia, 1985](https://pubmed.ncbi.nlm.nih.gov/3899825/)
+- [Katz A et al. Quantitative insulin sensitivity check index: a simple, accurate method for assessing insulin sensitivity in humans. J Clin Endocrinol Metab, 2000](https://pubmed.ncbi.nlm.nih.gov/10902785/)
+- [Gayoso-Diz P et al. Insulin resistance (HOMA-IR) cut-off values and the metabolic syndrome in a general adult population: effect of gender and age: EPIRCE cross-sectional study. BMC Endocr Disord, 2013](https://pubmed.ncbi.nlm.nih.gov/24131857/)
 
 ## Як вбудувати цей калькулятор
 

@@ -6,27 +6,28 @@
 
 `ies-2` · [NutriFit](https://nutrifit.health/es/calculators/ies-2)
 
-Herramienta psicométrica de 23 preguntas validada científicamente por Tracy Tylka para evaluar una relación saludable y autorregulada con la comida.
+IES-2: 23 afirmaciones sobre las actitudes alimentarias y las señales corporales, con cuatro subescalas.
 
-### Cómo usar
+### Uso
 
-1. Valore su relación habitual con la comida: Responda en base a sus actitudes, sensaciones y conductas cotidianas durante los últimos meses.
-2. Indique su grado de acuerdo del 1 al 5: 1 representa 'Totalmente en desacuerdo' y 5 'Totalmente de acuerdo'.
-3. Examine el perfil en las 4 dimensiones: Preste especial atención a las subescalas con puntuación inferior a 3,0 para enfocar su trabajo personal.
+1. Lea las instrucciones: Indique cuánto describe cada afirmación sus actitudes y conductas. No se fija un periodo de recuerdo.
+2. Elija sus respuestas: Responda a cada ítem eligiendo la opción adecuada.
+3. Consulte el resultado: El resultado refleja sus respuestas; interprételo dentro de los límites de la escala.
 
 ### Método y fórmula
 
-23 afirmaciones valoradas en escala Likert de 1 a 5 distribuidas en 4 subescalas: Permiso incondicional para comer (UPE), Comer por razones físicas (EPR), Confianza en señales de hambre/saciedad (RHSC) y Congruencia corporal (B-FCC).
+Grado de acuerdo de 1 a 5. En el formulario agrupado del autor, los ítems 1, 2, 3, 7, 8, 9 y 10 se puntúan como 6 menos la respuesta.
 
-Puntuación total IES-2 = Media aritmética de los 23 ítems considerando los ítems invertidos (1,0 a 5,0). Puntuaciones > 3,5 indican competencia intuitiva.
+Puntuación total: media de las 23 respuestas puntuadas. Subescalas: ítems 1–6, 7–14, 15–20 y 21–23. Todas las medias van de 1 a 5; no hay umbrales diagnósticos establecidos.
 
 ### Limitaciones
 
-La escala evalúa patrones psicológicos de conducta alimentaria. En caso de TCA activo, el proceso debe ser guiado por profesionales clínicos especializados.
+Este resultado informativo no establece un diagnóstico ni prescribe tratamiento. Las traducciones son adaptaciones informativas; no se ha confirmado su validación psicométrica por separado.
 
 ### Fuentes
 
-- [Tylka T.L., Kroon Van Diest A.M. The Intuitive Eating Scale-2: item refinement and psychometric evaluation. J Couns Psychol, 2013;60(1):137–153](https://pubmed.ncbi.nlm.nih.gov/23356469/)
+- [Tylka. Intuitive Eating Scale-2: grouped original items and scoring](https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/1/10560/files/2015/02/IES-2-Items-sz2at8.doc)
+- [Tylka TL et al. The Intuitive Eating Scale-2: item refinement and psychometric evaluation with college women and men. J Couns Psychol, 2013](https://pubmed.ncbi.nlm.nih.gov/23356469/)
 - [Tribole E., Resch E. Intuitive Eating: A Revolutionary Anti-Diet Approach. St. Martin’s Essentials, 2020](https://www.intuitiveeating.org/)
 
 ## Cómo integrar esta calculadora

@@ -1,4 +1,4 @@
-# Калькулятор циклів сну
+# Планувальник сну
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/sleep-cycles.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/sleep-cycles.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/sleep-cycles.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/sleep-cycles.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/sleep-cycles.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/sleep-cycles.md)
 
@@ -6,29 +6,29 @@
 
 `sleep-cycles` · [NutriFit](https://nutrifit.health/uk/calculators/sleep-cycles)
 
-Інструмент розрахунку часу сну на основі 90-хвилинних ультрадіанних циклів (фази повільного та швидкого сну) і середнього часу засинання.
+Час відходу до сну або підйому для 7, 8 і 9 годин сну з урахуванням часу засинання.
 
 ### Порядок використання
 
-1. Виберіть напрямок розрахунку: Визначте, що вам потрібно: дізнатися, о котрій лягти спати, щоб прокинутися до будильника, або о котрій завести будильник, якщо лягаєте зараз.
-2. Вкажіть латентність засинання: За замовчуванням встановлено 14 хвилин. Якщо ви зазвичай ворочаєтеся довше або засинаєте миттєво, скоригуйте це значення.
-3. Виберіть ланцюжок з 5 або 6 циклів: 5 циклів (7 год 30 хв) ідеально підходять для робочих днів, 6 циклів (9 год) — для інтенсивних тренувань або відновлення після недосипу.
+1. Введіть вихідні дані: Використовуйте фактичні значення й відповідні одиниці.
+2. Уточніть параметри: Змініть початкові припущення відповідно до вашої ситуації.
+3. Прочитайте результат: Враховуйте обмеження моделі та не сприймайте розрахунок як вимірювання.
 
-### Методика та формула
+### Методика і формула
 
-Розрахунок базується на моделі ультрадіанних циклів тривалістю 90 хвилин, що поєднують стадії NREM (повільний сон) та REM (швидкий сон). Пробудження на межі циклів запобігає інерції сну.
+Час підйому = час відходу до сну + час засинання + тривалість сну; час відходу до сну обчислюється зворотним відніманням.
 
-Час пробудження = Час відбою + Засинання (14 хв) + N × 90 хв. Час відбою = Час пробудження - (N × 90 хв) - Засинання (14 хв).
+Час підйому = час відходу до сну + час засинання + тривалість сну; час відходу до сну обчислюється зворотним відніманням.
 
 ### Обмеження
 
-Калькулятор використовує середню тривалість циклу 90 хвилин. Індивідуальний цикл може варіюватися від 70 до 120 хвилин. При хронічних розладах сну необхідна полісомнографія.
+Більшості дорослих рекомендують 7–9 годин сну. Це варіанти розкладу, а не індивідуальна норма чи прогноз фази сну. Цикли й стадії сну змінюються протягом ночі. За введеним часом не можна гарантувати пробудження в REM або легкість підйому.
 
 ### Джерела
 
-- [Carskadon M.A., Dement W.C. Normal Human Sleep: An Overview. Principles and Practice of Sleep Medicine, 2011;5:16–26](https://doi.org/10.1016/B978-1-4160-6645-3.00002-5)
-- [Hirshkowitz M. et al. National Sleep Foundation’s sleep time duration recommendations: methodology and results summary. Sleep Health, 2015;1(1):40–43](https://pubmed.ncbi.nlm.nih.gov/29073412/)
-- [Dijk D.J., Czeisler C.A. Contribution of the circadian pacemaker and the homeostatic process to the timing of human sleep. Sleep, 1995;18(5):285–304](https://pubmed.ncbi.nlm.nih.gov/7676163/)
+- [NHLBI. How Sleep Works: Sleep Phases and Stages](https://www.nhlbi.nih.gov/health/sleep/stages-of-sleep)
+- [NHLBI. How Sleep Works: How Much Sleep Is Enough?](https://www.nhlbi.nih.gov/health/sleep/how-much-sleep)
+- [Hirshkowitz M et al. National Sleep Foundation's sleep time duration recommendations: methodology and results summary. Sleep Health, 2015](https://pubmed.ncbi.nlm.nih.gov/29073412/)
 
 ## Як вбудувати цей калькулятор
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/sleep-cycles?lang=uk&theme=auto"
-  title="Калькулятор циклів сну" loading="lazy" referrerpolicy="no-referrer"
+  title="Планувальник сну" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

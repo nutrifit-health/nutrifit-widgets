@@ -6,27 +6,28 @@
 
 `pss-10` · [NutriFit](https://nutrifit.health/uz/calculators/pss-10)
 
-Insonning o‘z hayotidagi vaziyatlarni oldindan aytib bo‘lmaydigan, nazorat qilib bo‘lmaydigan va ortiqcha yuklama sifatida baholashini o‘lchaydigan Sheldon Koenning klassik shkalasi.
+Oxirgi oydagi sezilgan stressni PSS-10 ning 10 bandi orqali baholash.
 
 ### Foydalanish tartibi
 
-1. Oxirgi bir oyga eʼtibor qarating: So‘nggi 30 kun davomidagi umumiy his-tuyg‘ularingiz va kechinmalaringizni tahlil qiling.
-2. Javoblar tezligini tanlang: Har bir savolga 0 ('Hech qachon') dan 4 ('Juda tez-tez') gacha bo‘lgan bahoni belgilang.
-3. Stress profilingizni o‘rganing: O‘z ballingiz bilan tanishing va asab tizimini tiklash bo‘yicha tavsiyalarni ko‘rib chiqing.
+1. Yo‘riqnomani o‘qing: Ko‘rsatilgan davr va har bir fikrning ma’nosini hisobga oling.
+2. Javoblarni tanlang: Har bir bandga mos variantni tanlab javob bering.
+3. Natijani ko‘ring: Natija javoblarni aks ettiradi; uni usulning cheklovlarini hisobga olib talqin qiling.
 
 ### Usul va formula
 
-0 dan 4 gacha bo‘lgan 5 ta javob variantiga ega 10 ta savol. 4, 5, 7 va 8-savollar shaxsiy resurslar va chidamlilikni baholash uchun teskari hisoblanadi.
+0 dan 4 gacha bo‘lgan 10 javob. 4, 5, 7 va 8-bandlar 4 dan javobni ayirish orqali baholanadi.
 
-PSS-10 umumiy bali = To‘g‘ri savollar (1, 2, 3, 6, 9, 10) + Teskari savollar (4, 5, 7, 8). 0–13: past stress; 14–26: o‘rtacha stress; 27–40: yuqori stress darajasi.
+Yig‘indi 0–40. Yuqori ball ko‘proq sezilgan stressni bildiradi; muallif past, o‘rtacha yoki yuqori stress chegaralarini belgilamaydi.
 
 ### Cheklovlar
 
-Test hayotiy yuklamalarni subyektiv qabul qilishni aks ettiradi va tibbiy tashxis sanalmaydi. Surunkali toliqishda mutaxassisga murojaat qiling.
+Ma’lumot uchun berilgan natija tashxis qo‘ymaydi va davolash buyurmaydi. Tarjima axborot uchun moslashtirilgan; uning alohida psixometrik validatsiyasi tasdiqlanmagan.
 
 ### Manbalar
 
-- [Cohen S. et al. A global measure of perceived stress. J Health Soc Behav, 1983;24(4):385–396](https://pubmed.ncbi.nlm.nih.gov/6668417/)
+- [Cohen. Perceived Stress Scale: author instructions and scoring limitations](https://www.cmu.edu/dietrich/psychology/stress-immunity-disease-lab/scales/index.html)
+- [Cohen S et al. A global measure of perceived stress. J Health Soc Behav, 1983](https://pubmed.ncbi.nlm.nih.gov/6668417/)
 - [Cohen S., Williamson G.M. Perceived stress in a probability sample of the United States. The Social Psychology of Health, 1988:31–67](https://psycnet.apa.org/record/1988-98838-002)
 
 ## Ushbu kalkulyatorni joylashtirish

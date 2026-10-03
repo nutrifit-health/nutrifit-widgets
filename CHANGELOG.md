@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.5
+
+- Align all 48 hosted calculators and questionnaire documentation with the source and wording audit in six languages.
+- Correct questionnaire answer scales, recall periods, method descriptions and limits.
+- Preserve unknown nutrition values separately from measured zero in native results and localized CSV/PDF exports.
+- Keep iframe and React consumers aligned with the corrected hosted calculator catalog.
+
 ## 1.0.4
 
 - Localize the integration overview SVG into English, Russian, Spanish, Ukrainian, Kazakh and Uzbek, including accessible titles and descriptions.

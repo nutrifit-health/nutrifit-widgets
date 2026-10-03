@@ -1,4 +1,4 @@
-# Katch-McArdle BMR & TDEE Calculator
+# Energy estimates from fat-free mass
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/katch-mcardle.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/katch-mcardle.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/katch-mcardle.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/katch-mcardle.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/katch-mcardle.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/katch-mcardle.md)
 
@@ -6,29 +6,29 @@
 
 `katch-mcardle` · [NutriFit](https://nutrifit.health/calculators/katch-mcardle)
 
-Calculates basal metabolic rate (BMR) and total daily energy expenditure (TDEE) based strictly on lean muscle mass rather than total scale weight.
+Fat-free mass = weight × (1 − fat / 100). Katch–McArdle: 370 + 21.6 × fat-free mass; Cunningham: 500 + 22 × fat-free mass. Daily Katch estimate multiplies by the selected activity factor.
 
-### How to use
+### Usage
 
-1. Determine your lean body mass: Enter your current weight and body fat percentage. The calculator will isolate your metabolically active lean mass.
-2. Select an honest activity level: Be realistic: if you work a desk job and lift weights 3 times a week, choose 'Light' or 'Moderate' to avoid overestimating TDEE.
-3. Compare with the Mifflin formula: Analyze the difference: if you are lean and muscular, standard formulas underestimate your caloric expenditure by 150–300 kcal/day.
+1. Enter the starting values: Fat-free mass = weight × (1 − fat / 100). Katch–McArdle: 370 + 21.6 × fat-free mass; Cunningham: 500 + 22 × fat-free mass. Daily Katch estimate multiplies by the selected activity factor.
+2. Adjust the parameters: LBM = Weight × (1 − % Body Fat / 100); BMR (Katch) = 370 + 21.6 × LBM(kg); TDEE = BMR × Activity Factor; BMR (Cunningham) = 500 + 22 × LBM(kg).
+3. Read the result: These are estimates, not calorimetry measurements. Body fat error and approximate activity factors affect results. A difference between equations does not establish which is more accurate for you.
 
 ### Method and formula
 
-Unlike the Mifflin-St Jeor or Harris-Benedict formulas which rely on total body weight, the Katch-McArdle equation isolates metabolically active lean body mass (LBM). This provides unmatched precision for lean athletes and individuals with non-standard body fat levels.
+Fat-free mass = weight × (1 − fat / 100). Katch–McArdle: 370 + 21.6 × fat-free mass; Cunningham: 500 + 22 × fat-free mass. Daily Katch estimate multiplies by the selected activity factor.
 
 LBM = Weight × (1 − % Body Fat / 100); BMR (Katch) = 370 + 21.6 × LBM(kg); TDEE = BMR × Activity Factor; BMR (Cunningham) = 500 + 22 × LBM(kg).
 
 ### Limitations
 
-Requires prior knowledge of body fat percentage. Inaccurate body fat estimation introduces direct error into the calorie calculation.
+These are estimates, not calorimetry measurements. Body fat error and approximate activity factors affect results. A difference between equations does not establish which is more accurate for you.
 
 ### Sources
 
-- [McArdle W.D., Katch F.I., Katch V.L. Exercise Physiology: Nutrition, Energy, and Human Performance. 8th ed. Wolters Kluwer, 2014](https://pubmed.ncbi.nlm.nih.gov/15570161/)
-- [Cunningham J.J. A reanalysis of balanced nutrition and the relationship to body composition and resting metabolic rate. Am J Clin Nutr, 1991;54(6):963–969](https://pubmed.ncbi.nlm.nih.gov/1957828/)
-- [Mifflin M.D. et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990;51(2):241–247](https://pubmed.ncbi.nlm.nih.gov/2305711/)
+- [McArdle W.D., Katch F.I., Katch V.L. Exercise Physiology: Nutrition, Energy, and Human Performance. 8th ed. Wolters Kluwer](https://medicine.lww.com/Book/isbn/9781451191554)
+- [Cunningham JJ. et al. Body composition as a determinant of energy expenditure: a synthetic review and a proposed general prediction equation. Am J Clin Nutr, 1991](https://pubmed.ncbi.nlm.nih.gov/1957828/)
+- [Mifflin MD et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr, 1990](https://pubmed.ncbi.nlm.nih.gov/2305711/)
 
 ## Embed this calculator
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/katch-mcardle?lang=en&theme=auto"
-  title="Katch-McArdle BMR &amp; TDEE Calculator" loading="lazy" referrerpolicy="no-referrer"
+  title="Energy estimates from fat-free mass" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

@@ -6,29 +6,29 @@
 
 `findrisc` · [NutriFit](https://nutrifit.health/uz/calculators/findrisc)
 
-Yashirin diabetni erta skrining qilish va 10 yil ichida 2-toifa QD paydo bo‘lish xavfini baholash uchun JSST va IDF tomonidan xalqaro tan olingan so‘rovnoma.
+FINDRISC ning 8 omili bo‘yicha 2-tip diabetning 10 yillik ma’lumotnoma xavfi; yig‘indi 0–26. Foizlar dastlabki tadqiqot guruhiga tegishli va aniq shaxsiy ehtimol emas.
 
 ### Foydalanish tartibi
 
-1. Yosh va tana o‘lchamlarini ko‘rsating: Yosh guruhi, BMI toifasi va pastki qovurg‘a bilan yonbosh suyagi qirrasi o‘rtasida santimetrli lenta bilan o‘lchangan bel aylanasini tanlang.
-2. Turmush tarzi va ovqatlanishni baholang: Kuniga kamida 30 daqiqa jismoniy faollik bilan shug‘ullanasizmi va har kuni sabzavot, meva yoki rezavorlar isteʼmol qilasizmi, belgilang.
-3. Tibbiy anamnezni ko‘rsating: Qon bosimi dori-darmonlarini qabul qilish, o‘tmishda qondagi qand miqdorining oshishi va yaqin qarindoshlarda diabet mavjudligini belgilang.
+1. Boshlang‘ich ma’lumotlarni kiriting: FINDRISC ning 8 omili bo‘yicha 2-tip diabetning 10 yillik ma’lumotnoma xavfi; yig‘indi 0–26. Foizlar dastlabki tadqiqot guruhiga tegishli va aniq shaxsiy ehtimol emas.
+2. Parametrlarni aniqlashtiring: FINDRISC ning 8 omili bo‘yicha 2-tip diabetning 10 yillik ma’lumotnoma xavfi; yig‘indi 0–26. Foizlar dastlabki tadqiqot guruhiga tegishli va aniq shaxsiy ehtimol emas.
+3. Natijani o‘qing: O‘zini baholash uchun axborot tarjimasi. Aynan shu moslamaning validatsiyasi tasdiqlanmagan. Ball tashxis qo‘ymaydi, past natija kasallikni istisno qilmaydi. FINDRISC ning 8 omili bo‘yicha 2-tip diabetning 10 yillik ma’lumotnoma xavfi; yig‘indi 0–26. Foizlar dastlabki tadqiqot guruhiga tegishli va aniq shaxsiy ehtimol emas.
 
 ### Usul va formula
 
-Isbotlangan 8 ta xavf omilini jamlash: yosh, BMI, bel aylanasi, jismoniy faollik, taomnomadagi sabzavotlar, antigipertenziv davolash, anamnezdagi glikemiya va irsiyat.
+FINDRISC ning 8 omili bo‘yicha 2-tip diabetning 10 yillik ma’lumotnoma xavfi; yig‘indi 0–26. Foizlar dastlabki tadqiqot guruhiga tegishli va aniq shaxsiy ehtimol emas.
 
-FINDRISC balli = Yosh (0–4) + BMI (0–3) + Bel (0–4) + Jismoniy faollik (0/2) + Sabzavotlar (0/1) + Qon bosimi dorilari (0/2) + Anamnezdagi glyukoza (0/5) + Irsiyat (0/3/5). Jami: 0–26 ball.
+FINDRISC ning 8 omili bo‘yicha 2-tip diabetning 10 yillik ma’lumotnoma xavfi; yig‘indi 0–26. Foizlar dastlabki tadqiqot guruhiga tegishli va aniq shaxsiy ehtimol emas.
 
 ### Cheklovlar
 
-Shkala skrining prognoz vositasi bo‘lib, laboratoriya diagnostikasi (och qoringa plazma glyukozasi, HbA1c, peroral glyukozaga tolerantlik testi) o‘rnini bosmaydi.
+O‘zini baholash uchun axborot tarjimasi. Aynan shu moslamaning validatsiyasi tasdiqlanmagan. Ball tashxis qo‘ymaydi, past natija kasallikni istisno qilmaydi. FINDRISC ning 8 omili bo‘yicha 2-tip diabetning 10 yillik ma’lumotnoma xavfi; yig‘indi 0–26. Foizlar dastlabki tadqiqot guruhiga tegishli va aniq shaxsiy ehtimol emas.
 
 ### Manbalar
 
-- [Lindström J., Tuomilehto J. The diabetes risk score: a practical tool to predict type 2 diabetes risk. Diabetes Care, 2003;26(3):725–731](https://pubmed.ncbi.nlm.nih.gov/12610029/)
+- [Finnish Diabetes Association. Type 2 diabetes risk assessment form](https://sites.pitt.edu/~super1/assist/Type%202%20diabetes%20risk%20test.pdf)
+- [Lindström J et al. The diabetes risk score: a practical tool to predict type 2 diabetes risk. Diabetes Care, 2003](https://pubmed.ncbi.nlm.nih.gov/12610029/)
 - [International Diabetes Federation (IDF). Clinical Practice Recommendations for managing Type 2 Diabetes in Primary Care, 2017](https://www.idf.org/our-activities/care-prevention/clinical-practice-recommendations/)
-- [Saaristo T. et al. FINDRISC as an early intervention tool in primary health care. Diabetes Care, 2005;28(12):2900–2907](https://pubmed.ncbi.nlm.nih.gov/16316578/)
 
 ## Ushbu kalkulyatorni joylashtirish
 

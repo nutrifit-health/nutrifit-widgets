@@ -1,4 +1,4 @@
-# 1RM kalkulyatori (bir martalik maksimal vazn)
+# Bir takror maksimumi bahosi 1RM
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/one-rep-max.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/one-rep-max.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/one-rep-max.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/one-rep-max.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/one-rep-max.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/one-rep-max.md)
 
@@ -6,29 +6,31 @@
 
 `one-rep-max` · [NutriFit](https://nutrifit.health/uz/calculators/one-rep-max)
 
-Sportchining 2–10 takrorlik submaksimal test yordamida jarohat xavfisiz bitta takrorda ko‘tara oladigan maksimal og‘irligini aniqlaydi.
+Asosiy natija — muallif tanlagan Epley va Brzycki o‘rtachasi. Alohida formulalar va o‘rtachaning arifmetik foizlari ko‘rsatiladi.
 
 ### Foydalanish tartibi
 
-1. To‘liq qizdirish mashqlarini bajaring: Bo‘g‘inlarni umumiy qizdiring, so‘ngra ishchi vaznga qadar asta-sekin og‘irlikni oshirib 3–4 ta tayyorgarlik yondashuvini bajaring.
-2. 3–6 takrorlik ishchi yondashuvni bajaring: Zaxirada 1 tadan ko‘p bo‘lmagan takror qoldirib (RPE 9), toza texnika bilan 3 tadan 6 tagacha bajara oladigan vaznni tanlang.
-3. Ma’lumotlarni kiriting va foizlardan foydalaning: Vazn va takrorlar sonini kalkulyatorga kiriting. Foizlar jadvali orqali kuch (85%), gipertrofiya (75%) yoki tiklanish (60%) mashg‘ulotlari yuklamasini belgilang.
+1. Boshlang‘ich ma’lumotlarni kiriting: Asosiy natija — muallif tanlagan Epley va Brzycki o‘rtachasi. Alohida formulalar va o‘rtachaning arifmetik foizlari ko‘rsatiladi.
+2. Parametrlarni aniqlashtiring: Epley: w × (1 + r/30); Brzycki: w / (1.0278 − 0.0278 × r); Lombardi: w × r^0.10; Wathan: 100 × w / (48.8 + 53.8 × exp(−0.075 × r)); Mayhew: 100 × w / (52.2 + 41.9 × exp(−0.055 × r)).
+w — vazn, kg; r — takrorlash soni. r = 1 bo‘lsa, barcha baholar w ga teng.
+3. Natijani o‘qing: Holdan toyguncha bajarilgan bir yondashuvdagi og‘irlik va takror sonini kiriting. Aniqlik mashq va texnikaga bog‘liq, ko‘p takrorda pasayadi. Og‘irlik foizi muayyan takror sonini kafolatlamaydi.
 
 ### Usul va formula
 
-Bir takrorlik maksimum hisobi charchoqqa qadar bajarilgan takrorlar soni va maksimal kuch ulushi o‘rtasidagi regressiya tenglamalariga asoslanadi. Epley formulasi 2–6 takror oralig‘ida yaxshiroq ishlaydi, Brzycki formulasi esa 6–10 takrorda yuqori aniqlik beradi.
+Asosiy natija — muallif tanlagan Epley va Brzycki o‘rtachasi. Alohida formulalar va o‘rtachaning arifmetik foizlari ko‘rsatiladi.
 
-Epley: 1RM = Vazn × (1 + 0.0333 × Takr); Brzycki: 1RM = Vazn / (1.0278 − 0.0278 × Takr); Lombardi: Vazn × Takr^0.10; Wathan: (100 × Vazn) / (48.8 + 53.8 × e^(-0.075 × Takr)).
+Epley: w × (1 + r/30); Brzycki: w / (1.0278 − 0.0278 × r); Lombardi: w × r^0.10; Wathan: 100 × w / (48.8 + 53.8 × exp(−0.075 × r)); Mayhew: 100 × w / (52.2 + 41.9 × exp(−0.055 × r)).
+w — vazn, kg; r — takrorlash soni. r = 1 bo‘lsa, barcha baholar w ga teng.
 
 ### Cheklovlar
 
-Metabolik charchoq sababli 10–12 takrordan ortiq yondashuvlar uchun tavsiya etilmaydi. Aniqlik harakat texnikasi va mushak tolalari tarkibiga bog‘liq.
+Holdan toyguncha bajarilgan bir yondashuvdagi og‘irlik va takror sonini kiriting. Aniqlik mashq va texnikaga bog‘liq, ko‘p takrorda pasayadi. Og‘irlik foizi muayyan takror sonini kafolatlamaydi.
 
 ### Manbalar
 
-- [Epley B. Poundage chart. Boyd Epley Workout, Lincoln, NE, 1985](https://pubmed.ncbi.nlm.nih.gov/2706858/)
-- [Brzycki M. Strength testing—predicting a one-rep max from reps-to-fatigue. JOHPERD, 1993;64(1):88–90](https://doi.org/10.1080/07303084.1993.10606684)
-- [Reynolds J.M. et al. Prediction of one repetition maximum strength from multiple repetition maximum testing and anthropometry. J Strength Cond Res, 2006;20(3):584–592](https://pubmed.ncbi.nlm.nih.gov/16937972/)
+- [LeSuer D.A. et al. The Accuracy of Prediction Equations for Estimating 1-RM Performance in the Bench Press, Squat, and Deadlift. J Strength Cond Res, 1997;11(4):211–213](https://paulogentil.com/pdf/The%20Accuracy%20of%20Prediction%20Equations%20for%20Estimating%201-RM%20Performance%20in%20the%20Bench%20Press%2C%20Squat%2C%20and%20Deadlift.pdf)
+- [Brzycki M. Strength Testing—Predicting a One-Rep Max from Reps-to-Fatigue. JOHPERD, 1993;64(1):88–90](https://doi.org/10.1080/07303084.1993.10606684)
+- [Reynolds JM et al. Prediction of one repetition maximum strength from multiple repetition maximum testing and anthropometry. J Strength Cond Res, 2006](https://pubmed.ncbi.nlm.nih.gov/16937972/)
 
 ## Ushbu kalkulyatorni joylashtirish
 
@@ -59,7 +61,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/one-rep-max?lang=uz&theme=auto"
-  title="1RM kalkulyatori (bir martalik maksimal vazn)" loading="lazy" referrerpolicy="no-referrer"
+  title="Bir takror maksimumi bahosi 1RM" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

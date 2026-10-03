@@ -40,10 +40,10 @@ export function adaptCalculation(value: unknown): CalculationResult {
     }
     const total = finiteValue(totals[key]);
     return { key, total, per100g: finiteValue(per100g[key]),
-      incomplete: total === null || (Array.isArray(missingInputs) && missingInputs.length > 0) };
+      incomplete: total === null || finiteValue(per100g[key]) === null || (Array.isArray(missingInputs) && missingInputs.length > 0) };
   });
   return {
     outputWeight, metrics, checkedAt: calculation.capturedAt,
-    completeness: calculation.status === 'complete' ? 'complete' : calculation.status === 'partial' ? 'partial' : 'unknown',
+    completeness: metrics.every((metric) => metric.total === null) ? 'unknown' : metrics.some((metric) => metric.incomplete) ? 'partial' : 'complete',
   };
 }

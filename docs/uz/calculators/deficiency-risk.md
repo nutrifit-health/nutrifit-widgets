@@ -1,4 +1,4 @@
-# Nutriyent tanqisligi xavfi skriningi
+# Ovqatlanish va turmush tarzi ro‘yxati
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/deficiency-risk.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/deficiency-risk.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/deficiency-risk.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/deficiency-risk.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/deficiency-risk.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/deficiency-risk.md)
 
@@ -6,23 +6,23 @@
 
 `deficiency-risk` · [NutriFit](https://nutrifit.health/uz/calculators/deficiency-risk)
 
-Turmush tarzi va ovqatlanish omillarini belgilaydi hamda qaysi nutriyent tanqisligi ehtimoli borligini va uni qanday tahlillar bilan tekshirishni ko‘rsatadi.
+Mualliflik axborot ro‘yxati: hozirgi ovqatlanish va turmush tarzi xususiyatlarini belgilang va bog‘liq nutriyent mavzularini ko‘ring.
 
 ### Foydalanish tartibi
 
-1. Ovqatlanish xususiyatlarini belgilang: Parhezdagi cheklovlarni (go‘sht, baliq, sut mahsulotlaridan voz kechish) va odatlarni ko‘rsating.
-2. Turmush tarzi va dorilarni inobatga oling: Atrof-muhit omillarini (quyosh kamligi, intensiv sport) va dorilar qabul qilishni (antatsidlar, metformin) belgilang.
-3. Tahlillar ro‘yxatini oling: Har bir nutriyent bo‘yicha xavf ballarini va klinik tekshirish uchun aniq laboratoriya markerlarini bilib oling.
+1. Boshlang‘ich ma’lumotlarni kiriting: Omillar va nutriyentlar o‘rtasidagi bog‘lanishlar muhokama uchun axborot mavzularidir. NIH ODS va EFSA ovqatlanish hamda xavf guruhlari haqida ma’lumot beradi, ammo bu so‘rovnoma uchun ball yoki tanqislik ehtimolini belgilamaydi.
+2. Parametrlarni aniqlashtiring: Mualliflik axborot ro‘yxati: hozirgi ovqatlanish va turmush tarzi xususiyatlarini belgilang va bog‘liq nutriyent mavzularini ko‘ring.
+3. Natijani o‘qing: Ro‘yxat haqiqiy iste’mol va so‘rilishni, boyitilgan ovqatlar, qo‘shimchalar va kasalliklarni hisobga olmaydi. U tanqislikni tasdiqlamaydi yoki istisno qilmaydi; tahlillar va tuzatish zarurati individual belgilanadi.
 
 ### Usul va formula
 
-Bu tashxis emas, xavf omillari ro‘yxati. Har bir omilga NIH Office of Dietary Supplements fact sheets va EFSA ning iste’mol referens qiymatlari bo‘yicha materiallarida xavf omili deb tan olingan nutriyentlar mos qo‘yilgan. Omil vazni bog‘liqlik kuchini aks ettiradi: 3 ball — qoplanmasa tanqislik qonuniy bo‘ladigan holat, 2 — muhim omil, 1 — qo‘shimcha hissa. Ballar har bir nutriyent bo‘yicha yig‘iladi: 2 balldan xavf o‘rtacha, 4 dan yuqori.
+Omillar va nutriyentlar o‘rtasidagi bog‘lanishlar muhokama uchun axborot mavzularidir. NIH ODS va EFSA ovqatlanish hamda xavf guruhlari haqida ma’lumot beradi, ammo bu so‘rovnoma uchun ball yoki tanqislik ehtimolini belgilamaydi.
 
-Nutriyent bali = belgilangan omillar vaznlari yig‘indisi; 0–1 ball — past xavf, 2–3 — o‘rtacha, 4 va undan yuqori — yuqori
+Xavf ballari va toifalari hisoblanmaydi. Faqat belgilangan omillar va bog‘liq nutriyentlar ko‘rsatiladi.
 
 ### Cheklovlar
 
-Skrining faqat belgilangan omillarga tayanadi va haqiqiy iste’molni, qo‘shimchalar qabulini, genetikani hamda yondosh kasalliklarni hisobga olmaydi. U tanqislikni tasdiqlamaydi va istisno ham qilmaydi — nutriyent holati laboratoriyada aniqlanadi va shifokor yoki ovqatlanish mutaxassisi tomonidan baholanadi.
+Ro‘yxat haqiqiy iste’mol va so‘rilishni, boyitilgan ovqatlar, qo‘shimchalar va kasalliklarni hisobga olmaydi. U tanqislikni tasdiqlamaydi yoki istisno qilmaydi; tahlillar va tuzatish zarurati individual belgilanadi.
 
 ### Manbalar
 
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/deficiency-risk?lang=uz&theme=auto"
-  title="Nutriyent tanqisligi xavfi skriningi" loading="lazy" referrerpolicy="no-referrer"
+  title="Ovqatlanish va turmush tarzi ro‘yxati" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

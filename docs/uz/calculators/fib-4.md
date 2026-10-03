@@ -6,19 +6,21 @@
 
 `fib-4` · [NutriFit](https://nutrifit.health/uz/calculators/fib-4)
 
-AST, ALT, trombotsitlar va yosh asosida jigar fibrozi darajasini invaziv bo‘lmagan usulda baholaydi.
+FIB-4 (Sterling 2006) yosh, AST, ALT va trombotsitlardan foydalanadi. AASLD 2023 chegaralari metabolik yog‘li jigar kasalligida rivojlangan fibroz ehtimolini baholaydi, bosqichini aniqlamaydi. 35–65 yoshda quyi chegara 1,3; 65 yoshdan kattalarda 2,0; yuqori chegara 2,67. 35 yoshgacha toifa berilmaydi; o‘tkir kasallikda talqin qilinmaydi. APRI (Wai 2003) va 0,5/1,5 chegaralari surunkali C gepatitidagi sezilarli fibrozga tegishli, boshqa kasalliklarga avtomatik qo‘llanmaydi.
 
 ### Foydalanish tartibi
 
-1. Qon tahlillarini tayyorlang: Biokimyoviy tahlildan AST va ALT, umumiy qon tahlilidan esa trombotsitlar soni kerak bo‘ladi.
-2. Qiymatlarni kiriting: Yoshingiz, fermentlar faolligi va trombotsitlar sonini kiriting.
-3. Klinik tavsiyalar bilan tanishing: Past xavfda 1–2 yildan so‘ng qayta tekshiruv, yuqori xavfda esa mutaxassis maslahati kerak.
+1. Boshlang‘ich ma’lumotlarni kiriting: FIB-4 (Sterling 2006) yosh, AST, ALT va trombotsitlardan foydalanadi. AASLD 2023 chegaralari metabolik yog‘li jigar kasalligida rivojlangan fibroz ehtimolini baholaydi, bosqichini aniqlamaydi. 35–65 yoshda quyi chegara 1,3; 65 yoshdan kattalarda 2,0; yuqori chegara 2,67. 35 yoshgacha toifa berilmaydi; o‘tkir kasallikda talqin qilinmaydi. APRI (Wai 2003) va 0,5/1,5 chegaralari surunkali C gepatitidagi sezilarli fibrozga tegishli, boshqa kasalliklarga avtomatik qo‘llanmaydi.
+2. Parametrlarni aniqlashtiring: FIB-4 = age × AST / (platelets × √ALT); APRI = (AST / AST_ULN) × 100 / platelets.
+FIB-4 (Sterling 2006) yosh, AST, ALT va trombotsitlardan foydalanadi. AASLD 2023 chegaralari metabolik yog‘li jigar kasalligida rivojlangan fibroz ehtimolini baholaydi, bosqichini aniqlamaydi. 35–65 yoshda quyi chegara 1,3; 65 yoshdan kattalarda 2,0; yuqori chegara 2,67. 35 yoshgacha toifa berilmaydi; o‘tkir kasallikda talqin qilinmaydi. APRI (Wai 2003) va 0,5/1,5 chegaralari surunkali C gepatitidagi sezilarli fibrozga tegishli, boshqa kasalliklarga avtomatik qo‘llanmaydi.
+3. Natijani o‘qing: Natijalar o‘tkir gepatit, gemoliz yoki kuchli alkogol isteʼmoli paytida buzilishi mumkin. Tashxisni faqat shifokor tasdiqlaydi.
 
 ### Usul va formula
 
-Sterling (2006) va Wai (2003) algoritmlariga asoslangan. Xalqaro EASL va AASLD ko‘rsatmalarida tavsiya etilgan.
+FIB-4 (Sterling 2006) yosh, AST, ALT va trombotsitlardan foydalanadi. AASLD 2023 chegaralari metabolik yog‘li jigar kasalligida rivojlangan fibroz ehtimolini baholaydi, bosqichini aniqlamaydi. 35–65 yoshda quyi chegara 1,3; 65 yoshdan kattalarda 2,0; yuqori chegara 2,67. 35 yoshgacha toifa berilmaydi; o‘tkir kasallikda talqin qilinmaydi. APRI (Wai 2003) va 0,5/1,5 chegaralari surunkali C gepatitidagi sezilarli fibrozga tegishli, boshqa kasalliklarga avtomatik qo‘llanmaydi.
 
-FIB-4 = (Yosh × AST) / (Trombotsitlar × √ALT); APRI = ((AST / AST_yuqori_chegara) / Trombotsitlar) × 100.
+FIB-4 = age × AST / (platelets × √ALT); APRI = (AST / AST_ULN) × 100 / platelets.
+FIB-4 (Sterling 2006) yosh, AST, ALT va trombotsitlardan foydalanadi. AASLD 2023 chegaralari metabolik yog‘li jigar kasalligida rivojlangan fibroz ehtimolini baholaydi, bosqichini aniqlamaydi. 35–65 yoshda quyi chegara 1,3; 65 yoshdan kattalarda 2,0; yuqori chegara 2,67. 35 yoshgacha toifa berilmaydi; o‘tkir kasallikda talqin qilinmaydi. APRI (Wai 2003) va 0,5/1,5 chegaralari surunkali C gepatitidagi sezilarli fibrozga tegishli, boshqa kasalliklarga avtomatik qo‘llanmaydi.
 
 ### Cheklovlar
 
@@ -26,9 +28,10 @@ Natijalar o‘tkir gepatit, gemoliz yoki kuchli alkogol isteʼmoli paytida buzil
 
 ### Manbalar
 
-- [Sterling R.K. et al. Development of a simple noninvasive index to predict significant fibrosis in patients with HIV/HCV coinfection. Hepatology, 2006;43(6):1317–1325](https://pubmed.ncbi.nlm.nih.gov/16729309/)
-- [Wai C.T. et al. A simple noninvasive index can predict both significant fibrosis and cirrhosis in patients with chronic hepatitis C. Hepatology, 2003;38(2):518–526](https://pubmed.ncbi.nlm.nih.gov/12883497/)
-- [EASL Clinical Practice Guidelines on non-invasive tests for evaluation of liver disease severity and prognosis — 2021 update. J Hepatol, 2021;75(3):659–689](https://pubmed.ncbi.nlm.nih.gov/34166721/)
+- [Rinella M.E. et al. AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease. Hepatology, 2023.](https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/)
+- [Sterling RK et al. Development of a simple noninvasive index to predict significant fibrosis in patients with HIV/HCV coinfection. Hepatology, 2006](https://pubmed.ncbi.nlm.nih.gov/16729309/)
+- [Wai CT et al. A simple noninvasive index can predict both significant fibrosis and cirrhosis in patients with chronic hepatitis C. Hepatology, 2003](https://pubmed.ncbi.nlm.nih.gov/12883497/)
+- [European Association for the Study of the Liver. et al. EASL Clinical Practice Guidelines on non-invasive tests for evaluation of liver disease severity and prognosis - 2021 update. J Hepatol, 2021](https://pubmed.ncbi.nlm.nih.gov/34166721/)
 
 ## Ushbu kalkulyatorni joylashtirish
 

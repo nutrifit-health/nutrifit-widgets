@@ -6,32 +6,31 @@
 
 `corrected-calcium` · [NutriFit](https://nutrifit.health/calculators/corrected-calcium)
 
-Educational calculation of albumin-adjusted total calcium using the simplified Payne formula. It does not measure ionized calcium or determine treatment.
+Corrected calcium = total calcium + 0.02 × (40 − albumin), with calcium in mmol/L and albumin in g/L. This is the simplified Payne equation.
 
-### How to use
+### Usage
 
-1. Take total calcium and albumin from one sample: Both are part of standard chemistry. Units: calcium in mmol/L or mg/dL, albumin in g/L or g/dL — choose as on your report.
-2. Compare measured and corrected: A category change reflects only the mathematical adjustment. It does not prove that the original test was false or that treatment is unnecessary.
-3. When in doubt — ionized calcium: Adjustment is especially unreliable with low albumin, CKD, critical illness and pH disturbances. A clinician selects the measurements needed for clarification.
+1. Enter the starting values: Corrected calcium = total calcium + 0.02 × (40 − albumin), with calcium in mmol/L and albumin in g/L. This is the simplified Payne equation.
+2. Adjust the parameters: Corrected calcium = total calcium + 0.02 × (40 − albumin), with calcium in mmol/L and albumin in g/L. This is the simplified Payne equation.
+Ca: mg/dL × 0.2495 = mmol/L; mmol/L ÷ 0.2495 = mg/dL. Albumin: g/dL × 10 = g/L.
+3. Read the result: The correction does not measure ionized calcium and can misclassify results, particularly with low albumin. No universal calcium category is assigned.
 
 ### Method and formula
 
-The simplified Payne formula adds 0.02 mmol/L per 1 g/L decrease in albumin below 40 g/L. It is a historical adjustment of total calcium to an assumed albumin level, not a calculation of ionized calcium. A 2025 study found a risk of misclassification, especially at low albumin; unadjusted total calcium agreed better with ionized calcium in that study.
+Corrected calcium = total calcium + 0.02 × (40 − albumin), with calcium in mmol/L and albumin in g/L. This is the simplified Payne equation.
 
-Adjusted Ca (mmol/L) = total Ca + 0.02 × (40 − albumin, g/L)
-Ca entered in mg/dL is first multiplied by 0.2495; the result is converted back by dividing by 0.2495.
-Albumin g/dL × 10 = g/L. Common approximate expression: Ca (mg/dL) + 0.8 × (4 − albumin, g/dL).
-Assumed total-calcium comparison interval: 2.15–2.55 mmol/L.
+Corrected calcium = total calcium + 0.02 × (40 − albumin), with calcium in mmol/L and albumin in g/L. This is the simplified Payne equation.
+Ca: mg/dL × 0.2495 = mmol/L; mmol/L ÷ 0.2495 = mg/dL. Albumin: g/dL × 10 = g/L.
 
 ### Limitations
 
-Adjustment may worsen calcium-status classification, particularly with albumin below 30 g/L. It is unreliable in CKD, critical illness and pH disturbances. If clinically uncertain, a clinician may request ionized calcium, which also depends on correct sample collection and handling. This formula does not establish a diagnosis or a supplement prescription.
+The correction does not measure ionized calcium and can misclassify results, particularly with low albumin. No universal calcium category is assigned.
 
 ### Sources
 
-- [Payne R.B., Little A.J., Williams R.B., Milner J.R. Interpretation of serum calcium in patients with abnormal serum proteins. BMJ, 1973;4(5893):643–646](https://pubmed.ncbi.nlm.nih.gov/4758544/)
-- [Ladenson J.H., Lewis J.W., Boyd J.C. Failure of total calcium corrected for protein, albumin, and pH to correctly assess free calcium status. J Clin Endocrinol Metab, 1978;46(6):986–993](https://pubmed.ncbi.nlm.nih.gov/45478/)
-- [Desgagnés N. et al. Use of Albumin-Adjusted Calcium Measurements in Clinical Practice. JAMA Netw Open, 2025;8(1):e2455251](https://pubmed.ncbi.nlm.nih.gov/39836424/)
+- [Payne RB et al. Interpretation of serum calcium in patients with abnormal serum proteins. Br Med J, 1973](https://pubmed.ncbi.nlm.nih.gov/4758544/)
+- [Ladenson JH et al. Failure of total calcium corrected for protein, albumin, and pH to correctly assess free calcium status. J Clin Endocrinol Metab, 1978](https://pubmed.ncbi.nlm.nih.gov/45478/)
+- [Desgagnés N et al. Use of Albumin-Adjusted Calcium Measurements in Clinical Practice. JAMA Netw Open, 2025](https://pubmed.ncbi.nlm.nih.gov/39836424/)
 
 ## Embed this calculator
 

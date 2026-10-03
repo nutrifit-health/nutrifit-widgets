@@ -1,4 +1,4 @@
-# Protein Intake Calculator (ISSN & ESPEN)
+# Protein reference intakes
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/protein-intake.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/protein-intake.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/protein-intake.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/protein-intake.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/protein-intake.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/protein-intake.md)
 
@@ -6,29 +6,29 @@
 
 `protein-intake` · [NutriFit](https://nutrifit.health/calculators/protein-intake)
 
-Determines individualized daily protein targets based on fitness goals, dietary pattern, and muscle protein synthesis (MPS) thresholds.
+For healthy adults, the EFSA PRI is 0.83 g/kg/day. ISSN gives 1.4–2.0 g/kg/day for healthy exercising adults; ESPEN suggests 1.0–1.2 for healthy older adults. Amounts use the actual body weight entered. A reference range is not a safety upper limit.
 
-### How to use
+### Usage
 
-1. Identify your target number: Enter your weight and goal. The calculator establishes your daily gram target and optimal per-meal serving size.
-2. Aim for 25–40 g per meal: A single serving of 30 g protein (cottage cheese, 150 g chicken breast or fish) activates the leucine trigger for myofibrillar anabolism.
-3. Diversify your protein sources: Combine animal proteins (eggs, poultry, fish, dairy) with wholesome plant-based sources (tofu, lentils, chickpeas, tempeh).
+1. Enter the inputs: For healthy adults, the EFSA PRI is 0.83 g/kg/day. ISSN gives 1.4–2.0 g/kg/day for healthy exercising adults; ESPEN suggests 1.0–1.2 for healthy older adults. Amounts use the actual body weight entered. A reference range is not a safety upper limit.
+2. Compare the references: For healthy adults, the EFSA PRI is 0.83 g/kg/day. ISSN gives 1.4–2.0 g/kg/day for healthy exercising adults; ESPEN suggests 1.0–1.2 for healthy older adults. Amounts use the actual body weight entered. A reference range is not a safety upper limit.
+3. Consider the limitations: These population references are not an individual optimal dose. This form cannot prescribe nutrition for kidney disease, pregnancy, illness, malnutrition or substantial excess weight. Those situations require an individual choice of reference weight and intake.
 
 ### Method and formula
 
-Grounded in clinical consensus statements from the International Society of Sports Nutrition (ISSN, 2017) and ESPEN. In patients with overweight (BMI > 28), Adjusted Body Weight (AdjBW) is applied to protect renal hemodynamics.
+For healthy adults, the EFSA PRI is 0.83 g/kg/day. ISSN gives 1.4–2.0 g/kg/day for healthy exercising adults; ESPEN suggests 1.0–1.2 for healthy older adults. Amounts use the actual body weight entered. A reference range is not a safety upper limit.
 
-Maintenance: 1.0–1.4 g/kg; Muscle Gain: 1.6–2.2 g/kg; Fat Loss / Deficit: 2.0–2.4 g/kg; Endurance: 1.2–1.6 g/kg; Age 65+: 1.2–1.5 g/kg; CKD: 0.6–0.8 g/kg. Vegetarian: +10%.
+For healthy adults, the EFSA PRI is 0.83 g/kg/day. ISSN gives 1.4–2.0 g/kg/day for healthy exercising adults; ESPEN suggests 1.0–1.2 for healthy older adults. Amounts use the actual body weight entered. A reference range is not a safety upper limit.
 
 ### Limitations
 
-In chronic kidney disease (eGFR < 60 mL/min), protein prescriptions must be medically supervised by a nephrologist.
+These population references are not an individual optimal dose. This form cannot prescribe nutrition for kidney disease, pregnancy, illness, malnutrition or substantial excess weight. Those situations require an individual choice of reference weight and intake.
 
 ### Sources
 
-- [Jäger R. et al. International Society of Sports Nutrition Position Stand: protein and exercise. J Int Soc Sports Nutr, 2017;14:20](https://pubmed.ncbi.nlm.nih.gov/28642676/)
-- [Deutz N.E. et al. Protein intake and exercise for optimal muscle function with aging: recommendations from the ESPEN Expert Group. Clin Nutr, 2014;33(6):929–936](https://pubmed.ncbi.nlm.nih.gov/24814383/)
-- [Morton R.W. et al. A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on gains in muscle mass and strength in healthy adults. Br J Sports Med, 2018;52(6):376–384](https://pubmed.ncbi.nlm.nih.gov/28698222/)
+- [EFSA. Population reference intakes for protein, 2012](https://www.efsa.europa.eu/en/press/news/120209)
+- [ISSN. Protein and exercise, 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/)
+- [ESPEN Expert Group. Protein intake and exercise with aging, 2014](https://pmc.ncbi.nlm.nih.gov/articles/PMC4208946/)
 
 ## Embed this calculator
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/protein-intake?lang=en&theme=auto"
-  title="Protein Intake Calculator (ISSN &amp; ESPEN)" loading="lazy" referrerpolicy="no-referrer"
+  title="Protein reference intakes" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

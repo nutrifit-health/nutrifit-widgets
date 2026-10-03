@@ -1,4 +1,4 @@
-# Calculadora de FFMI (índice de masa libre de grasa)
+# Índice de masa libre de grasa (FFMI)
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/ffmi.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/ffmi.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/ffmi.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/ffmi.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/ffmi.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/ffmi.md)
 
@@ -6,28 +6,27 @@
 
 `ffmi` · [NutriFit](https://nutrifit.health/es/calculators/ffmi)
 
-Determina la cantidad de masa muscular magra en relación con la estatura, diferenciando la hipertrofia muscular real del acúmulo de grasa.
+Masa libre de grasa = peso × (1 − porcentaje de grasa / 100); FFMI = masa libre de grasa / altura², en metros. Para hombres: FFMI normalizado = FFMI + 6,3 × (1,8 − altura), según el resumen de Kouri (1995).
 
-### Cómo usar
+### Uso
 
-1. Mida la estatura y el peso con exactitud: Pésese por la mañana en ayunas tras evacuar. Mida la estatura descalzo contra una superficie vertical.
-2. Determine el porcentaje de grasa: Utilice un protocolo de pliegues cutáneos (3–7 pliegues), bioimpedancia multifrecuencia o exploración DEXA.
-3. Interprete el índice normalizado: El índice normalizado corrige la distorsión matemática en personas altas (>1,80 m) o bajas (<1,70 m), permitiendo una comparación ecuánime.
+1. Introduzca los datos iniciales: Masa libre de grasa = peso × (1 − porcentaje de grasa / 100); FFMI = masa libre de grasa / altura², en metros. Para hombres: FFMI normalizado = FFMI + 6,3 × (1,8 − altura), según el resumen de Kouri (1995).
+2. Ajuste los parámetros: Masa libre de grasa = peso × (1 − porcentaje de grasa / 100); FFMI = masa libre de grasa / altura², en metros. Para hombres: FFMI normalizado = FFMI + 6,3 × (1,8 − altura), según el resumen de Kouri (1995).
+3. Lea el resultado: El estudio original incluyó hombres. No se calcula normalización para mujeres. El resultado depende de la precisión del porcentaje de grasa; no diagnostica uso de esteroides, determina un límite genético ni establece una categoría universal de salud.
 
 ### Método y fórmula
 
-El IMC tradicional no distingue entre grasa y masa muscular. El índice de masa libre de grasa (FFMI) aísla el tejido magro e incorpora un factor de normalización por estatura (Kouri et al., 1995) para comparar atletas de distinta altura.
+Masa libre de grasa = peso × (1 − porcentaje de grasa / 100); FFMI = masa libre de grasa / altura², en metros. Para hombres: FFMI normalizado = FFMI + 6,3 × (1,8 − altura), según el resumen de Kouri (1995).
 
-Masa magra (LBM) = Peso × (1 − % Grasa / 100); FFMI base = LBM / Altura(m)²; FFMI normalizado = FFMI base + 6,1 × (1,80 − Altura(m)).
+Masa libre de grasa = peso × (1 − porcentaje de grasa / 100); FFMI = masa libre de grasa / altura², en metros. Para hombres: FFMI normalizado = FFMI + 6,3 × (1,8 − altura), según el resumen de Kouri (1995).
 
 ### Limitaciones
 
-La precisión depende directamente del método de estimación de grasa corporal. La densitometría DEXA y el pesaje hidrostático ofrecen la máxima fiabilidad.
+El estudio original incluyó hombres. No se calcula normalización para mujeres. El resultado depende de la precisión del porcentaje de grasa; no diagnostica uso de esteroides, determina un límite genético ni establece una categoría universal de salud.
 
 ### Fuentes
 
-- [Kouri E.M. et al. Fat-free mass index in users and nonusers of anabolic-androgenic steroids. Clin J Sport Med, 1995;5(4):223–228](https://pubmed.ncbi.nlm.nih.gov/7496846/)
-- [Trexler E.T. et al. Physiological changes after a female bodybuilding contest preparation. J Int Soc Sports Nutr, 2017;14:34](https://pubmed.ncbi.nlm.nih.gov/28878643/)
+- [Kouri EM et al. Fat-free mass index in users and nonusers of anabolic-androgenic steroids. Clin J Sport Med, 1995](https://pubmed.ncbi.nlm.nih.gov/7496846/)
 
 ## Cómo integrar esta calculadora
 
@@ -58,7 +57,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/ffmi?lang=es&theme=auto"
-  title="Calculadora de FFMI (índice de masa libre de grasa)" loading="lazy" referrerpolicy="no-referrer"
+  title="Índice de masa libre de grasa (FFMI)" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

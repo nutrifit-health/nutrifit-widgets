@@ -6,7 +6,7 @@
 
 `tyg-index` · [NutriFit](https://nutrifit.health/ru/calculators/tyg-index)
 
-Индекс TyG и производные TyG-BMI, TyG-WC: оценка инсулинорезистентности и кардиометаболического риска по триглицеридам и глюкозе натощак — без анализа на инсулин.
+Исследовательский индекс по триглицеридам и глюкозе натощак, с производными TyG-BMI и TyG-WC.
 
 ### Порядок использования
 
@@ -16,22 +16,20 @@
 
 ### Методика и формула
 
-Индекс TyG (Simental-Mendía, 2008) — натуральный логарифм половины произведения триглицеридов и глюкозы натощак в мг/дл. Он отражает липотоксичность и нарушение утилизации глюкозы — два ключевых механизма инсулинорезистентности — и коррелирует с эугликемическим клэмпом не хуже HOMA-IR, при этом не требует дорогого и плохо стандартизованного анализа на инсулин. Производные TyG-BMI и TyG-WC добавляют массу тела и окружность талии, повышая точность выявления метаболического синдрома и НАЖБП.
+Здесь используется вариант ln(TG × глюкоза / 2), обе концентрации в мг/дл, как в Lee et al. (2018). Другой опубликованный вариант — ln(TG × глюкоза)/2 — имеет другую числовую шкалу; его пороги нельзя переносить сюда.
 
-TyG = ln[ Триглицериды (мг/дл) × Глюкоза (мг/дл) / 2 ]
-TyG-BMI = TyG × ИМТ (кг/м²)
-TyG-WC = TyG × Окружность талии (см)
-Пересчёт: ТГ мг/дл = ммоль/л × 88,57; глюкоза мг/дл = ммоль/л × 18,016
+TyG = ln[TG (мг/дл) × глюкоза (мг/дл) / 2]. TyG-BMI = TyG × ИМТ; TyG-WC = TyG × талия (см).
 
 ### Ограничения
 
-Единого порога TyG нет: в разных популяциях граница высокого риска колеблется от 8,5 до 9,0, а в азиатских когортах — ниже. Индекс искажается при семейной гипертриглицеридемии, приёме фибратов, статинов и алкоголя накануне, а также при остром заболевании. Требуются значения натощак (8–12 ч). Индекс — скрининговый инструмент, а не диагноз.
+Универсальных диагностических порогов для этого расчёта не установлено. Индекс не подтверждает инсулинорезистентность, диабет или сердечно-сосудистое заболевание.
 
 ### Источники
 
-- [Simental-Mendía L.E., Rodríguez-Morán M., Guerrero-Romero F. The product of fasting glucose and triglycerides as surrogate for identifying insulin resistance in apparently healthy subjects. Metab Syndr Relat Disord, 2008;6(4):299–304](https://pubmed.ncbi.nlm.nih.gov/19067533/)
-- [Guerrero-Romero F. et al. The product of triglycerides and glucose, a simple measure of insulin sensitivity. Comparison with the euglycemic-hyperinsulinemic clamp. J Clin Endocrinol Metab, 2010;95(7):3347–3351](https://pubmed.ncbi.nlm.nih.gov/20484475/)
-- [Sánchez-García A. et al. Diagnostic accuracy of the triglyceride and glucose index for insulin resistance: a systematic review. Int J Endocrinol, 2020;2020:4678526](https://pubmed.ncbi.nlm.nih.gov/32256572/)
+- [Lee J.W., Lim N.K., Park H.Y. TyG and type 2 diabetes risk in middle-aged Koreans. BMC Endocr Disord, 2018;18:33](https://link.springer.com/article/10.1186/s12902-018-0259-x)
+- [Simental-Mendía LE et al. The product of fasting glucose and triglycerides as surrogate for identifying insulin resistance in apparently healthy subjects. Metab Syndr Relat Disord, 2008](https://pubmed.ncbi.nlm.nih.gov/19067533/)
+- [Guerrero-Romero F et al. The product of triglycerides and glucose, a simple measure of insulin sensitivity. Comparison with the euglycemic-hyperinsulinemic clamp. J Clin Endocrinol Metab, 2010](https://pubmed.ncbi.nlm.nih.gov/20484475/)
+- [Sánchez-García A et al. Diagnostic Accuracy of the Triglyceride and Glucose Index for Insulin Resistance: A Systematic Review. Int J Endocrinol, 2020](https://pubmed.ncbi.nlm.nih.gov/32256572/)
 
 ## Как встроить этот калькулятор
 

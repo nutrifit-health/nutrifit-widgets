@@ -1,4 +1,4 @@
-# Heart Rate Training Zones Calculator
+# Heart rate reserve zones
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/heart-rate-zones.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/heart-rate-zones.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/heart-rate-zones.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/heart-rate-zones.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/heart-rate-zones.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/heart-rate-zones.md)
 
@@ -6,28 +6,28 @@
 
 `heart-rate-zones` · [NutriFit](https://nutrifit.health/calculators/heart-rate-zones)
 
-Calculates individual target heart rate zones accounting for both maximum heart rate and resting pulse (Heart Rate Reserve method).
+Target HR = resting HR + fraction × (maximum HR − resting HR). Five bands are selected here: 50–60, 60–70, 70–80, 80–90 and 90–100% of reserve.
 
-### How to use
+### Usage
 
-1. Measure morning resting heart rate: Upon waking and while still in bed, measure your pulse for 60 seconds with a heart rate monitor or fingertip count over 3 consecutive days and take the average.
-2. Calculate zones using the Karvonen formula: The calculator subtracts resting pulse from HRmax to establish your true functional heart rate reserve.
-3. Distribute volume according to the 80/20 rule: Dedicate approximately 80% of total weekly endurance training volume to Zone 2, reserving 20% for high-intensity work in Zones 4 and 5.
+1. Enter the starting values: Target HR = resting HR + fraction × (maximum HR − resting HR). Five bands are selected here: 50–60, 60–70, 70–80, 80–90 and 90–100% of reserve.
+2. Adjust the parameters: HRmax (Tanaka) = 208 − 0.7 × Age; HRR = HRmax − HRrest; Target HR = HRrest + (% intensity × HRR). Haskell formula: HRmax = 220 − Age.
+3. Read the result: This is a selected intensity scheme, not individually measured aerobic or anaerobic thresholds. Age-predicted maximum HR is an estimate, not a physiological ceiling; reserve must be positive.
 
 ### Method and formula
 
-The Karvonen method utilizes Heart Rate Reserve (HRR = HRmax − HRrest). By accounting for resting pulse, target zones dynamically adapt to the athlete's aerobic fitness level and cardiovascular conditioning.
+Target HR = resting HR + fraction × (maximum HR − resting HR). Five bands are selected here: 50–60, 60–70, 70–80, 80–90 and 90–100% of reserve.
 
 HRmax (Tanaka) = 208 − 0.7 × Age; HRR = HRmax − HRrest; Target HR = HRrest + (% intensity × HRR). Haskell formula: HRmax = 220 − Age.
 
 ### Limitations
 
-Standard maximum heart rate formulas have a ±10–12 bpm standard error. For clinical or competitive precision, laboratory CPET gas-exchange testing is recommended.
+This is a selected intensity scheme, not individually measured aerobic or anaerobic thresholds. Age-predicted maximum HR is an estimate, not a physiological ceiling; reserve must be positive.
 
 ### Sources
 
-- [Tanaka H., Monahan K.D., Seals D.R. Age-predicted maximal heart rate revisited. J Am Coll Cardiol, 2001;37(1):153–156](https://pubmed.ncbi.nlm.nih.gov/11153730/)
-- [Karvonen M.J., Kentala E., Mustala O. The effects of training on heart rate; a longitudinal study. Ann Med Exp Biol Fenn, 1957;35(3):307–315](https://pubmed.ncbi.nlm.nih.gov/13470504/)
+- [Tanaka H et al. Age-predicted maximal heart rate revisited. J Am Coll Cardiol, 2001](https://pubmed.ncbi.nlm.nih.gov/11153730/)
+- [KARVONEN MJ et al. The effects of training on heart rate; a longitudinal study. Ann Med Exp Biol Fenn, 1957](https://pubmed.ncbi.nlm.nih.gov/13470504/)
 - [American College of Sports Medicine. ACSM’s Guidelines for Exercise Testing and Prescription. 11th ed. Wolters Kluwer, 2021](https://www.acsm.org/education-resources/books/guidelines-exercise-testing-prescription)
 
 ## Embed this calculator
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/heart-rate-zones?lang=en&theme=auto"
-  title="Heart Rate Training Zones Calculator" loading="lazy" referrerpolicy="no-referrer"
+  title="Heart rate reserve zones" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

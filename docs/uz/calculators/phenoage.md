@@ -6,28 +6,34 @@
 
 `phenoage` · [NutriFit](https://nutrifit.health/uz/calculators/phenoage)
 
-9 ta biokimyoviy va gematologik biomarker asosida biologik fenotipik yoshni va qarish tezligini hisoblaydi.
+Levine 2018 modeli to‘qqiz biomarker va xronologik yoshni birlashtiradi. PhenoAge — NHANES modelidagi populyatsion xavfning yosh ekvivalenti; a’zolar yoshi yoki individual umr davomiyligi emas. Yosh farqi arifmetik ayirma bo‘lib, qarish tezligi yoki PhenoAgeAccel statistik qoldig‘i emas.
 
 ### Foydalanish tartibi
 
-1. Qon tahlillarini topshiring: Umumiy qon tahlili (leykotsitlar, limfotsitlar %, MCV, RDW) va biokimyo (albumin, kreatinin, glyukoza, CRO, ALP) talab etiladi.
-2. Qiymatlarni kalkulyatorga kiriting: Ko‘rsatkichlar o‘lchov birliklariga eʼtibor bering va ularni mos maydonlarga kiriting.
-3. Natijani tahlil qiling: Agar biologik yosh pasport yoshidan katta bo‘lsa, yallig‘lanish va metabolik biomarkerlarni tuzatishga eʼtibor qarating.
+1. Boshlang‘ich ma’lumotlarni kiriting: Levine 2018 modeli to‘qqiz biomarker va xronologik yoshni birlashtiradi. PhenoAge — NHANES modelidagi populyatsion xavfning yosh ekvivalenti; a’zolar yoshi yoki individual umr davomiyligi emas. Yosh farqi arifmetik ayirma bo‘lib, qarish tezligi yoki PhenoAgeAccel statistik qoldig‘i emas.
+2. Parametrlarni aniqlashtiring: xb = −19.907 − 0.0336·A + 0.0095·C + 0.1953·G + 0.0954·ln(CRP) − 0.012·L + 0.0268·M + 0.3306·R + 0.00188·P + 0.0554·W + 0.0804·a
+H = exp(xb) × (exp(120 × 0.0076927) − 1) / 0.0076927
+PhenoAge = 141.50225 + ln(0.00553 × H) / 0.09165
+A — albumin, g/L; C — kreatinin, µmol/L; G — glyukoza, mmol/L; CRP — mg/dL (kiritilgan mg/L ÷ 10); L — limfotsitlar, %; M — MCV, fL; R — RDW, %; P — ishqoriy fosfataza, U/L; W — leykotsitlar, 10⁹/L; a — yosh, yil.
+3. Natijani o‘qing: 20–84 yosh uchun tadqiqot modeli. O‘tkir kasallik biomarkerlar va natijani o‘zgartiradi. Bu tashxis, umr davomiyligi yoki yosharish isboti emas. CRP o‘lchangan va musbat bo‘lishi kerak; aniqlash chegarasidan past natijani nol bilan almashtirib bo‘lmaydi.
 
 ### Usul va formula
 
-Morgan Levine (2018, Aging) ning NHANES IV maʼlumotlari asosidagi Gompertz modeliga tayangan. 9 ta biomarker (albumin, kreatinin, glyukoza, CRO, limfotsitlar ulushi, MCV, RDW, ishqoriy fosfataza, leykotsitlar) hamda xronologik yoshni birlashtiradi.
+Levine 2018 modeli to‘qqiz biomarker va xronologik yoshni birlashtiradi. PhenoAge — NHANES modelidagi populyatsion xavfning yosh ekvivalenti; a’zolar yoshi yoki individual umr davomiyligi emas. Yosh farqi arifmetik ayirma bo‘lib, qarish tezligi yoki PhenoAgeAccel statistik qoldig‘i emas.
 
-Chiziqli yig‘indi xb = koeffitsiyentlar × biomarkerlar; O‘lim xavfi M = 1 − exp(−exp(xb) × (exp(120/b) − 1) / (10 × 0.00769)); PhenoAge = 141.5 + ln(−0.00553 × ln(1 − M)) / 0.090165.
+xb = −19.907 − 0.0336·A + 0.0095·C + 0.1953·G + 0.0954·ln(CRP) − 0.012·L + 0.0268·M + 0.3306·R + 0.00188·P + 0.0554·W + 0.0804·a
+H = exp(xb) × (exp(120 × 0.0076927) − 1) / 0.0076927
+PhenoAge = 141.50225 + ln(0.00553 × H) / 0.09165
+A — albumin, g/L; C — kreatinin, µmol/L; G — glyukoza, mmol/L; CRP — mg/dL (kiritilgan mg/L ÷ 10); L — limfotsitlar, %; M — MCV, fL; R — RDW, %; P — ishqoriy fosfataza, U/L; W — leykotsitlar, 10⁹/L; a — yosh, yil.
 
 ### Cheklovlar
 
-Model o‘tkir infektsiyalar, jarohatlar yoki o‘tkir yallig‘lanish davrida qo‘llanilmaydi, chunki vaqtinchalik CRO yoki leykotsitoz ko‘rsatkichlarni buzadi.
+20–84 yosh uchun tadqiqot modeli. O‘tkir kasallik biomarkerlar va natijani o‘zgartiradi. Bu tashxis, umr davomiyligi yoki yosharish isboti emas. CRP o‘lchangan va musbat bo‘lishi kerak; aniqlash chegarasidan past natijani nol bilan almashtirib bo‘lmaydi.
 
 ### Manbalar
 
-- [Levine M.E. et al. An epigenetic biomarker of aging for lifespan and healthspan. Aging (Albany NY), 2018;10(4):573–591](https://pubmed.ncbi.nlm.nih.gov/29676998/)
-- [Liu Z. et al. A new aging measure captures morbidity and mortality risk across diverse subpopulations from NHANES IV: a cohort study. PLoS Med, 2018;15(12):e1002718](https://pubmed.ncbi.nlm.nih.gov/30596641/)
+- [Levine ME et al. An epigenetic biomarker of aging for lifespan and healthspan. Aging (Albany NY), 2018](https://pubmed.ncbi.nlm.nih.gov/29676998/)
+- [Liu Z et al. A new aging measure captures morbidity and mortality risk across diverse subpopulations from NHANES IV: A cohort study. PLoS Med, 2018](https://pubmed.ncbi.nlm.nih.gov/30596641/)
 
 ## Ushbu kalkulyatorni joylashtirish
 

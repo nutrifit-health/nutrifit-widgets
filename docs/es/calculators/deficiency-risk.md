@@ -1,4 +1,4 @@
-# Cribado del riesgo de déficit de nutrientes
+# Lista de alimentación y estilo de vida
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/deficiency-risk.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/deficiency-risk.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/deficiency-risk.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/deficiency-risk.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/deficiency-risk.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/deficiency-risk.md)
 
@@ -6,23 +6,23 @@
 
 `deficiency-risk` · [NutriFit](https://nutrifit.health/es/calculators/deficiency-risk)
 
-Marca los factores de estilo de vida y alimentación que te afectan y descubre qué déficits son probables y con qué analíticas se comprueban.
+Lista informativa propia: marque sus circunstancias actuales de alimentación y estilo de vida para ver temas relacionados con nutrientes.
 
-### Cómo usar
+### Uso
 
-1. Indica tus hábitos dietéticos: Señala exclusiones como ausencia de carne, pescado o lácteos en tu alimentación.
-2. Considera tu estilo de vida: Ten en cuenta la falta de sol, entrenamientos intensos y fármacos como antiácidos o metformina.
-3. Revisa los análisis recomendados: Recibe tu puntuación de riesgo y los marcadores sanguíneos de referencia para cada nutriente.
+1. Introduzca los datos iniciales: Las relaciones entre factores y nutrientes son temas informativos para comentar. NIH ODS y EFSA ofrecen información sobre nutrición y grupos de riesgo, pero no definen puntuaciones ni probabilidades de déficit para esta lista.
+2. Ajuste los parámetros: Lista informativa propia: marque sus circunstancias actuales de alimentación y estilo de vida para ver temas relacionados con nutrientes.
+3. Lea el resultado: La lista no considera la ingesta real ni la absorción, alimentos enriquecidos, suplementos o enfermedades. No confirma ni descarta un déficit; las pruebas y la corrección requieren una evaluación individual.
 
 ### Método y fórmula
 
-No es un diagnóstico, sino una lista de comprobación de factores de riesgo. Cada factor se asocia a los nutrientes para los que está reconocido como factor de riesgo en las fichas del NIH Office of Dietary Supplements y en los documentos de la EFSA sobre valores de referencia. El peso refleja la fuerza del vínculo: 3 puntos cuando el déficit es esperable sin compensación, 2 para un factor significativo y 1 para una contribución adicional. Los puntos se suman por nutriente: desde 2 puntos el riesgo es moderado y desde 4, alto.
+Las relaciones entre factores y nutrientes son temas informativos para comentar. NIH ODS y EFSA ofrecen información sobre nutrición y grupos de riesgo, pero no definen puntuaciones ni probabilidades de déficit para esta lista.
 
-Puntuación del nutriente = suma de los pesos de los factores marcados; 0–1 punto es riesgo bajo, 2–3 moderado y 4 o más alto
+No se calculan puntuaciones ni categorías de riesgo. Solo se muestran los factores marcados y los nutrientes relacionados.
 
 ### Limitaciones
 
-El cribado se basa solo en los factores marcados y no considera la ingesta real, el uso de suplementos, la genética ni las enfermedades asociadas. No confirma ni descarta un déficit: el estado de un nutriente se determina en el laboratorio y lo interpreta un médico o un profesional de la nutrición.
+La lista no considera la ingesta real ni la absorción, alimentos enriquecidos, suplementos o enfermedades. No confirma ni descarta un déficit; las pruebas y la corrección requieren una evaluación individual.
 
 ### Fuentes
 
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/deficiency-risk?lang=es&theme=auto"
-  title="Cribado del riesgo de déficit de nutrientes" loading="lazy" referrerpolicy="no-referrer"
+  title="Lista de alimentación y estilo de vida" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

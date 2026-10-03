@@ -51,7 +51,7 @@ export type WidgetTranslations = Record<
   'title' | 'intro' | 'search' | 'searchHint' | 'searching' | 'empty' | 'add' | 'food' | 'recipe' |
   'grams' | 'remove' | 'output' | 'outputHint' | 'calculate' | 'calculating' | 'limit' | 'total' |
   'per100g' | 'results' | 'partial' | 'unknown' | 'checked' | 'source' | 'open' | 'error' |
-  'limited' | 'missing' | 'calories' | 'protein' | 'fat' | 'carbs' | 'continueHint' | 'download' | 'integrate' | 'transferTooLarge' | 'ingredients' | 'emptyIngredients' | 'pdf' | 'pdfBusy' | 'whiteSource',
+  'limited' | 'missing' | 'calories' | 'protein' | 'fat' | 'carbs' | 'continueHint' | 'download' | 'integrate' | 'transferTooLarge' | 'ingredients' | 'emptyIngredients' | 'pdf' | 'pdfBusy' | 'whiteSource' | 'unitEnergy' | 'unitMass',
   string
 >;
 

@@ -6,27 +6,28 @@
 
 `ies-2` · [NutriFit](https://nutrifit.health/uz/calculators/ies-2)
 
-Treysi Tilka tomonidan ishlab chiqilgan, taom va tana bilan uyg‘un hamda intuitiv munosabatni o‘lchovchi 23 savolli ilmiy shkala.
+IES-2: ovqatga va tana belgilariga munosabat haqida 23 fikr, to‘rtta kichik shkala.
 
 ### Foydalanish tartibi
 
-1. Taomga bo‘lgan odatiy munosabatingizni baholang: Oxirgi oylardagi odatlaringiz va haqiqiy his-tuyg‘ularingizga tayanib javob bering.
-2. 1 dan 5 gacha bo‘lgan rozilik darajasini belgilang: 1 — mutlaqo qo‘shilmayman, 5 — to‘liq qo‘shilaman.
-3. 4 ta komponent bo‘yicha profilingizni o‘rganing: Bali 3,0 dan past bo‘lgan subshkalalarga eʼtibor qarating — bular yaxshilanishi kerak bo‘lgan sohalardir.
+1. Yo‘riqnomani o‘qing: Har bir fikr qarashlaringiz va xulqingizni qanchalik ifodalashini ko‘rsating. Aniq eslash davri belgilanmagan.
+2. Javoblarni tanlang: Har bir bandga mos variantni tanlab javob bering.
+3. Natijani ko‘ring: Natija javoblarni aks ettiradi; uni usulning cheklovlarini hisobga olib talqin qiling.
 
 ### Usul va formula
 
-5 ballik Likert shkalasi bo‘yicha baholanadigan 23 ta savol. 4 ta subshkalani o‘z ichiga oladi: so‘zsiz ruxsat (UPE), jismoniy sabablarga ko‘ra yeyish (EPR), ochlik/to‘qlikka tayanish (RHSC) va tana mutanosibligi (B-FCC).
+Rozilik darajasi 1 dan 5 gacha. Muallifning guruhlangan blankasida 1, 2, 3, 7, 8, 9 va 10-bandlar 6 dan javobni ayirish orqali baholanadi.
 
-IES-2 umumiy bali = Barcha 23 ta savol bo‘yicha o‘rtacha arifmetik qiymat (1,0 dan 5,0 gacha). 3,5 dan yuqori ball intuitiv ovqatlanish ko‘nikmasini bildiradi.
+Umumiy ball — teskari baholashdan keyingi 23 javobning o‘rtachasi. Kichik shkalalar: 1–6, 7–14, 15–20 va 21–23-bandlar. Barcha o‘rtachalar 1–5 oralig‘ida; diagnostik chegaralar yo‘q.
 
 ### Cheklovlar
 
-Shkala taomlanishning psixologik odatlarini baholaydi. Klinik OXB mavjud bo‘lganda jarayon maxsus shifokor nazorati ostida olib borilishi lozim.
+Ma’lumot uchun berilgan natija tashxis qo‘ymaydi va davolash buyurmaydi. Tarjima axborot uchun moslashtirilgan; uning alohida psixometrik validatsiyasi tasdiqlanmagan.
 
 ### Manbalar
 
-- [Tylka T.L., Kroon Van Diest A.M. The Intuitive Eating Scale-2: item refinement and psychometric evaluation. J Couns Psychol, 2013;60(1):137–153](https://pubmed.ncbi.nlm.nih.gov/23356469/)
+- [Tylka. Intuitive Eating Scale-2: grouped original items and scoring](https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/1/10560/files/2015/02/IES-2-Items-sz2at8.doc)
+- [Tylka TL et al. The Intuitive Eating Scale-2: item refinement and psychometric evaluation with college women and men. J Couns Psychol, 2013](https://pubmed.ncbi.nlm.nih.gov/23356469/)
 - [Tribole E., Resch E. Intuitive Eating: A Revolutionary Anti-Diet Approach. St. Martin’s Essentials, 2020](https://www.intuitiveeating.org/)
 
 ## Ushbu kalkulyatorni joylashtirish

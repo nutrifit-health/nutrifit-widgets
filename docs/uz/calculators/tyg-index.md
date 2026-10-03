@@ -6,7 +6,7 @@
 
 `tyg-index` · [NutriFit](https://nutrifit.health/uz/calculators/tyg-index)
 
-TyG indeksi va TyG-BMI, TyG-WC hosilalari: och qoringa triglitseridlar va glyukoza bo‘yicha insulinga chidamlilik va kardiometabolik xavfni baholash — insulin tahlilisiz.
+Och qoringa o‘lchangan triglitserid va glyukozaga asoslangan tadqiqot indeksi, TyG-BMI va TyG-WC hosilalari bilan.
 
 ### Foydalanish tartibi
 
@@ -16,22 +16,20 @@ TyG indeksi va TyG-BMI, TyG-WC hosilalari: och qoringa triglitseridlar va glyuko
 
 ### Usul va formula
 
-TyG indeksi (Simental-Mendía, 2008) — mg/dl dagi och qoringa triglitseridlar va glyukoza ko‘paytmasining yarmining natural logarifmi. U lipotoksiklik va glyukoza o‘zlashtirilishining buzilishini — insulinga chidamlilikning ikki asosiy mexanizmini — aks ettiradi va euglikemik klamp bilan HOMA-IR dan kam bo‘lmagan darajada korrelyatsiyalanadi, bunda qimmat va yomon standartlashtirilgan insulin tahlilini talab qilmaydi. TyG-BMI va TyG-WC hosilalari tana vazni va bel aylanasini qo‘shib, metabolik sindrom va NAJKni aniqlash aniqligini oshiradi.
+Bu yerda Lee et al. (2018) ishlatgan ln(TG × glyukoza / 2) varianti qo‘llanadi; har ikkala konsentratsiya mg/dl da. Boshqa nashr etilgan ln(TG × glyukoza)/2 variantining sonli shkalasi boshqa; uning chegaralarini bu yerga ko‘chirish mumkin emas.
 
-TyG = ln[ Triglitseridlar (mg/dl) × Glyukoza (mg/dl) / 2 ]
-TyG-BMI = TyG × TVI (kg/m²)
-TyG-WC = TyG × Bel aylanasi (sm)
-Qayta hisoblash: TG mg/dl = mmol/l × 88,57; glyukoza mg/dl = mmol/l × 18,016
+TyG = ln[TG (mg/dl) × glyukoza (mg/dl) / 2]. TyG-BMI = TyG × TMI; TyG-WC = TyG × bel (sm).
 
 ### Cheklovlar
 
-TyG ning yagona chegarasi yo‘q: turli populyatsiyalarda yuqori xavf chegarasi 8,5 dan 9,0 gacha o‘zgaradi, osiyo kogortalarida esa pastroq. Indeks oilaviy gipertriglitseridemiya, fibratlar, statinlar va bir kun oldingi alkogol qabulida, shuningdek o‘tkir kasallikda buziladi. Och qoringa (8–12 soat) qiymatlar talab qilinadi. Indeks — tashxis emas, skrining vositasi.
+Bu hisoblash uchun umumiy diagnostik chegaralar belgilanmagan. Indeks insulin rezistentligi, diabet yoki yurak-qon tomir kasalligini tasdiqlamaydi.
 
 ### Manbalar
 
-- [Simental-Mendía L.E., Rodríguez-Morán M., Guerrero-Romero F. The product of fasting glucose and triglycerides as surrogate for identifying insulin resistance in apparently healthy subjects. Metab Syndr Relat Disord, 2008;6(4):299–304](https://pubmed.ncbi.nlm.nih.gov/19067533/)
-- [Guerrero-Romero F. et al. The product of triglycerides and glucose, a simple measure of insulin sensitivity. Comparison with the euglycemic-hyperinsulinemic clamp. J Clin Endocrinol Metab, 2010;95(7):3347–3351](https://pubmed.ncbi.nlm.nih.gov/20484475/)
-- [Sánchez-García A. et al. Diagnostic accuracy of the triglyceride and glucose index for insulin resistance: a systematic review. Int J Endocrinol, 2020;2020:4678526](https://pubmed.ncbi.nlm.nih.gov/32256572/)
+- [Lee J.W., Lim N.K., Park H.Y. TyG and type 2 diabetes risk in middle-aged Koreans. BMC Endocr Disord, 2018;18:33](https://link.springer.com/article/10.1186/s12902-018-0259-x)
+- [Simental-Mendía LE et al. The product of fasting glucose and triglycerides as surrogate for identifying insulin resistance in apparently healthy subjects. Metab Syndr Relat Disord, 2008](https://pubmed.ncbi.nlm.nih.gov/19067533/)
+- [Guerrero-Romero F et al. The product of triglycerides and glucose, a simple measure of insulin sensitivity. Comparison with the euglycemic-hyperinsulinemic clamp. J Clin Endocrinol Metab, 2010](https://pubmed.ncbi.nlm.nih.gov/20484475/)
+- [Sánchez-García A et al. Diagnostic Accuracy of the Triglyceride and Glucose Index for Insulin Resistance: A Systematic Review. Int J Endocrinol, 2020](https://pubmed.ncbi.nlm.nih.gov/32256572/)
 
 ## Ushbu kalkulyatorni joylashtirish
 

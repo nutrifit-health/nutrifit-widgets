@@ -1,4 +1,4 @@
-# Калькулятор МПК (VO2max)
+# Полевые оценки VO2max
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/vo2max.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/vo2max.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/vo2max.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/vo2max.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/vo2max.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/vo2max.md)
 
@@ -6,29 +6,29 @@
 
 `vo2max` · [NutriFit](https://nutrifit.health/ru/calculators/vo2max)
 
-Оценивает аэробную мощность и кардиореспираторную выносливость в мл/кг/мин, прогнозирует соревновательный темп на 5 км и 10 км.
+Купер: дистанция за 12 минут. Rockport: быстрая ходьба 1 мили (1609,344 м), время и конечная ЧСС; исходная проверка у здоровых взрослых 30–69 лет. Uth: 15,3 × ЧССмакс / ЧССпокоя; проверен у хорошо тренированных мужчин 21–51 года.
 
 ### Порядок использования
 
-1. Выберите подходящий протокол: Бегунам рекомендуется 12-минутный тест Купера на стадионе. Людям без беговой подготовки или с избыточным весом безопаснее пройти 1 милю (1609 м) быстрой ходьбой по тесту Рокпорт.
-2. Зафиксируйте показатели: В тесте Купера измерьте точное расстояние по GPS или дорожкам стадиона (400 м). В тесте Рокпорт засеките время с точностью до секунды и пульс за первые 10 секунд после финиша.
-3. Оцените прогноз и темп: Калькулятор сопоставит ваш результат со сверстниками того же пола и покажет ориентировочный соревновательный темп.
+1. Введите исходные данные: Купер: дистанция за 12 минут. Rockport: быстрая ходьба 1 мили (1609,344 м), время и конечная ЧСС; исходная проверка у здоровых взрослых 30–69 лет. Uth: 15,3 × ЧССмакс / ЧССпокоя; проверен у хорошо тренированных мужчин 21–51 года.
+2. Уточните параметры: Купер: дистанция за 12 минут. Rockport: быстрая ходьба 1 мили (1609,344 м), время и конечная ЧСС; исходная проверка у здоровых взрослых 30–69 лет. Uth: 15,3 × ЧССмакс / ЧССпокоя; проверен у хорошо тренированных мужчин 21–51 года.
+3. Прочитайте результат: Это непрямые оценки, а не измерение газообмена. Метод Uth не экстраполируется здесь на женщин, Rockport — за указанную возрастную область. Возрастной прогноз максимальной ЧСС добавляет неопределённость. Отрицательные оценки, категории подготовки и прогноз темпа 5/10 км не выдаются.
 
 ### Методика и формула
 
-В калькуляторе реализованы три научно подтверждённых полевых протокола: 12-минутный беговой тест Кеннета Купера (1968), одномильный тест ходьбы Рокпорт (Kline et al., 1987) и формула соотношения пульса (Uth et al., 2004). Категория физической подготовки определяется по таблицам Cooper Institute.
+Купер: дистанция за 12 минут. Rockport: быстрая ходьба 1 мили (1609,344 м), время и конечная ЧСС; исходная проверка у здоровых взрослых 30–69 лет. Uth: 15,3 × ЧССмакс / ЧССпокоя; проверен у хорошо тренированных мужчин 21–51 года.
 
-Купер: VO2max = (Дистанция, м − 504,9) / 44,73; Рокпорт: 132,853 − 0,0769×Вес_фунт − 0,3877×Возраст + 6,315×Пол − 3,2649×Время_мин − 0,1565×ЧСС; Uth: 15,3 × (ЧСС max / ЧСС покоя).
+Купер: дистанция за 12 минут. Rockport: быстрая ходьба 1 мили (1609,344 м), время и конечная ЧСС; исходная проверка у здоровых взрослых 30–69 лет. Uth: 15,3 × ЧССмакс / ЧССпокоя; проверен у хорошо тренированных мужчин 21–51 года.
 
 ### Ограничения
 
-Полевые тесты являются непрямой оценкой с корреляцией r ≈ 0,85–0,92 с лабораторным газоанализом. На результат влияют мотивация, рельеф трассы, погода и точность замера ЧСС.
+Это непрямые оценки, а не измерение газообмена. Метод Uth не экстраполируется здесь на женщин, Rockport — за указанную возрастную область. Возрастной прогноз максимальной ЧСС добавляет неопределённость. Отрицательные оценки, категории подготовки и прогноз темпа 5/10 км не выдаются.
 
 ### Источники
 
-- [Cooper K.H. A means of assessing maximal oxygen intake. Correlation between field and treadmill testing. JAMA, 1968;203(3):201–204](https://pubmed.ncbi.nlm.nih.gov/5694044/)
-- [Kline G.M. et al. Estimation of VO2max from a one-mile track walk, gender, age, and body weight. Med Sci Sports Exerc, 1987;19(3):253–259](https://pubmed.ncbi.nlm.nih.gov/3600239/)
-- [Uth N. et al. Estimation of VO2max from the ratio between HRmax and HRrest--the Heart Rate Ratio Method. Eur J Appl Physiol, 2004;91(1):111–115](https://pubmed.ncbi.nlm.nih.gov/14624296/)
+- [Cooper KH. et al. A means of assessing maximal oxygen intake. Correlation between field and treadmill testing. JAMA, 1968](https://pubmed.ncbi.nlm.nih.gov/5694044/)
+- [Kline GM et al. Estimation of VO2max from a one-mile track walk, gender, age, and body weight. Med Sci Sports Exerc, 1987](https://pubmed.ncbi.nlm.nih.gov/3600239/)
+- [Uth N et al. Estimation of VO2max from the ratio between HRmax and HRrest--the Heart Rate Ratio Method. Eur J Appl Physiol, 2004](https://pubmed.ncbi.nlm.nih.gov/14624296/)
 
 ## Как встроить этот калькулятор
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/vo2max?lang=ru&theme=auto"
-  title="Калькулятор МПК (VO2max)" loading="lazy" referrerpolicy="no-referrer"
+  title="Полевые оценки VO2max" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

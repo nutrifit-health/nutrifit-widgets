@@ -6,28 +6,29 @@
 
 `isi` · [NutriFit](https://nutrifit.health/uz/calculators/isi)
 
-Uyqusizlik alomatlarining xususiyati, og‘irligi va kunduzgi faoliyatga taʼsirini baholash uchun mo‘ljallangan 7 savolli qisqa klinik vosita.
+Oxirgi 2 haftadagi uyquni baholash: 0–4 oralig‘idagi turli shkalali 7 band; yig‘indi 0–28. Qoniqish, muammoning boshqalarga bilinishi, tashvish va kundalik hayotga ta’sir uchun javoblar alohida.
 
 ### Foydalanish tartibi
 
-1. Oxirgi 2 haftani yodga oling: So‘nggi 14 kun davomida qanday uxlaganingizni va kunduzi o‘zingizni qanchalik tetik his qilganingizni baholang.
-2. Barcha 7 ta savolga javob bering: Har bir qiyinchilik darajasini 0 ('Umuman yo‘q') dan 4 ('Juda kuchli') gacha belgilang.
-3. Natija va tavsiyalarni ko‘rib chiqing: O‘z og‘irlik toifangizni aniqlang va uyquni yaxshilash bo‘yicha tavsiyalardan foydalaning.
+1. Boshlang‘ich ma’lumotlarni kiriting: Oxirgi 2 haftadagi uyquni baholash: 0–4 oralig‘idagi turli shkalali 7 band; yig‘indi 0–28. Qoniqish, muammoning boshqalarga bilinishi, tashvish va kundalik hayotga ta’sir uchun javoblar alohida.
+2. Parametrlarni aniqlashtiring: Oxirgi 2 haftadagi uyquni baholash: 0–4 oralig‘idagi turli shkalali 7 band; yig‘indi 0–28. Qoniqish, muammoning boshqalarga bilinishi, tashvish va kundalik hayotga ta’sir uchun javoblar alohida.
+3. Natijani o‘qing: O‘zini baholash uchun axborot tarjimasi. Aynan shu moslamaning validatsiyasi tasdiqlanmagan. Ball tashxis qo‘ymaydi, past natija kasallikni istisno qilmaydi.
 
 ### Usul va formula
 
-Har biri 0 dan 4 ballgacha baholanadigan 7 ta savol. Umumiy ball 0 dan 28 gacha bo‘lib, uxlab qolish, uyquni saqlash va erta uyg‘onishni qamrab oladi.
+Oxirgi 2 haftadagi uyquni baholash: 0–4 oralig‘idagi turli shkalali 7 band; yig‘indi 0–28. Qoniqish, muammoning boshqalarga bilinishi, tashvish va kundalik hayotga ta’sir uchun javoblar alohida.
 
-ISI umumiy bali = Barcha 7 ta savol ballari yig‘indisi (0–28). 0–7: klinik uyqusizlik yo‘q; 8–14: chegara osti (yengil); 15–21: o‘rtacha klinik; 22–28: og‘ir klinik uyqusizlik.
+Oxirgi 2 haftadagi uyquni baholash: 0–4 oralig‘idagi turli shkalali 7 band; yig‘indi 0–28. Qoniqish, muammoning boshqalarga bilinishi, tashvish va kundalik hayotga ta’sir uchun javoblar alohida.
 
 ### Cheklovlar
 
-Indeks skrining maqsadida qo‘llaniladi. Uyqudagi apnoe (nafas to‘xtashi) yoki bezovta oyoqlar sindromida polisomnografiya talab etiladi.
+O‘zini baholash uchun axborot tarjimasi. Aynan shu moslamaning validatsiyasi tasdiqlanmagan. Ball tashxis qo‘ymaydi, past natija kasallikni istisno qilmaydi.
 
 ### Manbalar
 
-- [Morin C.M. et al. The Insomnia Severity Index: psychometric indicators to detect insomnia cases. Sleep, 2011;34(5):601–608](https://pubmed.ncbi.nlm.nih.gov/21532953/)
-- [Bastien C.H. et al. Validation of the Insomnia Severity Index as an outcome measure. Sleep Med, 2001;2(4):297–307](https://pubmed.ncbi.nlm.nih.gov/11438246/)
+- [Morin CM et al. The Insomnia Severity Index: psychometric indicators to detect insomnia cases and evaluate treatment response. Sleep, 2011](https://pubmed.ncbi.nlm.nih.gov/21532953/)
+- [Bastien CH et al. Validation of the Insomnia Severity Index as an outcome measure for insomnia research. Sleep Med, 2001](https://pubmed.ncbi.nlm.nih.gov/11438246/)
+- [PhenX Toolkit. Insomnia Severity Index: patient questionnaire, last two weeks, protocol 640801](https://www.phenxtoolkit.org/protocols/view/640801?origin=subcollection)
 
 ## Ushbu kalkulyatorni joylashtirish
 

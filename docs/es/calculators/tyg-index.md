@@ -6,9 +6,9 @@
 
 `tyg-index` · [NutriFit](https://nutrifit.health/es/calculators/tyg-index)
 
-Índice TyG y sus derivados TyG-IMC y TyG-CC: resistencia a la insulina y riesgo cardiometabólico a partir de triglicéridos y glucosa en ayunas, sin análisis de insulina.
+Índice de investigación basado en triglicéridos y glucosa en ayunas, con las variantes TyG-BMI y TyG-WC.
 
-### Cómo usar
+### Uso
 
 1. Tome triglicéridos y glucosa en ayunas: Ambos forman parte de la bioquímica estándar. La extracción debe ser en ayunas: los triglicéridos posprandiales suben 1,5–2 veces e inflan el índice.
 2. Indique las unidades del informe: La fórmula está definida para mg/dL. Si el laboratorio informa mmol/L, deje el selector en mmol/L: la calculadora convierte a mg/dL automáticamente.
@@ -16,22 +16,20 @@
 
 ### Método y fórmula
 
-El índice TyG (Simental-Mendía, 2008) es el logaritmo natural de la mitad del producto de triglicéridos y glucosa en ayunas en mg/dL. Refleja la lipotoxicidad y la utilización deficiente de glucosa, dos mecanismos clave de la resistencia a la insulina, y se correlaciona con el clamp euglucémico tan bien como el HOMA-IR, sin necesitar el análisis de insulina, caro y mal estandarizado. Los derivados TyG-IMC y TyG-CC añaden el peso y el perímetro de cintura y mejoran la detección de síndrome metabólico y NAFLD.
+Se utiliza ln(TG × glucosa / 2), con ambas concentraciones en mg/dl, como en Lee et al. (2018). La otra variante publicada, ln(TG × glucosa)/2, tiene una escala numérica diferente; sus umbrales no se pueden trasladar aquí.
 
-TyG = ln[ Triglicéridos (mg/dL) × Glucosa (mg/dL) / 2 ]
-TyG-IMC = TyG × IMC (kg/m²)
-TyG-CC = TyG × Perímetro de cintura (cm)
-Conversión: TG mg/dL = mmol/L × 88,57; glucosa mg/dL = mmol/L × 18,016
+TyG = ln[TG (mg/dl) × glucosa (mg/dl) / 2]. TyG-BMI = TyG × IMC; TyG-WC = TyG × cintura (cm).
 
 ### Limitaciones
 
-No existe un punto de corte único del TyG: según la población, el umbral de alto riesgo va de 8,5 a 9,0, y en cohortes asiáticas es menor. El índice se distorsiona con hipertrigliceridemia familiar, fibratos, estatinas y alcohol la víspera, y en enfermedad aguda. Se requieren valores en ayunas (8–12 h). Es una herramienta de cribado, no un diagnóstico.
+No se han establecido umbrales diagnósticos universales para este cálculo. El índice no confirma resistencia a la insulina, diabetes ni enfermedad cardiovascular.
 
 ### Fuentes
 
-- [Simental-Mendía L.E., Rodríguez-Morán M., Guerrero-Romero F. The product of fasting glucose and triglycerides as surrogate for identifying insulin resistance in apparently healthy subjects. Metab Syndr Relat Disord, 2008;6(4):299–304](https://pubmed.ncbi.nlm.nih.gov/19067533/)
-- [Guerrero-Romero F. et al. The product of triglycerides and glucose, a simple measure of insulin sensitivity. Comparison with the euglycemic-hyperinsulinemic clamp. J Clin Endocrinol Metab, 2010;95(7):3347–3351](https://pubmed.ncbi.nlm.nih.gov/20484475/)
-- [Sánchez-García A. et al. Diagnostic accuracy of the triglyceride and glucose index for insulin resistance: a systematic review. Int J Endocrinol, 2020;2020:4678526](https://pubmed.ncbi.nlm.nih.gov/32256572/)
+- [Lee J.W., Lim N.K., Park H.Y. TyG and type 2 diabetes risk in middle-aged Koreans. BMC Endocr Disord, 2018;18:33](https://link.springer.com/article/10.1186/s12902-018-0259-x)
+- [Simental-Mendía LE et al. The product of fasting glucose and triglycerides as surrogate for identifying insulin resistance in apparently healthy subjects. Metab Syndr Relat Disord, 2008](https://pubmed.ncbi.nlm.nih.gov/19067533/)
+- [Guerrero-Romero F et al. The product of triglycerides and glucose, a simple measure of insulin sensitivity. Comparison with the euglycemic-hyperinsulinemic clamp. J Clin Endocrinol Metab, 2010](https://pubmed.ncbi.nlm.nih.gov/20484475/)
+- [Sánchez-García A et al. Diagnostic Accuracy of the Triglyceride and Glucose Index for Insulin Resistance: A Systematic Review. Int J Endocrinol, 2020](https://pubmed.ncbi.nlm.nih.gov/32256572/)
 
 ## Cómo integrar esta calculadora
 

@@ -6,30 +6,31 @@
 
 `corrected-calcium` · [NutriFit](https://nutrifit.health/kk/calculators/corrected-calcium)
 
-Payne (1973) формуласы бойынша альбуминге түзетілген жалпы кальцийді есептеу және әдістің заманауи шектеулері.
+Түзетілген кальций = жалпы кальций + 0,02 × (40 − альбумин), кальций ммоль/л, альбумин г/л. Бұл Payne жеңілдетілген формуласы.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Жалпы кальцийді енгізіңіз: Қан биохимиясынан ммоль/л немесе мг/дл мәнін енгізіңіз.
-2. Альбуминді енгізіңіз: Сол сынамадан алынған альбумин деңгейі.
-3. Иондалған кальций қажеттілігін бағалаңыз: Егер науқаста бүйрек ауруы болса, иондалған кальций тапсырылуы тиіс.
+1. Бастапқы деректерді енгізіңіз: Түзетілген кальций = жалпы кальций + 0,02 × (40 − альбумин), кальций ммоль/л, альбумин г/л. Бұл Payne жеңілдетілген формуласы.
+2. Параметрлерді нақтылаңыз: Түзетілген кальций = жалпы кальций + 0,02 × (40 − альбумин), кальций ммоль/л, альбумин г/л. Бұл Payne жеңілдетілген формуласы.
+Ca: mg/dL × 0.2495 = mmol/L; mmol/L ÷ 0.2495 = mg/dL. Albumin: g/dL × 10 = g/L.
+3. Нәтижені оқыңыз: Түзету иондалған кальцийді өлшемейді және нәтижені, әсіресе альбумин төмен кезде, қате жіктеуі мүмкін. Кальцийдің әмбебап санаты берілмейді.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-Сарысу кальцийінің 40–45 %-ы альбуминмен байланысқан. Гипоальбуминемия кезінде белсенді иондалған кальций қалыпты болса да, жалпы кальций төмендейді. Payne (1973) формуласы 40 г/л-ден төмен әрбір 1 г/л үшін 0,02 ммоль/л қосады.
+Түзетілген кальций = жалпы кальций + 0,02 × (40 − альбумин), кальций ммоль/л, альбумин г/л. Бұл Payne жеңілдетілген формуласы.
 
-Түзетілген Ca (ммоль/л) = Жалпы Ca + 0,02 × (40 − Альбумин, г/л)
-АҚШ бірліктерінде: Түзетілген Ca (мг/дл) = Жалпы Ca + 0,8 × (4,0 − Альбумин, г/дл).
+Түзетілген кальций = жалпы кальций + 0,02 × (40 − альбумин), кальций ммоль/л, альбумин г/л. Бұл Payne жеңілдетілген формуласы.
+Ca: mg/dL × 0.2495 = mmol/L; mmol/L ÷ 0.2495 = mg/dL. Albumin: g/dL × 10 = g/L.
 
 ### Шектеулер
 
-Payne түзетуі созылмалы бүйрек ауруы (СБА) мен реанимациядағы науқастарда дәл болмауы мүмкін. Алтын стандарт — иондалған кальцийді (Ca²⁺) тікелей өлшеу.
+Түзету иондалған кальцийді өлшемейді және нәтижені, әсіресе альбумин төмен кезде, қате жіктеуі мүмкін. Кальцийдің әмбебап санаты берілмейді.
 
 ### Дереккөздер
 
-- [Payne R.B., Little A.J., Williams R.B., Milner J.R. Interpretation of serum calcium in patients with abnormal serum proteins. BMJ, 1973;4(5893):643–646](https://pubmed.ncbi.nlm.nih.gov/4758544/)
-- [Ladenson J.H., Lewis J.W., Boyd J.C. Failure of total calcium corrected for protein, albumin, and pH to correctly assess free calcium status. J Clin Endocrinol Metab, 1978;46(6):986–993](https://pubmed.ncbi.nlm.nih.gov/45478/)
-- [Desgagnés N. et al. Use of Albumin-Adjusted Calcium Measurements in Clinical Practice. JAMA Netw Open, 2025;8(1):e2455251](https://pubmed.ncbi.nlm.nih.gov/39836424/)
+- [Payne RB et al. Interpretation of serum calcium in patients with abnormal serum proteins. Br Med J, 1973](https://pubmed.ncbi.nlm.nih.gov/4758544/)
+- [Ladenson JH et al. Failure of total calcium corrected for protein, albumin, and pH to correctly assess free calcium status. J Clin Endocrinol Metab, 1978](https://pubmed.ncbi.nlm.nih.gov/45478/)
+- [Desgagnés N et al. Use of Albumin-Adjusted Calcium Measurements in Clinical Practice. JAMA Netw Open, 2025](https://pubmed.ncbi.nlm.nih.gov/39836424/)
 
 ## Осы калькуляторды ендіру
 

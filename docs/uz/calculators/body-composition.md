@@ -1,4 +1,4 @@
-# Tana tarkibi kalkulyatori
+# Aylanalar bo‘yicha tana tarkibi va TMI
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/body-composition.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/body-composition.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/body-composition.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/body-composition.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/body-composition.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/body-composition.md)
 
@@ -6,23 +6,23 @@
 
 `body-composition` · [NutriFit](https://nutrifit.health/uz/calculators/body-composition)
 
-Tana o‘lchamlari bo‘yicha yog‘ ulushini baholaydi, yog‘ va toza massani hamda tana vazni indeksini hisoblaydi.
+Tarixiy Hodgdon–Beckett (1984) modeli bo‘y va aylanalarga asoslanadi. Erkaklar: kindikdagi qorin va bo‘yin; ayollar: tabiiy tor bel, eng keng son va bo‘yin. TMI = vazn / bo‘y².
 
 ### Foydalanish tartibi
 
-1. Santimetrli lentani oling: Cho‘zilmaydigan egiluvchan o‘lchov lentasidan foydalaning. O‘lchovlarni ertalab och qoringa bajaring.
-2. Tana aylanalarini o‘lchang: Erkaklarga bo‘yin va bel kerak. Ayollarga — bo‘yin, bel va dumba. Lenta teriga zich tegib turishi, lekin qisib qo‘ymasligi lozim.
-3. Tana tarkibingizni bilib oling: Kalkulyator yog‘ foizini, mutlaq yog‘ massasini va yog‘siz quruq (mushak) massasini hisoblab beradi.
+1. Boshlang‘ich ma’lumotlarni kiriting: Tarixiy Hodgdon–Beckett (1984) modeli bo‘y va aylanalarga asoslanadi. Erkaklar: kindikdagi qorin va bo‘yin; ayollar: tabiiy tor bel, eng keng son va bo‘yin. TMI = vazn / bo‘y².
+2. Parametrlarni aniqlashtiring: Tarixiy Hodgdon–Beckett (1984) modeli bo‘y va aylanalarga asoslanadi. Erkaklar: kindikdagi qorin va bo‘yin; ayollar: tabiiy tor bel, eng keng son va bo‘yin. TMI = vazn / bo‘y².
+3. Natijani o‘qing: Baho tana tarkibi o‘lchovini almashtirmaydi va Navy ning joriy rasmiy standarti emas. ACE toifalari tavsifiy referens, tashxis emas; TMI — kattalar uchun alohida tasnif. Mos bo‘lmagan aylanalarda hisoblanmaydi.
 
 ### Usul va formula
 
-Yog‘ ulushi U.S. Navy usuli bilan baholanadi (Hodgdon va Beckett, 1984): hisobga bo‘y hamda bo‘yin, bel, ayollarda esa son aylanasi kiradi. Usul jihoz talab qilmagani uchun tanlangan, xatoligi esa maishiy bioimpedans tarozilari bilan solishtirsa bo‘ladi. Qo‘shimcha ravishda JSST tasnifi bo‘yicha TVI hisoblanadi — u tana tarkibi haqida hech narsa aytmaydi, lekin populyatsion normalar bilan solishtirish uchun kerak.
+Tarixiy Hodgdon–Beckett (1984) modeli bo‘y va aylanalarga asoslanadi. Erkaklar: kindikdagi qorin va bo‘yin; ayollar: tabiiy tor bel, eng keng son va bo‘yin. TMI = vazn / bo‘y².
 
 Erkaklar: %yog‘ = 495 / (1,0324 − 0,19077 × log₁₀(bel − bo‘yin) + 0,15456 × log₁₀(bo‘y)) − 450; Ayollar: %yog‘ = 495 / (1,29579 − 0,35004 × log₁₀(bel + son − bo‘yin) + 0,221 × log₁₀(bo‘y)) − 450; TVI = vazn / bo‘y²
 
 ### Cheklovlar
 
-Usul xatoligi DXA bilan solishtirganda taxminan ±3–4% va tana tuzilishi noodatiy bo‘lgani sari ortadi. O‘lchovlarni ertalab nahorda, lentani tortmasdan, doim bir nuqtalarda oling: beldagi 1 sm farq natijani sezilarli o‘zgartiradi. TVI mushak bilan yog‘ni ajratmaydi va sportchilar, homiladorlar hamda bolalarga qo‘llanmaydi.
+Baho tana tarkibi o‘lchovini almashtirmaydi va Navy ning joriy rasmiy standarti emas. ACE toifalari tavsifiy referens, tashxis emas; TMI — kattalar uchun alohida tasnif. Mos bo‘lmagan aylanalarda hisoblanmaydi.
 
 ### Manbalar
 
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/body-composition?lang=uz&theme=auto"
-  title="Tana tarkibi kalkulyatori" loading="lazy" referrerpolicy="no-referrer"
+  title="Aylanalar bo‘yicha tana tarkibi va TMI" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

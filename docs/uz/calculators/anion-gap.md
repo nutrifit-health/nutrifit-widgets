@@ -6,29 +6,31 @@
 
 `anion-gap` · [NutriFit](https://nutrifit.health/uz/calculators/anion-gap)
 
-Elektrolitlar balansi va kislota-ishqor holatini (KShH), yashirin metabolik asidoz va alkalozlarni aniqlaydi.
+Anion farqi = Na − Cl − HCO₃; albumin tuzatishi = 0,25 × (40 − albumin, g/L). Delta nisbati = (tuzatilgan farq − tanlangan referens) / (bikarbonat referensi − HCO₃).
 
 ### Foydalanish tartibi
 
-1. Elektrolitlar tahlilini oling: Qon biokimyosidan natriy, xlorid, bikarbonat (yoki umumiy CO2) va albumin qiymatlarini oling.
-2. Qiymatlarni kiriting: Qiymatlarni tegishli maydonlarga kiriting.
-3. Buzilish turini aniqlang: Kalkulyator oddiy yoki aralash asidozni aniqlab beradi.
+1. Boshlang‘ich ma’lumotlarni kiriting: Anion farqi = Na − Cl − HCO₃; albumin tuzatishi = 0,25 × (40 − albumin, g/L). Delta nisbati = (tuzatilgan farq − tanlangan referens) / (bikarbonat referensi − HCO₃).
+2. Parametrlarni aniqlashtiring: Anion farqi = Na − Cl − HCO₃; albumin tuzatishi = 0,25 × (40 − albumin, g/L). Delta nisbati = (tuzatilgan farq − tanlangan referens) / (bikarbonat referensi − HCO₃).
+Referenslar laboratoriya usuliga bog‘liq. Delta faqat musbat surat va maxrajda hisoblanadi. Bitta son pH, qon gazlari va klinik kontekstsiz tashxis qo‘ymaydi.
+3. Natijani o‘qing: Referenslar laboratoriya usuliga bog‘liq. Delta faqat musbat surat va maxrajda hisoblanadi. Bitta son pH, qon gazlari va klinik kontekstsiz tashxis qo‘ymaydi.
 
 ### Usul va formula
 
-Klassik Gamblegram tenglamasiga va Figge-Jabor-Kazda albumin tuzatishiga asoslangan. Kuchli kislotalar va intoksikatsiyalarni aniqlaydi.
+Anion farqi = Na − Cl − HCO₃; albumin tuzatishi = 0,25 × (40 − albumin, g/L). Delta nisbati = (tuzatilgan farq − tanlangan referens) / (bikarbonat referensi − HCO₃).
 
-Anion bo‘shlig‘i (AG) = [Na+] − ([Cl−] + [HCO3−]); Albumin bo‘yicha tuzatilgan AG = AG + 2.5 × (40 − Albumin g/l) / 10; Delta nisbati = (Tuzatilgan AG − 12) / (24 − HCO3−).
+Anion farqi = Na − Cl − HCO₃; albumin tuzatishi = 0,25 × (40 − albumin, g/L). Delta nisbati = (tuzatilgan farq − tanlangan referens) / (bikarbonat referensi − HCO₃).
+Referenslar laboratoriya usuliga bog‘liq. Delta faqat musbat surat va maxrajda hisoblanadi. Bitta son pH, qon gazlari va klinik kontekstsiz tashxis qo‘ymaydi.
 
 ### Cheklovlar
 
-Natijalar qon gazlari tahlili (KShH), laktat va ketonlar bilan birgalikda shifokor tomonidan talqin qilinishi kerak.
+Referenslar laboratoriya usuliga bog‘liq. Delta faqat musbat surat va maxrajda hisoblanadi. Bitta son pH, qon gazlari va klinik kontekstsiz tashxis qo‘ymaydi.
 
 ### Manbalar
 
-- [Kraut J.A., Madias N.E. Serum anion gap: its uses and limitations in clinical medicine. Clin J Am Soc Nephrol, 2007;2(1):162–174](https://pubmed.ncbi.nlm.nih.gov/17699401/)
-- [Figge J., Jabor A., Kazda A., Fencl V. Anion gap and hypoalbuminemia. Crit Care Med, 1998;26(11):1807–1810](https://pubmed.ncbi.nlm.nih.gov/9824071/)
-- [Berend K., de Vries A.P., Gans R.O. Physiological approach to assessment of acid-base disturbances. N Engl J Med, 2014;371(15):1434–1445](https://pubmed.ncbi.nlm.nih.gov/25295502/)
+- [Kraut JA et al. Serum anion gap: its uses and limitations in clinical medicine. Clin J Am Soc Nephrol, 2007](https://pubmed.ncbi.nlm.nih.gov/17699401/)
+- [Figge J et al. Anion gap and hypoalbuminemia. Crit Care Med, 1998](https://pubmed.ncbi.nlm.nih.gov/9824071/)
+- [Berend K et al. Physiological approach to assessment of acid-base disturbances. N Engl J Med, 2014](https://pubmed.ncbi.nlm.nih.gov/25295502/)
 
 ## Ushbu kalkulyatorni joylashtirish
 

@@ -1,4 +1,4 @@
-# Голландтық тамақтану мінез-құлқы сұрақтамасы (DEBQ)
+# Тамақтану мінез-құлқы: өзгертілген DEBQ бейімдеуі
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/debq.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/debq.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/debq.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/debq.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/debq.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/debq.md)
 
@@ -6,28 +6,28 @@
 
 `debq` · [NutriFit](https://nutrifit.health/kk/calculators/debq)
 
-Тамақтану мінез-құлқының жетекші үш түрін (шектеулі, эмоциогенді және экстерналды) анықтауға арналған классикалық валидацияланған психологиялық құрал.
+Әдеттегі тамақтану мінез-құлқы туралы 33 сұрақ. Үш топтың орташа жауаптары көрсетіледі; норма санаты мен диагноз берілмейді.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Шынайы жауап беріңіз: Соңғы бірнеше айдағы әдеттегі мінез-құлқыңызды барынша дәл сипаттайтын нұсқаны таңдаңыз.
-2. Ұзақ ойланбаңыз: Алғашқы спонтанды реакция көбінесе ең дәл және шынайы көрсеткіш болып табылады.
-3. Үш субшкала бойынша нәтижелерді зерттеңіз: Балдарыңызды нормативтік шектермен салыстырып, сарапшылық кеңестермен танысыңыз.
+1. Бастапқы деректерді енгізіңіз: Нақты мәндер мен тиісті бірліктерді қолданыңыз.
+2. Параметрлерді нақтылаңыз: Бастапқы болжамдарды өз жағдайыңызға сай өзгертіңіз.
+3. Нәтижені оқыңыз: Модель шектеулерін ескеріңіз; есеп өлшеу емес.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-Сауалнама Лайкерт шкаласы бойынша 1-ден 5-ке дейін бағаланатын 33 тұжырымнан тұрады: когнитивті шектеу (10 сұрақ), эмоциогенді артық тамақтану (13 сұрақ) және экстерналды ынталандыру (10 сұрақ).
+Эмоциялық топ: 1–13; сыртқы: 14–23; шектеуші: 24–33. Әр орташа 1–5 аралығында; 17-сұрақ 6-дан жауапты шегеру арқылы есептеледі.
 
-Әр субшкаланың балы = Сәйкес сұрақтар жауаптарының орташа арифметикалық мәні (1,0-ден 5,0-ге дейін). Шектеулі: қалыпты ~2.4; Эмоциогенді: қалыпты ~1.8; Экстерналды: қалыпты ~2.7.
+Эмоциялық топ: 1–13; сыртқы: 14–23; шектеуші: 24–33. Әр орташа 1–5 аралығында; 17-сұрақ 6-дан жауапты шегеру арқылы есептеледі.
 
 ### Шектеулер
 
-Сауалнама өзін-өзі психологиялық бағалау құралы болып табылады және клиникалық диагноз емес. Айқын дистресс кезінде тамақтану бұзылыстары маманына жүгініңіз.
+Мәтіндер өзгертіліп, топталған. Бұл бастапқы DEBQ-дың валидациясы расталған нұсқасы емес; клиникалық нормалар қолданылмайды. Түпнұсқа бланкті пайдалану рұқсаты бөлек расталуы керек.
 
 ### Дереккөздер
 
 - [Van Strien T. et al. The Dutch Eating Behavior Questionnaire (DEBQ) for assessment of restrained, emotional, and external eating behavior. Int J Eat Disord, 1986;5(2):295–315](https://doi.org/10.1002/1098-108X(198602)5:2<295::AID-EAT2260050209>3.0.CO;2-T)
-- [Wardle J. Eating style: a validation study of the Dutch Eating Behaviour Questionnaire. J Psychosom Res, 1987;31(2):161–169](https://pubmed.ncbi.nlm.nih.gov/3585818/)
+- [Wardle J. et al. Eating style: a validation study of the Dutch Eating Behaviour Questionnaire in normal subjects and women with eating disorders. J Psychosom Res, 1987](https://pubmed.ncbi.nlm.nih.gov/3473234/)
 
 ## Осы калькуляторды ендіру
 
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/debq?lang=kk&theme=auto"
-  title="Голландтық тамақтану мінез-құлқы сұрақтамасы (DEBQ)" loading="lazy" referrerpolicy="no-referrer"
+  title="Тамақтану мінез-құлқы: өзгертілген DEBQ бейімдеуі" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

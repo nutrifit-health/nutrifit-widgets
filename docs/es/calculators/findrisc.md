@@ -6,29 +6,29 @@
 
 `findrisc` · [NutriFit](https://nutrifit.health/es/calculators/findrisc)
 
-Cuestionario reconocido internacionalmente por la OMS y la IDF para la detección precoz de diabetes oculta y la evaluación del riesgo de aparición de diabetes tipo 2 en 10 años.
+Riesgo de referencia de diabetes tipo 2 a 10 años según 8 factores FINDRISC; total de 0 a 26. Los porcentajes corresponden a la población del estudio original y no son una probabilidad individual precisa.
 
-### Cómo usar
+### Uso
 
-1. Indica tu edad y datos antropométricos: Selecciona tu grupo de edad, categoría de IMC y circunferencia de cintura, medida con cinta métrica a mitad de camino entre la última costilla y la cresta ilíaca.
-2. Evalúa tu estilo de vida y alimentación: Indica si realizas al menos 30 minutos de actividad física al día y si consumes verduras, frutas o bayas a diario.
-3. Indica tus antecedentes médicos: Indica si tomas medicación para la presión, si has tenido azúcar elevada en el pasado y si hay diabetes en familiares de sangre.
+1. Introduzca los datos iniciales: Riesgo de referencia de diabetes tipo 2 a 10 años según 8 factores FINDRISC; total de 0 a 26. Los porcentajes corresponden a la población del estudio original y no son una probabilidad individual precisa.
+2. Ajuste los parámetros: Riesgo de referencia de diabetes tipo 2 a 10 años según 8 factores FINDRISC; total de 0 a 26. Los porcentajes corresponden a la población del estudio original y no son una probabilidad individual precisa.
+3. Lea el resultado: Traducción informativa para autoevaluación. No se ha confirmado la validación de esta adaptación concreta. La puntuación no establece un diagnóstico y un resultado bajo no descarta enfermedad. Riesgo de referencia de diabetes tipo 2 a 10 años según 8 factores FINDRISC; total de 0 a 26. Los porcentajes corresponden a la población del estudio original y no son una probabilidad individual precisa.
 
 ### Método y fórmula
 
-Suma 8 factores de riesgo probados: edad, IMC, circunferencia de cintura, actividad física, verduras en la dieta, tratamiento antihipertensivo, glucemia elevada previa y antecedentes familiares.
+Riesgo de referencia de diabetes tipo 2 a 10 años según 8 factores FINDRISC; total de 0 a 26. Los porcentajes corresponden a la población del estudio original y no son una probabilidad individual precisa.
 
-Puntuación FINDRISC = Edad (0–4) + IMC (0–3) + Cintura (0–4) + Actividad física (0/2) + Verduras (0/1) + Medicación para la presión (0/2) + Glucosa elevada previa (0/5) + Antecedentes familiares (0/3/5). Total: 0–26 puntos.
+Riesgo de referencia de diabetes tipo 2 a 10 años según 8 factores FINDRISC; total de 0 a 26. Los porcentajes corresponden a la población del estudio original y no son una probabilidad individual precisa.
 
 ### Limitaciones
 
-Esta escala es una herramienta predictiva de cribado y no reemplaza el diagnóstico de laboratorio (glucosa plasmática en ayunas, HbA1c, prueba de tolerancia oral a la glucosa).
+Traducción informativa para autoevaluación. No se ha confirmado la validación de esta adaptación concreta. La puntuación no establece un diagnóstico y un resultado bajo no descarta enfermedad. Riesgo de referencia de diabetes tipo 2 a 10 años según 8 factores FINDRISC; total de 0 a 26. Los porcentajes corresponden a la población del estudio original y no son una probabilidad individual precisa.
 
 ### Fuentes
 
-- [Lindström J., Tuomilehto J. The diabetes risk score: a practical tool to predict type 2 diabetes risk. Diabetes Care, 2003;26(3):725–731](https://pubmed.ncbi.nlm.nih.gov/12610029/)
+- [Finnish Diabetes Association. Type 2 diabetes risk assessment form](https://sites.pitt.edu/~super1/assist/Type%202%20diabetes%20risk%20test.pdf)
+- [Lindström J et al. The diabetes risk score: a practical tool to predict type 2 diabetes risk. Diabetes Care, 2003](https://pubmed.ncbi.nlm.nih.gov/12610029/)
 - [International Diabetes Federation (IDF). Clinical Practice Recommendations for managing Type 2 Diabetes in Primary Care, 2017](https://www.idf.org/our-activities/care-prevention/clinical-practice-recommendations/)
-- [Saaristo T. et al. FINDRISC as an early intervention tool in primary health care. Diabetes Care, 2005;28(12):2900–2907](https://pubmed.ncbi.nlm.nih.gov/16316578/)
 
 ## Cómo integrar esta calculadora
 

@@ -1,4 +1,4 @@
-# HbA1c ↔ o‘rtacha glyukoza (eAG) konvertori
+# HbA1c va o‘rtacha glyukozani aylantirish
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/hba1c-eag.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/hba1c-eag.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/hba1c-eag.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/hba1c-eag.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/hba1c-eag.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/hba1c-eag.md)
 
@@ -6,31 +6,28 @@
 
 `hba1c-eag` · [NutriFit](https://nutrifit.health/uz/calculators/hba1c-eag)
 
-ADAG formulasi bo‘yicha HbA1c ni 3 oylik o‘rtacha glikemiyaga qayta hisoblash, teskari hisob va ADA toifalari bilan % ↔ mmol/mol konvertatsiya.
+Laboratoriya HbA1c dan taxminan 2–3 oydagi o‘rtacha glyukozani yoki teskari taxminiy bahoni hisoblash.
 
 ### Foydalanish tartibi
 
-1. Nima borligini tanlang: Qo‘lingizda HbA1c tahlili bo‘lsa — uni kiriting. Glyukometr yoki CGM yuritsangiz va 2–3 oydagi o‘rtacha glyukozani bilsangiz — teskari hisobga o‘ting.
-2. Blank birliklarini ko‘rsating: HbA1c foizda (NGSP, AQSh va MDH) yoki mmol/mol da (IFCC, Yevropa) beriladi. 6,5 % 48 mmol/mol ga mos keladi — kalkulyator avtomatik qayta hisoblaydi.
-3. eAG ni glyukometr ko‘rsatkichlari bilan solishtiring: Glyukometr bo‘yicha o‘rtacha eAG dan sezilarli past bo‘lsa — siz asosan och qoringa o‘lchab, ovqatdan keyingi cho‘qqilarni o‘tkazib yuborayotgan bo‘lishingiz mumkin. 1,5 mmol/l dan ortiq farqni shifokor bilan muhokama qilish kerak.
+1. Boshlang‘ich ma’lumotlarni kiriting: Haqiqiy qiymatlar va mos birliklardan foydalaning.
+2. Parametrlarni aniqlashtiring: Boshlang‘ich taxminlarni holatingizga moslang.
+3. Natijani o‘qing: Model cheklovlarini hisobga oling; hisob o‘lchov emas.
 
 ### Usul va formula
 
-Glikirlangan gemoglobin 8–12 hafta — eritrotsit hayoti muddati — davomidagi o‘rtacha glyukoza konsentratsiyasini aks ettiradi. A1c-Derived Average Glucose tadqiqoti (ADAG, Nathan 2008) 507 kishida HbA1c ni glyukozaning uzluksiz monitoringi bilan solishtirib, chiziqli bog‘liqlikni chiqardi: eAG (mg/dl) = 28,7 × HbA1c − 46,7. Kalkulyator ikki tomonga ishlaydi — HbA1c dan o‘rtacha glyukozaga va ma’lum o‘rtacha glikemiyadan (masalan, glyukometr yoki CGM bo‘yicha) kutilayotgan HbA1c ga — va NGSP foizlarini Yevropa va Avstraliyada qabul qilingan IFCC birliklariga (mmol/mol) o‘tkazadi.
+ADAG bog‘lanishi populyatsiya ma’lumotlariga asoslangan baho, har bir odam uchun aniq moslik emas. NGSP/IFCC aylantirishida rasmiy tenglama qo‘llanadi.
 
-eAG (mg/dl) = 28,7 × HbA1c (%) − 46,7
-eAG (mmol/l) = 1,59 × HbA1c (%) − 2,59
-HbA1c (mmol/mol, IFCC) = (HbA1c (%, NGSP) − 2,15) × 10,929
-Teskari: HbA1c (%) = (eAG, mg/dl + 46,7) / 28,7
+eAG (mg/dL) = 28.7 × HbA1c (%) − 46.7; eAG (mmol/L) = eAG (mg/dL) / 18.016; IFCC (mmol/mol) = (NGSP (%) − 2.152) / 0.09148; NGSP (%) = 0.09148 × IFCC + 2.152.
 
 ### Cheklovlar
 
-HbA1c eritrotsitlar hayoti muddatini yoki gemoglobin tuzilishini o‘zgartiruvchi holatlarda noaniq: anemiya, gemoglobinopatiyalar, homiladorlik, SBK, yaqinda qon yo‘qotish yoki quyish, temir va B12 tanqisligi. Odamlarning 10–15 % ida HbA1c va glyukoza o‘rtasidagi individual bog‘liqlik o‘rtachadan sezilarli farq qiladi («glikatsiya uzilishi» fenomeni), shuning uchun eAG — o‘lchov emas, populyatsion baho. Diabet tashxisi takroriy test bilan tasdiqlashni talab qiladi.
+O‘rtacha glyukozadan teskari hisob HbA1c tahlilini almashtirmaydi va tashxis qo‘ymaydi. Anemiya, eritrotsit umrining o‘zgarishi, gemoglobin variantlari va homiladorlik moslikka ta’sir qilishi mumkin. Tashxis shifokor bahosi va odatda qayta tasdiqlashni talab etadi.
 
 ### Manbalar
 
-- [Nathan D.M. et al. Translating the A1C assay into estimated average glucose values. Diabetes Care, 2008;31(8):1473–1478](https://pubmed.ncbi.nlm.nih.gov/18540046/)
-- [American Diabetes Association. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes — 2024. Diabetes Care, 2024;47(Suppl 1):S20–S42](https://pubmed.ncbi.nlm.nih.gov/38078589/)
+- [Nathan DM et al. Translating the A1C assay into estimated average glucose values. Diabetes Care, 2008](https://pubmed.ncbi.nlm.nih.gov/18540046/)
+- [American Diabetes Association Professional Practice Committee. et al. 2. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes-2024. Diabetes Care, 2024](https://pubmed.ncbi.nlm.nih.gov/38078589/)
 - [NGSP. IFCC Standardization of HbA1c: master equation NGSP ↔ IFCC](https://ngsp.org/ifcc.asp)
 
 ## Ushbu kalkulyatorni joylashtirish
@@ -62,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/hba1c-eag?lang=uz&theme=auto"
-  title="HbA1c ↔ o‘rtacha glyukoza (eAG) konvertori" loading="lazy" referrerpolicy="no-referrer"
+  title="HbA1c va o‘rtacha glyukozani aylantirish" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

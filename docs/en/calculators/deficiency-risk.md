@@ -1,4 +1,4 @@
-# Nutrient deficiency risk screening
+# Diet and lifestyle checklist
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/deficiency-risk.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/deficiency-risk.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/deficiency-risk.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/deficiency-risk.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/deficiency-risk.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/deficiency-risk.md)
 
@@ -6,23 +6,23 @@
 
 `deficiency-risk` · [NutriFit](https://nutrifit.health/calculators/deficiency-risk)
 
-Mark the lifestyle and diet factors that apply to you and see which nutrient deficiencies are likely and which laboratory tests confirm them.
+An author-written informational checklist: select your current dietary and lifestyle circumstances to see related nutrient topics.
 
-### How to use
+### Usage
 
-1. Mark dietary habits: Identify dietary exclusions such as meat, seafood, or dairy avoidance.
-2. Check lifestyle & medications: Factor in sunlight exposure, intense athletics, and chronic medications like metformin or antacids.
-3. Review lab recommendations: Receive a tailored risk score and the gold-standard diagnostic blood markers for each nutrient.
+1. Enter the starting values: Factor–nutrient links are informational topics for discussion. NIH ODS and EFSA provide information on nutrition and risk groups, but do not define scores or deficiency probabilities for this questionnaire.
+2. Adjust the parameters: An author-written informational checklist: select your current dietary and lifestyle circumstances to see related nutrient topics.
+3. Read the result: The checklist does not account for actual intake or absorption, fortified foods, supplements or illness. It neither confirms nor rules out deficiency; testing and supplementation require individual assessment.
 
 ### Method and formula
 
-This is a risk checklist, not a diagnosis. Every factor is mapped to the nutrients for which it is listed as a risk factor in the NIH Office of Dietary Supplements fact sheets and in EFSA dietary reference value materials. The weight reflects the strength of the link: 3 points for a situation where deficiency is expected without compensation, 2 for a significant factor, 1 for an additional contribution. Points are summed per nutrient: from 2 points the risk is moderate, from 4 it is high.
+Factor–nutrient links are informational topics for discussion. NIH ODS and EFSA provide information on nutrition and risk groups, but do not define scores or deficiency probabilities for this questionnaire.
 
-Nutrient score = sum of the weights of the selected factors; 0–1 point is low risk, 2–3 moderate, 4 and above high
+No risk scores or categories are calculated. Only selected factors and related nutrients are shown.
 
 ### Limitations
 
-The screening relies only on the factors you selected and ignores actual intake, supplement use, genetics and comorbidities. It neither confirms nor rules out a deficiency — nutrient status is determined in the laboratory and interpreted by a physician or nutrition professional.
+The checklist does not account for actual intake or absorption, fortified foods, supplements or illness. It neither confirms nor rules out deficiency; testing and supplementation require individual assessment.
 
 ### Sources
 
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/deficiency-risk?lang=en&theme=auto"
-  title="Nutrient deficiency risk screening" loading="lazy" referrerpolicy="no-referrer"
+  title="Diet and lifestyle checklist" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

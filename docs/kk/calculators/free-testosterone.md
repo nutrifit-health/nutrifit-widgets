@@ -1,4 +1,4 @@
-# Бос тестостерон калькуляторы (Вермюлен)
+# Вермюлен бойынша бос тестостерон
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/free-testosterone.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/free-testosterone.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/free-testosterone.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/free-testosterone.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/free-testosterone.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/free-testosterone.md)
 
@@ -6,32 +6,29 @@
 
 `free-testosterone` · [NutriFit](https://nutrifit.health/kk/calculators/free-testosterone)
 
-Vermeulen 1999 моделі бойынша тестостеронның бос және биологиялық қолжетімді фракциялары. Нәтиже әдіс референстерін талап етеді.
+Жалпы тестостерон, SHBG және альбумин бойынша бос және SHBG-мен байланыспаған фракцияларды есептеу.
 
-### Пайдалану реті
+### Қолдану тәртібі
 
-1. Жалпы тестостерон мен ЖСГБ-ны таңертең тапсырыңыз: Тестостерон таңертең сағат 7–10 арасында ең жоғары деңгейде болады. Аш қарынға тапсырыңыз.
-2. Альбуминді қосыңыз: Өлшенген альбуминді г/л түрінде енгізіңіз.
-3. Егер ЖСГБ стандартты болмаса, бос фракцияға қараңыз: ЖСГБ өзгергенде жалпы тестостерон мен бос фракция әртүрлі болуы мүмкін.
+1. Бастапқы деректерді енгізіңіз: Нақты мәндер мен тиісті бірліктерді қолданыңыз.
+2. Параметрлерді нақтылаңыз: Бастапқы болжамдарды өз жағдайыңызға сай өзгертіңіз.
+3. Нәтижені оқыңыз: Модель шектеулерін ескеріңіз; есеп өлшеу емес.
 
-### Әдістеме және формула
+### Әдіс пен формула
 
-Қандағы тестостеронның тек 1–3 %-ы бос күйде болады, 40–50 %-ы ЖСГБ-мен берік байланысқан, қалғаны альбуминмен байланысады. Vermeulen 1999 моделі осы байланыстарды есептейді.
+Vermeulen (1999) тепе-теңдік байланысу моделі: K_SHBG=10⁹ л/моль, K_Alb=3,6×10⁴ л/моль, альбумин молярлық массасы 69 000 г/моль. Модельдегі биожетімді фракция — бос және альбуминмен байланысқан тестостерон.
 
-N = Kальб × [Альбумин] + 1;  a = N × Kжсгб;  b = N + Kжсгб × ([ЖСГБ] − [T])
-Бос T = (−b + √(b² + 4·a·[T])) / (2·a)
-Био-қолжетімді T = Бос T × N
-Қайта есептеу: T нг/дл × 0,0347 = нмоль/л; бос T нмоль/л × 288,4 = пг/мл
+Vermeulen (1999) тепе-теңдік байланысу моделі: K_SHBG=10⁹ л/моль, K_Alb=3,6×10⁴ л/моль, альбумин молярлық массасы 69 000 г/моль. Модельдегі биожетімді фракция — бос және альбуминмен байланысқан тестостерон.
 
 ### Шектеулер
 
-Жалпы тестостеронды таңертең аш қарынға дәл әдіспен (СХ-МС/МС) өлшегенде есеп дұрыс болады. Бір реттік нәтиже диагноз қоюға негіз болмайды.
+Бұл есеп, тікелей өлшеу емес. Әмбебап норма берілмейді: түсіндіру симптомдарға, жасқа, жынысқа, зертхана әдісіне және қайталанған өлшемдерге байланысты.
 
 ### Дереккөздер
 
-- [Vermeulen A., Verdonck L., Kaufman J.M. A critical evaluation of simple methods for the estimation of free testosterone in serum. J Clin Endocrinol Metab, 1999;84(10):3666–3672](https://pubmed.ncbi.nlm.nih.gov/10523012/)
-- [Bhasin S. et al. Testosterone therapy in men with hypogonadism: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab, 2018;103(5):1715–1744](https://pubmed.ncbi.nlm.nih.gov/29562364/)
-- [Salonia A. et al. European Association of Urology guidelines on sexual and reproductive health — 2021 update: male sexual dysfunction. Eur Urol, 2021;80(3):333–357](https://pubmed.ncbi.nlm.nih.gov/34183196/)
+- [Vermeulen A et al. A critical evaluation of simple methods for the estimation of free testosterone in serum. J Clin Endocrinol Metab, 1999](https://pubmed.ncbi.nlm.nih.gov/10523012/)
+- [Bhasin S et al. Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab, 2018](https://pubmed.ncbi.nlm.nih.gov/29562364/)
+- [Salonia A et al. European Association of Urology Guidelines on Sexual and Reproductive Health-2021 Update: Male Sexual Dysfunction. Eur Urol, 2021](https://pubmed.ncbi.nlm.nih.gov/34183196/)
 
 ## Осы калькуляторды ендіру
 
@@ -62,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/free-testosterone?lang=kk&theme=auto"
-  title="Бос тестостерон калькуляторы (Вермюлен)" loading="lazy" referrerpolicy="no-referrer"
+  title="Вермюлен бойынша бос тестостерон" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

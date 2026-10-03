@@ -1,4 +1,4 @@
-# Suv normasi kalkulyatori
+# Kunlik suvning evristik bahosi
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/water.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/water.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/water.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/water.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/water.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/water.md)
 
@@ -6,28 +6,28 @@
 
 `water` · [NutriFit](https://nutrifit.health/uz/calculators/water)
 
-Tana vaznidan kunlik suyuqlik ehtiyojini jismoniy yuklama va issiq iqlimga tuzatish bilan hisoblaydi.
+Tanlangan model: 30 mL/kg + yuklama soatiga 500 mL + issiqda 500 mL. Shartli 75% ichimlikdan; stakan = 250 mL. Yoshga qarab kamaytirilmaydi.
 
 ### Foydalanish tartibi
 
-1. Tana vaznini ko‘rsating: Suvga bo‘lgan asosiy fiziologik ehtiyoj tana vazniga to‘g‘ridan-to‘g‘ri proporsionaldir (o‘rtacha 1 kg vaznga 30–35 ml).
-2. Jismoniy faollikni qo‘shing: Har 30 daqiqalik mashg‘ulot ter bilan yo‘qotilgan suyuqlik o‘rnini qoplash uchun qo‘shimcha 350–500 ml suyuqlik talab qiladi.
-3. Iqlim va haroratni inobatga oling: Issiq ob-havo (>25°C) yoki havoning past namligi kunlik ehtiyojni yana 500 ml ga oshiradi.
+1. Boshlang‘ich ma’lumotlarni kiriting: Tanlangan model: 30 mL/kg + yuklama soatiga 500 mL + issiqda 500 mL. Shartli 75% ichimlikdan; stakan = 250 mL. Yoshga qarab kamaytirilmaydi.
+2. Parametrlarni aniqlashtiring: Tanlangan model: 30 mL/kg + yuklama soatiga 500 mL + issiqda 500 mL. Shartli 75% ichimlikdan; stakan = 250 mL. Yoshga qarab kamaytirilmaydi.
+3. Natijani o‘qing: Bular farazlar, EFSA me’yori emas. EFSA: ichimlik va ovqatdan umumiy suv ayollarga 2,0 L, erkaklarga 2,5 L; mo‘tadil sharoitda kattalar va keksalarga bir xil. Ter va kasallik cheklovlari alohida baholanadi.
 
 ### Usul va formula
 
-Asosiy ehtiyoj — kattalar uchun tana vaznining har kg iga 30 ml, 60 yoshdan keyin 25 ml/kg, chunki buyrakning konsentratsiya qobiliyati pasayadi. Har bir soat jadal yuklama ter bilan yo‘qotishni qoplash uchun 500 ml, issiq iqlim yoki quruq isitiladigan xona uchun yana 500 ml qo‘shadi. Yakun — suvga to‘liq ehtiyoj; uning 20–30% oziq-ovqat bilan keladi, shuning uchun ichimliklar normasi alohida ko‘rsatilgan (EFSA, 2010).
+Tanlangan model: 30 mL/kg + yuklama soatiga 500 mL + issiqda 500 mL. Shartli 75% ichimlikdan; stakan = 250 mL. Yoshga qarab kamaytirilmaydi.
 
-Jami(ml) = vazn × 30 (yoki 60 yoshdan keyin × 25) + 500 × yuklama soatlari + issiqda 500; Ichimliklar(ml) = jami × 0,75
+Tanlangan model: 30 mL/kg + yuklama soatiga 500 mL + issiqda 500 mL. Shartli 75% ichimlikdan; stakan = 250 mL. Yoshga qarab kamaytirilmaydi.
 
 ### Cheklovlar
 
-Sog‘lom kattalar uchun mo‘ljal. Yurak va buyrak yetishmovchiligida, diuretik qabul qilishda, isitmada va issiq ishlab chiqarishda normani shifokor belgilaydi. Chanqoq va siydik rangi har qanday hisobdan ko‘ra ishonchliroq mo‘ljal bo‘lib qoladi.
+Bular farazlar, EFSA me’yori emas. EFSA: ichimlik va ovqatdan umumiy suv ayollarga 2,0 L, erkaklarga 2,5 L; mo‘tadil sharoitda kattalar va keksalarga bir xil. Ter va kasallik cheklovlari alohida baholanadi.
 
 ### Manbalar
 
 - [EFSA Panel on Dietetic Products. Scientific Opinion on Dietary Reference Values for water, 2010](https://www.efsa.europa.eu/en/efsajournal/pub/1459)
-- [Sawka M.N. et al. American College of Sports Medicine Position Stand: Exercise and Fluid Replacement, 2007](https://pubmed.ncbi.nlm.nih.gov/17277604/)
+- [American College of Sports Medicine et al. American College of Sports Medicine position stand. Exercise and fluid replacement. Med Sci Sports Exerc, 2007](https://pubmed.ncbi.nlm.nih.gov/17277604/)
 
 ## Ushbu kalkulyatorni joylashtirish
 
@@ -58,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/water?lang=uz&theme=auto"
-  title="Suv normasi kalkulyatori" loading="lazy" referrerpolicy="no-referrer"
+  title="Kunlik suvning evristik bahosi" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

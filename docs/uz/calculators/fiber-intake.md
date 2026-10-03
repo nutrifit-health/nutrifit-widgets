@@ -1,4 +1,4 @@
-# Kletchatka (ozuqaviy tolalar) meʼyori kalkulyatori
+# Oziq tolalari bo‘yicha ma’lumotnoma
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/fiber-intake.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/fiber-intake.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/fiber-intake.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/fiber-intake.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/fiber-intake.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/fiber-intake.md)
 
@@ -6,29 +6,28 @@
 
 `fiber-intake` · [NutriFit](https://nutrifit.health/uz/calculators/fiber-intake)
 
-Ichak mikrobiotasini oziqlantirish, xolesterinni normallashtirish va oshqozon-ichak motorikasini yaxshilash uchun zarur kunlik kletchatka miqdorini aniqlaydi.
+Yo‘nalishlar alohida ko‘rsatiladi: EFSA kattalarga 25 g/kun, IOM/NASEM 14 g/1000 kkal beradi. IOM yosh va jins bo‘yicha AI: 19–50 yoshda erkaklarga 38 g, ayollarga 25 g; 50 yoshdan keyin 30 va 21 g. Energiya hisobi boshqa yo‘nalishlarni avtomatik almashtirmaydi.
 
 ### Foydalanish tartibi
 
-1. Har bir ovqatlanishga sabzavot qo‘shing: Kuniga kamida 400–500 g kraxmalsiz sabzavotlar va ko‘katlar isteʼmol qiling (Garvard tarelkasi qoidasi).
-2. Tozalangan yormalarni to‘liq donlilarga almashtiring: Oq guruch va oliy navli un o‘rniga grechka, kinoa, suli yormasi, arpa va butun donli nonni tanlang.
-3. Urug‘lar va dukkaklilarni qo‘shing: 1 osh qoshiq chia yoki zig‘ir urug‘i hamda bir porsiya yasmiq darhol 8–12 g sifatli tola beradi.
+1. Ma’lumotlarni kiriting: Yo‘nalishlar alohida ko‘rsatiladi: EFSA kattalarga 25 g/kun, IOM/NASEM 14 g/1000 kkal beradi. IOM yosh va jins bo‘yicha AI: 19–50 yoshda erkaklarga 38 g, ayollarga 25 g; 50 yoshdan keyin 30 va 21 g. Energiya hisobi boshqa yo‘nalishlarni avtomatik almashtirmaydi.
+2. Yo‘nalishlarni taqqoslang: Yo‘nalishlar alohida ko‘rsatiladi: EFSA kattalarga 25 g/kun, IOM/NASEM 14 g/1000 kkal beradi. IOM yosh va jins bo‘yicha AI: 19–50 yoshda erkaklarga 38 g, ayollarga 25 g; 50 yoshdan keyin 30 va 21 g. Energiya hisobi boshqa yo‘nalishlarni avtomatik almashtirmaydi.
+3. Cheklovlarni hisobga oling: Homilador yoki emizikli bo‘lmagan 19 yosh va undan katta kattalar uchun. Bular shaxsiy xavfsizlik chegarasi yoki qabziyat, IBS va yuqori xolesterinni davolash usuli emas. Iste’molni ko‘tara olishga qarab oshiring. Har bir gramm tola uchun qo‘shimcha 40 ml suv hisoblanmaydi.
 
 ### Usul va formula
 
-JSST va Yevropa oziq-ovqat xavfsizligi agentligi (EFSA: ratsionning har 1000 kkaliga 14 g kletchatka, ayollar uchun kamida 25 g va erkaklar uchun 38 g) standartlariga asoslangan. Suv balansini (+1 g tola uchun 40 ml suv) hisoblaydi va TIS bo‘yicha moslashtiradi.
+Yo‘nalishlar alohida ko‘rsatiladi: EFSA kattalarga 25 g/kun, IOM/NASEM 14 g/1000 kkal beradi. IOM yosh va jins bo‘yicha AI: 19–50 yoshda erkaklarga 38 g, ayollarga 25 g; 50 yoshdan keyin 30 va 21 g. Energiya hisobi boshqa yo‘nalishlarni avtomatik almashtirmaydi.
 
-Maqsadli kletchatka = max(25/38 g, Kaloriya × 0,014); Eruvchan fraksiya ~30–35%; Erimaydigan fraksiya ~65–70%; Qo‘shimcha suv = Kletchatka (g) × 40 ml.
+Yo‘nalishlar alohida ko‘rsatiladi: EFSA kattalarga 25 g/kun, IOM/NASEM 14 g/1000 kkal beradi. IOM yosh va jins bo‘yicha AI: 19–50 yoshda erkaklarga 38 g, ayollarga 25 g; 50 yoshdan keyin 30 va 21 g. Energiya hisobi boshqa yo‘nalishlarni avtomatik almashtirmaydi.
 
 ### Cheklovlar
 
-Ichakda bakteriyalarning ortiqcha o‘sishi sindromi (SIBO) va kolit xurujida fermentatsiyalanuvchi tolalar meteorizmni kuchaytirishi mumkin. Kletchatka dozasini bosqichma-bosqich oshirish lozim.
+Homilador yoki emizikli bo‘lmagan 19 yosh va undan katta kattalar uchun. Bular shaxsiy xavfsizlik chegarasi yoki qabziyat, IBS va yuqori xolesterinni davolash usuli emas. Iste’molni ko‘tara olishga qarab oshiring. Har bir gramm tola uchun qo‘shimcha 40 ml suv hisoblanmaydi.
 
 ### Manbalar
 
-- [EFSA Panel on Dietetic Products, Nutrition, and Allergies. Scientific Opinion on Dietary Reference Values for carbohydrates and dietary fibre. EFSA Journal, 2010;8(3):1462](https://doi.org/10.2903/j.efsa.2010.1462)
-- [Reynolds A. et al. Carbohydrate quality and human health: a series of systematic reviews and meta-analyses. Lancet, 2019;393(10170):434–445](https://pubmed.ncbi.nlm.nih.gov/30638909/)
-- [Stephen A.M. et al. Dietary fibre in Europe: current state of knowledge on definitions, sources, recommendations, intakes and relationships to health. Nutr Res Rev, 2017;30(2):149–190](https://pubmed.ncbi.nlm.nih.gov/28676135/)
+- [EFSA. Dietary Reference Values summary, 2017](https://www.efsa.europa.eu/sites/default/files/2017_09_DRVs_summary_report.pdf)
+- [IOM/NASEM. Dietary Reference Intakes: Fiber, 2006](https://www.nationalacademies.org/read/11537/chapter/11)
 
 ## Ushbu kalkulyatorni joylashtirish
 
@@ -59,7 +58,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/fiber-intake?lang=uz&theme=auto"
-  title="Kletchatka (ozuqaviy tolalar) meʼyori kalkulyatori" loading="lazy" referrerpolicy="no-referrer"
+  title="Oziq tolalari bo‘yicha ma’lumotnoma" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>

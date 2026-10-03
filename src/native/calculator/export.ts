@@ -17,7 +17,7 @@ export function downloadNutritionCsv(result: CalculationResult, brandName?: stri
   const rows = [
     [columns.nutrient, columns.unit, t.total, t.per100g, columns.status, t.output, t.checked, t.source],
     ...result.metrics.map((metric) => [
-      t[metric.key], metric.key === 'calories' ? 'kcal' : 'g',
+      t[metric.key], metric.key === 'calories' ? t.unitEnergy : t.unitMass,
       metric.total === null ? '' : String(metric.total),
       metric.per100g === null ? '' : String(metric.per100g),
       metric.incomplete ? t.missing : columns.complete,

@@ -1,4 +1,4 @@
-# Eating Behavior Diagnostic Wizard
+# Eating behaviour self-assessment
 
 [English](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/en/calculators/eating-behavior-wizard.md) · [Русский](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/ru/calculators/eating-behavior-wizard.md) · [Español](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/es/calculators/eating-behavior-wizard.md) · [Українська](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uk/calculators/eating-behavior-wizard.md) · [Қазақша](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/kk/calculators/eating-behavior-wizard.md) · [O‘zbekcha](https://github.com/nutrifit-health/nutrifit-widgets/blob/main/docs/uz/calculators/eating-behavior-wizard.md)
 
@@ -6,23 +6,23 @@
 
 `eating-behavior-wizard` · [NutriFit](https://nutrifit.health/calculators/eating-behavior-wizard)
 
-An integrated diagnostic wizard by NutriFit synthesizing leading validated scales to identify your core eating behavior archetype and personalized action plan.
+Five SCOFF questions and four author-written questions for reflection on eating behaviour.
 
-### How to use
+### Usage
 
-1. Complete clinical risk screening: Note critical indicators regarding food preoccupation and rigid body weight control.
-2. Configure eating behavior dimensions: Indicate your tendencies toward dietary restriction, stress-driven eating, and external cues.
-3. Receive your archetype and strategy: Review your primary pattern description and download your detailed PDF report.
+1. Read the instructions: Consider the stated period and the meaning of each statement.
+2. Choose your answers: Answer each item by choosing the appropriate option.
+3. View the result: The result reflects your answers; interpret it within the limits of the measure.
 
 ### Method and formula
 
-NutriFit multi-factor algorithm correlating markers of dietary restraint, emotional eating, external cues, and eating disorder risk into an eating profile.
+SCOFF is scored using five actual yes/no answers. The other answers are shown directly.
 
-Comprehensive classification matrix based on cross-scale correlations among DEBQ, SCOFF, IES-2, and mYFAS 2.0.
+Two or more yes answers on SCOFF produce a positive screen. The author-written questions do not calculate DEBQ, IES-2 or mYFAS scores or identify a psychological type.
 
 ### Limitations
 
-This tool is designed for self-discovery and nutritional counseling guidance. It does not replace a clinical psychiatric diagnostic interview.
+This informational result does not establish a diagnosis or prescribe treatment. Translated versions are informational adaptations; separate psychometric validation of each translation has not been confirmed.
 
 ### Sources
 
@@ -59,7 +59,7 @@ export function Calculator() {
 ```html
 <iframe
   src="https://nutrifit.health/embed/calculators/eating-behavior-wizard?lang=en&theme=auto"
-  title="Eating Behavior Diagnostic Wizard" loading="lazy" referrerpolicy="no-referrer"
+  title="Eating behaviour self-assessment" loading="lazy" referrerpolicy="no-referrer"
   sandbox="allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox"
   style="width:100%;height:880px;border:0"
 ></iframe>
